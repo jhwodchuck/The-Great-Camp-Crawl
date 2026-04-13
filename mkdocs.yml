@@ -20,6 +20,7 @@ nav:
   - Scope: docs/scope.md
   - Methodology: docs/methodology.md
   - Workflow: docs/workflow.md
+  - Discovery Pipeline: docs/discovery-pipeline.md
   - Coverage:
       - United States: docs/coverage/united-states.md
       - Canada: docs/coverage/canada.md

@@ -1,16 +1,18 @@
 # DuckDuckGo Discovery Scripts
 
-These scripts add a lightweight web-discovery path using `https://api.duckduckgo.com/` plus HTML-to-Markdown capture.
+These scripts provide the default deterministic raw-discovery path using `https://api.duckduckgo.com/` plus local HTML-to-Markdown capture.
 
 ## Important caveat
 
-DuckDuckGo's Instant Answer API is useful for seed discovery, but it is not a full rich search-results API. Treat it as a recall helper rather than the only search source forever.
+DuckDuckGo's Instant Answer API is useful for seed discovery, but it is not a full rich search-results API. Treat it explicitly as a recall helper rather than a complete search layer.
 
 ## Files
 
-- `scripts/search_duckduckgo.py` — query the DuckDuckGo API and emit deduplicated JSONL hits
-- `scripts/html_to_markdown.py` — fetch a page, extract main content, and convert it to Markdown
+- `scripts/search_duckduckgo.py` — query the DuckDuckGo API with query expansion, host filters, retries, and query provenance
+- `scripts/search_batch.py` — run file-based batch search
+- `scripts/html_to_markdown.py` — fetch a page, preserve raw HTML, and convert main content to Markdown evidence
 - `scripts/discover_and_capture.py` — do both in one pass for a small set of hits
+- `scripts/run_discovery_pipeline.py` — orchestrate search, capture, normalization, indexing, follow-up generation, staging, and summary writing
 - `scripts/requirements-discovery.txt` — Python dependencies for the discovery scripts
 
 ## Setup
@@ -26,19 +28,31 @@ pip install -r scripts/requirements-discovery.txt
 Run seed discovery:
 
 ```bash
-python scripts/search_duckduckgo.py "site:.edu pre-college residential program" --output data/staging/discovered-ddg.jsonl
+python scripts/search_duckduckgo.py \
+  "site:.edu pre-college residential program" \
+  --output reports/discovery/manual_seed_raw.jsonl \
+  --query-log data/raw/discovery-runs/manual_seed/queries.jsonl \
+  --country US \
+  --program-family college-pre-college
 ```
 
 Capture one page to Markdown:
 
 ```bash
-python scripts/html_to_markdown.py "https://globalscholars.yale.edu/" --output data/raw/evidence-pages/text/yale-young-global-scholars.md
+python scripts/html_to_markdown.py \
+  "https://globalscholars.yale.edu/" \
+  --manifest data/raw/evidence-pages/manifests/manual_capture_manifest.jsonl
 ```
 
-Run combined discovery and capture:
+Run the full pipeline:
 
 ```bash
-python scripts/discover_and_capture.py "pre-college residential program" --limit 10
+python scripts/run_discovery_pipeline.py \
+  "site:.edu pre-college residential program" \
+  --run-id us-college-precollege-seed \
+  --country US \
+  --region CT \
+  --program-family college-pre-college
 ```
 
 ## Suggested role in this repo
@@ -46,4 +60,6 @@ python scripts/discover_and_capture.py "pre-college residential program" --limit
 Use these scripts to:
 - generate raw leads
 - capture source pages into Markdown for auditability
-- feed the validation and enrichment prompts already in the repository
+- normalize discovery into repo candidate schema
+- generate deterministic follow-up and split queues
+- feed later validation and enrichment work without requiring prompt-driven raw gathering

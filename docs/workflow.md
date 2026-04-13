@@ -1,12 +1,14 @@
 # Workflow
 
 ## 1. Discovery
-Run discovery agents by geography, program family, and language.
+Run the deterministic code-first discovery pipeline by geography, program family, and language.
 
 Primary outputs:
-- `data/staging/discovered-candidates.jsonl`
-- raw source captures in `data/raw/`
-- discovery notes in `data/raw/notes/`
+- `reports/discovery/<run-id>_raw.jsonl`
+- `reports/discovery/<run-id>_normalized.jsonl`
+- `reports/discovery/<run-id>_followup_queue.jsonl`
+- `data/raw/discovery-runs/<run-id>/...`
+- raw source captures in `data/raw/evidence-pages/`
 
 ## 2. Validation
 Validate overnight status, venue identity, and recent activity.

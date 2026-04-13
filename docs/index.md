@@ -43,3 +43,4 @@ The current research bias favors:
 - `prompts/system/OUTPUT_SCHEMA.md`
 - `prompts/system/NAMING_CONVENTIONS.md`
 - `templates/camp.md`
+- `docs/discovery-pipeline.md`

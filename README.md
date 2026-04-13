@@ -50,12 +50,111 @@ mkdocs.yml               Docs configuration
 
 ## Recommended workflow
 
-1. Run discovery agents by country, region, and specialty.
-2. Stage candidates in `data/staging/discovered-candidates.jsonl`.
+1. Run the deterministic raw discovery pipeline by country, region, and program family.
+2. Review normalized candidates and follow-up queues in `reports/discovery/` and `data/staging/discovery-runs/`.
 3. Validate overnight status, venue identity, and recent activity.
 4. Enrich pricing, duration, age ranges, contact details, and taxonomy.
 5. Render a final dossier into `camps/...`.
 6. Publish browsable documentation through MkDocs.
+
+## Deterministic discovery pipeline
+
+The repository now supports a code-first raw ingestion path for:
+
+- seed discovery through DuckDuckGo Instant Answer
+- HTML capture and Markdown evidence preservation
+- evidence indexing
+- candidate normalization into repo schema
+- deterministic follow-up queue generation
+- multi-venue split-task generation
+- run summaries and staging outputs
+
+LLMs are still useful later for validation, enrichment review, and final dossier drafting, but the raw gathering path does not require prompts.
+
+## Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r scripts/requirements-discovery.txt
+```
+
+## Quick start
+
+Run the full pipeline for a small scoped pass:
+
+```bash
+python scripts/run_discovery_pipeline.py \
+  "site:.edu pre-college residential program" \
+  --run-id us-college-precollege-seed \
+  --country US \
+  --region MA \
+  --program-family college-pre-college
+```
+
+Search only:
+
+```bash
+python scripts/search_duckduckgo.py \
+  "site:.edu pre-college residential program" \
+  --output reports/discovery/manual_seed_raw.jsonl \
+  --query-log data/raw/discovery-runs/manual_seed/queries.jsonl \
+  --country US \
+  --program-family college-pre-college
+```
+
+Normalize an existing discovery report and generate queues:
+
+```bash
+python scripts/normalize_existing_discovery_report.py \
+  reports/discovery/us_candidates_2026-04-13.jsonl \
+  --output reports/discovery/us_candidates_2026-04-13_normalized.jsonl
+
+python scripts/generate_followup_queue.py \
+  reports/discovery/us_candidates_2026-04-13_normalized.jsonl \
+  --output reports/discovery/us_candidates_2026-04-13_followup_queue.jsonl
+
+python scripts/split_multi_venue_candidates.py \
+  reports/discovery/us_candidates_2026-04-13_normalized.jsonl \
+  --output reports/discovery/us_candidates_2026-04-13_split_queue.jsonl \
+  --skeleton-output reports/discovery/us_candidates_2026-04-13_split_stubs.jsonl
+```
+
+Run tests:
+
+```bash
+python -m pytest -q
+```
+
+## Run outputs
+
+A pipeline run writes to:
+
+```text
+data/raw/discovery-runs/<run-id>/queries.jsonl
+data/raw/discovery-runs/<run-id>/search_results.jsonl
+data/raw/discovery-runs/<run-id>/capture_manifest.jsonl
+data/raw/discovery-runs/<run-id>/run.json
+data/raw/evidence-pages/html/*.html
+data/raw/evidence-pages/text/*.md
+reports/discovery/<run-id>_raw.jsonl
+reports/discovery/<run-id>_normalized.jsonl
+reports/discovery/<run-id>_followup_queue.jsonl
+reports/discovery/<run-id>_split_queue.jsonl
+reports/discovery/<run-id>_evidence_index.jsonl
+reports/discovery/<run-id>_summary.json
+data/staging/discovery-runs/<run-id>/discovered_candidates.jsonl
+data/staging/discovery-runs/<run-id>/followup_queue.jsonl
+data/staging/discovery-runs/<run-id>/split_queue.jsonl
+data/normalized/evidence_index.jsonl
+```
+
+## Search-layer limitations
+
+- DuckDuckGo Instant Answer is a seed-discovery layer, not a complete search engine.
+- Expect false negatives; broad recall still needs multiple reruns, geography slices, family slices, and later supplemental sources.
+- The pipeline preserves ambiguity instead of inventing venue certainty or overnight status.
+- Non-English sources should still be kept when found; discovery should not discard Spanish or French material.
 
 ## Docs site
 
@@ -101,7 +200,7 @@ This repository is intentionally set up as a research system rather than a loose
 
 ## Near-term next steps
 
-- add the remaining discovery, validation, and enrichment prompts
-- create normalization/export scripts
-- add sample venue dossiers
-- add search index generation for docs browsing
+- expand supplemental seed sources beyond DuckDuckGo Instant Answer
+- improve venue splitting against official multi-campus program pages
+- deepen enrichment and validation automation on top of the deterministic raw corpus
+- add more sample venue dossiers and docs browsing helpers
