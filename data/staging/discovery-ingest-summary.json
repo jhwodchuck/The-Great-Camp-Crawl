@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T15:04:12Z",
+  "generated_at": "2026-04-13T15:24:34Z",
   "reports_ingested": [
     {
       "source_report": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13.json",
@@ -60,33 +60,29 @@
         "split_queue": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_split_queue.jsonl",
         "split_stubs": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_split_stubs.jsonl"
       }
-    },
-    {
-      "source_report": "reports/discovery/jhu_ei_live_probe_2026-04-13.jsonl",
-      "records": 10,
-      "outputs": {
-        "normalized": "reports/discovery/jhu_ei_live_probe_2026-04-13_normalized.jsonl",
-        "followup": "reports/discovery/jhu_ei_live_probe_2026-04-13_followup_queue.jsonl",
-        "split_queue": "reports/discovery/jhu_ei_live_probe_2026-04-13_split_queue.jsonl",
-        "split_stubs": "reports/discovery/jhu_ei_live_probe_2026-04-13_split_stubs.jsonl"
-      }
     }
   ],
   "normalized_reports_used": [
+    "canada-french-singleq-live-2026-04-13_normalized.jsonl",
+    "canada-hebergement-singleq-live-2026-04-13_normalized.jsonl",
     "gt_georgia_tech_starter_dump_2026-04-13_normalized.jsonl",
     "gt_gifted_talented_institutional_leads_2026-04-13_normalized.jsonl",
     "gt_gifted_talented_math_stem_expansion_2026-04-13_normalized.jsonl",
     "gt_gifted_talented_starter_dump_2026-04-13_normalized.jsonl",
     "jhu_ei_live_probe_2026-04-13_normalized.jsonl",
+    "mexico-singleq-live-2026-04-13_normalized.jsonl",
     "starter_research_dump_2026-04-13_normalized.jsonl",
     "texas_gifted_talented_full_starter_dump_2026-04-13_normalized.jsonl",
+    "us-college-precollege-national-live-2026-04-13_normalized.jsonl",
     "us-md-college-precollege-live-2026-04-13_normalized.jsonl",
     "us-md-targeted-live-2026-04-13_normalized.jsonl",
+    "us-precollege-singleq-live-2026-04-13_normalized.jsonl",
+    "us-precollege-summerres-singleq-live-2026-04-13_normalized.jsonl",
     "us_candidates_2026-04-13_normalized.jsonl"
   ],
   "counts": {
-    "aggregate_candidates": 69,
-    "aggregate_followups": 343,
+    "aggregate_candidates": 110,
+    "aggregate_followups": 551,
     "aggregate_split_tasks": 7,
     "duplicate_candidate_ids": 0
   },

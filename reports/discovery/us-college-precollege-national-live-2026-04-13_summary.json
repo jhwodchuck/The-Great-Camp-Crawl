@@ -1,0 +1,72 @@
+{
+  "run_id": "us-college-precollege-national-live-2026-04-13",
+  "started_at": "2026-04-13T15:21:59Z",
+  "git_revision": "e4f5b65",
+  "scope": {
+    "country": "US",
+    "region": "",
+    "program_family": "college-pre-college",
+    "city": null,
+    "venue_name": null
+  },
+  "inputs": {
+    "seed_queries": [
+      "site:.edu \"pre-college\" residential summer program high school",
+      "site:.edu \"pre-college\" residential summer program high school US",
+      "site:.edu \"summer residential program\" \"high school students\"",
+      "site:.edu \"summer residential program\" \"high school students\" US",
+      "site:.edu \"pre-college\" dorm housing high school summer",
+      "site:.edu \"high school summer scholars\" residential",
+      "site:.edu \"high school summer scholars\" residential US",
+      "site:.edu \"on-campus summer program\" \"high school students\" residential",
+      "site:.edu \"residential track\" \"pre-college\"",
+      "site:.edu \"residential track\" \"pre-college\" US"
+    ],
+    "query_file": "data/seed-queries/us-college-precollege-national.txt",
+    "allow_hosts": [],
+    "deny_hosts": [
+      "duckduckgo.com",
+      "facebook.com",
+      "instagram.com",
+      "linkedin.com",
+      "tiktok.com",
+      "twitter.com",
+      "x.com",
+      "youtube.com",
+      "youtu.be",
+      "pinterest.com"
+    ],
+    "search_providers": [
+      "instant_answer",
+      "lite_html"
+    ]
+  },
+  "counts": {
+    "queries": 10,
+    "raw_results": 0,
+    "captured": 0,
+    "capture_failed": 0,
+    "normalized_candidates": 0,
+    "followup_items": 0,
+    "split_tasks": 0,
+    "evidence_index_rows": 0
+  },
+  "outputs": {
+    "run_id": "us-college-precollege-national-live-2026-04-13",
+    "started_at": "2026-04-13T15:21:59Z",
+    "raw_run_dir": "data/raw/discovery-runs/us-college-precollege-national-live-2026-04-13",
+    "raw_query_log": "data/raw/discovery-runs/us-college-precollege-national-live-2026-04-13/queries.jsonl",
+    "raw_search_results": "data/raw/discovery-runs/us-college-precollege-national-live-2026-04-13/search_results.jsonl",
+    "raw_capture_manifest": "data/raw/discovery-runs/us-college-precollege-national-live-2026-04-13/capture_manifest.jsonl",
+    "reports_raw": "reports/discovery/us-college-precollege-national-live-2026-04-13_raw.jsonl",
+    "reports_normalized": "reports/discovery/us-college-precollege-national-live-2026-04-13_normalized.jsonl",
+    "reports_followup": "reports/discovery/us-college-precollege-national-live-2026-04-13_followup_queue.jsonl",
+    "reports_split_queue": "reports/discovery/us-college-precollege-national-live-2026-04-13_split_queue.jsonl",
+    "reports_evidence_index": "reports/discovery/us-college-precollege-national-live-2026-04-13_evidence_index.jsonl",
+    "reports_summary": "reports/discovery/us-college-precollege-national-live-2026-04-13_summary.json",
+    "staging_run_dir": "data/staging/discovery-runs/us-college-precollege-national-live-2026-04-13",
+    "global_evidence_index": "data/normalized/evidence_index.jsonl",
+    "split_stub_path": "data/staging/discovery-runs/us-college-precollege-national-live-2026-04-13/split_stubs.jsonl"
+  },
+  "status": "ok"
+}

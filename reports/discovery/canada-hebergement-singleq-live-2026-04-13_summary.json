@@ -1,0 +1,63 @@
+{
+  "run_id": "canada-hebergement-singleq-live-2026-04-13",
+  "started_at": "2026-04-13T15:24:04Z",
+  "git_revision": "e4f5b65",
+  "scope": {
+    "country": "CA",
+    "region": "",
+    "program_family": null,
+    "city": null,
+    "venue_name": null
+  },
+  "inputs": {
+    "seed_queries": [
+      "camp dete avec hebergement adolescents canada"
+    ],
+    "query_file": null,
+    "allow_hosts": [],
+    "deny_hosts": [
+      "duckduckgo.com",
+      "facebook.com",
+      "instagram.com",
+      "linkedin.com",
+      "tiktok.com",
+      "twitter.com",
+      "x.com",
+      "youtube.com",
+      "youtu.be",
+      "pinterest.com"
+    ],
+    "search_providers": [
+      "instant_answer",
+      "lite_html"
+    ]
+  },
+  "counts": {
+    "queries": 1,
+    "raw_results": 10,
+    "captured": 10,
+    "capture_failed": 0,
+    "normalized_candidates": 10,
+    "followup_items": 50,
+    "split_tasks": 0,
+    "evidence_index_rows": 10
+  },
+  "outputs": {
+    "run_id": "canada-hebergement-singleq-live-2026-04-13",
+    "started_at": "2026-04-13T15:24:04Z",
+    "raw_run_dir": "data/raw/discovery-runs/canada-hebergement-singleq-live-2026-04-13",
+    "raw_query_log": "data/raw/discovery-runs/canada-hebergement-singleq-live-2026-04-13/queries.jsonl",
+    "raw_search_results": "data/raw/discovery-runs/canada-hebergement-singleq-live-2026-04-13/search_results.jsonl",
+    "raw_capture_manifest": "data/raw/discovery-runs/canada-hebergement-singleq-live-2026-04-13/capture_manifest.jsonl",
+    "reports_raw": "reports/discovery/canada-hebergement-singleq-live-2026-04-13_raw.jsonl",
+    "reports_normalized": "reports/discovery/canada-hebergement-singleq-live-2026-04-13_normalized.jsonl",
+    "reports_followup": "reports/discovery/canada-hebergement-singleq-live-2026-04-13_followup_queue.jsonl",
+    "reports_split_queue": "reports/discovery/canada-hebergement-singleq-live-2026-04-13_split_queue.jsonl",
+    "reports_evidence_index": "reports/discovery/canada-hebergement-singleq-live-2026-04-13_evidence_index.jsonl",
+    "reports_summary": "reports/discovery/canada-hebergement-singleq-live-2026-04-13_summary.json",
+    "staging_run_dir": "data/staging/discovery-runs/canada-hebergement-singleq-live-2026-04-13",
+    "global_evidence_index": "data/normalized/evidence_index.jsonl",
+    "split_stub_path": "data/staging/discovery-runs/canada-hebergement-singleq-live-2026-04-13/split_stubs.jsonl"
+  },
+  "status": "ok"
+}
