@@ -1,0 +1,24 @@
+{
+  "candidate_id": "cand-us-md-baltimore-johns-hopkins-engineering-innovation-pending-venue",
+  "record_basis": "venue_candidate_pending_confirmation",
+  "name": "Johns Hopkins Engineering Innovation",
+  "operator_name": "Johns Hopkins University",
+  "venue_name": "venue to be confirmed",
+  "city": "Baltimore",
+  "region": "MD",
+  "country": "US",
+  "canonical_url": "https://ei.jhu.edu",
+  "program_family": [
+    "college-pre-college",
+    "stem",
+    "traditional"
+  ],
+  "camp_types": [
+    "residential",
+    "residential-academic"
+  ],
+  "priority_flags": {
+    "college_precollege": true,
+    "one_week_plus": true
+  }
+}
