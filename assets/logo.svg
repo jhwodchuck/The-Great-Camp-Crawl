@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Camp Crawl logo</title>
+  <desc id="desc">Badge-style logo with tent, magnifying glass, trail, and campfire.</desc>
+  <defs>
+    <style>
+      .line { fill: none; stroke: #16324f; stroke-width: 18; stroke-linecap: round; stroke-linejoin: round; }
+      .fill { fill: #f7f3e9; }
+      .accent { fill: #e67e22; }
+      .accent2 { fill: #2e8b57; }
+    </style>
+  </defs>
+  <path class="fill" d="M256 30 430 104v122c0 126-73 211-174 256C155 437 82 352 82 226V104L256 30Z"/>
+  <path class="line" d="M256 30 430 104v122c0 126-73 211-174 256C155 437 82 352 82 226V104L256 30Z"/>
+  <path class="line" d="M162 318c33-42 61-79 94-125 37 52 61 86 94 125"/>
+  <path class="line" d="M205 318h102"/>
+  <circle class="fill" cx="343" cy="193" r="48"/>
+  <circle class="line" cx="343" cy="193" r="48"/>
+  <path class="line" d="m376 226 38 38"/>
+  <path class="line" d="M147 381c31-22 74-29 109-20 40 10 77 1 108-18"/>
+  <path class="accent" d="M256 284c9-25 26-29 29-49 14 14 20 35 8 52-8 11-20 18-37 19 9-5 13-11 14-22-5 2-9 2-14 0Z"/>
+  <path class="accent2" d="M223 332h66l-12 21h-42l-12-21Z"/>
+</svg>
