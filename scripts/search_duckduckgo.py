@@ -20,6 +20,11 @@ def main() -> int:
     parser.add_argument("--no-expand", action="store_true")
     parser.add_argument("--allow-host-file")
     parser.add_argument("--deny-host-file")
+    parser.add_argument(
+        "--providers",
+        default="instant_answer,lite_html",
+        help="Comma-separated search providers. Supported: instant_answer,lite_html",
+    )
     parser.add_argument("--timeout", type=int, default=20)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--backoff-seconds", type=float, default=1.0)
@@ -42,6 +47,7 @@ def main() -> int:
         output_path=args.output,
         allow_hosts=load_line_file(Path(args.allow_host_file)) if args.allow_host_file else [],
         deny_hosts=load_line_file(Path(args.deny_host_file)) if args.deny_host_file else [],
+        providers=[value.strip() for value in args.providers.split(",") if value.strip()],
         timeout=args.timeout,
         retries=args.retries,
         backoff_seconds=args.backoff_seconds,

@@ -27,6 +27,11 @@ def main() -> int:
     parser.add_argument("--limit", type=int)
     parser.add_argument("--allow-host-file")
     parser.add_argument("--deny-host-file")
+    parser.add_argument(
+        "--search-providers",
+        default="instant_answer,lite_html",
+        help="Comma-separated search providers. Supported: instant_answer,lite_html",
+    )
     parser.add_argument("--timeout", type=int, default=30)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--backoff-seconds", type=float, default=1.0)
@@ -56,6 +61,7 @@ def main() -> int:
         queries=queries,
         allow_hosts=allow_hosts,
         deny_hosts=deny_hosts,
+        providers=[value.strip() for value in args.search_providers.split(",") if value.strip()],
         timeout=args.timeout,
         retries=args.retries,
         backoff_seconds=args.backoff_seconds,
@@ -128,6 +134,7 @@ def main() -> int:
             "query_file": args.query_file,
             "allow_hosts": allow_hosts,
             "deny_hosts": deny_hosts,
+            "search_providers": [value.strip() for value in args.search_providers.split(",") if value.strip()],
         },
         "counts": {
             "queries": search_result["counts"]["queries"],

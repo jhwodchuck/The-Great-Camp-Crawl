@@ -31,6 +31,7 @@ Key options:
 - `--country` and `--region` set discovery defaults for sparse raw records.
 - `--program-family` controls deterministic query expansion templates.
 - `--allow-host-file` and `--deny-host-file` filter search results by host.
+- `--search-providers` chooses the provider chain for the main runner. Default: `instant_answer,lite_html`.
 - `--no-expand` disables query expansion.
 - `--no-skip-existing-captures` forces re-fetching even when a stable capture file already exists.
 
@@ -58,7 +59,7 @@ data/normalized/evidence_index.jsonl
 
 ## Script roles
 
-- `scripts/search_duckduckgo.py`: DDG seed search with expansion, retries, timestamps, host filters, and query logs.
+- `scripts/search_duckduckgo.py`: DDG seed search with expansion, retries, timestamps, host filters, query logs, and Lite HTML fallback.
 - `scripts/search_batch.py`: file-driven wrapper around the same search layer.
 - `scripts/html_to_markdown.py`: capture one page, preserve HTML, emit Markdown evidence, and append to a manifest.
 - `scripts/discover_and_capture.py`: lightweight combined path for small search-and-capture jobs.
@@ -89,7 +90,7 @@ The seeded `reports/discovery/us_candidates_2026-04-13.jsonl` report is now supp
 
 ## Limitations
 
-- DuckDuckGo Instant Answer is not exhaustive. Treat it as seed discovery.
+- DuckDuckGo Instant Answer is not exhaustive. The Lite HTML fallback improves recall, but it is still a seed-discovery layer rather than a guaranteed complete index.
 - Content extraction is heuristic. It is built for auditability and repeatability, not perfect page rendering.
 - Multi-venue split generation operationalizes the problem, but venue-specific filling still needs later validation work.
 - Normalization is intentionally conservative; ambiguity is preserved instead of guessed away.

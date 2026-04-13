@@ -15,6 +15,7 @@ def main() -> int:
     parser.add_argument("--program-family")
     parser.add_argument("--allow-host-file")
     parser.add_argument("--deny-host-file")
+    parser.add_argument("--providers", default="instant_answer,lite_html")
     parser.add_argument("--timeout", type=int, default=20)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--backoff-seconds", type=float, default=1.0)
@@ -37,6 +38,8 @@ def main() -> int:
         str(args.backoff_seconds),
         "--sleep-seconds",
         str(args.sleep_seconds),
+        "--providers",
+        args.providers,
     ]
     if args.query_log:
         cmd.extend(["--query-log", args.query_log])

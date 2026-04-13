@@ -25,4 +25,3 @@ def load_fixture_json(fixture_path: Path):
         return json.loads((fixture_path / relative_path).read_text(encoding="utf-8"))
 
     return _load
-
