@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-04-13T15:04:12Z",
+  "reports_ingested": [
+    {
+      "source_report": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13.json",
+      "records": 2,
+      "outputs": {
+        "normalized": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13_split_stubs.jsonl"
+      }
+    },
+    {
+      "source_report": "reports/discovery/gt_gifted_talented_institutional_leads_2026-04-13.json",
+      "records": 5,
+      "outputs": {
+        "normalized": "reports/discovery/gt_gifted_talented_institutional_leads_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/gt_gifted_talented_institutional_leads_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/gt_gifted_talented_institutional_leads_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/gt_gifted_talented_institutional_leads_2026-04-13_split_stubs.jsonl"
+      }
+    },
+    {
+      "source_report": "reports/discovery/gt_gifted_talented_math_stem_expansion_2026-04-13.json",
+      "records": 7,
+      "outputs": {
+        "normalized": "reports/discovery/gt_gifted_talented_math_stem_expansion_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/gt_gifted_talented_math_stem_expansion_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/gt_gifted_talented_math_stem_expansion_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/gt_gifted_talented_math_stem_expansion_2026-04-13_split_stubs.jsonl"
+      }
+    },
+    {
+      "source_report": "reports/discovery/gt_gifted_talented_starter_dump_2026-04-13.json",
+      "records": 14,
+      "outputs": {
+        "normalized": "reports/discovery/gt_gifted_talented_starter_dump_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/gt_gifted_talented_starter_dump_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/gt_gifted_talented_starter_dump_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/gt_gifted_talented_starter_dump_2026-04-13_split_stubs.jsonl"
+      }
+    },
+    {
+      "source_report": "reports/discovery/starter_research_dump_2026-04-13.json",
+      "records": 10,
+      "outputs": {
+        "normalized": "reports/discovery/starter_research_dump_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/starter_research_dump_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/starter_research_dump_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/starter_research_dump_2026-04-13_split_stubs.jsonl"
+      }
+    },
+    {
+      "source_report": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13.json",
+      "records": 13,
+      "outputs": {
+        "normalized": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_split_stubs.jsonl"
+      }
+    },
+    {
+      "source_report": "reports/discovery/jhu_ei_live_probe_2026-04-13.jsonl",
+      "records": 10,
+      "outputs": {
+        "normalized": "reports/discovery/jhu_ei_live_probe_2026-04-13_normalized.jsonl",
+        "followup": "reports/discovery/jhu_ei_live_probe_2026-04-13_followup_queue.jsonl",
+        "split_queue": "reports/discovery/jhu_ei_live_probe_2026-04-13_split_queue.jsonl",
+        "split_stubs": "reports/discovery/jhu_ei_live_probe_2026-04-13_split_stubs.jsonl"
+      }
+    }
+  ],
+  "normalized_reports_used": [
+    "gt_georgia_tech_starter_dump_2026-04-13_normalized.jsonl",
+    "gt_gifted_talented_institutional_leads_2026-04-13_normalized.jsonl",
+    "gt_gifted_talented_math_stem_expansion_2026-04-13_normalized.jsonl",
+    "gt_gifted_talented_starter_dump_2026-04-13_normalized.jsonl",
+    "jhu_ei_live_probe_2026-04-13_normalized.jsonl",
+    "starter_research_dump_2026-04-13_normalized.jsonl",
+    "texas_gifted_talented_full_starter_dump_2026-04-13_normalized.jsonl",
+    "us-md-college-precollege-live-2026-04-13_normalized.jsonl",
+    "us-md-targeted-live-2026-04-13_normalized.jsonl",
+    "us_candidates_2026-04-13_normalized.jsonl"
+  ],
+  "counts": {
+    "aggregate_candidates": 69,
+    "aggregate_followups": 343,
+    "aggregate_split_tasks": 7,
+    "duplicate_candidate_ids": 0
+  },
+  "duplicates": [],
+  "outputs": {
+    "discovered_candidates": "data/staging/discovered-candidates.jsonl",
+    "followup_queue": "data/staging/discovery-followup-queue.jsonl",
+    "split_queue": "data/staging/discovery-split-queue.jsonl",
+    "split_stubs": "data/staging/discovery-split-stubs.jsonl",
+    "summary": "data/staging/discovery-ingest-summary.json"
+  }
+}
