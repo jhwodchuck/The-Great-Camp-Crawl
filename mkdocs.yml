@@ -17,9 +17,22 @@ theme:
 
 nav:
   - Home: docs/index.md
+  - Scope: docs/scope.md
   - Methodology: docs/methodology.md
-  - Grounding Rules: docs/reference/grounding-rules.md
-  - Output Schema: docs/reference/output-schema.md
+  - Workflow: docs/workflow.md
+  - Coverage:
+      - United States: docs/coverage/united-states.md
+      - Canada: docs/coverage/canada.md
+      - Mexico: docs/coverage/mexico.md
+  - Venue Records:
+      - Overview: docs/camps/index.md
+      - US Maryland: docs/camps/us/md.md
+      - Canada Ontario: docs/camps/canada/on.md
+      - Mexico Jalisco: docs/camps/mexico/jal.md
+  - Reference:
+      - Grounding Rules: docs/reference/grounding-rules.md
+      - Output Schema: docs/reference/output-schema.md
+      - Status Codes: docs/reference/status-codes.md
 
 markdown_extensions:
   - admonition
