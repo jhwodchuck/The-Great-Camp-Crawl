@@ -2,7 +2,7 @@
 
 ## File path policy
 
-Final records live under country and region folders, for example:
+Final venue records live under country and region folders, for example:
 
 ```text
 camps/us/tx/
@@ -10,13 +10,13 @@ camps/canada/on/
 camps/mexico/jal/
 ```
 
-## Filename pattern
+## Final filename pattern
 
 ```text
 [camp-slug]--[country]-[region]-[city]-[venue-slug]--[record-id].md
 ```
 
-## Example
+Example:
 
 ```text
 johns-hopkins-engineering-innovation--us-md-baltimore-homewood-campus--us-md-baltimore-homewood-campus.md
@@ -24,27 +24,28 @@ johns-hopkins-engineering-innovation--us-md-baltimore-homewood-campus--us-md-bal
 
 ## Identifier guidance
 
-### `camp_id`
-Stable brand-level identity.
-
-### `venue_id`
-Stable physical-location identity.
-
-### `record_id`
-Normally the same as `venue_id` unless there is a justified need to distinguish the rendered record from the location key.
+- `camp_id`: stable brand-level identity
+- `venue_id`: stable physical-location identity
+- `record_id`: usually the same as `venue_id`
+- `candidate_id`: temporary or staging identity for a discovered lead
 
 ## Slug rules
 
 - lowercase
 - ASCII when practical
 - words separated by hyphens
-- avoid punctuation unless necessary to preserve meaning
-- prefer city names over metro names when venue specificity is available
+- avoid punctuation unless it is needed to preserve meaning
+- prefer official campus or venue names over marketing slogans
+- prefer city names over metro names when the venue is known
+
+## Low-certainty rule
+
+If the venue is not specific enough, do not invent a precise venue slug. Use a broader candidate label or leave the venue field `null` and flag venue follow-up instead.
 
 ## Multi-campus rule
 
-If the same operator runs programs at multiple venues, create one file per venue rather than one file per operator.
+If the same operator runs programs at multiple venues, create one final record per venue.
 
 ## Multi-track rule
 
-If the same venue hosts multiple program tracks, keep one venue file and capture track distinctions inside structured fields unless there is a strong reason to split them.
+If one venue hosts multiple tracks, keep one venue record unless the tracks are genuinely separate locations.

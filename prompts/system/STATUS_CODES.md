@@ -1,23 +1,49 @@
 # Status Codes
 
+Use these exact values unless a task explicitly asks for something else.
+
 ## Candidate lifecycle
 
-- `discovered` — found by a discovery agent but not yet validated
-- `validated` — passed overnight, venue, and recent-activity checks
-- `rejected` — does not meet requirements for a final record
-- `enrichment_pending` — validated but missing important fields
-- `rendered` — venue dossier written
-- `stale_review` — requires human or automated recency re-check
+- `discovered`
+- `validated`
+- `rejected`
+- `enrichment_pending`
+- `rendered`
+- `stale_review`
 
-## Activity status values
+## Candidate shape
 
-- `active_recent` — evidence of activity in the last 24 months
-- `possibly_active` — weak current evidence, needs follow-up
-- `stale` — no acceptable recent-activity evidence
-- `closed_or_inactive` — evidence suggests the program is no longer operating
+- `single_venue_candidate`
+- `venue_unconfirmed`
+- `multi_venue_candidate`
 
-## Confidence values
+## Validation result
 
-- `high`
-- `medium`
+- `pass`
+- `fail`
+- `uncertain`
+
+## Activity status
+
+- `active_recent`
+- `possibly_active`
+- `stale`
+- `closed_or_inactive`
+
+## Enrichment status
+
+- `found`
+- `partial`
+- `missing`
+- `uncertain`
+
+## Duplicate review
+
+- `duplicate_likelihood`: `low`, `medium`, `high`
+- `recommended_action`: `keep_both`, `split_needed`, `likely_duplicate`, `needs_human_review`
+
+## Confidence
+
 - `low`
+- `medium`
+- `high`

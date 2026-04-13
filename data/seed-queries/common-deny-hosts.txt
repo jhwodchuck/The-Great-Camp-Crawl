@@ -1,0 +1,11 @@
+# Common low-signal or self-referential hosts for discovery search
+duckduckgo.com
+facebook.com
+instagram.com
+linkedin.com
+tiktok.com
+twitter.com
+x.com
+youtube.com
+youtu.be
+pinterest.com

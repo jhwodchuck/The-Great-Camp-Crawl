@@ -24,6 +24,19 @@ DEFAULT_EXPANSIONS = [
     "{seed} youth overnight program",
 ]
 
+IGNORED_SCOPE_TOKENS = {
+    "",
+    "all",
+    "any",
+    "multi",
+    "na",
+    "n/a",
+    "national",
+    "nationwide",
+    "unk",
+    "unknown",
+}
+
 PROGRAM_FAMILY_EXPANSIONS = {
     "college-pre-college": [
         "{seed} pre-college residential program",
@@ -80,7 +93,13 @@ def build_query_specs(
     specs: list[QuerySpec] = []
 
     family_templates = PROGRAM_FAMILY_EXPANSIONS.get((program_family or "").lower(), [])
-    scope_suffix = " ".join(part for part in [country, region] if part).strip()
+    scope_parts = []
+    for part in [country, region]:
+        normalized = (part or "").strip()
+        if not normalized or normalized.lower() in IGNORED_SCOPE_TOKENS:
+            continue
+        scope_parts.append(normalized)
+    scope_suffix = " ".join(scope_parts).strip()
 
     for seed in all_seeds:
         templates = ["{seed}"]
@@ -165,6 +184,17 @@ def _parse_ddg_lite_url(href: str) -> str:
     return absolute
 
 
+def _is_noise_result(url: str, title: str) -> bool:
+    normalized_url = normalize_url(url)
+    host = extract_host(normalized_url)
+    lowered_title = (title or "").strip().lower()
+    if host == "duckduckgo.com":
+        return True
+    if lowered_title == "more info":
+        return True
+    return False
+
+
 def _search_instant_answer(
     session: requests.Session,
     spec: QuerySpec,
@@ -235,6 +265,9 @@ def _search_lite_html(
         url = _parse_ddg_lite_url(link.get("href", ""))
         if not url:
             continue
+        title = link.get_text(" ", strip=True) or url
+        if _is_noise_result(url, title):
+            continue
         snippet = ""
         row = link.find_parent("tr")
         if row is not None:
@@ -251,7 +284,7 @@ def _search_lite_html(
                 "query_parent": spec.parent_query,
                 "query_index": query_index,
                 "search_timestamp": searched_at,
-                "title": link.get_text(" ", strip=True) or url,
+                "title": title,
                 "url": url,
                 "normalized_url": normalized_url,
                 "snippet": snippet,

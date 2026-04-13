@@ -1,0 +1,7 @@
+# High-yield specialty and one-week-plus discovery
+"overnight STEM camp" "high school"
+"engineering camp" residential "high school"
+"residential music camp" teens
+"band camp" overnight summer
+"wilderness camp" residential teens
+"sports camp" residential "two-week"

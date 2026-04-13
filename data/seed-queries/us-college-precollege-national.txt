@@ -1,0 +1,7 @@
+# High-yield national US university residential/pre-college discovery
+site:.edu "pre-college" residential summer program high school
+site:.edu "summer residential program" "high school students"
+site:.edu "pre-college" dorm housing high school summer
+site:.edu "high school summer scholars" residential
+site:.edu "on-campus summer program" "high school students" residential
+site:.edu "residential track" "pre-college"
