@@ -1,0 +1,606 @@
+{
+  "scan_type": "aca_directory_crawl",
+  "scope": {
+    "country": "US",
+    "region": "WY",
+    "city": null
+  },
+  "queries_used": [
+    "ACA Advanced Search POST parameters"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "For Parents",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/campers-families",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/campers-families",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "What Is ACA Accreditation?",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/campers-families/planning-camp/preparing-camp/fun-safety-aca-accredited-camps-set-standard",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/campers-families/planning-camp/preparing-camp/fun-safety-aca-accredited-camps-set-standard",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Parent Resources",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/campers-families/news-resources",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/campers-families/news-resources",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camp Fairs",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/staff-professionals/events-professional-development/events/camp-fairs",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/staff-professionals/events-professional-development/events/camp-fairs",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Donate - Send a Child to Camp Fund",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/donate/send-a-child-camp-fund",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/donate/send-a-child-camp-fund",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camps outside the U.S.",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/marketplace/camps/list-your-camp-find-camp/camps-outside-us",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/marketplace/camps/list-your-camp-find-camp/camps-outside-us",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camper Gear",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://campgear.acacamps.org",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://campgear.acacamps.org",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "For Camps",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/staff-professionals",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/staff-professionals",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Add my Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/marketplace/camps/list-your-camp-find-camp/add-your-camp",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/marketplace/camps/list-your-camp-find-camp/add-your-camp",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Edit my Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/marketplace/camps/list-your-camp-find-camp/update-your-find-camp-listing",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/marketplace/camps/list-your-camp-find-camp/update-your-find-camp-listing",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camps that Rent to Groups",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/rentals/",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/rentals/",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "About ACA",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/about",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/about",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "ACA Home Page",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Contact Us",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/contact",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/contact",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "contactus@ACAcamps.org",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "mailto:contactus@ACAcamps.org",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "mailto:contactus@ACAcamps.org",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Find a Job",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "WY",
+      "country": "US",
+      "canonical_url": "http://www.acacamps.org/jobs",
+      "supporting_urls": [],
+      "directory_source_url": "https://find.acacamps.org/",
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [
+        "aca-accredited"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discovered via ACA Directory (Resident Filter)",
+        "url": "https://find.acacamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "ACA Listing active",
+        "url": "http://www.acacamps.org/jobs",
+        "date_text": "2026"
+      },
+      "notes": "Programmatic ACA scrape candidate",
+      "validation_needs": [
+        "Requires detail crawl to confirm venue features and direct URL"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

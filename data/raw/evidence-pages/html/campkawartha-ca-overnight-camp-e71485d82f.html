@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://campkawartha.ca/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Nunito';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiLXAHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNi83AHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXAHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNic3cHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiSncHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiLXcHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiBHcHg6bf.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDshdTo3ig.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhdTo3ig.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTo3ig.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTo3ig.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTo3ig.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTo3ig.ttf) format('truetype');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDBImdTo3ig.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Nunito';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiLXAHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNi83AHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXAHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNic3cHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiSncHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiLXcHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiBHcHg6bc&skey=75768d03a8bfc23a&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDDshdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=XRXI3I6Li01BKofiOc5wtlZ2di8HDBImdTo3iQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Nunito';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiLXAHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNi83AHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNirXAHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNic3cHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiSncHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiLXcHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNiBHcHg6ba.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDshdTo3jw.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhdTo3jw.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTo3jw.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTo3jw.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTo3jw.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTo3jw.woff2) format('woff2');}@font-face {font-family: 'Nunito';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDBImdTo3jw.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO Premium plugin v27.2 (Yoast SEO v27.3) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<title>overnight-camp &#8226; Camp Kawartha</title>
+	<link rel="canonical" href="https://campkawartha.ca/overnight-camp/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="overnight-camp" />
+	<meta property="og:url" content="https://campkawartha.ca/overnight-camp/" />
+	<meta property="og:site_name" content="Camp Kawartha" />
+	<meta property="article:publisher" content="https://www.facebook.com/CampKawartha" />
+	<meta property="article:modified_time" content="2023-07-17T17:31:46+00:00" />
+	<meta property="og:image" content="https://campkawartha.ca/overnight-camp" />
+	<meta property="og:image:width" content="225" />
+	<meta property="og:image:height" content="128" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@CampKawartha" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/campkawartha.ca\/overnight-camp\/","url":"https:\/\/campkawartha.ca\/overnight-camp\/","name":"overnight-camp &#8226; Camp Kawartha","isPartOf":{"@id":"https:\/\/campkawartha.ca\/#website"},"primaryImageOfPage":{"@id":"https:\/\/campkawartha.ca\/overnight-camp\/#primaryimage"},"image":{"@id":"https:\/\/campkawartha.ca\/overnight-camp\/#primaryimage"},"thumbnailUrl":"https:\/\/campkawartha.ca\/wp-content\/uploads\/overnight-camp.jpg","datePublished":"2019-04-23T05:27:57+00:00","dateModified":"2023-07-17T17:31:46+00:00","breadcrumb":{"@id":"https:\/\/campkawartha.ca\/overnight-camp\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/campkawartha.ca\/overnight-camp\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/campkawartha.ca\/overnight-camp\/#primaryimage","url":"https:\/\/campkawartha.ca\/wp-content\/uploads\/overnight-camp.jpg","contentUrl":"https:\/\/campkawartha.ca\/wp-content\/uploads\/overnight-camp.jpg","width":225,"height":128,"caption":"campers posing with matching sweaters"},{"@type":"BreadcrumbList","@id":"https:\/\/campkawartha.ca\/overnight-camp\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/campkawartha.ca\/"},{"@type":"ListItem","position":2,"name":"overnight-camp"}]},{"@type":"WebSite","@id":"https:\/\/campkawartha.ca\/#website","url":"https:\/\/campkawartha.ca\/","name":"Camp Kawartha","description":"Inspiring Outdoor &amp; Environmental Stewardship","publisher":{"@id":"https:\/\/campkawartha.ca\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/campkawartha.ca\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/campkawartha.ca\/#organization","name":"Camp Kawartha","url":"https:\/\/campkawartha.ca\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/campkawartha.ca\/#\/schema\/logo\/image\/","url":"https:\/\/campkawartha.ca\/wp-content\/uploads\/Camp-Kawartha-Logo.jpg","contentUrl":"https:\/\/campkawartha.ca\/wp-content\/uploads\/Camp-Kawartha-Logo.jpg","width":387,"height":85,"caption":"Camp Kawartha"},"image":{"@id":"https:\/\/campkawartha.ca\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/CampKawartha","https:\/\/x.com\/CampKawartha","https:\/\/www.instagram.com\/campkawartha\/","https:\/\/www.pinterest.com\/campkawartha","https:\/\/www.youtube.com\/user\/CampKawartha"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Camp Kawartha &raquo; Feed" href="https://campkawartha.ca/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Camp Kawartha &raquo; Comments Feed" href="https://campkawartha.ca/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://campkawartha.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcampkawartha.ca%2Fovernight-camp%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://campkawartha.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcampkawartha.ca%2Fovernight-camp%2F&#038;format=xml" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v10.1.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-C3C23NEYLH"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '10.1.2';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/campkawartha.ca\/overnight-camp\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-C3C23NEYLH',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-C3C23NEYLH', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<meta content="Camp Kawartha v." name="generator"/><link rel='stylesheet' id='wpsbc-style-css' href='https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/assets/css/style-front-end.min.css?ver=8.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://campkawartha.ca/wp-includes/css/dashicons.min.css?ver=6.9.4' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='searchandfilter-css' href='https://campkawartha.ca/wp-content/plugins/search-filter/style.css?ver=1' type='text/css' media='all' />
+<style id='divi-style-parent-inline-inline-css' type='text/css'>
+/*!
+Theme Name: Divi
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Version: 4.27.6
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}blockquote{margin:20px 0 30px;border-left:5px solid;padding-left:20px}:focus{outline:0}del{text-decoration:line-through}pre{overflow:auto;padding:10px}figure{margin:0}table{border-collapse:collapse;border-spacing:0}article,aside,footer,header,hgroup,nav,section{display:block}body{font-family:Open Sans,Arial,sans-serif;font-size:14px;color:#666;background-color:#fff;line-height:1.7em;font-weight:500;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body.page-template-page-template-blank-php #page-container{padding-top:0!important}body.et_cover_background{background-size:cover!important;background-position:top!important;background-repeat:no-repeat!important;background-attachment:fixed}a{color:#2ea3f2}a,a:hover{text-decoration:none}p{padding-bottom:1em}p:not(.has-background):last-of-type{padding-bottom:0}p.et_normal_padding{padding-bottom:1em}strong{font-weight:700}cite,em,i{font-style:italic}code,pre{font-family:Courier New,monospace;margin-bottom:10px}ins{text-decoration:none}sub,sup{height:0;line-height:1;position:relative;vertical-align:baseline}sup{bottom:.8em}sub{top:.3em}dl{margin:0 0 1.5em}dl dt{font-weight:700}dd{margin-left:1.5em}blockquote p{padding-bottom:0}embed,iframe,object,video{max-width:100%}h1,h2,h3,h4,h5,h6{color:#333;padding-bottom:10px;line-height:1em;font-weight:500}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit}h1{font-size:30px}h2{font-size:26px}h3{font-size:22px}h4{font-size:18px}h5{font-size:16px}h6{font-size:14px}input{-webkit-appearance:none}input[type=checkbox]{-webkit-appearance:checkbox}input[type=radio]{-webkit-appearance:radio}input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea{background-color:#fff;border:1px solid #bbb;padding:2px;color:#4e4e4e}input.text:focus,input.title:focus,input[type=text]:focus,select:focus,textarea:focus{border-color:#2d3940;color:#3e3e3e}input.text,input.title,input[type=text],select,textarea{margin:0}textarea{padding:4px}button,input,select,textarea{font-family:inherit}img{max-width:100%;height:auto}.clear{clear:both}br.clear{margin:0;padding:0}.pagination{clear:both}#et_search_icon:hover,.et-social-icon a:hover,.et_password_protected_form .et_submit_button,.form-submit .et_pb_buttontton.alt.disabled,.nav-single a,.posted_in a{color:#2ea3f2}.et-search-form,blockquote{border-color:#2ea3f2}#main-content{background-color:#fff}.container{width:80%;max-width:1080px;margin:auto;position:relative}body:not(.et-tb) #main-content .container,body:not(.et-tb-has-header) #main-content .container{padding-top:58px}.et_full_width_page #main-content .container:before{display:none}.main_title{margin-bottom:20px}.et_password_protected_form .et_submit_button:hover,.form-submit .et_pb_button:hover{background:rgba(0,0,0,.05)}.et_button_icon_visible .et_pb_button{padding-right:2em;padding-left:.7em}.et_button_icon_visible .et_pb_button:after{opacity:1;margin-left:0}.et_button_left .et_pb_button:hover:after{left:.15em}.et_button_left .et_pb_button:after{margin-left:0;left:1em}.et_button_icon_visible.et_button_left .et_pb_button,.et_button_left .et_pb_button:hover,.et_button_left .et_pb_module .et_pb_button:hover{padding-left:2em;padding-right:.7em}.et_button_icon_visible.et_button_left .et_pb_button:after,.et_button_left .et_pb_button:hover:after{left:.15em}.et_password_protected_form .et_submit_button:hover,.form-submit .et_pb_button:hover{padding:.3em 1em}.et_button_no_icon .et_pb_button:after{display:none}.et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button,.et_button_no_icon.et_button_left .et_pb_button:hover,.et_button_no_icon .et_pb_button,.et_button_no_icon .et_pb_button:hover{padding:.3em 1em!important}.et_button_custom_icon .et_pb_button:after{line-height:1.7em}.et_button_custom_icon.et_button_icon_visible .et_pb_button:after,.et_button_custom_icon .et_pb_button:hover:after{margin-left:.3em}#left-area .post_format-post-format-gallery .wp-block-gallery:first-of-type{padding:0;margin-bottom:-16px}.entry-content table:not(.variations){border:1px solid #eee;margin:0 0 15px;text-align:left;width:100%}.entry-content thead th,.entry-content tr th{color:#555;font-weight:700;padding:9px 24px}.entry-content tr td{border-top:1px solid #eee;padding:6px 24px}#left-area ul,.entry-content ul,.et-l--body ul,.et-l--footer ul,.et-l--header ul{list-style-type:disc;padding:0 0 23px 1em;line-height:26px}#left-area ol,.entry-content ol,.et-l--body ol,.et-l--footer ol,.et-l--header ol{list-style-type:decimal;list-style-position:inside;padding:0 0 23px;line-height:26px}#left-area ul li ul,.entry-content ul li ol{padding:2px 0 2px 20px}#left-area ol li ul,.entry-content ol li ol,.et-l--body ol li ol,.et-l--footer ol li ol,.et-l--header ol li ol{padding:2px 0 2px 35px}#left-area ul.wp-block-gallery{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;list-style-type:none;padding:0}#left-area ul.products{padding:0!important;line-height:1.7!important;list-style:none!important}.gallery-item a{display:block}.gallery-caption,.gallery-item a{width:90%}#wpadminbar{z-index:100001}#left-area .post-meta{font-size:14px;padding-bottom:15px}#left-area .post-meta a{text-decoration:none;color:#666}#left-area .et_featured_image{padding-bottom:7px}.single .post{padding-bottom:25px}body.single .et_audio_content{margin-bottom:-6px}.nav-single a{text-decoration:none;color:#2ea3f2;font-size:14px;font-weight:400}.nav-previous{float:left}.nav-next{float:right}.et_password_protected_form p input{background-color:#eee;border:none!important;width:100%!important;border-radius:0!important;font-size:14px;color:#999!important;padding:16px!important;-webkit-box-sizing:border-box;box-sizing:border-box}.et_password_protected_form label{display:none}.et_password_protected_form .et_submit_button{font-family:inherit;display:block;float:right;margin:8px auto 0;cursor:pointer}.post-password-required p.nocomments.container{max-width:100%}.post-password-required p.nocomments.container:before{display:none}.aligncenter,div.post .new-post .aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{border:1px solid #ddd;text-align:center;background-color:#f3f3f3;margin-bottom:10px;max-width:96%;padding:8px}.wp-caption.alignleft{margin:0 30px 20px 0}.wp-caption.alignright{margin:0 0 20px 30px}.wp-caption img{margin:0;padding:0;border:0}.wp-caption p.wp-caption-text{font-size:12px;padding:0 4px 5px;margin:0}.alignright{float:right}.alignleft{float:left}img.alignleft{display:inline;float:left;margin-right:15px}img.alignright{display:inline;float:right;margin-left:15px}.page.et_pb_pagebuilder_layout #main-content{background-color:transparent}body #main-content .et_builder_inner_content>h1,body #main-content .et_builder_inner_content>h2,body #main-content .et_builder_inner_content>h3,body #main-content .et_builder_inner_content>h4,body #main-content .et_builder_inner_content>h5,body #main-content .et_builder_inner_content>h6{line-height:1.4em}body #main-content .et_builder_inner_content>p{line-height:1.7em}.wp-block-pullquote{margin:20px 0 30px}.wp-block-pullquote.has-background blockquote{border-left:none}.wp-block-group.has-background{padding:1.5em 1.5em .5em}@media (min-width:981px){#left-area{width:79.125%;padding-bottom:23px}#main-content .container:before{content:"";position:absolute;top:0;height:100%;width:1px;background-color:#e2e2e2}.et_full_width_page #left-area,.et_no_sidebar #left-area{float:none;width:100%!important}.et_full_width_page #left-area{padding-bottom:0}.et_no_sidebar #main-content .container:before{display:none}}@media (max-width:980px){#page-container{padding-top:80px}.et-tb #page-container,.et-tb-has-header #page-container{padding-top:0!important}#left-area,#sidebar{width:100%!important}#main-content .container:before{display:none!important}.et_full_width_page .et_gallery_item:nth-child(4n+1){clear:none}}@media print{#page-container{padding-top:0!important}}#wp-admin-bar-et-use-visual-builder a:before{font-family:ETmodules!important;content:"\e625";font-size:30px!important;width:28px;margin-top:-3px;color:#974df3!important}#wp-admin-bar-et-use-visual-builder:hover a:before{color:#fff!important}#wp-admin-bar-et-use-visual-builder:hover a,#wp-admin-bar-et-use-visual-builder a:hover{transition:background-color .5s ease;-webkit-transition:background-color .5s ease;-moz-transition:background-color .5s ease;background-color:#7e3bd0!important;color:#fff!important}* html .clearfix,:first-child+html .clearfix{zoom:1}.iphone .et_pb_section_video_bg video::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none}.et_mobile_device .et_pb_section_parallax .et_pb_parallax_css{background-attachment:scroll}.et-social-facebook a.icon:before{content:"\e093"}.et-social-twitter a.icon:before{content:"\e094"}.et-social-google-plus a.icon:before{content:"\e096"}.et-social-instagram a.icon:before{content:"\e09a"}.et-social-rss a.icon:before{content:"\e09e"}.ai1ec-single-event:after{content:" ";display:table;clear:both}.evcal_event_details .evcal_evdata_cell .eventon_details_shading_bot.eventon_details_shading_bot{z-index:3}.wp-block-divi-layout{margin-bottom:1em}*{-webkit-box-sizing:border-box;box-sizing:border-box}#et-info-email:before,#et-info-phone:before,#et_search_icon:before,.comment-reply-link:after,.et-cart-info span:before,.et-pb-arrow-next:before,.et-pb-arrow-prev:before,.et-social-icon a:before,.et_audio_container .mejs-playpause-button button:before,.et_audio_container .mejs-volume-button button:before,.et_overlay:before,.et_password_protected_form .et_submit_button:after,.et_pb_button:after,.et_pb_contact_reset:after,.et_pb_contact_submit:after,.et_pb_font_icon:before,.et_pb_newsletter_button:after,.et_pb_pricing_table_button:after,.et_pb_promo_button:after,.et_pb_testimonial:before,.et_pb_toggle_title:before,.form-submit .et_pb_button:after,.mobile_menu_bar:before,a.et_pb_more_button:after{font-family:ETmodules!important;speak:none;font-style:normal;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-shadow:0 0;direction:ltr}.et-pb-icon,.et_pb_custom_button_icon.et_pb_button:after,.et_pb_login .et_pb_custom_button_icon.et_pb_button:after,.et_pb_woo_custom_button_icon .button.et_pb_custom_button_icon.et_pb_button:after,.et_pb_woo_custom_button_icon .button.et_pb_custom_button_icon.et_pb_button:hover:after{content:attr(data-icon)}.et-pb-icon{font-family:ETmodules;speak:none;font-weight:400;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;font-size:96px;font-style:normal;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;direction:ltr}#et-ajax-saving{display:none;-webkit-transition:background .3s,-webkit-box-shadow .3s;transition:background .3s,-webkit-box-shadow .3s;transition:background .3s,box-shadow .3s;transition:background .3s,box-shadow .3s,-webkit-box-shadow .3s;-webkit-box-shadow:rgba(0,139,219,.247059) 0 0 60px;box-shadow:0 0 60px rgba(0,139,219,.247059);position:fixed;top:50%;left:50%;width:50px;height:50px;background:#fff;border-radius:50px;margin:-25px 0 0 -25px;z-index:999999;text-align:center}#et-ajax-saving img{margin:9px}.et-safe-mode-indicator,.et-safe-mode-indicator:focus,.et-safe-mode-indicator:hover{-webkit-box-shadow:0 5px 10px rgba(41,196,169,.15);box-shadow:0 5px 10px rgba(41,196,169,.15);background:#29c4a9;color:#fff;font-size:14px;font-weight:600;padding:12px;line-height:16px;border-radius:3px;position:fixed;bottom:30px;right:30px;z-index:999999;text-decoration:none;font-family:Open Sans,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.et_pb_button{font-size:20px;font-weight:500;padding:.3em 1em;line-height:1.7em!important;background-color:transparent;background-size:cover;background-position:50%;background-repeat:no-repeat;border:2px solid;border-radius:3px;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-property:all!important;transition-property:all!important}.et_pb_button,.et_pb_button_inner{position:relative}.et_pb_button:hover,.et_pb_module .et_pb_button:hover{border:2px solid transparent;padding:.3em 2em .3em .7em}.et_pb_button:hover{background-color:hsla(0,0%,100%,.2)}.et_pb_bg_layout_light.et_pb_button:hover,.et_pb_bg_layout_light .et_pb_button:hover{background-color:rgba(0,0,0,.05)}.et_pb_button:after,.et_pb_button:before{font-size:32px;line-height:1em;content:"\35";opacity:0;position:absolute;margin-left:-1em;-webkit-transition:all .2s;transition:all .2s;text-transform:none;-webkit-font-feature-settings:"kern" off;font-feature-settings:"kern" off;font-variant:none;font-style:normal;font-weight:400;text-shadow:none}.et_pb_button.et_hover_enabled:hover:after,.et_pb_button.et_pb_hovered:hover:after{-webkit-transition:none!important;transition:none!important}.et_pb_button:before{display:none}.et_pb_button:hover:after{opacity:1;margin-left:0}.et_pb_column_1_3 h1,.et_pb_column_1_4 h1,.et_pb_column_1_5 h1,.et_pb_column_1_6 h1,.et_pb_column_2_5 h1{font-size:26px}.et_pb_column_1_3 h2,.et_pb_column_1_4 h2,.et_pb_column_1_5 h2,.et_pb_column_1_6 h2,.et_pb_column_2_5 h2{font-size:23px}.et_pb_column_1_3 h3,.et_pb_column_1_4 h3,.et_pb_column_1_5 h3,.et_pb_column_1_6 h3,.et_pb_column_2_5 h3{font-size:20px}.et_pb_column_1_3 h4,.et_pb_column_1_4 h4,.et_pb_column_1_5 h4,.et_pb_column_1_6 h4,.et_pb_column_2_5 h4{font-size:18px}.et_pb_column_1_3 h5,.et_pb_column_1_4 h5,.et_pb_column_1_5 h5,.et_pb_column_1_6 h5,.et_pb_column_2_5 h5{font-size:16px}.et_pb_column_1_3 h6,.et_pb_column_1_4 h6,.et_pb_column_1_5 h6,.et_pb_column_1_6 h6,.et_pb_column_2_5 h6{font-size:15px}.et_pb_bg_layout_dark,.et_pb_bg_layout_dark h1,.et_pb_bg_layout_dark h2,.et_pb_bg_layout_dark h3,.et_pb_bg_layout_dark h4,.et_pb_bg_layout_dark h5,.et_pb_bg_layout_dark h6{color:#fff!important}.et_pb_module.et_pb_text_align_left{text-align:left}.et_pb_module.et_pb_text_align_center{text-align:center}.et_pb_module.et_pb_text_align_right{text-align:right}.et_pb_module.et_pb_text_align_justified{text-align:justify}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.et_pb_bg_layout_light .et_pb_more_button{color:#2ea3f2}.et_builder_inner_content{position:relative;z-index:1}header .et_builder_inner_content{z-index:2}.et_pb_css_mix_blend_mode_passthrough{mix-blend-mode:unset!important}.et_pb_image_container{margin:-20px -20px 29px}.et_pb_module_inner{position:relative}.et_hover_enabled_preview{z-index:2}.et_hover_enabled:hover{position:relative;z-index:2}.et_pb_all_tabs,.et_pb_module,.et_pb_posts_nav a,.et_pb_tab,.et_pb_with_background{position:relative;background-size:cover;background-position:50%;background-repeat:no-repeat}.et_pb_background_mask,.et_pb_background_pattern{bottom:0;left:0;position:absolute;right:0;top:0}.et_pb_background_mask{background-size:calc(100% + 2px) calc(100% + 2px);background-repeat:no-repeat;background-position:50%;overflow:hidden}.et_pb_background_pattern{background-position:0 0;background-repeat:repeat}.et_pb_with_border{position:relative;border:0 solid #333}.post-password-required .et_pb_row{padding:0;width:100%}.post-password-required .et_password_protected_form{min-height:0}body.et_pb_pagebuilder_layout.et_pb_show_title .post-password-required .et_password_protected_form h1,body:not(.et_pb_pagebuilder_layout) .post-password-required .et_password_protected_form h1{display:none}.et_pb_no_bg{padding:0!important}.et_overlay.et_pb_inline_icon:before,.et_pb_inline_icon:before{content:attr(data-icon)}.et_pb_more_button{color:inherit;text-shadow:none;text-decoration:none;display:inline-block;margin-top:20px}.et_parallax_bg_wrap{overflow:hidden;position:absolute;top:0;right:0;bottom:0;left:0}.et_parallax_bg{background-repeat:no-repeat;background-position:top;background-size:cover;position:absolute;bottom:0;left:0;width:100%;height:100%;display:block}.et_parallax_bg.et_parallax_bg__hover,.et_parallax_bg.et_parallax_bg_phone,.et_parallax_bg.et_parallax_bg_tablet,.et_parallax_gradient.et_parallax_gradient__hover,.et_parallax_gradient.et_parallax_gradient_phone,.et_parallax_gradient.et_parallax_gradient_tablet,.et_pb_section_parallax_hover:hover .et_parallax_bg:not(.et_parallax_bg__hover),.et_pb_section_parallax_hover:hover .et_parallax_gradient:not(.et_parallax_gradient__hover){display:none}.et_pb_section_parallax_hover:hover .et_parallax_bg.et_parallax_bg__hover,.et_pb_section_parallax_hover:hover .et_parallax_gradient.et_parallax_gradient__hover{display:block}.et_parallax_gradient{bottom:0;display:block;left:0;position:absolute;right:0;top:0}.et_pb_module.et_pb_section_parallax,.et_pb_posts_nav a.et_pb_section_parallax,.et_pb_tab.et_pb_section_parallax{position:relative}.et_pb_section_parallax .et_pb_parallax_css,.et_pb_slides .et_parallax_bg.et_pb_parallax_css{background-attachment:fixed}body.et-bfb .et_pb_section_parallax .et_pb_parallax_css,body.et-bfb .et_pb_slides .et_parallax_bg.et_pb_parallax_css{background-attachment:scroll;bottom:auto}.et_pb_section_parallax.et_pb_column .et_pb_module,.et_pb_section_parallax.et_pb_row .et_pb_column,.et_pb_section_parallax.et_pb_row .et_pb_module{z-index:9;position:relative}.et_pb_more_button:hover:after{opacity:1;margin-left:0}.et_pb_preload .et_pb_section_video_bg,.et_pb_preload>div{visibility:hidden}.et_pb_preload,.et_pb_section.et_pb_section_video.et_pb_preload{position:relative;background:#464646!important}.et_pb_preload:before{content:"";position:absolute;top:50%;left:50%;background:url(https://campkawartha.ca/wp-content/themes/Divi/includes/builder/styles/images/preloader.gif) no-repeat;border-radius:32px;width:32px;height:32px;margin:-16px 0 0 -16px}.box-shadow-overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;pointer-events:none}.et_pb_section>.box-shadow-overlay~.et_pb_row{z-index:11}body.safari .section_has_divider{will-change:transform}.et_pb_row>.box-shadow-overlay{z-index:8}.has-box-shadow-overlay{position:relative}.et_clickable{cursor:pointer}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.et_multi_view_hidden,.et_multi_view_hidden_image{display:none!important}@keyframes multi-view-image-fade{0%{opacity:0}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8}90%{opacity:.9}to{opacity:1}}.et_multi_view_image__loading{visibility:hidden}.et_multi_view_image__loaded{-webkit-animation:multi-view-image-fade .5s;animation:multi-view-image-fade .5s}#et-pb-motion-effects-offset-tracker{visibility:hidden!important;opacity:0;position:absolute;top:0;left:0}.et-pb-before-scroll-animation{opacity:0}header.et-l.et-l--header:after{clear:both;display:block;content:""}.et_pb_module{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-duration:.2s;animation-duration:.2s}@-webkit-keyframes fadeBottom{0%{opacity:0;-webkit-transform:translateY(10%);transform:translateY(10%)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeBottom{0%{opacity:0;-webkit-transform:translateY(10%);transform:translateY(10%)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%);transform:translateX(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeLeft{0%{opacity:0;-webkit-transform:translateX(-10%);transform:translateX(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes fadeRight{0%{opacity:0;-webkit-transform:translateX(10%);transform:translateX(10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeRight{0%{opacity:0;-webkit-transform:translateX(10%);transform:translateX(10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%);transform:translateY(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeTop{0%{opacity:0;-webkit-transform:translateY(-10%);transform:translateY(-10%)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.et-waypoint:not(.et_pb_counters){opacity:0}@media (min-width:981px){.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module.et-last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module:last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module.et-last-child,.et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module:last-child,.et_pb_section div.et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_pb_section div.et_pb_row .et_pb_column .et_pb_module:last-child{margin-bottom:0}}@media (max-width:980px){.et_overlay.et_pb_inline_icon_tablet:before,.et_pb_inline_icon_tablet:before{content:attr(data-icon-tablet)}.et_parallax_bg.et_parallax_bg_tablet_exist,.et_parallax_gradient.et_parallax_gradient_tablet_exist{display:none}.et_parallax_bg.et_parallax_bg_tablet,.et_parallax_gradient.et_parallax_gradient_tablet{display:block}.et_pb_column .et_pb_module{margin-bottom:30px}.et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_pb_row .et_pb_column .et_pb_module:last-child,.et_section_specialty .et_pb_row .et_pb_column .et_pb_module.et-last-child,.et_section_specialty .et_pb_row .et_pb_column .et_pb_module:last-child{margin-bottom:0}.et_pb_more_button{display:inline-block!important}.et_pb_bg_layout_light_tablet.et_pb_button,.et_pb_bg_layout_light_tablet.et_pb_module.et_pb_button,.et_pb_bg_layout_light_tablet .et_pb_more_button{color:#2ea3f2}.et_pb_bg_layout_light_tablet .et_pb_forgot_password a{color:#666}.et_pb_bg_layout_light_tablet h1,.et_pb_bg_layout_light_tablet h2,.et_pb_bg_layout_light_tablet h3,.et_pb_bg_layout_light_tablet h4,.et_pb_bg_layout_light_tablet h5,.et_pb_bg_layout_light_tablet h6{color:#333!important}.et_pb_module .et_pb_bg_layout_light_tablet.et_pb_button{color:#2ea3f2!important}.et_pb_bg_layout_light_tablet{color:#666!important}.et_pb_bg_layout_dark_tablet,.et_pb_bg_layout_dark_tablet h1,.et_pb_bg_layout_dark_tablet h2,.et_pb_bg_layout_dark_tablet h3,.et_pb_bg_layout_dark_tablet h4,.et_pb_bg_layout_dark_tablet h5,.et_pb_bg_layout_dark_tablet h6{color:#fff!important}.et_pb_bg_layout_dark_tablet.et_pb_button,.et_pb_bg_layout_dark_tablet.et_pb_module.et_pb_button,.et_pb_bg_layout_dark_tablet .et_pb_more_button{color:inherit}.et_pb_bg_layout_dark_tablet .et_pb_forgot_password a{color:#fff}.et_pb_module.et_pb_text_align_left-tablet{text-align:left}.et_pb_module.et_pb_text_align_center-tablet{text-align:center}.et_pb_module.et_pb_text_align_right-tablet{text-align:right}.et_pb_module.et_pb_text_align_justified-tablet{text-align:justify}}@media (max-width:767px){.et_pb_more_button{display:inline-block!important}.et_overlay.et_pb_inline_icon_phone:before,.et_pb_inline_icon_phone:before{content:attr(data-icon-phone)}.et_parallax_bg.et_parallax_bg_phone_exist,.et_parallax_gradient.et_parallax_gradient_phone_exist{display:none}.et_parallax_bg.et_parallax_bg_phone,.et_parallax_gradient.et_parallax_gradient_phone{display:block}.et-hide-mobile{display:none!important}.et_pb_bg_layout_light_phone.et_pb_button,.et_pb_bg_layout_light_phone.et_pb_module.et_pb_button,.et_pb_bg_layout_light_phone .et_pb_more_button{color:#2ea3f2}.et_pb_bg_layout_light_phone .et_pb_forgot_password a{color:#666}.et_pb_bg_layout_light_phone h1,.et_pb_bg_layout_light_phone h2,.et_pb_bg_layout_light_phone h3,.et_pb_bg_layout_light_phone h4,.et_pb_bg_layout_light_phone h5,.et_pb_bg_layout_light_phone h6{color:#333!important}.et_pb_module .et_pb_bg_layout_light_phone.et_pb_button{color:#2ea3f2!important}.et_pb_bg_layout_light_phone{color:#666!important}.et_pb_bg_layout_dark_phone,.et_pb_bg_layout_dark_phone h1,.et_pb_bg_layout_dark_phone h2,.et_pb_bg_layout_dark_phone h3,.et_pb_bg_layout_dark_phone h4,.et_pb_bg_layout_dark_phone h5,.et_pb_bg_layout_dark_phone h6{color:#fff!important}.et_pb_bg_layout_dark_phone.et_pb_button,.et_pb_bg_layout_dark_phone.et_pb_module.et_pb_button,.et_pb_bg_layout_dark_phone .et_pb_more_button{color:inherit}.et_pb_module .et_pb_bg_layout_dark_phone.et_pb_button{color:#fff!important}.et_pb_bg_layout_dark_phone .et_pb_forgot_password a{color:#fff}.et_pb_module.et_pb_text_align_left-phone{text-align:left}.et_pb_module.et_pb_text_align_center-phone{text-align:center}.et_pb_module.et_pb_text_align_right-phone{text-align:right}.et_pb_module.et_pb_text_align_justified-phone{text-align:justify}}@media (max-width:479px){a.et_pb_more_button{display:block}}@media (min-width:768px) and (max-width:980px){[data-et-multi-view-load-tablet-hidden=true]:not(.et_multi_view_swapped){display:none!important}}@media (max-width:767px){[data-et-multi-view-load-phone-hidden=true]:not(.et_multi_view_swapped){display:none!important}}.et_pb_menu.et_pb_menu--style-inline_centered_logo .et_pb_menu__menu nav ul{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@-webkit-keyframes multi-view-image-fade{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}50%{-webkit-transform:scale(1.01);transform:scale(1.01);opacity:1}to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+/*# sourceURL=divi-style-parent-inline-inline-css */
+</style>
+<link rel='stylesheet' id='divi-dynamic-late-css' href='https://campkawartha.ca/wp-content/et-cache/16274/et-divi-dynamic-16274-late.css?ver=1775050971' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-dynamic-css' href='https://campkawartha.ca/wp-content/et-cache/16274/et-divi-dynamic-16274.css?ver=1775050971' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-divi-acf-object-loop-styles-css' href='https://campkawartha.ca/wp-content/plugins/ct-divi-acf-object-loop/styles/style.min.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-divi-query-builder-styles-css' href='https://campkawartha.ca/wp-content/plugins/ct-divi-query-builder/styles/style.min.css?ver=1.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-customblog-module-styles-css' href='https://campkawartha.ca/wp-content/plugins/divi-customblog-module/styles/style.min.css?ver=2.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-taxonomy-helper-styles-css' href='https://campkawartha.ca/wp-content/plugins/divi-taxonomy-helper/styles/style.min.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-testimonial-extended-styles-css' href='https://campkawartha.ca/wp-content/plugins/divi-testimonial-extended/styles/style.min.css?ver=2.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='single-calendar-styles-css' href='https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/includes/modules/divi/styles/style.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='overview-calendar-styles-css' href='https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/includes/modules/divi/styles/style.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='calendar-search-styles-css' href='https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/includes/modules/divi/styles/style.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='abcfsl-staff-list-css' href='https://campkawartha.ca/wp-content/plugins/abcfolio-staff-list-pro/css/staff-list.css?ver=4.0.9' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css' href='https://campkawartha.ca/wp-content/themes/Divi-child/style.css?ver=6.9.4' type='text/css' media='all' />
+<script type="text/javascript" src="https://campkawartha.ca/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+/* <![CDATA[ */
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+//# sourceURL=jquery-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/google-analytics-premium/assets/js/frontend-gtag.min.js?ver=10.1.2" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/campkawartha.ca","hash_tracking":"false","v4_id":"G-C3C23NEYLH"};/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://campkawartha.ca/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://campkawartha.ca/wp-json/wp/v2/media/16274" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://campkawartha.ca/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://campkawartha.ca/?p=16274' />
+<style type="text/css"></style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4214756-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-4214756-1');
+</script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+<link rel="icon" href="https://campkawartha.ca/wp-content/uploads/cropped-logo512x512-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://campkawartha.ca/wp-content/uploads/cropped-logo512x512-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://campkawartha.ca/wp-content/uploads/cropped-logo512x512-180x180.png" />
+<meta name="msapplication-TileImage" content="https://campkawartha.ca/wp-content/uploads/cropped-logo512x512-270x270.png" />
+<style id="et-divi-customizer-global-cached-inline-styles">body,.et_pb_column_1_2 .et_quote_content blockquote cite,.et_pb_column_1_2 .et_link_content a.et_link_main_url,.et_pb_column_1_3 .et_quote_content blockquote cite,.et_pb_column_3_8 .et_quote_content blockquote cite,.et_pb_column_1_4 .et_quote_content blockquote cite,.et_pb_blog_grid .et_quote_content blockquote cite,.et_pb_column_1_3 .et_link_content a.et_link_main_url,.et_pb_column_3_8 .et_link_content a.et_link_main_url,.et_pb_column_1_4 .et_link_content a.et_link_main_url,.et_pb_blog_grid .et_link_content a.et_link_main_url,body .et_pb_bg_layout_light .et_pb_post p,body .et_pb_bg_layout_dark .et_pb_post p{font-size:16px}.et_pb_slide_content,.et_pb_best_value{font-size:18px}body{color:#262626}h1,h2,h3,h4,h5,h6{color:#083643}body{line-height:1.8em}#et_search_icon:hover,.mobile_menu_bar:before,.mobile_menu_bar:after,.et_toggle_slide_menu:after,.et-social-icon a:hover,.et_pb_sum,.et_pb_pricing li a,.et_pb_pricing_table_button,.et_overlay:before,.entry-summary p.price ins,.et_pb_member_social_links a:hover,.et_pb_widget li a:hover,.et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active,.et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active,.et_pb_gallery .et_pb_gallery_pagination ul li a.active,.wp-pagenavi span.current,.wp-pagenavi a:hover,.nav-single a,.tagged_as a,.posted_in a{color:#33592d}.et_pb_contact_submit,.et_password_protected_form .et_submit_button,.et_pb_bg_layout_light .et_pb_newsletter_button,.comment-reply-link,.form-submit .et_pb_button,.et_pb_bg_layout_light .et_pb_promo_button,.et_pb_bg_layout_light .et_pb_more_button,.et_pb_contact p input[type="checkbox"]:checked+label i:before,.et_pb_bg_layout_light.et_pb_module.et_pb_button{color:#33592d}.footer-widget h4{color:#33592d}.et-search-form,.nav li ul,.et_mobile_menu,.footer-widget li:before,.et_pb_pricing li:before,blockquote{border-color:#33592d}.et_pb_counter_amount,.et_pb_featured_table .et_pb_pricing_heading,.et_quote_content,.et_link_content,.et_audio_content,.et_pb_post_slider.et_pb_bg_layout_dark,.et_slide_in_menu_container,.et_pb_contact p input[type="radio"]:checked+label i:before{background-color:#33592d}.container,.et_pb_row,.et_pb_slider .et_pb_container,.et_pb_fullwidth_section .et_pb_title_container,.et_pb_fullwidth_section .et_pb_title_featured_container,.et_pb_fullwidth_header:not(.et_pb_fullscreen) .et_pb_fullwidth_header_container{max-width:1920px}.et_boxed_layout #page-container,.et_boxed_layout.et_non_fixed_nav.et_transparent_nav #page-container #top-header,.et_boxed_layout.et_non_fixed_nav.et_transparent_nav #page-container #main-header,.et_fixed_nav.et_boxed_layout #page-container #top-header,.et_fixed_nav.et_boxed_layout #page-container #main-header,.et_boxed_layout #page-container .container,.et_boxed_layout #page-container .et_pb_row{max-width:2080px}a{color:#1f696d}#main-header .nav li ul{background-color:#f7fff4}.nav li ul{border-color:#2e6d48}.et_secondary_nav_enabled #page-container #top-header{background-color:#506a6e!important}#et-secondary-nav li ul{background-color:#506a6e}#top-header,#top-header a{color:#ddddc5}.et_header_style_centered .mobile_nav .select_page,.et_header_style_split .mobile_nav .select_page,.et_nav_text_color_light #top-menu>li>a,.et_nav_text_color_dark #top-menu>li>a,#top-menu a,.et_mobile_menu li a,.et_nav_text_color_light .et_mobile_menu li a,.et_nav_text_color_dark .et_mobile_menu li a,#et_search_icon:before,.et_search_form_container input,span.et_close_search_field:after,#et-top-navigation .et-cart-info{color:#083643}.et_search_form_container input::-moz-placeholder{color:#083643}.et_search_form_container input::-webkit-input-placeholder{color:#083643}.et_search_form_container input:-ms-input-placeholder{color:#083643}#top-header,#top-header a,#et-secondary-nav li li a,#top-header .et-social-icon a:before{font-size:18px;font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}#top-menu li a{font-size:17px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:17px!important}#top-menu li a,.et_search_form_container input{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}.et_search_form_container input::-moz-placeholder{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}.et_search_form_container input::-webkit-input-placeholder{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}.et_search_form_container input:-ms-input-placeholder{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}#top-menu li.current-menu-ancestor>a,#top-menu li.current-menu-item>a,#top-menu li.current_page_item>a{color:#2e6d48}#main-footer{background-color:#083643}#footer-widgets .footer-widget a,#footer-widgets .footer-widget li a,#footer-widgets .footer-widget li a:hover{color:#a9dee8}#main-footer .footer-widget h4,#main-footer .widget_block h1,#main-footer .widget_block h2,#main-footer .widget_block h3,#main-footer .widget_block h4,#main-footer .widget_block h5,#main-footer .widget_block h6{color:#ada87d}.footer-widget li:before{border-color:#ada87d}.footer-widget,.footer-widget li,.footer-widget li a,#footer-info{font-size:13px}.footer-widget .et_pb_widget div,.footer-widget .et_pb_widget ul,.footer-widget .et_pb_widget ol,.footer-widget .et_pb_widget label{line-height:1.4em}#footer-widgets .footer-widget li:before{top:6.1px}#et-footer-nav .bottom-nav li.current-menu-item a{color:#083643}.bottom-nav,.bottom-nav a{font-size:12px}#footer-bottom{background-color:rgba(80,106,110,0.32)}#footer-info,#footer-info a{color:#ffffff}#footer-info{font-size:12px}#footer-bottom .et-social-icon a{font-size:18px}#footer-bottom .et-social-icon a{color:#a9dee8}body .et_pb_button{background-color:#083643;border-width:0px!important;font-weight:bold;font-style:normal;text-transform:none;text-decoration:none;;letter-spacing:1px}body.et_pb_button_helper_class .et_pb_button,body.et_pb_button_helper_class .et_pb_module.et_pb_button{color:#a9dee8}body .et_pb_bg_layout_light.et_pb_button:hover,body .et_pb_bg_layout_light .et_pb_button:hover,body .et_pb_button:hover{background-color:#506a6e}h1,h2,h3,h4,h5,h6,.et_quote_content blockquote p,.et_pb_slide_description .et_pb_slide_title{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}@media only screen and (min-width:981px){#main-footer .footer-widget h4,#main-footer .widget_block h1,#main-footer .widget_block h2,#main-footer .widget_block h3,#main-footer .widget_block h4,#main-footer .widget_block h5,#main-footer .widget_block h6{font-size:18px}.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:32px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:32px}.et_header_style_split .centered-inline-logo-wrap{width:63px;margin:-63px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:63px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:63px}.et_header_style_centered #top-menu>li>a{padding-bottom:11px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:23px 0 23px 0!important}.et_header_style_centered #main-header .logo_container{height:63px}#logo{max-height:50%}.et_pb_svg_logo #logo{height:50%}.et_header_style_centered.et_hide_primary_logo #main-header:not(.et-fixed-header) .logo_container,.et_header_style_centered.et_hide_fixed_logo #main-header.et-fixed-header .logo_container{height:11.34px}.et_fixed_nav #page-container .et-fixed-header#top-header{background-color:#506a6e!important}.et_fixed_nav #page-container .et-fixed-header#top-header #et-secondary-nav li ul{background-color:#506a6e}.et-fixed-header #top-menu a,.et-fixed-header #et_search_icon:before,.et-fixed-header #et_top_search .et-search-form input,.et-fixed-header .et_search_form_container input,.et-fixed-header .et_close_search_field:after,.et-fixed-header #et-top-navigation .et-cart-info{color:#083643!important}.et-fixed-header .et_search_form_container input::-moz-placeholder{color:#083643!important}.et-fixed-header .et_search_form_container input::-webkit-input-placeholder{color:#083643!important}.et-fixed-header .et_search_form_container input:-ms-input-placeholder{color:#083643!important}.et-fixed-header #top-menu li.current-menu-ancestor>a,.et-fixed-header #top-menu li.current-menu-item>a,.et-fixed-header #top-menu li.current_page_item>a{color:#007209!important}.et-fixed-header#top-header a{color:#ddddc5}}@media only screen and (min-width:2400px){.et_pb_row{padding:48px 0}.et_pb_section{padding:96px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:144px}.et_pb_fullwidth_section{padding:0}}h1,h1.et_pb_contact_main_title,.et_pb_title_container h1{font-size:34px}h2,.product .related h2,.et_pb_column_1_2 .et_quote_content blockquote p{font-size:29px}h3{font-size:24px}h4,.et_pb_circle_counter h3,.et_pb_number_counter h3,.et_pb_column_1_3 .et_pb_post h2,.et_pb_column_1_4 .et_pb_post h2,.et_pb_blog_grid h2,.et_pb_column_1_3 .et_quote_content blockquote p,.et_pb_column_3_8 .et_quote_content blockquote p,.et_pb_column_1_4 .et_quote_content blockquote p,.et_pb_blog_grid .et_quote_content blockquote p,.et_pb_column_1_3 .et_link_content h2,.et_pb_column_3_8 .et_link_content h2,.et_pb_column_1_4 .et_link_content h2,.et_pb_blog_grid .et_link_content h2,.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_3_8 .et_audio_content h2,.et_pb_column_1_4 .et_audio_content h2,.et_pb_blog_grid .et_audio_content h2,.et_pb_column_3_8 .et_pb_audio_module_content h2,.et_pb_column_1_3 .et_pb_audio_module_content h2,.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2{font-size:20px}h5{font-size:18px}h6{font-size:15px}.et_pb_slide_description .et_pb_slide_title{font-size:52px}.et_pb_gallery_grid .et_pb_gallery_item h3,.et_pb_portfolio_grid .et_pb_portfolio_item h2,.et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2,.et_pb_column_1_4 .et_pb_audio_module_content h2{font-size:18px}@media only screen and (max-width:980px){.et_pb_section{padding:51px 0}.et_pb_section.et_pb_fullwidth_section{padding:0}}	h1,h2,h3,h4,h5,h6{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif}.et_pb_button{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif}#main-header,#et-top-navigation{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif}#top-header .container{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif}body .gform_wrapper .gform_footer input[type=submit]{color:#173542;background:#ACCC59;font-size:19px;letter-spacing:1px;text-transform:uppercase;float:left;height:60px;min-width:280px;border:none;border-radius:5px;margin-left:12px;transition:0.3s}body .gform_wrapper .gform_footer input:hover[type=submit]{background:#78A03f}#top-menu li.main-nav-donate{background-color:#083643;padding:10px 20px;border-radius:3px}#top-menu li.main-nav-donate a{color:#a9dee8!important;padding-bottom:0!important;font-size:20px}.et_mobile_menu{overflow:scroll!important;max-height:80vh}</style></head>
+<body class="attachment wp-singular attachment-template-default single single-attachment postid-16274 attachmentid-16274 attachment-jpeg custom-background wp-theme-Divi wp-child-theme-Divi-child et_button_no_icon et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_expand et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters2 et_right_sidebar et_divi_theme et-db">
+	<div id="page-container">
+
+					<div id="top-header">
+			<div class="container clearfix">
+
+			
+				<div id="et-info">
+									<span id="et-info-phone">705-652-3860</span>
+				
+									<a href="mailto:info@campkawartha.ca"><span id="et-info-email">info@campkawartha.ca</span></a>
+				
+								</div>
+
+			
+				<div id="et-secondary-menu">
+				<ul id="et-secondary-nav" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29116"><a href="https://campkawartha.ca/about/employment-opportunities/">Employment Opportunities</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23672"><a href="https://campkawartha.campbrainregistration.com/">Camper &#038; Parent Login</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11317"><a href="https://shop.campkawartha.ca/">Gift Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25488"><a href="https://campkawartha.ca/contact-us/">Contact &#038; Find Us</a></li>
+</ul>				</div>
+
+			</div>
+		</div>
+		
+	
+			<header id="main-header" data-height-onload="63">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://campkawartha.ca/">
+						<img src="https://campkawartha.ca/wp-content/uploads/Camp-Kawartha-Logo.jpg" width="387" height="85" alt="Camp Kawartha" id="logo" data-height-percentage="50" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="63" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-26366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-26366"><a href="https://campkawartha.ca/">Home</a></li>
+<li id="menu-item-27989" class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27989"><a href="https://campkawartha.ca/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-23323" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23323"><a href="#">Organization</a>
+	<ul class="sub-menu">
+		<li id="menu-item-489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-489"><a href="https://campkawartha.ca/about/">What We Do</a></li>
+		<li id="menu-item-11743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11743"><a href="https://campkawartha.ca/about/mission-and-vision/">Mission and Vision &#038; Annual Reports</a></li>
+		<li id="menu-item-491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-491"><a href="https://campkawartha.ca/about/awards/">Awards &amp; Recognition</a></li>
+		<li id="menu-item-330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="https://campkawartha.ca/about/history/">History</a></li>
+		<li id="menu-item-25145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25145"><a href="https://campkawartha.ca/locations/">Our Two Facility Locations</a></li>
+	</ul>
+</li>
+	<li id="menu-item-23322" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23322"><a href="#">Our Team &#038; Community</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25274"><a href="https://campkawartha.ca/about/staff-directory/">Management and Office Staff</a></li>
+		<li id="menu-item-23329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23329"><a href="https://campkawartha.ca/about/employment-opportunities/">Employment Opportunities</a></li>
+		<li id="menu-item-490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-490"><a href="https://campkawartha.ca/about/governance/">Board of Directors</a></li>
+		<li id="menu-item-14358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14358"><a href="https://campkawartha.ca/about/instructor-profiles/">Instructor Profiles</a></li>
+		<li id="menu-item-25141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25141"><a href="https://campkawartha.ca/about/who-we-are/alumni/">Alumni</a></li>
+		<li id="menu-item-31938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31938"><a href="https://campkawartha.ca/newsletter/">Newsletter</a></li>
+	</ul>
+</li>
+	<li id="menu-item-23324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23324"><a href="#">Philosophies in Practice</a>
+	<ul class="sub-menu">
+		<li id="menu-item-26419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26419"><a href="https://campkawartha.ca/sustainable-living/">Sustainable Living</a></li>
+		<li id="menu-item-26421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26421"><a href="https://campkawartha.ca/health-and-safety/">Health and Safety</a></li>
+		<li id="menu-item-28516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28516"><a href="https://campkawartha.ca/accessibility-2/">Accessibility</a></li>
+		<li id="menu-item-13559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13559"><a href="https://campkawartha.ca/about/food-philosophy/">Food Philosophy</a></li>
+	</ul>
+</li>
+	<li id="menu-item-25429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25429"><a href="https://campkawartha.ca/about/sponsorships-and-subsidies/">Support</a>
+	<ul class="sub-menu">
+		<li id="menu-item-28413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28413"><a href="https://campkawartha.ca/about/donate/why-donate/">Why Donate?</a></li>
+		<li id="menu-item-25437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25437"><a href="https://campkawartha.ca/capital-campaign/">Capital Projects</a></li>
+		<li id="menu-item-26899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26899"><a href="https://campkawartha.ca/about/sponsorships-and-subsidies/">Sponsorship and Subsidies</a></li>
+		<li id="menu-item-23330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23330"><a href="https://campkawartha.ca/volunteer-opportunities/">Volunteer Opportunities</a></li>
+		<li id="menu-item-25430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25430"><a href="https://campkawartha.ca/about/donate/">Ways to Support</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-23489" class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-23489"><a href="https://campkawartha.ca/summer-camp/">Summer Camp</a>
+<ul class="sub-menu">
+	<li id="menu-item-26491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26491"><a href="#">Summer Camp</a>
+	<ul class="sub-menu">
+		<li id="menu-item-26348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26348"><a href="https://campkawartha.ca/summer-camp/about/">About Summer Camp</a></li>
+		<li id="menu-item-25377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25377"><a href="https://campkawartha.ca/summer-camp/team/">Our Summer Camp Team</a></li>
+		<li id="menu-item-26535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26535"><a href="https://campkawartha.ca/summer-camp/activities/">Summer Camp Activities</a></li>
+		<li id="menu-item-25438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25438"><a href="https://campkawartha.ca/about/food-philosophy/">Food Philosophy</a></li>
+		<li id="menu-item-28030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28030"><a href="https://campkawartha.ca/virtual-facility-tour/">Tour of Clear Lake Facility</a></li>
+		<li id="menu-item-25143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25143"><a href="https://campkawartha.ca/summer-camp/faqs/">FAQs</a></li>
+	</ul>
+</li>
+	<li id="menu-item-26492" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26492"><a href="#">2026 Camp Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-569"><a href="https://campkawartha.ca/summer-camp/clear-lake-day-camps/">Clear Lake Day Camps</a></li>
+		<li id="menu-item-28090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28090"><a href="https://campkawartha.ca/summer-camp/peterborough-day-camps/">Environment Centre Day Camps</a></li>
+		<li id="menu-item-657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-657"><a href="https://campkawartha.ca/summer-camp/overnight-camps/">Overnight Camps</a></li>
+		<li id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-656"><a href="https://campkawartha.ca/summer-camp/tripping-camps/">Canoe Tripping Programs</a></li>
+		<li id="menu-item-655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-655"><a href="https://campkawartha.ca/summer-camp/leadership-camp/">Leadership Camps</a></li>
+	</ul>
+</li>
+	<li id="menu-item-26496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26496"><a href="#">Register for Camp</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25341"><a href="https://campkawartha.ca/summer-camp/dates-and-rates/">Camp Dates &#038; Rates</a></li>
+		<li id="menu-item-27982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27982"><a href="https://campkawartha.campbrainregistration.com/">Online Registration</a></li>
+		<li id="menu-item-26501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26501"><a href="https://campkawartha.ca/summer-camp/financial-assistance/">Financial Assistance</a></li>
+	</ul>
+</li>
+	<li id="menu-item-26398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26398"><a>For Parents and Campers</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25343"><a href="https://campkawartha.ca/summer-camp/getting-ready-for-camp/">Getting Ready for Camp</a></li>
+		<li id="menu-item-28095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28095"><a href="https://campkawartha.ca/summer-camp/health-and-safety/">Healthcare</a></li>
+		<li id="menu-item-25378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25378"><a href="https://campkawartha.ca/summer-camp/camper-mail/">Camper Mail</a></li>
+		<li id="menu-item-26536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26536"><a href="https://shop.campkawartha.ca/">Camp Store</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-25398" class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25398"><a href="https://campkawartha.ca/outdoor-education-school-groups/">Outdoor Education</a>
+<ul class="sub-menu">
+	<li id="menu-item-25785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25785"><a>Outdoor Education</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25793"><a href="https://campkawartha.ca/outdoor-education-school-groups/about-outdoor-education/">About Outdoor Education</a></li>
+		<li id="menu-item-25814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25814"><a href="https://campkawartha.ca/outdoor-education-school-groups/facilities/">Outdoor Education Facilities</a></li>
+		<li id="menu-item-25448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25448"><a href="https://campkawartha.ca/about/instructor-profiles/">Instructor Profiles</a></li>
+		<li id="menu-item-25882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25882"><a href="https://campkawartha.ca/outdoor-education-school-groups/curriculum-linked-programs/">Curriculum-Linked Programs</a></li>
+		<li id="menu-item-25449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25449"><a href="https://campkawartha.ca/about/food-philosophy/">Food Philosophy</a></li>
+		<li id="menu-item-27162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27162"><a href="https://campkawartha.ca/locations/birchview-road/">Location &#038; Directions</a></li>
+	</ul>
+</li>
+	<li id="menu-item-25786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25786"><a>School Trips</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25877"><a href="https://campkawartha.ca/outdoor-education-school-groups/overnight-trip/">Overnight Trip</a></li>
+		<li id="menu-item-25978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25978"><a href="https://campkawartha.ca/outdoor-education-school-groups/day-trip/">Day Trip</a></li>
+		<li id="menu-item-31366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31366"><a href="https://campkawartha.ca/locations/birchview-road-availability-calendar/">Availability Calendar</a></li>
+		<li id="menu-item-26003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26003"><a href="https://campkawartha.ca/outdoor-education-school-groups/camp-kawartha-at-your-school/">Camp Kawartha at Your School</a></li>
+		<li id="menu-item-26561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26561"><a href="https://campkawartha.ca/outdoor-education-school-groups/forest-school/">Forest School for a Day</a></li>
+		<li id="menu-item-25687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25687"><a href="https://campkawartha.ca/subsidy-program/">Subsidy Program</a></li>
+		<li id="menu-item-26906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26906"><a href="https://shop.campkawartha.ca/">Gift Store</a></li>
+	</ul>
+</li>
+	<li id="menu-item-25787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25787"><a>Information for Teachers</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25930"><a href="https://campkawartha.ca/outdoor-education-school-groups/teacher-information-plan-your-trip/">Teacher Information: Plan Your Trip</a></li>
+		<li id="menu-item-26069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26069"><a href="https://campkawartha.ca/health-and-safety/">Health and Safety</a></li>
+		<li id="menu-item-26124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26124"><a href="https://campkawartha.ca/outdoor-education-school-groups/teacher-testimonials/">Teacher Testimonials</a></li>
+		<li id="menu-item-25674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25674"><a href="https://campkawartha.ca/outdoor-education-school-groups/faqs/">FAQs</a></li>
+		<li id="menu-item-26123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26123"><a href="https://campkawartha.ca/outdoor-education-school-groups/photo-gallery/">Photo Gallery</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-29143" class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29143"><a href="https://campkawartha.ca/environment-centre/">Environment Centre</a>
+<ul class="sub-menu">
+	<li id="menu-item-28226" class="unclickable menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28226"><a href="#">About</a>
+	<ul class="sub-menu">
+		<li id="menu-item-29269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29269"><a href="https://campkawartha.ca/environment-centre/">About Us</a></li>
+		<li id="menu-item-26884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26884"><a href="https://campkawartha.ca/our-team/">Our Environment Centre Team</a></li>
+		<li id="menu-item-26389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26389"><a href="https://campkawartha.ca/sustainable-building-features/">Sustainable Building Features</a></li>
+		<li id="menu-item-27152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27152"><a href="https://campkawartha.ca/location-and-directions/">Location &#038; Directions – Environment Centre</a></li>
+	</ul>
+</li>
+	<li id="menu-item-27153" class="unclickable menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27153"><a href="#">Environmental Education</a>
+	<ul class="sub-menu">
+		<li id="menu-item-10291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10291"><a href="https://campkawartha.ca/class-visits/">Class Visits</a></li>
+		<li id="menu-item-23666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23666"><a href="https://campkawartha.ca/environment-centre/nature-school/">Nature School Programs</a></li>
+		<li id="menu-item-10626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10626"><a href="https://campkawartha.ca/environment-centre/eco-mentorship-certificate/">Eco Mentor Certificate Program (Post-Secondary)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28227"><a href="#">Day Camps</a>
+	<ul class="sub-menu">
+		<li id="menu-item-25479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25479"><a href="https://campkawartha.ca/summer-camp/peterborough-day-camps/">Environment Centre Day Camps</a></li>
+		<li id="menu-item-31896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31896"><a href="https://campkawartha.ca/summer-camp/dates-and-rates/">Summer Camp Dates &#038; Rates</a></li>
+	</ul>
+</li>
+	<li id="menu-item-26634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26634"><a href="https://campkawartha.ca/facility-rentals/">Facility Rentals</a>
+	<ul class="sub-menu">
+		<li id="menu-item-27263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27263"><a href="https://campkawartha.ca/environment-centre-facility-rentals/">Environment Centre Facility Rentals</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-27262" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27262"><a href="#">Facility Rentals</a>
+<ul class="sub-menu">
+	<li id="menu-item-14352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14352"><a>Clear Lake (our Main Camp)</a>
+	<ul class="sub-menu">
+		<li id="menu-item-26765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26765"><a href="https://campkawartha.ca/facility-rentals/clear-lake-facility-rentals/">Overnight &#038; Day-Use Facility Rentals</a></li>
+		<li id="menu-item-24401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24401"><a href="https://campkawartha.ca/facility-rentals/green-weddings/">Green Weddings</a></li>
+		<li id="menu-item-28486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28486"><a href="https://campkawartha.ca/facility-rentals/team-building/">Team Building Programs</a></li>
+		<li id="menu-item-11597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11597"><a href="https://campkawartha.ca/facility-rentals/booking-info/">Booking Details</a></li>
+		<li id="menu-item-11593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11593"><a href="https://campkawartha.ca/locations/birchview-road-availability-calendar/">Availability Calendar</a></li>
+		<li id="menu-item-28900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28900"><a href="https://campkawartha.ca/locations/birchview-road/">Location &#038; Directions – Clear Lake</a></li>
+	</ul>
+</li>
+	<li id="menu-item-26740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26740"><a href="#">Peterborough (Environment Centre at Trent)</a>
+	<ul class="sub-menu">
+		<li id="menu-item-27269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27269"><a href="https://campkawartha.ca/environment-centre-facility-rentals/">Environment Centre Facility Rentals</a></li>
+		<li id="menu-item-11740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11740"><a href="https://campkawartha.ca/facility-rentals/booking-details/">Booking Details</a></li>
+		<li id="menu-item-25340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25340"><a href="https://campkawartha.ca/location-and-directions/">Location &#038; Directions – Environment Centre</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-26957" class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26957"><a href="https://campkawartha.ca/community-connections/">Community Connections</a>
+<ul class="sub-menu">
+	<li id="menu-item-25493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25493"><a href="#">Community</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12258"><a href="https://campkawartha.ca/outdoor-education-school-groups/facilities/educational-programs/outreach/">Outreach Day Camp Partnerships</a></li>
+		<li id="menu-item-27309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27309"><a href="https://campkawartha.ca/volunteer-opportunities/">Volunteer Opportunities</a></li>
+	</ul>
+</li>
+	<li id="menu-item-25497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25497"><a href="#">Education</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33279"><a href="https://campkawartha.ca/pathway-to-stewardship-and-kinship-2/">Pathway To Stewardship and Kinship</a></li>
+		<li id="menu-item-28918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28918"><a href="https://campkawartha.ca/outdoor-education-school-groups/camp-kawartha-at-your-school/">Camp Kawartha at Your School</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24539"><a href="#">Resources &#038; Activities</a>
+	<ul class="sub-menu">
+		<li id="menu-item-23619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23619"><a href="https://campkawartha.ca/resources-for-educators/">Resources for Educators</a></li>
+		<li id="menu-item-23620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23620"><a href="https://campkawartha.ca/resources-for-families/">Resources for Families</a></li>
+		<li id="menu-item-32253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32253"><a href="https://campkawartha.ca/blog/">Blog</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-28415" class="main-nav-donate menu-item menu-item-type-custom menu-item-object-custom menu-item-28415"><a href="https://www.canadahelps.org/en/dn/4511">Donate</a></li>
+</ul>						</nav>
+					
+					
+					
+											<div id="et_top_search">
+							<span id="et_search_icon"></span>
+						</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+						<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://campkawartha.ca/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-16274" class="et_pb_post post-16274 attachment type-attachment status-inherit hentry">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">overnight-camp</h1>
+
+						<p class="post-meta"><span class="published">Apr 23, 2019</span></p><img src="https://campkawartha.ca/wp-content/uploads/overnight-camp.jpg" alt="" class="" width="1080" height="675" />
+												</div>
+				
+					<div class="entry-content">
+					<p class="attachment"><a href='https://campkawartha.ca/wp-content/uploads/overnight-camp.jpg'><img decoding="async" width="225" height="128" src="https://campkawartha.ca/wp-content/uploads/overnight-camp.jpg" class="attachment-medium size-medium" alt="campers posing with matching sweaters" /></a></p>
+					</div>
+					<div class="et_post_meta_wrapper">
+										</div>
+				</article>
+
+						</div>
+
+				<div id="sidebar">
+		<div id="custom_html-3" class="widget_text et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script></div></div><div id="search-3" class="et_pb_widget widget_search"><h4 class="widgettitle">Search Website</h4><form role="search" method="get" id="searchform" class="searchform" action="https://campkawartha.ca/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div>	</div>
+		</div>
+	</div>
+	</div>
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+	<div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="nav_menu-12" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">For Parents</h4><div class="menu-footer-menu-parents-container"><ul id="menu-footer-menu-parents" class="menu"><li id="menu-item-26945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26945"><a href="https://campkawartha.ca/summer-camp/">Summer Camp CLEAR LAKE</a></li>
+<li id="menu-item-26944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26944"><a href="https://campkawartha.ca/summer-camp/peterborough-day-camps/">Summer Camp PETERBOROUGH</a></li>
+<li id="menu-item-24169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24169"><a href="https://campkawartha.ca/environment-centre/nature-school/">Nature School Programs</a></li>
+<li id="menu-item-24170" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24170"><a href="https://campkawartha.campbrainregistration.com/">Summer Camp Registration Portal</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-13" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">For Educators</h4><div class="menu-footer-menu-for-educators-container"><ul id="menu-footer-menu-for-educators" class="menu"><li id="menu-item-24506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24506"><a href="https://campkawartha.ca/?page_id=9265">Peterborough School Trips</a></li>
+<li id="menu-item-24172" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24172"><a href="https://campkawartha.ca/category/for-educators/">Resources for Your Classroom</a></li>
+<li id="menu-item-26942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26942"><a href="https://campkawartha.ca/outdoor-education-school-groups/camp-kawartha-at-your-school/">School Visits</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-14" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">For Visitors</h4><div class="menu-footer-menu-for-visitors-container"><ul id="menu-footer-menu-for-visitors" class="menu"><li id="menu-item-24178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24178"><a href="https://campkawartha.ca/locations/">Our Two Facility Locations</a></li>
+<li id="menu-item-29309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29309"><a href="https://campkawartha.ca/environment-centre-facility-rentals/">Peterborough Facility Rentals</a></li>
+<li id="menu-item-29307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29307"><a href="https://campkawartha.ca/facility-rentals/clear-lake-facility-rentals/">Clear Lake Facility Rentals</a></li>
+<li id="menu-item-24176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24176"><a href="https://campkawartha.ca/facility-rentals/green-weddings/">Green Weddings &#038; Catering</a></li>
+</ul></div></div></div><div class="footer-widget"><div id="nav_menu-15" class="fwidget et_pb_widget widget_nav_menu"><h4 class="title">For Our Supporters</h4><div class="menu-footer-menu-for-supporters-container"><ul id="menu-footer-menu-for-supporters" class="menu"><li id="menu-item-24520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24520"><a href="https://campkawartha.ca/about/who-we-are/alumni/">Alumni</a></li>
+<li id="menu-item-28450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28450"><a href="https://campkawartha.ca/about/donate/">Ways to Support</a></li>
+<li id="menu-item-24524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24524"><a href="https://shop.campkawartha.ca/">Shop our Gift Store</a></li>
+</ul></div></div></div>	</div>
+</div>
+
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="https://www.facebook.com/CampKawartha" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="https://twitter.com/CampKawartha" class="icon">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="https://www.instagram.com/campkawartha/" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+
+<li class="et-social-icon et-social-linkedin">
+<a href="https://linkedin.com/company/camp-kawartha" class="icon">
+<span>LinkedIn</span>
+</a>
+</li>
+	
+<li class="et-social-icon et-social-pinterest">
+<a href="https://www.pinterest.ca/campkawartha/" class="icon">
+<span>Pinterest</span>
+</a>
+</li>
+
+<li class="et-social-icon et-social-youtube">
+<a href="https://www.youtube.com/user/CampKawartha" class="icon">
+<span>YouTube</span>
+</a>
+</li>
+
+</ul><div id="footer-info"><a href="https://campkawartha.ca/privacy-policy/">Privacy Policy</a> | <a href="https://campkawartha.ca/accessibility/">Accessibility</a> | <a href="https://campkawartha.ca/public-notices/">Public Notices</a>
+<p>© Camp Kawartha Incorporated | Charitable registration # 12453 9214 RR0001</p></div>					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Divi-child/*","/wp-content/themes/Divi/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script type="application/javascript">
+			(function() {
+				var file     = ["https:\/\/campkawartha.ca\/wp-content\/et-cache\/16274\/et-divi-dynamic-16274-late.css"];
+				var handle   = document.getElementById('divi-style-parent-inline-inline-css');
+				var location = handle.parentNode;
+
+				if (0===document.querySelectorAll('link[href="' + file + '"]').length) {
+					var link  = document.createElement('link');
+					link.rel  = 'stylesheet';
+					link.id   = 'et-dynamic-late-css';
+					link.href = file;
+
+					location.insertBefore(link, handle.nextSibling);
+				}
+			})();
+		</script>
+		<script type="text/javascript">
+		/* MonsterInsights Scroll Tracking */
+		if ( typeof(jQuery) !== 'undefined' ) {
+		jQuery( document ).ready(function(){
+		function monsterinsights_scroll_tracking_load() {
+		if ( ( typeof(__gaTracker) !== 'undefined' && __gaTracker && __gaTracker.hasOwnProperty( "loaded" ) && __gaTracker.loaded == true ) || ( typeof(__gtagTracker) !== 'undefined' && __gtagTracker ) ) {
+		(function(factory) {
+		factory(jQuery);
+		}(function($) {
+
+		/* Scroll Depth */
+		"use strict";
+		var defaults = {
+		percentage: true
+		};
+
+		var $window = $(window),
+		cache = [],
+		scrollEventBound = false,
+		lastPixelDepth = 0;
+
+		/*
+		* Plugin
+		*/
+
+		$.scrollDepth = function(options) {
+
+		var startTime = +new Date();
+
+		options = $.extend({}, defaults, options);
+
+		/*
+		* Functions
+		*/
+
+		function sendEvent(action, label, scrollDistance, timing) {
+		if ( 'undefined' === typeof MonsterInsightsObject || 'undefined' === typeof MonsterInsightsObject.sendEvent ) {
+		return;
+		}
+			var paramName = action.toLowerCase();
+	var fieldsArray = {
+	send_to: 'G-C3C23NEYLH',
+	non_interaction: true
+	};
+	fieldsArray[paramName] = label;
+
+	if (arguments.length > 3) {
+	fieldsArray.scroll_timing = timing
+	MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
+	} else {
+	MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
+	}
+			}
+
+		function calculateMarks(docHeight) {
+		return {
+		'25%' : parseInt(docHeight * 0.25, 10),
+		'50%' : parseInt(docHeight * 0.50, 10),
+		'75%' : parseInt(docHeight * 0.75, 10),
+		/* Cushion to trigger 100% event in iOS */
+		'100%': docHeight - 5
+		};
+		}
+
+		function checkMarks(marks, scrollDistance, timing) {
+		/* Check each active mark */
+		$.each(marks, function(key, val) {
+		if ( $.inArray(key, cache) === -1 && scrollDistance >= val ) {
+		sendEvent('Percentage', key, scrollDistance, timing);
+		cache.push(key);
+		}
+		});
+		}
+
+		function rounded(scrollDistance) {
+		/* Returns String */
+		return (Math.floor(scrollDistance/250) * 250).toString();
+		}
+
+		function init() {
+		bindScrollDepth();
+		}
+
+		/*
+		* Public Methods
+		*/
+
+		/* Reset Scroll Depth with the originally initialized options */
+		$.scrollDepth.reset = function() {
+		cache = [];
+		lastPixelDepth = 0;
+		$window.off('scroll.scrollDepth');
+		bindScrollDepth();
+		};
+
+		/* Add DOM elements to be tracked */
+		$.scrollDepth.addElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.merge(options.elements, elems);
+
+		/* If scroll event has been unbound from window, rebind */
+		if (!scrollEventBound) {
+		bindScrollDepth();
+		}
+
+		};
+
+		/* Remove DOM elements currently tracked */
+		$.scrollDepth.removeElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.each(elems, function(index, elem) {
+
+		var inElementsArray = $.inArray(elem, options.elements);
+		var inCacheArray = $.inArray(elem, cache);
+
+		if (inElementsArray != -1) {
+		options.elements.splice(inElementsArray, 1);
+		}
+
+		if (inCacheArray != -1) {
+		cache.splice(inCacheArray, 1);
+		}
+
+		});
+
+		};
+
+		/*
+		* Throttle function borrowed from:
+		* Underscore.js 1.5.2
+		* http://underscorejs.org
+		* (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+		* Underscore may be freely distributed under the MIT license.
+		*/
+
+		function throttle(func, wait) {
+		var context, args, result;
+		var timeout = null;
+		var previous = 0;
+		var later = function() {
+		previous = new Date;
+		timeout = null;
+		result = func.apply(context, args);
+		};
+		return function() {
+		var now = new Date;
+		if (!previous) previous = now;
+		var remaining = wait - (now - previous);
+		context = this;
+		args = arguments;
+		if (remaining <= 0) {
+		clearTimeout(timeout);
+		timeout = null;
+		previous = now;
+		result = func.apply(context, args);
+		} else if (!timeout) {
+		timeout = setTimeout(later, remaining);
+		}
+		return result;
+		};
+		}
+
+		/*
+		* Scroll Event
+		*/
+
+		function bindScrollDepth() {
+
+		scrollEventBound = true;
+
+		$window.on('scroll.scrollDepth', throttle(function() {
+		/*
+		* We calculate document and window height on each scroll event to
+		* account for dynamic DOM changes.
+		*/
+
+		var docHeight = $(document).height(),
+		winHeight = window.innerHeight ? window.innerHeight : $window.height(),
+		scrollDistance = $window.scrollTop() + winHeight,
+
+		/* Recalculate percentage marks */
+		marks = calculateMarks(docHeight),
+
+		/* Timing */
+		timing = +new Date - startTime;
+
+		checkMarks(marks, scrollDistance, timing);
+		}, 500));
+
+		}
+
+		init();
+		};
+
+		/* UMD export */
+		return $.scrollDepth;
+
+		}));
+
+		jQuery.scrollDepth();
+		} else {
+		setTimeout(monsterinsights_scroll_tracking_load, 200);
+		}
+		}
+		monsterinsights_scroll_tracking_load();
+		});
+		}
+		/* End MonsterInsights Scroll Tracking */
+			/* MonsterInsights Conversion Event */
+	jQuery(document).ready(function() {
+		jQuery('a[data-mi-conversion-event]')
+			.off('click.monsterinsightsConversion')
+			.on('click.monsterinsightsConversion', function() {
+				if ( typeof(__gtagTracker) !== 'undefined' && __gtagTracker ) {
+					var $link = jQuery(this);
+					var eventName = $link.attr('data-mi-event-name');
+					if ( typeof eventName === 'undefined' || ! eventName ) {
+						// Fallback to first word of the <a> tag, lowercase, strip html
+						var text = $link.text().trim();
+						text = text.replace(/(<([^>]+)>)/gi, '').toLowerCase();
+						var firstWord = text.split(/\s+/)[0] || '';
+
+						if ( firstWord ) {
+							eventName = 'click-' + firstWord;
+						} else {
+							eventName = $link.parent().hasClass('wp-block-image') ? 'image-click' : 'button-click';
+						}
+					}
+					__gtagTracker('event', 'mi-' + eventName);
+				}
+			});
+	});
+	/* End MonsterInsights Conversion Event */
+	
+</script><!--    -->
+<style type="text/css">
+#main-header .et_mobile_menu .menu-item-has-children > a { background-color: transparent; position: relative; }
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-family: 'ETmodules'; text-align: center; speak: none; font-weight: normal; font-variant: normal; text-transform: none; -webkit-font-smoothing: antialiased; position: absolute; }
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-size: 16px; content: '\4c'; top: 13px; right: 10px; }
+#main-header .et_mobile_menu .menu-item-has-children.visible > a:after { content: '\4d'; }
+#main-header .et_mobile_menu ul.sub-menu { display: none !important; visibility: hidden !important;  transition: all 1.5s ease-in-out;}
+#main-header .et_mobile_menu .visible > ul.sub-menu { display: block !important; visibility: visible !important; }
+</style>
+<script type="text/javascript">
+(function($) {
+      
+    function setup_collapsible_submenus() {
+        var $menu = $('#mobile_menu'),
+            top_level_link = '#mobile_menu .menu-item-has-children > a';
+             
+        $menu.find('a').each(function() {
+            $(this).off('click');
+              
+            if ( $(this).is(top_level_link) ) {
+                $(this).attr('href', '#');
+            }
+              
+            if ( ! $(this).siblings('.sub-menu').length ) {
+                $(this).on('click', function(event) {
+                    $(this).parents('.mobile_nav').trigger('click');
+                });
+            } else {
+                $(this).on('click', function(event) {
+                    event.preventDefault();
+                    $(this).parent().toggleClass('visible');
+                });
+            }
+        });
+    }
+      
+    $(window).load(function() {
+        setTimeout(function() {
+            setup_collapsible_submenus();
+        }, 700);
+    });
+ 
+})(jQuery);
+</script><script type="text/javascript" src="https://campkawartha.ca/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" id="jquery-ui-datepicker-js-after">
+/* <![CDATA[ */
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":0,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="wpsbc-script-js-extra">
+/* <![CDATA[ */
+var wpsbc = {"ajax_url":"https://campkawartha.ca/wp-admin/admin-ajax.php","search_form_nonce":"6f33398a58","search_date_format":"MM d, yy","calendar_months_to_jump":""};
+//# sourceURL=wpsbc-script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/assets/js/script-front-end.min.js?ver=8.5.2" id="wpsbc-script-js"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https://campkawartha.ca/wp-admin/admin-ajax.php","images_uri":"https://campkawartha.ca/wp-content/themes/Divi/images","builder_images_uri":"https://campkawartha.ca/wp-content/themes/Divi/includes/builder/images","et_frontend_nonce":"9c818f7dfc","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"fd853c4367","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"16274","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"https://campkawartha.ca/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors","accent_color":"#33592d","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+//# sourceURL=divi-custom-script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.6" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.6" id="fitvids-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/ct-divi-acf-object-loop/scripts/frontend-bundle.min.js?ver=1.0.2" id="ct-divi-acf-object-loop-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/ct-divi-query-builder/scripts/frontend-bundle.min.js?ver=1.0.5" id="ct-divi-query-builder-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/divi-customblog-module/scripts/frontend-bundle.min.js?ver=2.0.3" id="divi-customblog-module-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/divi-taxonomy-helper/scripts/frontend-bundle.min.js?ver=1.6" id="divi-taxonomy-helper-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/divi-testimonial-extended/scripts/frontend-bundle.min.js?ver=2.2.6" id="divi-testimonial-extended-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/includes/modules/divi/scripts/frontend-bundle.min.js?ver=1.0.0" id="single-calendar-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/includes/modules/divi/scripts/frontend-bundle.min.js?ver=1.0.0" id="overview-calendar-frontend-bundle-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/plugins/wp-simple-booking-calendar-premium/includes/modules/divi/scripts/frontend-bundle.min.js?ver=1.0.0" id="calendar-search-frontend-bundle-js"></script>
+<script type="text/javascript" id="et-builder-cpt-modules-wrapper-js-extra">
+/* <![CDATA[ */
+var et_modules_wrapper = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+//# sourceURL=et-builder-cpt-modules-wrapper-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/themes/Divi/includes/builder/scripts/cpt-modules-wrapper.js?ver=4.27.6" id="et-builder-cpt-modules-wrapper-js"></script>
+<script type="text/javascript" src="https://campkawartha.ca/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.6" id="et-core-common-js"></script>
+</body>
+</html>
+<!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 13782 objects (6 MB) from Redis using PhpRedis (v6.3.0).
+-->

@@ -1,0 +1,17 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "CA",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"California\"",
+    "\"residential summer camp\" \"California\"",
+    "\"family camp\" \"California\"",
+    "\"youth retreat\" \"California\" overnight",
+    "site:.edu \"California\" \"pre-college\" residential"
+  ],
+  "next_queries": [],
+  "candidates": []
+}

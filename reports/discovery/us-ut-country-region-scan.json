@@ -1,0 +1,284 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "UT",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Utah\"",
+    "site:.edu \"Utah\" \"pre-college\" residential summer",
+    "\"Brigham Young University\" OR \"University of Utah\" pre-college residential summer camp",
+    "\"Camp Fellowship\" OR \"Camp UTABA\" Utah overnight"
+  ],
+  "next_queries": [
+    "\"sports camp\" Utah residential",
+    "\"band camp\" Utah overnight"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "Camp Roger",
+      "translated_name_hint": null,
+      "operator_name": "YMCA of Northern Utah",
+      "venue_name": "Camp Roger",
+      "city": "Kamas",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://ymcautah.org/camp-roger/",
+      "supporting_urls": ["https://ymcautah.org/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "outdoor-adventure"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one-week sessions",
+      "overnight_evidence": {
+        "snippet": "traditional camp with activities... overnight summer camp options in Utah",
+        "url": "https://ymcautah.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "YMCA summer camps running",
+        "url": "https://ymcautah.org/",
+        "date_text": "2026"
+      },
+      "notes": "Traditional camp with activities like archery, mountain biking, and arts.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Mill Hollow",
+      "translated_name_hint": null,
+      "operator_name": "YMCA of Northern Utah",
+      "venue_name": "Camp Mill Hollow",
+      "city": "Kamas",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://ymcautah.org/camp-mill-hollow/",
+      "supporting_urls": ["https://ymcautah.org/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["outdoor-education", "environmental"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day residential",
+      "overnight_evidence": {
+        "snippet": "focused on outdoor education and natural sciences... overnight summer camp",
+        "url": "https://ymcautah.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "YMCA operations active",
+        "url": "https://ymcautah.org/",
+        "date_text": "2026"
+      },
+      "notes": "Focuses on exploring nature and outdoor sciences.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Trefoil Ranch",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of Utah",
+      "venue_name": "Trefoil Ranch",
+      "city": "Provo Canyon",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://www.gsutah.org/en/camp/our-camps/trefoil-ranch.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["girl-scouts", "equestrian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "various sessions",
+      "overnight_evidence": {
+        "snippet": "Offers overnight programs for girls at Trefoil Ranch in Provo Canyon",
+        "url": "https://www.gsutah.org/en/camp/our-camps/trefoil-ranch.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer camp registration open",
+        "url": "https://www.gsutah.org/en/camp/our-camps/trefoil-ranch.html",
+        "date_text": "2026"
+      },
+      "notes": "Features equestrian programs, archery, and high ropes.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Cloud Rim",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of Utah",
+      "venue_name": "Camp Cloud Rim",
+      "city": "Park City",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://www.gsutah.org/en/camp/our-camps/camp-cloud-rim.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["girl-scouts", "water-sports"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "various sessions",
+      "overnight_evidence": {
+        "snippet": "overnight programs ... featuring water activities, rock climbing, and backpacking",
+        "url": "https://www.gsutah.org/en/camp/our-camps/camp-cloud-rim.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Camp active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Offers outdoor adventures in the mountains.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "BYU Youth Programs Residential Experiences",
+      "translated_name_hint": null,
+      "operator_name": "Brigham Young University",
+      "venue_name": "BYU Campus",
+      "city": "Provo",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://youth.ce.byu.edu/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college", "academic-and-stem-camps", "arts-camps"],
+      "camp_type_tags": ["academic", "stem", "performing-arts"],
+      "candidate_shape": "multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "offer an optional 'Food and Housing' package, allowing students to stay in BYU dormitories during their camp session.",
+        "url": "https://youth.ce.byu.edu/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration opens in spring",
+        "url": "https://youth.ce.byu.edu/",
+        "date_text": "2026"
+      },
+      "notes": "Covers a wide range of academic, STEM, performing arts, and personal enrichment camps with residential options.",
+      "validation_needs": ["split into specific residential programs like ACT Prep or Chemistry camp if they operate as separate entities"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Upward Bound Summer Academy",
+      "translated_name_hint": null,
+      "operator_name": "University of Utah",
+      "venue_name": "University of Utah Campus",
+      "city": "Salt Lake City",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://trio.utah.edu/upward-bound/",
+      "supporting_urls": ["https://youth.utah.edu/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college", "academic-and-stem-camps"],
+      "camp_type_tags": ["academic", "college-prep"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "An intensive, multi-week residential academic program for eligible students to earn high school credit and experience campus life.",
+        "url": "https://trio.utah.edu/upward-bound/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 programming",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Targeted at specific eligible students for academic enrichment.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp UTABA",
+      "translated_name_hint": null,
+      "operator_name": "Utah Association of American Baptist Churches",
+      "venue_name": "Camp UTABA",
+      "city": "Eden",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://camputaba.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["christian", "retreat"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one-week or multi-day retreats",
+      "overnight_evidence": {
+        "snippet": "retreat center operated by the Utah Association of American Baptist Churches... features cabin accommodations for up to 80 campers",
+        "url": "https://camputaba.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Facility operational and accepting reservations",
+        "url": "https://camputaba.org/",
+        "date_text": "2026"
+      },
+      "notes": "Nestled in the Wasatch Mountains.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Fellowship",
+      "translated_name_hint": null,
+      "operator_name": "First Congregational Church in Salt Lake City",
+      "venue_name": "Camp Fellowship",
+      "city": "Coalville",
+      "region": "UT",
+      "country": "US",
+      "canonical_url": "https://campfellowship.com/",
+      "supporting_urls": ["https://firstcongregationalslc.org/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["interdenominational", "youth-camp"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "week-long",
+      "overnight_evidence": {
+        "snippet": "An interdenominational youth camp... week-long summer youth camp",
+        "url": "https://campfellowship.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer registration active",
+        "url": "https://campfellowship.com/",
+        "date_text": "2026"
+      },
+      "notes": "Designed for grades 4th through 9th.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "input_path": "reports/discovery/pending_dossier_resolutions_2026-04-13.jsonl",
+  "output_dir": "camps",
+  "input_records": 10,
+  "deduped_records": 10,
+  "rendered": 10,
+  "skipped_existing": 0,
+  "skipped_unrenderable": 0
+}

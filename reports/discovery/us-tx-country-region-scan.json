@@ -1,0 +1,348 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "TX",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Texas\"",
+    "site:.edu \"Texas\" \"pre-college\" residential"
+  ],
+  "next_queries": [
+    "\"Texas\" summer residential bridge program",
+    "\"Texas\" college-prep residential summer"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "Rice ELITE Tech Camp",
+      "translated_name_hint": null,
+      "operator_name": "Rice University",
+      "venue_name": "Rice University Campus",
+      "city": "Houston",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://rcel.rice.edu/rice-elite-tech-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["STEM", "pre-college"],
+      "camp_type_tags": ["residential", "academic"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "Campers attending the Residential Track will stay on Rice University campus in the Residential Colleges (dormitories) for the duration of camp. Your tuition includes housing...",
+        "url": "https://rcel.rice.edu/rice-elite-tech-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Course Catalog",
+        "url": "https://rcel.rice.edu/rice-elite-tech-camp",
+        "date_text": "2026"
+      },
+      "notes": "High-quality pre-college engineering program.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "NEXUS Musical Theatre Intensive",
+      "translated_name_hint": null,
+      "operator_name": "Texas State University",
+      "venue_name": "Texas State University",
+      "city": "San Marcos",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://sotdf.txst.edu/theatre/summer-camps.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["arts", "pre-college"],
+      "camp_type_tags": ["residential", "theatre"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "June 15-25 (10 days)",
+      "overnight_evidence": {
+        "snippet": "The NEXUS Pre-College Intensive is a residential summer camp designed to train not only the artist, but the person.",
+        "url": "https://sotdf.txst.edu/theatre/summer-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 15-25, 2026",
+        "url": "https://sotdf.txst.edu/theatre/summer-camps.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Academy for Robotics",
+      "translated_name_hint": null,
+      "operator_name": "University of Texas at Austin",
+      "venue_name": "UT Austin Campus",
+      "city": "Austin",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://cns.utexas.edu/news/announcements/science-and-stem-camps-ut-austin-summer",
+      "supporting_urls": ["https://www.cs.utexas.edu/academy-for-robotics"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["STEM", "pre-college"],
+      "camp_type_tags": ["residential", "robotics"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "6 days (Sunday-Friday)",
+      "overnight_evidence": {
+        "snippet": "Students get a taste of university life by staying overnight in campus residence halls.",
+        "url": "https://cns.utexas.edu/news/announcements/science-and-stem-camps-ut-austin-summer"
+      },
+      "recent_activity_evidence": {
+        "snippet": "In 2025, two sessions will be held: June 15-20 and June 22-27.",
+        "url": "https://cns.utexas.edu/news/announcements/science-and-stem-camps-ut-austin-summer",
+        "date_text": "2025"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Olympia",
+      "translated_name_hint": null,
+      "operator_name": "Camp Olympia, Inc.",
+      "venue_name": "Camp Olympia",
+      "city": "Trinity",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.campolympia.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1, 2, and 3 week sessions",
+      "overnight_evidence": {
+        "snippet": "CAMP OLYMPIA is a private, overnight Texas summer camp for boys and girls ages 6-16.",
+        "url": "https://www.campolympia.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Search result indicated 2026 dates.",
+        "url": "https://www.google.com/search?q=%22overnight+summer+camp%22+%22Texas%22",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Cho-Yeh",
+      "translated_name_hint": null,
+      "operator_name": "Camp Cho-Yeh",
+      "venue_name": "Camp Cho-Yeh",
+      "city": "Livingston",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.cho-yeh.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "faith-based"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "Overnight Camp - Camp Cho-Yeh - Livingston, TX",
+        "url": "https://www.google.com/search?q=%22overnight+summer+camp%22+%22Texas%22"
+      },
+      "recent_activity_evidence": {
+        "snippet": "REGISTRATION FOR SUMMER 2026 IS OPEN!",
+        "url": "https://www.cho-yeh.org/camp-dates-rates/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Allen",
+      "translated_name_hint": null,
+      "operator_name": "Episcopal Diocese of Texas",
+      "venue_name": "Camp Allen",
+      "city": "Navasota",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.campallen.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "faith-based"],
+      "camp_type_tags": ["overnight", "retreat"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Typical camp sessions",
+      "overnight_evidence": {
+        "snippet": "dormitory campsites, family lodges, lakeside log cabins",
+        "url": "https://www.campallen.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Search result indicated 2024 dates.",
+        "url": "https://www.google.com/search?q=%22overnight+summer+camp%22+%22Texas%22",
+        "date_text": "2024"
+      },
+      "notes": null,
+      "validation_needs": ["Verify specific 2025/2026 dates"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Champions",
+      "translated_name_hint": null,
+      "operator_name": "Camp Champions",
+      "venue_name": "Camp Champions",
+      "city": "Marble Falls",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://campchampions.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2 and 3 week sessions",
+      "overnight_evidence": {
+        "snippet": "...consistently ranks as one of the best overnight summer camps in Texas.",
+        "url": "https://campchampions.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 link exists.",
+        "url": "https://campchampions.com/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Mo-Ranch Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": "Presbyterian Mo-Ranch Assembly",
+      "venue_name": "Mo-Ranch",
+      "city": "Hunt",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.moranch.org/mo-ranch-summer-camp/",
+      "supporting_urls": ["https://www.moranch.org/camps/overnight-camps/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "faith-based"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "Mo-Ranch Summer Camp is a traditional, overnight Christian camp...",
+        "url": "https://www.moranch.org/mo-ranch-summer-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "© Copyright 2026",
+        "url": "https://www.moranch.org/mo-ranch-summer-camp/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Stewart for Boys",
+      "translated_name_hint": null,
+      "operator_name": "The Stewart Family",
+      "venue_name": "Camp Stewart",
+      "city": "Hunt",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://campstewart.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2 and 4 week sessions",
+      "overnight_evidence": {
+        "snippet": "Traditional Summer Camping Since 1924... Join Our Summer Camp for Boys (ages 6-16)",
+        "url": "https://campstewart.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Spots Available for 2026",
+        "url": "https://campstewart.com/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Heart O' the Hills for Girls",
+      "translated_name_hint": null,
+      "operator_name": "The Stewart Family",
+      "venue_name": "Heart O' the Hills",
+      "city": "Hunt",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://hohcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2, 3, and 4 week sessions",
+      "overnight_evidence": {
+        "snippet": "SUMMER CAMP FOR GIRLS 6 THRU 16... opening day and closing day for several week sessions",
+        "url": "https://hohcamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 sessions mentioned on site.",
+        "url": "https://hohcamp.com/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

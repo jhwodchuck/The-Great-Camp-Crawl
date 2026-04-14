@@ -1,0 +1,344 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "MO",
+    "city": null
+  },
+  "queries_used": [
+    "\"top 15 overnight summer camps in Missouri\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "YMCA Camp Lakewood",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Camp Lakewood",
+      "city": "Potosi",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://gwrymca.org/locations/ymca-camp-lakewood",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "Traditional, outdoor, adventure, equestrian, and leadership programs... overnight",
+        "url": "https://gwrymca.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 6-17",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Cub Creek Science and Animal Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Cub Creek",
+      "city": "Rolla",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://cubcreeksciencecamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "academic-and-stem-camps"],
+      "camp_type_tags": ["science", "animals"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "Science, nature, and animals... sleepaway",
+        "url": "https://cubcreeksciencecamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 7-17.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Sabra",
+      "translated_name_hint": null,
+      "operator_name": "JCC St. Louis",
+      "venue_name": "Camp Sabra",
+      "city": "Rocky Mount",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://campsabra.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["jewish", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "Jewish sleepaway camp",
+        "url": "https://campsabra.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Lake of the Ozarks.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Barnabas",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Barnabas",
+      "city": "Purdy",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://campbarnabas.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["special-needs", "christian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "traditional camp experience for children with special needs... resident",
+        "url": "https://campbarnabas.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Children and teens with disabilities.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Weloki for Girls",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Weloki",
+      "city": "Dutzow",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://campweloki.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty-camps"],
+      "camp_type_tags": ["girls", "empowerment"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "Personal growth, leadership, and empowerment for girls... overnight",
+        "url": "https://campweloki.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 9-18.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Sherwood Forest Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Sherwood Forest",
+      "city": "Lesterville",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://sherwoodforeststl.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "youth-development"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "Youth development and adventure... sleepaway",
+        "url": "https://sherwoodforeststl.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 6-18.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Kanakuk Kamps",
+      "translated_name_hint": null,
+      "operator_name": "Kanakuk",
+      "venue_name": "Kanakuk",
+      "city": "Branson",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://kanakuk.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "sports"],
+      "candidate_shape": "multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "Christian-based, sports, and adventure... resident camp",
+        "url": "https://kanakuk.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Multiple locations in Branson area.",
+      "validation_needs": ["split queue for multiple venues"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp MoVal",
+      "translated_name_hint": null,
+      "operator_name": "United Church of Christ",
+      "venue_name": "Camp MoVal",
+      "city": "Union",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://campmoval.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "Religious and traditional camp... overnight",
+        "url": "https://campmoval.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "280 acres.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Wonderland Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Wonderland Camp",
+      "city": "Rocky Mount",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://wonderlandcamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty-camps"],
+      "camp_type_tags": ["special-needs"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "Specialized camp for children and adults with physical and developmental disabilities... overnight",
+        "url": "https://wonderlandcamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Lake of the Ozarks.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Missouri Military Academy Leadership Camp",
+      "translated_name_hint": null,
+      "operator_name": "Missouri Military Academy",
+      "venue_name": "MMA Leadership Camp",
+      "city": "Mexico",
+      "region": "MO",
+      "country": "US",
+      "canonical_url": "https://missourimilitaryacademy.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty-camps"],
+      "camp_type_tags": ["leadership", "military"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "short intensive session",
+      "overnight_evidence": {
+        "snippet": "structured program focused on discipline... camp",
+        "url": "https://missourimilitaryacademy.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 12-17.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

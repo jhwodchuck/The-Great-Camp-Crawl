@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "IA",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Iowa\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "YMCA Camp Wapsie",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Camp Wapsie",
+      "city": "Coggon",
+      "region": "IA",
+      "country": "US",
+      "canonical_url": "https://crmetroymca.org/camp-wapsie/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one-week sessions",
+      "overnight_evidence": {
+        "snippet": "traditional overnight programs on 182 acres",
+        "url": "https://crmetroymca.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Activities like canoeing, climbing towers, swimming.",
+      "validation_needs": ["check canonical url accuracy"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Des Moines Y Camp",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Y Camp",
+      "city": "Boone",
+      "region": "IA",
+      "country": "US",
+      "canonical_url": "https://dmymca.org/y-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly sessions",
+      "overnight_evidence": {
+        "snippet": "provides traditional overnight camp programs",
+        "url": "https://dmymca.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Situated along the Des Moines River.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Wakonda",
+      "translated_name_hint": null,
+      "operator_name": "Scouting America (Hawkeye Area Council)",
+      "venue_name": "Camp Wakonda",
+      "city": "Central City",
+      "region": "IA",
+      "country": "US",
+      "canonical_url": "https://hawkeyescouting.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["scouts", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "6-day/5-night program",
+      "overnight_evidence": {
+        "snippet": "offers a 6-day/5-night program for youth",
+        "url": "https://hawkeyescouting.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Youth entering 2nd through 8th grades.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

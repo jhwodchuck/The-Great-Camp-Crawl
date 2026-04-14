@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from lib.candidate_normalization import normalize_candidate_rows
-from lib.common import read_jsonl, utc_now_iso, write_jsonl
+from lib.common import compact_whitespace, read_jsonl, utc_now_iso, write_jsonl
 from lib.followup_queue import generate_followup_queue
 from lib.split_queue import generate_split_queue
 
@@ -24,15 +24,32 @@ SKIP_REPORT_SUFFIXES = (
     "_split_stubs.jsonl",
 )
 
+PLACEHOLDER_VENUES = {"", "unknown", "venue to be confirmed"}
+PLACEHOLDER_CITIES = {"", "unknown", "unknown city", "city to be confirmed", "unk"}
+
 
 @dataclass(frozen=True)
 class CandidateArrayReport:
     path: Path
     stem: str
+    payload: list[dict[str, Any]]
+
+
+@dataclass(frozen=True)
+class DiscoveryBatchReport:
+    path: Path
+    stem: str
+    payload: dict[str, Any]
 
 
 @dataclass(frozen=True)
 class RawJsonlReport:
+    path: Path
+    stem: str
+
+
+@dataclass(frozen=True)
+class CandidateJsonlReport:
     path: Path
     stem: str
 
@@ -51,7 +68,29 @@ def discover_candidate_array_reports(reports_dir: Path) -> list[CandidateArrayRe
         except json.JSONDecodeError:
             continue
         if isinstance(payload, list) and all(isinstance(item, dict) for item in payload):
-            reports.append(CandidateArrayReport(path=path, stem=path.stem))
+            reports.append(CandidateArrayReport(path=path, stem=path.stem, payload=payload))
+    return reports
+
+
+def discover_discovery_batch_reports(reports_dir: Path) -> list[DiscoveryBatchReport]:
+    reports: list[DiscoveryBatchReport] = []
+    for path in sorted(reports_dir.iterdir()):
+        if not path.is_file():
+            continue
+        if path.suffix.lower() != ".json":
+            continue
+        if path.name.endswith("_summary.json"):
+            continue
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(payload, dict):
+            continue
+        candidates = payload.get("candidates")
+        if not isinstance(candidates, list) or not all(isinstance(item, dict) for item in candidates):
+            continue
+        reports.append(DiscoveryBatchReport(path=path, stem=path.stem, payload=payload))
     return reports
 
 
@@ -72,9 +111,46 @@ def discover_raw_jsonl_reports(reports_dir: Path) -> list[RawJsonlReport]:
             continue
         if "candidate_id" in first:
             continue
+        if any(key in first for key in ["candidate_ids", "candidate_names", "queries", "matched_reason", "matched_reasons"]):
+            continue
         if not any(key in first for key in ["url", "title", "query", "source", "provider"]):
             continue
         reports.append(RawJsonlReport(path=path, stem=path.stem))
+    return reports
+
+
+def discover_candidate_jsonl_reports(reports_dir: Path) -> list[CandidateJsonlReport]:
+    reports: list[CandidateJsonlReport] = []
+    for path in sorted(reports_dir.glob("*.jsonl")):
+        if not path.is_file():
+            continue
+        if path.name.endswith("_normalized.jsonl"):
+            continue
+        if path.name.endswith(SKIP_REPORT_SUFFIXES):
+            continue
+        rows = read_jsonl(path)
+        if not rows:
+            continue
+        first = rows[0]
+        if not isinstance(first, dict):
+            continue
+        if "candidate_id" not in first:
+            continue
+        if any(key in first for key in ["queries", "matched_reason", "matched_reasons", "search_query", "candidate_ids"]):
+            continue
+        if not any(
+            key in first
+            for key in [
+                "name",
+                "candidate_name",
+                "canonical_url",
+                "record_basis",
+                "program_family",
+                "program_family_tags",
+            ]
+        ):
+            continue
+        reports.append(CandidateJsonlReport(path=path, stem=path.stem))
     return reports
 
 
@@ -101,13 +177,62 @@ def _write_companion_outputs(stem: str, reports_dir: Path, normalized_rows: list
 def ingest_candidate_array_reports(reports_dir: Path) -> list[dict[str, Any]]:
     ingested: list[dict[str, Any]] = []
     for report in discover_candidate_array_reports(reports_dir):
-        payload = json.loads(report.path.read_text(encoding="utf-8"))
-        normalized_rows = normalize_candidate_rows(payload)
+        normalized_rows = normalize_candidate_rows(report.payload)
         outputs = _write_companion_outputs(report.stem, reports_dir, normalized_rows)
         ingested.append(
             {
                 "source_report": str(report.path),
-                "records": len(payload),
+                "records": len(report.payload),
+                "outputs": {key: str(value) for key, value in outputs.items()},
+            }
+        )
+    return ingested
+
+
+def ingest_candidate_jsonl_reports(reports_dir: Path) -> list[dict[str, Any]]:
+    ingested: list[dict[str, Any]] = []
+    for report in discover_candidate_jsonl_reports(reports_dir):
+        normalized_path = reports_dir / f"{report.stem}_normalized.jsonl"
+        if normalized_path.exists():
+            continue
+        rows = read_jsonl(report.path)
+        normalized_rows = normalize_candidate_rows(rows)
+        outputs = _write_companion_outputs(report.stem, reports_dir, normalized_rows)
+        ingested.append(
+            {
+                "source_report": str(report.path),
+                "records": len(rows),
+                "outputs": {key: str(value) for key, value in outputs.items()},
+            }
+        )
+    return ingested
+
+
+def ingest_discovery_batch_reports(reports_dir: Path) -> list[dict[str, Any]]:
+    ingested: list[dict[str, Any]] = []
+    for report in discover_discovery_batch_reports(reports_dir):
+        normalized_path = reports_dir / f"{report.stem}_normalized.jsonl"
+        if normalized_path.exists():
+            continue
+        payload = report.payload
+        candidates = list(payload.get("candidates") or [])
+        enriched_rows: list[dict[str, Any]] = []
+        for row in candidates:
+            enriched_rows.append(
+                {
+                    **row,
+                    "scan_type": payload.get("scan_type"),
+                    "report_scope": payload.get("scope"),
+                    "queries_used": payload.get("queries_used") or [],
+                    "next_queries": payload.get("next_queries") or [],
+                }
+            )
+        normalized_rows = normalize_candidate_rows(enriched_rows)
+        outputs = _write_companion_outputs(report.stem, reports_dir, normalized_rows)
+        ingested.append(
+            {
+                "source_report": str(report.path),
+                "records": len(candidates),
                 "outputs": {key: str(value) for key, value in outputs.items()},
             }
         )
@@ -141,6 +266,38 @@ def discover_normalized_reports(reports_dir: Path) -> list[Path]:
     )
 
 
+def _record_basis_rank(value: str | None) -> int:
+    normalized = compact_whitespace(value or "").lower()
+    if normalized == "venue_candidate":
+        return 0
+    if normalized == "venue_candidate_pending_confirmation":
+        return 1
+    if normalized == "multi_venue_candidate":
+        return 2
+    return 3
+
+
+def _is_placeholder(value: Any, placeholders: set[str]) -> bool:
+    normalized = compact_whitespace(str(value or "")).lower()
+    return normalized in placeholders
+
+
+def _candidate_preference_key(row: dict[str, Any]) -> tuple[Any, ...]:
+    return (
+        _record_basis_rank(row.get("record_basis")),
+        0 if not _is_placeholder(row.get("city"), PLACEHOLDER_CITIES) else 1,
+        0 if not _is_placeholder(row.get("venue_name"), PLACEHOLDER_VENUES) else 1,
+        0 if compact_whitespace(str(row.get("recent_activity_evidence_snippet") or "")) else 1,
+        0 if compact_whitespace(str(row.get("overnight_evidence_snippet") or "")) else 1,
+        0 if compact_whitespace(str(row.get("operator_name") or "")) else 1,
+        0 if compact_whitespace(str(row.get("activity_status_guess") or "")) == "active_recent" else 1,
+        len(row.get("validation_needs") or []),
+        -len(compact_whitespace(str(row.get("recent_activity_evidence_snippet") or ""))),
+        -len(compact_whitespace(str(row.get("overnight_evidence_snippet") or ""))),
+        -len(compact_whitespace(str(row.get("notes") or ""))),
+    )
+
+
 def aggregate_normalized_reports(reports_dir: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     merged: dict[str, dict[str, Any]] = {}
     duplicates: list[dict[str, Any]] = []
@@ -157,7 +314,10 @@ def aggregate_normalized_reports(reports_dir: Path) -> tuple[list[dict[str, Any]
                 continue
             existing_sources = set(existing.get("source_reports", []))
             existing_sources.add(path.name)
+            tagged_row["source_reports"] = sorted(existing_sources)
             existing["source_reports"] = sorted(existing_sources)
+            if _candidate_preference_key(tagged_row) < _candidate_preference_key(existing):
+                merged[candidate_id] = tagged_row
             if existing.get("canonical_url") != row.get("canonical_url") or existing.get("name") != row.get("name"):
                 duplicates.append(
                     {
@@ -174,6 +334,8 @@ def aggregate_normalized_reports(reports_dir: Path) -> tuple[list[dict[str, Any]
 def write_ingest_outputs(reports_dir: Path, staging_dir: Path) -> dict[str, Any]:
     ingested_reports = [
         *ingest_candidate_array_reports(reports_dir),
+        *ingest_discovery_batch_reports(reports_dir),
+        *ingest_candidate_jsonl_reports(reports_dir),
         *ingest_raw_jsonl_reports(reports_dir),
     ]
     aggregate_rows, duplicate_candidates = aggregate_normalized_reports(reports_dir)

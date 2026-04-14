@@ -1,0 +1,114 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "AR",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Arkansas\"",
+    "site:.edu \"Arkansas\" \"pre-college\" residential summer"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Ozark",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Ozark",
+      "city": "Mt. Ida",
+      "region": "AR",
+      "country": "US",
+      "canonical_url": "https://campozark.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "adventure", "sports"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-3 weeks",
+      "overnight_evidence": {
+        "snippet": "one of the state's most well-known camps... overnight summer camps",
+        "url": "https://campozark.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration active",
+        "url": "https://campozark.com/",
+        "date_text": "2026"
+      },
+      "notes": "Large-scale camp in Ouachita National Forest.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp War Eagle",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp War Eagle",
+      "city": "Rogers",
+      "region": "AR",
+      "country": "US",
+      "canonical_url": "https://campwareagle.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "sports", "adventure"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-2 weeks",
+      "overnight_evidence": {
+        "snippet": "overnight summer camps",
+        "url": "https://campwareagle.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": "https://campwareagle.org/",
+        "date_text": "2026"
+      },
+      "notes": "Boys and girls ages 6 to 17.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Brookhill Ranch Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Brookhill Ranch",
+      "city": "Hot Springs Village",
+      "region": "AR",
+      "country": "US",
+      "canonical_url": "https://brookhillranch.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "screen-free"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "overnight summer camps",
+        "url": "https://brookhillranch.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": "https://brookhillranch.com/",
+        "date_text": "2026"
+      },
+      "notes": "Grades 2-12, unplugged camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

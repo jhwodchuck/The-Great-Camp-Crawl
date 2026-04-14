@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "KY",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Kentucky\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "YMCA Camp Piomingo",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Camp Piomingo",
+      "city": "Brandenburg",
+      "region": "KY",
+      "country": "US",
+      "canonical_url": "https://ymcalouisville.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "equestrian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly sessions",
+      "overnight_evidence": {
+        "snippet": "Offers traditional and equestrian overnight camps",
+        "url": "https://ymcalouisville.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 5-17.",
+      "validation_needs": ["check venue city matches YMCA Louisville location context"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Barefoot Republic",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Barefoot Republic Camp",
+      "city": "Fountain Run",
+      "region": "KY",
+      "country": "US",
+      "canonical_url": "https://barefootrepublic.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "Hosts overnight camps in Fountain Run, KY",
+        "url": "https://barefootrepublic.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Elementary to senior high school.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Bluegrass Christian Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Bluegrass Christian Camp",
+      "city": "Lexington",
+      "region": "KY",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": ["https://kentuckyfamilyfun.net/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "sleep-away camp experiences... Bluegrass Christian Camp",
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Located in Lexington.",
+      "validation_needs": ["find canonical url"],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "GU",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Guam\"",
+    "\"residential summer camp\" \"Guam\"",
+    "\"family camp\" \"Guam\"",
+    "\"youth retreat\" \"Guam\" overnight",
+    "site:.edu \"Guam\" \"pre-college\" residential"
+  ],
+  "next_queries": [],
+  "candidates": []
+}

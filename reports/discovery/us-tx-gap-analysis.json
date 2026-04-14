@@ -1,0 +1,38 @@
+{
+  "scan_type": "gap_analysis",
+  "scope": {
+    "country": "US",
+    "region": "TX",
+    "city": null
+  },
+  "queries_used": [],
+  "next_queries": [
+    "site:.edu \"Texas\" \"residential\" \"summer\" program",
+    "\"Texas\" overnight sports camp",
+    "\"Texas\" college-prep residential summer",
+    "\"Texas\" campamento residencial juvenil"
+  ],
+  "undercovered_slices": [
+    {
+      "slice_type": "geography",
+      "label": "South Texas & Gulf Coast",
+      "reason": "Current coverage is concentrated in Central Texas and Hill Country, with few or no candidates from the Rio Grande Valley, Corpus Christi area, or coastal metro regions."
+    },
+    {
+      "slice_type": "program_family",
+      "label": "Sports and adventure specialty camps",
+      "reason": "The existing set is dominated by traditional overnight and college pre-college programs; specialist sports, aquatics, equestrian, and adventure leadership camps are under-represented."
+    },
+    {
+      "slice_type": "program_family",
+      "label": "College-hosted residential programs beyond STEM/arts",
+      "reason": "University-based candidates are largely STEM or theatre focused; broader university residential offerings in business, leadership, health, or college-prep may be missing."
+    },
+    {
+      "slice_type": "language",
+      "label": "Spanish-language sources",
+      "reason": "No Spanish-language or bilingual candidate sources are present, leaving a gap for Texas programs serving Spanish-speaking families and border-region schools."
+    }
+  ],
+  "candidates": []
+}

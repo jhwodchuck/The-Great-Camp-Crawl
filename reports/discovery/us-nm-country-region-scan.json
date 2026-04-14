@@ -1,0 +1,1683 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "NM",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"New Mexico\"",
+    "\"residential summer camp\" \"New Mexico\"",
+    "\"family camp\" \"New Mexico\"",
+    "\"youth retreat\" \"New Mexico\" overnight",
+    "site:.edu \"New Mexico\" \"pre-college\" residential"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Overnight Shipping for Next Day Delivery | FedEx",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.fedex.com/en-us/shipping/overnight.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "FedEx overnight services provide overnight shipping for fast delivery to ZIP codes in the U.S. and around the globe to ensure your package arrives the next day.",
+        "url": "https://www.fedex.com/en-us/shipping/overnight.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "OVERNIGHT Definition & Meaning - Merriam-Webster",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.merriam-webster.com/dictionary/overnight",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "The meaning of OVERNIGHT is on the evening before. How to use overnight in a sentence.",
+        "url": "https://www.merriam-webster.com/dictionary/overnight"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Flexible Overnight Remote Work From Home Jobs - Indeed",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.indeed.com/q-Overnight-Remote-Work-From-Home-jobs.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "21 hours ago · Browse 182,124 Overnight Remote Work From Home job openings. Discover flexible, work-from-home opportunities on Indeed in fields like tech, admin, and customer service.",
+        "url": "https://www.indeed.com/q-Overnight-Remote-Work-From-Home-jobs.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Domestic Shipping: UPS Ground & Air Services | UPS - United States",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.ups.com/us/en/support/shipping-support/shipping-services/domestic?msockid=39667e81221c60d2379c69bb2343611a",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Ship anywhere in the U.S. with UPS — choose from overnight, 2-day, 3-day, or ground delivery options to match your speed and budget.",
+        "url": "https://www.ups.com/us/en/support/shipping-support/shipping-services/domestic?msockid=39667e81221c60d2379c69bb2343611a"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "OVERNIGHT Definition & Meaning | Dictionary.com",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.dictionary.com/browse/overnight",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "OVERNIGHT definition: for or during the night. See examples of overnight used in a sentence.",
+        "url": "https://www.dictionary.com/browse/overnight"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Overnight - definition of overnight by The Free Dictionary",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.thefreedictionary.com/overnight",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "1. During or for the length of the night: Let the meat marinate overnight. 2. In or as if in the course of one night; suddenly: became a sensation overnight.",
+        "url": "https://www.thefreedictionary.com/overnight"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "OVERNIGHT | definition in the Cambridge English Dictionary",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://dictionary.cambridge.org/us/dictionary/english/overnight",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "You can stay overnight if you want to. Don't forget to pack an overnight bag (= a bag for things that you need when you stay away from home for a night).",
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/overnight"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Home - Best Overnite Express",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.bestovernite.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Need FTL, expedited, air, or intermodal rate quotes for domestic and international freight? Ask us how.",
+        "url": "https://www.bestovernite.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "OVERNIGHT definition and meaning | Collins English Dictionary",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.collinsdictionary.com/dictionary/english/overnight",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "If something happens overnight, it happens throughout the night or at some point during the night. The weather remained calm overnight. The decision was reached overnight.",
+        "url": "https://www.collinsdictionary.com/dictionary/english/overnight"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Overnight Shipping Options (UPS vs USPS vs FedEx)",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.reverselogix.com/industry-updates/overnight-shipping-options-you-should-know/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Feb 18, 2026 · Learn which overnight shipping service is fastest, cheapest, and best for businesses. Compare UPS, FedEx, and USPS next-day delivery options.",
+        "url": "https://www.reverselogix.com/industry-updates/overnight-shipping-options-you-should-know/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Domestic Shipping: UPS Ground & Air Services | UPS - United States",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.ups.com/us/en/support/shipping-support/shipping-services/domestic?msockid=2ae60a1a5712626b2b8b1d20564d63e1",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Ship anywhere in the U.S. with UPS — choose from overnight, 2-day, 3-day, or ground delivery options to match your speed and budget.",
+        "url": "https://www.ups.com/us/en/support/shipping-support/shipping-services/domestic?msockid=2ae60a1a5712626b2b8b1d20564d63e1"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"overnight summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Greenville NC Real Estate & Homes For Sale - Zillow",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.zillow.com/greenville-nc/?msockid=064f55b5e3d26fe8372a428fe23f6ea9",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Oct 17, 2025 · View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+        "url": "https://www.zillow.com/greenville-nc/?msockid=064f55b5e3d26fe8372a428fe23f6ea9"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Greenville, NC homes for sale & real estate - realtor.com",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.realtor.com/realestateandhomes-search/Greenville_NC?msockid=064f55b5e3d26fe8372a428fe23f6ea9",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Realtor.com® has 586 homes for sale in Greenville, NC. The median listing price is $277,400. Browse the latest listings and find your dream home today.",
+        "url": "https://www.realtor.com/realestateandhomes-search/Greenville_NC?msockid=064f55b5e3d26fe8372a428fe23f6ea9"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Apartments for Rent in Greenville NC",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.apartments.com/greenville-nc/?msockid=064f55b5e3d26fe8372a428fe23f6ea9",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find 1,510 apartments for rent in Greenville, NC with new listings daily. Compare verified, detailed unit listings, explore 3D tours, and find your next rental today.",
+        "url": "https://www.apartments.com/greenville-nc/?msockid=064f55b5e3d26fe8372a428fe23f6ea9"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Homes For Sale in Greenville, | D.R. Horton",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.drhorton.com/north-carolina/eastern-north-carolina/greenville",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "See all the home floor plans, houses under construction, and new homes for sale in the Eastern North Carolina area.",
+        "url": "https://www.drhorton.com/north-carolina/eastern-north-carolina/greenville"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Russell Property Management – ……",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://russellpm.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find your home with us. Our rental properties include single family homes, apartments, duplexes and townhomes in the ECU, Pitt Community College, Vidant Health, and ECU School of Medicine areas.",
+        "url": "https://russellpm.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Residential Properties for Sale in Greenville, North Carolina - 35 ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.land.com/Greenville-NC/residential-property/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find Greenville, North Carolina residential properties for sale on Land.com. Browse lots and acreage by price, size, amenities, and more. Find your ideal residential property in Greenville, North Carolina.",
+        "url": "https://www.land.com/Greenville-NC/residential-property/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Greenville Homes for Rent, Houses for Rent in Greenville, NC ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.greenvilleforrent.com/greenville-homes-for-rent",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discover residential and commercial rental opportunities in Greenville by exploring our listings or customizing your search below. Give us a call today—we’d love to help you find the perfect fit. Find …",
+        "url": "https://www.greenvilleforrent.com/greenville-homes-for-rent"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "RESIDENTIAL Definition & Meaning - Merriam-Webster",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.merriam-webster.com/dictionary/residential",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "The meaning of RESIDENTIAL is used as a residence or by residents. How to use residential in a sentence.",
+        "url": "https://www.merriam-webster.com/dictionary/residential"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Greenville, NC Real Estate & Homes For Sale - Trulia",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.trulia.com/NC/Greenville/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Oct 17, 2025 · 340 Homes For Sale in Greenville, NC. Browse photos, see new properties, get open house info, and research neighborhoods on Trulia.",
+        "url": "https://www.trulia.com/NC/Greenville/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Apartments and Homes for Rent | Redfin",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.redfin.com/rentals?msockid=064f55b5e3d26fe8372a428fe23f6ea9",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find apartments, houses and condos for rent in your area. Explore rentals by neighborhood, property type and amenities.",
+        "url": "https://www.redfin.com/rentals?msockid=064f55b5e3d26fe8372a428fe23f6ea9"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Greenville NC Real Estate & Homes For Sale - Zillow",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.zillow.com/greenville-nc/?msockid=24d399b5341169f83e4f8e8f353b68e6",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Oct 17, 2025 · View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+        "url": "https://www.zillow.com/greenville-nc/?msockid=24d399b5341169f83e4f8e8f353b68e6"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Greenville, NC homes for sale & real estate - realtor.com",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.realtor.com/realestateandhomes-search/Greenville_NC?msockid=24d399b5341169f83e4f8e8f353b68e6",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Realtor.com® has 586 homes for sale in Greenville, NC. The median listing price is $277,400. Browse the latest listings and find your dream home today.",
+        "url": "https://www.realtor.com/realestateandhomes-search/Greenville_NC?msockid=24d399b5341169f83e4f8e8f353b68e6"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Apartments for Rent in Greenville NC",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.apartments.com/greenville-nc/?msockid=24d399b5341169f83e4f8e8f353b68e6",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find 1,510 apartments for rent in Greenville, NC with new listings daily. Compare verified, detailed unit listings, explore 3D tours, and find your next rental today.",
+        "url": "https://www.apartments.com/greenville-nc/?msockid=24d399b5341169f83e4f8e8f353b68e6"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Apartments and Homes for Rent | Redfin",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.redfin.com/rentals?msockid=24d399b5341169f83e4f8e8f353b68e6",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find apartments, houses and condos for rent in your area. Explore rentals by neighborhood, property type and amenities.",
+        "url": "https://www.redfin.com/rentals?msockid=24d399b5341169f83e4f8e8f353b68e6"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Mulai menggunakan Family Link - Bantuan Google For Families",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=id",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Penting: Family Link mungkin hanya tersedia di negara atau wilayah tertentu. iPhone, iPad, dan komputer selain Chromebook tidak dapat diawasi dengan Family Link. Akun Google Workspace for …",
+        "url": "https://support.google.com/families/answer/7101025?hl=id"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Understand YouTube & YouTube Kids options for your child",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/10495678?hl=en",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "When you use Family Link to manage a Google Account for your child, you can set up parental controls on: YouTube Kids: If available in your location. Learn where YouTube Kids is available.",
+        "url": "https://support.google.com/families/answer/10495678?hl=en"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Начало работы с Family Link - Cправка - Google For Families",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=ru",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "На устройствах iPhone и iPad, а также на компьютерах, за исключением Chromebook, настроить родительский контроль с помощью Family Link нельзя. Аккаунтами Google Workspace for …",
+        "url": "https://support.google.com/families/answer/7101025?hl=ru"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Wypróbuj Family Link - Google For Families - Pomoc",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=pl",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Wypróbuj Family Link Za pomocą aplikacji Family Link możesz utworzyć konto Google dla dziecka w wieku poniżej 13 lat (lub poniżej innego wieku obowiązującego w Twoim kraju). Z Family Link możesz …",
+        "url": "https://support.google.com/families/answer/7101025?hl=pl"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Manage your family on Google - Android - Google For Families Help",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/6286986?hl=en&co=GENIE.Platform%3DAndroid",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "As the family manager, you can invite up to 5 people to join your family group. You can also remove people from your family group, or delete the family group. Learn more about what happens when you …",
+        "url": "https://support.google.com/families/answer/6286986?hl=en&co=GENIE.Platform%3DAndroid"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Çocuğunuzun Google Hesabı'nı Family Link ile yönetme - Google For ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7103262?hl=tr",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aile grubunuzdaki ebeveynler, çocuğunuzun Google Hesabındaki hesap ayarlarını yönetmek için Family Link'i kullanabilir. Çocuğunuzun Google Hesabı ayarlarını kontrol etme Family Link'te yönetici …",
+        "url": "https://support.google.com/families/answer/7103262?hl=tr"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Administra la Cuenta de Google de tu hijo o hija con Family Link ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7103262?hl=es-419",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Los padres del grupo familiar pueden administrar la configuración de la Cuenta de Google de su hijo con Family Link. Verifica la configuración de la Cuenta de Google de tu hijo o hija Como administrador …",
+        "url": "https://support.google.com/families/answer/7103262?hl=es-419"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Link'i kullanmaya başlama - Google For Families Yardım",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=tr",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Önemli: Family Link tüm ülke veya bölgelerde kullanılamayabilir. Chromebook'lar dışındaki bilgisayarlar ve iPhone'lar ile iPad'ler Family Link ile gözetim altında bulundurulamaz. Google Workspace for …",
+        "url": "https://support.google.com/families/answer/7101025?hl=tr"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Get started with Family Link - Google For Families Help",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=en",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Get started with Family Link You can use the Family Link App to create a Google Account for your child under 13 (or the applicable age in your country). You can also use Family Link to add supervision to …",
+        "url": "https://support.google.com/families/answer/7101025?hl=en"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "ESL Conversation Questions - Family (I-TESL-J)",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "http://iteslj.org/questions/family.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Conversation Questions Family A Part of Conversation Questions for the ESL Classroom. Are friends more important than family? What do you think? Are chores assigned to children in your family? Are …",
+        "url": "http://iteslj.org/questions/family.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"New Mexico\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "UNICEF x Youth",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/unicef-and-youth",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Young people have long stood at the forefront of calls for peace, justice and equity. They have an internationally recognized right to be heard on matters that affect them. That’s why UNICEF engages …",
+        "url": "https://www.unicef.org/unicef-and-youth"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "5 pathways towards an optimistic future, according to today's youth",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/08/youth-priorities-global-shapers-annual-summit/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aug 4, 2025 · The youth climate agenda extends beyond emissions reduction to encompass biodiversity protection, circular economy principles and climate-resilient infrastructure, with policies designed with …",
+        "url": "https://www.weforum.org/stories/2025/08/youth-priorities-global-shapers-annual-summit/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Youth for climate action - UNICEF",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/environment-and-climate-change/youth-action",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Sep 19, 2019 · We also work with youth to spread the message offline, through initiatives like UNICEF’s first-ever Climate Comic Contest. Sathviga ‘Sona’ Sridhar, a 21-year-old artist from Chennai, India, …",
+        "url": "https://www.unicef.org/environment-and-climate-change/youth-action"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Meaningful Youth Engagement in the Multilateral System",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/innocenti/media/9701/file/UNICEF-Innocenti-Meaningful-Youth-Engagement-2024.pdf",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "But unfortunately, despite their engagement in the multilateral sphere, youth continue to exert little influence over decision making on sustainable development, the maintenance of peace and security, …",
+        "url": "https://www.unicef.org/innocenti/media/9701/file/UNICEF-Innocenti-Meaningful-Youth-Engagement-2024.pdf"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Yutopia - A Public, Private & Youth Collective | UNICEF India",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/india/yutopia-public-private-youth-collective",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Yutopia - A Public, Private & Youth Collective Partnering with Governments, Corporates and CSOs to unlock a youth-powered India of the future. About Yutopia India’s 371 million young people aren’t just …",
+        "url": "https://www.unicef.org/india/yutopia-public-private-youth-collective"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "15 years on, building the Global Shapers youth movement",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/08/building-a-global-youth-movement/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aug 12, 2025 · From climate justice to digital inclusion, young people are organizing, innovating and leading real solutions to the world’s most urgent challenges. Founded on a belief that young people …",
+        "url": "https://www.weforum.org/stories/2025/08/building-a-global-youth-movement/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "From hustle culture to systems change: How youth in the Global South ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/08/youth-global-south-social-innovation/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aug 14, 2025 · Young people in the Global South can spearhead social innovation – if they are appropriately supported by capital, community and context-sensitive education.",
+        "url": "https://www.weforum.org/stories/2025/08/youth-global-south-social-innovation/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Who are the youth of today? Generation unlimited - UNICEF",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/cuba/en/publications/who-are-the-youth-today-generation-unlimited",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Nov 26, 2020 · Who are the youth of today? Generation unlimited We have approached several young people to understand their vision and how they look at the society they live in and make it their own, …",
+        "url": "https://www.unicef.org/cuba/en/publications/who-are-the-youth-today-generation-unlimited"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Why UNGA 2025 was historic for youth leadership at the UN",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/11/un-general-assembly-turning-point-for-youth-leadership/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Nov 5, 2025 · UNGA represented a landmark moment for youth leadership at the UN, with progress in embedding institutional youth participation and youth-led innovations.",
+        "url": "https://www.weforum.org/stories/2025/11/un-general-assembly-turning-point-for-youth-leadership/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Ruwa Social Innovation Hub: Empowering Youth - UNICEF",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NM",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/zimbabwe/stories/ruwa-social-innovation-hub-empowering-youth",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Oct 24, 2024 · Ruwa Social Innovation Hub fosters youth creativity, developing eco-friendly solutions and enhancing communication for children with hearing impairments.",
+        "url": "https://www.unicef.org/zimbabwe/stories/ruwa-social-innovation-hub-empowering-youth"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"New Mexico\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

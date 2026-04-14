@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "IL",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Illinois\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Shaw-waw-nas-see",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Shaw-waw-nas-see",
+      "city": "Manteno",
+      "region": "IL",
+      "country": "US",
+      "canonical_url": "https://campshaw.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer sessions",
+      "overnight_evidence": {
+        "snippet": "mix of traditional camp activities... overnight summer camps",
+        "url": "https://campshaw.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Over 75 years of history.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Ondessonk",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Ondessonk",
+      "city": "Ozark",
+      "region": "IL",
+      "country": "US",
+      "canonical_url": "https://ondessonk.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "adventure", "equestrian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly sessions",
+      "overnight_evidence": {
+        "snippet": "immersive outdoor experience... overnight summer camp",
+        "url": "https://ondessonk.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Located in the Shawnee National Forest.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Kupugani",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Kupugani",
+      "city": "Leaf River",
+      "region": "IL",
+      "country": "US",
+      "canonical_url": "https://campkupugani.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["multicultural", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "multicultural summer camp near Chicago",
+        "url": "https://campkupugani.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Focuses on empowering campers through diversity.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

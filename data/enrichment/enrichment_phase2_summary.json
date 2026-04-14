@@ -1,0 +1,39 @@
+{
+  "run_timestamp": "2026-04-14T01:45:49Z",
+  "phase": 2,
+  "candidates_processed": 686,
+  "fetch_stats": {
+    "fetched": 347,
+    "cached": 200,
+    "failed": 139,
+    "upgraded": 405
+  },
+  "phase2_extractions": {
+    "pricing": 134,
+    "duration": 42,
+    "age_grade": 109,
+    "contact": 319
+  },
+  "merge_stats": {
+    "pricing": {
+      "total": 803,
+      "upgraded_from_phase2": 134
+    },
+    "duration": {
+      "total": 803,
+      "upgraded_from_phase2": 42
+    },
+    "age_grade": {
+      "total": 803,
+      "upgraded_from_phase2": 109
+    },
+    "contact": {
+      "total": 803,
+      "upgraded_from_phase2": 130
+    },
+    "taxonomy": {
+      "total": 803,
+      "upgraded_from_phase2": 0
+    }
+  }
+}

@@ -30,7 +30,7 @@ def main() -> int:
     parser.add_argument(
         "--search-providers",
         default="instant_answer,lite_html",
-        help="Comma-separated search providers. Supported: instant_answer,lite_html",
+        help="Comma-separated search providers. Supported: instant_answer,lite_html,google_cdp",
     )
     parser.add_argument("--timeout", type=int, default=30)
     parser.add_argument("--retries", type=int, default=3)

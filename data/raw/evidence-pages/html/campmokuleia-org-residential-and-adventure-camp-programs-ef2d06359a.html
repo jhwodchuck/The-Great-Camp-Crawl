@@ -1,0 +1,2646 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.campmokuleia.org/',
+
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'da499350',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Apr 11, 2026',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'residential-and-adventure-camp-programs',
+        InitialPageUuid: 'a36da341da50495c96fa4894fef7a9d0',
+        InitialPageId: '1203407472',
+        InitialEncodedPageAlias: 'cmVzaWRlbnRpYWwtYW5kLWFkdmVudHVyZS1jYW1wLXByb2dyYW1z',
+        InitialHeaderUuid: 'bbef6ee0d13943c4bdb48bca7f6ce0be',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.campmokuleia.org/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'en',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<link rel="manifest" href="/manifest.json">
+<!-- Tell the browser it's a PWA -->
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Tell iOS it's a PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.campmokuleia.org/residential-and-adventure-camp-programs">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon"
+      href="https://irp.cdn-website.com/da499350/dms3rep/multi/favicon.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/da499350/site_favicon_16_1724897171885.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(39, 158, 193, 1);
+  --color_2: rgba(44, 184, 176, 1);
+  --color_3: rgba(82, 101, 101, 1);
+  --color_4: rgba(255,255,255,1);
+  --color_5: rgba(0,0,0,1);
+  --color_6: rgba(34, 143, 137, 1);
+  --color_7: rgba(241,249,251,1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shadows+Into+Light:ital,wght@0,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/6346/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/6e7021f18973be328ad9e297713c5df7.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="residential-and-adventure-camp-programs"] #dm [data-show-on-page-only="residential-and-adventure-camp-programs"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/da499350/files/da499350_1.min.css?v=7ab080c02a01eb2b74eed73e6cf6f023" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly
+{
+	color:var(--color_4) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-style:normal !important;
+}
+*#dm *.dmBody div.dmforminput textarea
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.dmforminput *.fileUploadLink
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.checkboxwrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.radiowrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody *.u_1560152225
+{
+	display:none !important;
+}
+*#dm *.dmBody div.u_1929588184 .color-overlay
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody *.u_1768785884:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1768785884.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1768785884>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1730714129:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1730714129.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1730714129>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1730714129
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/header-bb85145e-2880w.jpg) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1730714129:before
+{
+	background-color:var(--color_5) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1730714129.before
+{
+	background-color:var(--color_5) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1730714129>.bgExtraLayerOverlay
+{
+	background-color:var(--color_5) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody *.u_1501504068 .dividerEx svg .shape-fill
+{
+	fill:var(--color_4) !important;
+}
+*#dm *.dmBody div.u_1769707485
+{
+	background-color:var(--color_4) !important;
+}
+*#dm *.dmBody div.u_1985789873
+{
+	background-color:var(--color_4) !important;
+}
+*#dm *.dmBody div.u_1768785884:before
+{
+	background-color:var(--color_4) !important;
+	opacity:0.75 !important;
+}
+*#dm *.dmBody div.u_1768785884.before
+{
+	background-color:var(--color_4) !important;
+	opacity:0.75 !important;
+}
+*#dm *.dmBody div.u_1768785884>.bgExtraLayerOverlay
+{
+	background-color:var(--color_4) !important;
+	opacity:0.75 !important;
+}
+*#dm *.dmBody div.u_1768785884
+{
+	background-color:var(--color_4) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/social-network-2880w.png) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1536641194
+{
+	border-bottom-width:1px !important;
+	border-bottom-style:solid !important;
+	border-bottom-color:var(--color_6) !important;
+}
+*#dm *.dmBody *.u_undefined
+{
+	display:none !important;
+}
+*#dm *.dmBody div.u_1016006671
+{
+	background-color:var(--color_4) !important;
+}
+*#dm *.dmBody nav.u_1112353738
+{
+	color:white !important;
+}
+*#dm *.dmBody div.u_1811944832
+{
+	line-height:normal !important;
+}
+*#dm *.dmBody div.u_1577824774
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1731746908 *.svg
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+	width:50% !important;
+}
+*#dm *.dmBody div.u_1731746908
+{
+	border-radius:50% !important;
+	border-color:var(--color_2) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1175180369 *.svg
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+	width:50% !important;
+}
+*#dm *.dmBody div.u_1175180369
+{
+	border-radius:50% !important;
+	border-color:var(--color_2) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1994723563
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1018043818 *.svg
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+	width:50% !important;
+}
+*#dm *.dmBody div.u_1018043818
+{
+	border-radius:50% !important;
+	border-color:var(--color_2) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1899952656 *.svg
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+	width:50% !important;
+}
+*#dm *.dmBody div.u_1899952656
+{
+	border-radius:50% !important;
+	border-color:var(--color_2) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1513470052
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1298958673 *.svg
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+	width:50% !important;
+}
+*#dm *.dmBody div.u_1298958673
+{
+	border-radius:50% !important;
+	border-color:var(--color_2) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1930985132 *.svg
+{
+	color:var(--color_2) !important;
+	fill:var(--color_2) !important;
+	width:50% !important;
+}
+*#dm *.dmBody div.u_1930985132
+{
+	border-radius:50% !important;
+	border-color:var(--color_2) !important;
+	border-width:1px !important;
+}
+*#dm *.dmBody div.u_1934656277
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1763587584
+{
+	background-color:var(--color_4) !important;
+}
+*#dm *.dmBody nav.u_1144820115
+{
+	color:black !important;
+}
+*#dm *.dmBody *.u_1603591275
+{
+	background-image:url(https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/IMG_0481-cf8ea3aa-65455651-2880w.jpg) !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1424092409
+{
+	background-color:var(--color_6) !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1929588184
+{
+	important:true !important;
+	width:100% !important;
+	height:100% !important;
+}
+*#dm *.dmBody div.u_1769707485
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+}
+*#dm *.dmBody *.u_1501504068 .dividerEx svg
+{
+	height:115px !important;
+	width:100px !important;
+}
+*#dm *.dmBody div.u_1501504068
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:-113px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1985789873
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:20px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1768785884
+{
+	margin-left:0px !important;
+	padding-top:60px !important;
+	padding-left:40px !important;
+	padding-bottom:60px !important;
+	margin-top:-1px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	background-repeat:no-repeat !important;
+	background-size:auto !important;
+	background-position:50% 50% !important;
+	background-attachment:initial !important;
+}
+*#dm *.dmBody div.u_1730714129
+{
+	background-position:50% 50% !important;
+	padding-top:200px !important;
+	padding-left:40px !important;
+	padding-bottom:140px !important;
+	padding-right:40px !important;
+	width:auto !important;
+}
+*#dm *.dmBody a.u_1106834942
+{
+	width:200px !important;
+	height:50px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1496126818
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1436452539
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:-8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1550374326
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1536641194
+{
+	padding-top:20px !important;
+	padding-bottom:10px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	width:auto !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1690932688
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:20px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1686725836
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:20px !important;
+}
+*#dm *.dmBody div.u_1353461867
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1659517197
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:800px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1211437735
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	min-height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1633931361
+{
+	width:calc(100% - 0px) !important;
+	height:640.797px !important;
+	max-height:100% !important;
+	max-width:100% !important;
+	margin-left:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:auto !important;
+	padding-right:0px !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	position:relative !important;
+	min-height:auto !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody a.u_1593836236
+{
+	width:280px !important;
+	height:50px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody a.u_1588903731
+{
+	width:280px !important;
+	height:50px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	margin-top:10px !important;
+	margin-bottom:10px !important;
+}
+*#dm *.dmBody div.u_1871591258
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:200px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1125861374
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 180px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:840px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1811944832
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 180px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:840px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody h3.u_1961795269
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:300px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1822479824
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+}
+*#dm *.dmBody div.u_1175180369
+{
+	width:55px !important;
+	height:55px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1731746908
+{
+	width:55px !important;
+	height:55px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody h3.u_1895245113
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:300px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1211435927
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1895245113
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:25px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1961795269
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:25px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1577824774
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0.5px !important;
+	padding-left:40px !important;
+	padding-bottom:24.5px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody h3.u_1457564731
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:300px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1397212762
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+}
+*#dm *.dmBody div.u_1899952656
+{
+	width:55px !important;
+	height:55px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1018043818
+{
+	width:55px !important;
+	height:55px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody h3.u_1059897457
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:300px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1247644247
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1059897457
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:25px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1457564731
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:25px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1994723563
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0.5px !important;
+	padding-left:40px !important;
+	padding-bottom:24.5px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody h3.u_1424897743
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:300px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody h3.u_1750884658
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:300px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:left !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1392872492
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+}
+*#dm *.dmBody div.u_1949222497
+{
+	padding-right:10px !important;
+	padding-left:10px !important;
+}
+*#dm *.dmBody div.u_1298958673
+{
+	width:55px !important;
+	height:55px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1930985132
+{
+	width:55px !important;
+	height:55px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1750884658
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:23px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1424897743
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	min-height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:23px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1513470052
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:40px !important;
+	padding-bottom:7px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1763587584
+{
+	padding-top:50px !important;
+	padding-bottom:0px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Lato Fallback";
+  src: local('Arial');
+  ascent-override: 101.3181%;
+  descent-override: 21.865%;
+  size-adjust: 97.4159%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Josefin Sans Fallback";
+  src: local('Arial');
+  ascent-override: 72.9195%;
+  descent-override: 24.3065%;
+  size-adjust: 102.8531%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Shadows Into Light Fallback";
+  src: local('Arial');
+  ascent-override: 135.8086%;
+  descent-override: 49.8981%;
+  size-adjust: 86.5044%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Open Sans Fallback";
+  src: local('Arial');
+  ascent-override: 101.1768%;
+  descent-override: 27.7323%;
+  size-adjust: 105.6416%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.campmokuleia.org/residential-and-adventure-camp-programs">
+
+  <title>
+    Summer Camp Programs | Waialua, HI | Camp Mokule`ia
+  </title>
+  <meta name="keywords" content="Overnight Summer Camp Programs in Waialua, HI"/>
+  <meta name="description" content="Join Camp Mokule`ia for enriching summer camp programs. Enjoy swimming, kayaking, &amp; arts &amp; crafts. Registration for Summer Camp 2025 coming soon!"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Summer Camp Programs | Waialua, HI | Camp Mokule`ia"/>
+  <meta name="twitter:description" content="Join Camp Mokule`ia for enriching summer camp programs. Enjoy swimming, kayaking, &amp; arts &amp; crafts. Registration for Summer Camp 2025 coming soon!"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/social+network-1920w.png"/>
+  <meta property="og:description" content="Join Camp Mokule`ia for enriching summer camp programs. Enjoy swimming, kayaking, &amp; arts &amp; crafts. Registration for Summer Camp 2025 coming soon!"/>
+  <meta property="og:title" content="Summer Camp Programs | Waialua, HI | Camp Mokule`ia"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/social+network-1920w.png"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="residential-and-adventure-camp-programs"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac safariFix dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content" mobile-global-classes="header-over-content"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 hasStickyHeader hamburger-reverse header-over-content dmPageBody d-page-1716942098 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse" data-auto-height="true"> <div class="u_1826294544 dmRespRow" style="text-align: center;" id="1826294544"> <div class="dmRespColsWrapper" id="1337204992"> <div class="u_1183846399 dmRespCol small-12 medium-12 large-12 empty-column" id="1183846399"></div> 
+</div> 
+</div> 
+ <div class="u_1021493186 dmRespRow middleDrawerRow" style="text-align: center;" id="1021493186"> <div class="dmRespColsWrapper" id="1170137577"> <div class="dmRespCol small-12 u_1808057136 medium-12 large-12" id="1808057136"> <nav class="u_1144820115 effect-roll-over main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1144820115" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/about" class="unifiednav__item  dmUDNavigationItem_010101446209  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="About" data-auto="page-text-style">About<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/residential-and-adventure-camp-programs" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101169680  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Summer Camp Programs" data-auto="page-text-style">Summer Camp Programs<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/overnight-summer-camp" class="unifiednav__item  dmUDNavigationItem_010101955274  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Residential Summer Camp" data-auto="page-text-style">Residential Summer Camp<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/camp-ho-omana" class="unifiednav__item  dmUDNavigationItem_010101642070  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Camp Ho'omana" data-auto="page-text-style">Camp Ho'omana<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/events" class="unifiednav__item  dmUDNavigationItem_010101513364  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Events" data-auto="page-text-style">Events<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/splashanddash" class="unifiednav__item  dmUDNavigationItem_010101558019  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Splash & Dash" data-auto="page-text-style">Splash &amp; Dash<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/ohana-stay-cay" class="unifiednav__item  dmUDNavigationItem_010101790769  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="'Ohana Stay-Cay" data-auto="page-text-style">'Ohana Stay-Cay<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/mother-s-day-brunch" class="unifiednav__item  dmUDNavigationItem_010101599687  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Mother's Day Lunch" data-auto="page-text-style">Mother's Day Lunch<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/dym-youth-days" class="unifiednav__item  dmUDNavigationItem_010101318900  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="DYM Youth Days" data-auto="page-text-style">DYM Youth Days<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/diocesan-youth-ministry-retreat" class="unifiednav__item  dmUDNavigationItem_010101967195  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Diocesan Youth Ministry Retreat" data-auto="page-text-style">Diocesan Youth Ministry Retreat<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/families-can-survive" class="unifiednav__item  dmUDNavigationItem_010101294305  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Families Can Survive" data-auto="page-text-style">Families Can Survive<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/rental-groups" class="unifiednav__item  dmUDNavigationItem_010101428201  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Rental Groups" data-auto="page-text-style">Rental Groups<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/lodging" class="unifiednav__item  dmUDNavigationItem_010101483869  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Lodging" data-auto="page-text-style">Lodging<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/food-service" class="unifiednav__item  dmUDNavigationItem_010101709384  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Food Service" data-auto="page-text-style">Food Service<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/meeting-spaces" class="unifiednav__item  dmUDNavigationItem_010101677430  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Meeting Spaces" data-auto="page-text-style">Meeting Spaces<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/program-activities" class="unifiednav__item  dmUDNavigationItem_010101375998  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Program Activities" data-auto="page-text-style">Program Activities<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/outdoor-education" class="unifiednav__item  dmUDNavigationItem_010101124211  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Outdoor Education" data-auto="page-text-style">Outdoor Education<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/campground" class="unifiednav__item  dmUDNavigationItem_01010130301  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Campground" data-auto="page-text-style">Campground<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/reservations" class="unifiednav__item  dmUDNavigationItem_010101858499  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Reservations/Rates" data-auto="page-text-style">Reservations/Rates<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/donate" class="unifiednav__item  dmUDNavigationItem_010101917937  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Donate" data-auto="page-text-style">Donate<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101943230  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/job-opportunities" class="unifiednav__item  dmUDNavigationItem_010101439509  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Job Opportunities" data-auto="page-text-style">Job Opportunities<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/faq-s" class="unifiednav__item  dmUDNavigationItem_01010125564  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="FAQ's" data-auto="page-text-style">FAQ's<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1676049285" style="text-align: center;" id="1676049285"> <div class="dmRespColsWrapper" id="1888750820"> <div class="u_1916182198 dmRespCol small-12 medium-12 large-12 empty-column" id="1916182198"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="dmRespRow dmDefaultListContentRow u_1078708286 fullBleedChanged fullBleedMode" style="text-align:center" id="1078708286"> <div class="dmRespColsWrapper" id="1962004704"> <div class="u_1356412252 small-12 dmRespCol medium-12 large-12" id="1356412252"> <div class="u_1539258007 imageWidget align-center" data-widget-type="image" id="1539258007" data-element-type="image"> <a href="/" id="1286051107"><img src="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/camp+mokule-ia-1920w.png" id="1432368736" class="" data-dm-image-path="https://irp.cdn-website.com/da499350/dms3rep/multi/camp+mokule-ia.png" width="1920" height="605" alt="Camp Mokule`ia" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu" aria-controls="hamburger-drawer" aria-expanded="false"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header" has-shadow="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1861705244 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1861705244"> <div class="dmRespColsWrapper" id="1914255413"> <div class="u_1677919435 small-12 dmRespCol medium-12 large-12" id="1677919435"> <script src="" id="1401079472">
+
+
+                                                                                                                                                                                                                                
+
+          </script> 
+ <div class="u_1011018909 imageWidget align-center" data-widget-type="image" id="1011018909" data-element-type="image"> <a href="/" id="1772610168"><img src="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/camp+mokule-ia-1920w.png" id="1456770677" class="" data-dm-image-path="https://irp.cdn-website.com/da499350/dms3rep/multi/camp+mokule-ia.png" width="1920" height="605" alt="Camp Mokule`ia" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <nav class="u_1063240814 effect-roll-over main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1063240814" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/about" class="unifiednav__item  dmUDNavigationItem_010101446209  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="About" data-auto="page-text-style">About<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/residential-and-adventure-camp-programs" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101169680  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Summer Camp Programs" data-auto="page-text-style">Summer Camp Programs<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/overnight-summer-camp" class="unifiednav__item  dmUDNavigationItem_010101955274  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Residential Summer Camp" data-auto="page-text-style">Residential Summer Camp<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/camp-ho-omana" class="unifiednav__item  dmUDNavigationItem_010101642070  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Camp Ho'omana" data-auto="page-text-style">Camp Ho'omana<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/events" class="unifiednav__item  dmUDNavigationItem_010101513364  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Events" data-auto="page-text-style">Events<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/splashanddash" class="unifiednav__item  dmUDNavigationItem_010101558019  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Splash & Dash" data-auto="page-text-style">Splash &amp; Dash<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/ohana-stay-cay" class="unifiednav__item  dmUDNavigationItem_010101790769  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="'Ohana Stay-Cay" data-auto="page-text-style">'Ohana Stay-Cay<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/mother-s-day-brunch" class="unifiednav__item  dmUDNavigationItem_010101599687  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Mother's Day Lunch" data-auto="page-text-style">Mother's Day Lunch<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/dym-youth-days" class="unifiednav__item  dmUDNavigationItem_010101318900  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="DYM Youth Days" data-auto="page-text-style">DYM Youth Days<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/diocesan-youth-ministry-retreat" class="unifiednav__item  dmUDNavigationItem_010101967195  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Diocesan Youth Ministry Retreat" data-auto="page-text-style">Diocesan Youth Ministry Retreat<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/families-can-survive" class="unifiednav__item  dmUDNavigationItem_010101294305  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Families Can Survive" data-auto="page-text-style">Families Can Survive<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/rental-groups" class="unifiednav__item  dmUDNavigationItem_010101428201  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Rental Groups" data-auto="page-text-style">Rental Groups<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/lodging" class="unifiednav__item  dmUDNavigationItem_010101483869  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Lodging" data-auto="page-text-style">Lodging<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/food-service" class="unifiednav__item  dmUDNavigationItem_010101709384  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Food Service" data-auto="page-text-style">Food Service<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/meeting-spaces" class="unifiednav__item  dmUDNavigationItem_010101677430  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Meeting Spaces" data-auto="page-text-style">Meeting Spaces<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/program-activities" class="unifiednav__item  dmUDNavigationItem_010101375998  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Program Activities" data-auto="page-text-style">Program Activities<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/outdoor-education" class="unifiednav__item  dmUDNavigationItem_010101124211  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Outdoor Education" data-auto="page-text-style">Outdoor Education<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/campground" class="unifiednav__item  dmUDNavigationItem_01010130301  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Campground" data-auto="page-text-style">Campground<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/reservations" class="unifiednav__item  dmUDNavigationItem_010101858499  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Reservations/Rates" data-auto="page-text-style">Reservations/Rates<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/donate" class="unifiednav__item  dmUDNavigationItem_010101917937  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Donate" data-auto="page-text-style">Donate<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101943230  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/job-opportunities" class="unifiednav__item  dmUDNavigationItem_010101439509  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Job Opportunities" data-auto="page-text-style">Job Opportunities<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/faq-s" class="unifiednav__item  dmUDNavigationItem_01010125564  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="FAQ's" data-auto="page-text-style">FAQ's<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_residential-and-adventure-camp-programs dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content" mobile-global-classes="header-over-content"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="dmRespRow dmDefaultListContentRow u_1730714129 hasBackgroundOverlay" style="text-align:center" id="1730714129"> <div class="dmRespColsWrapper" id="1163638427"> <div class="dmRespCol small-12 medium-12 large-12 content-removed" id="1094907030"> <div class="u_1353461867 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1353461867" style="transition: opacity 1s ease-in-out 0s;"> <h1 class="text-align-left m-size-36 size-60" style="line-height: 1.5;"><span class="font-size-60 m-font-size-36" m-font-size-set="true" style="display: unset; color: var(--color_4);">Summer Camp Programs</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1769707485 fullBleedChanged fullBleedMode" id="1769707485"> <div class="dmRespColsWrapper" id="1921247802"> <div class="dmRespCol large-12 medium-12 small-12 u_1985789873" id="1985789873"> <div class="widget-fe423e u_1501504068 dmCustomWidget" data-lazy-load="true" data-title="" id="1501504068" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="fe423e4512d946889e8986702bff0bea" data-widget-version="5" data-widget-config="eyJzaGFwZSI6IndhdmVzIiwiZmxpcF94Ijp0cnVlLCJmbGlwX3kiOnRydWV9"> <div class="dividerEx" style="transform: rotateY(180deg);"> <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none" style="transform: rotate(180deg)"> <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path> 
+</svg> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1768785884 hasBackgroundOverlay" id="1768785884"> <div class="dmRespColsWrapper" id="1292502035"> <div class="dmRespCol large-12 medium-12 small-12" id="1319551587"> <div class="u_1659517197 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1659517197" style="transition: opacity 1s ease-in-out; text-align: left;"> <h2 class="text-align-center"><span style="display: initial;">Summer Camp<span class="ql-cursor">﻿</span></span></h2> 
+</div> 
+ <div class="u_1871591258 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1871591258" style="transition: none; text-align: left; display: block;"><p style="line-height: 22px;"><span style="display: initial;">Located on the beautiful North Shore of Oʻahu, Camp Mokulēʻia has been creating unforgettable summer camp experiences for children and youth since 1947. When families choose to enroll their child at Camp Mokulēʻia, they are doing something truly extraordinary&mdash;placing their trust in us to care for the most precious part of their lives. We do not take that responsibility lightly. Camper safety, well-being, and emotional care are always our highest priorities, and our dedicated counselors and staff are deeply committed to creating a safe, nurturing, and supportive environment for every child.</span></p><p style="line-height: 22px;"><br/></p><p style="line-height: 22px;"><span style="display: initial;">Through experiencing the beauty of God&rsquo;s creation and living in a genuine Christian community, campers are invited into moments of growth, reflection, and spiritual transformation&mdash;always guided with care, encouragement, and respect. Camp Mokulēʻia is a ministry of the Episcopal Diocese of Hawaiʻi, and we warmly welcome campers of all faith backgrounds, or none at all.</span></p><p style="line-height: 22px;"><br/></p><p style="line-height: 22px;"><span style="display: initial;">During their time at residential camp, campers build meaningful friendships, grow in confidence by trying new things, and discover more about themselves and the world around them&mdash;all while having an incredible amount of fun. Each day is filled with laughter, adventure, and memory-making through age-appropriate activities such as swimming, paddle boarding, kayaking, arts and crafts, group games, team-building challenges, the high ropes course, and hiking. Campers leave with new skills, strong friendships, and memories that will last a lifetime.</span></p><p style="line-height: 22px;"><br/></p><p style="line-height: 22px;"><span style="display: initial;">Camp Mokule&lsquo;ia is deeply committed to the safety and well-being of every camper and guest. We take a proactive approach by partnering with experts in abuse prevention and maintaining thorough staff screening, training, and supervision practices. In addition, our team receives ongoing training in weather preparedness, medical response, and activity safety. Our goal is to provide an environment where parents can feel confident and at peace entrusting their child to our care for a week of Summer Camp. <span class="ql-cursor">﻿</span><br/></span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1922259085" style="transition: opacity 1s ease-in-out;"> <h3 class="text-align-center"><span style="display: unset;">Summer Camp 2026 Dates Now Available!</span></h3> 
+</div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient flexButton" file="false" href="/overnight-summer-camp" data-element-type="dButtonLinkId" id="1052207870"> <span class="iconBg" aria-hidden="true" id="1552566863"> <span class="icon hasFontIcon icon-star" id="1168114162"></span> 
+</span> 
+ <span class="text" id="1880905534">LEARN MORE</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1211437735 dmRespRow fullBleedChanged fullBleedMode" id="1211437735"> <div class="dmRespColsWrapper" id="1751405819"> <div class="dmRespCol large-12 medium-12 small-12" id="1684858366"> <div data-element-type="dYouTubeId" class="u_1633931361 youtubeExt dmNoMark youtube-padding-fix hasFullWidth" id="1633931361"> <div class="innerYoutubeExt" id="1768325481"> <iframe id="1095616855" src="https://www.youtube.com/embed/2qwF_hB9j0I" frameborder="0" allowfullscreen=""></iframe> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1763587584 dmRespRow" style="text-align: center;" id="1763587584" data-page-element-type="section" data-page-element-id="1430345484"> <div class="dmRespColsWrapper" id="1884484889"> <div class="dmRespCol small-12 medium-12 large-12 u_1934656277" id="1934656277"> <div class="u_1811944832 dmNewParagraph" id="1811944832" data-element-type="paragraph" data-version="5" style="transition: none; text-align: left; display: block;"> <h2 class="text-align-center"><span style="display: initial;">Summer Camp Activites</span></h2> 
+</div> <div class="dmNewParagraph u_1125861374" id="1125861374" style="transition: none; display: block; text-align: left;" data-version="5"><p class="m-text-align-left text-align-center"><span style="display: initial; color: rgb(40, 64, 83);">With over 15 awesome activities and programs led by our trained and knowledgeable staff, it&rsquo;s easy to create an unforgettable summer camp experience that fosters lifetime connections and memories!<br/>Some of our activities include:</span></p></div></div> 
+</div> 
+</div> 
+ <div class="u_1577824774 dmRespRow" style="text-align: center;" id="1577824774" data-page-element-type="section" data-page-element-id="1430345484"> <div class="dmRespColsWrapper" id="1298407780"> <div class="u_1211435927 dmRespCol small-12 large-1 medium-1" id="1211435927"> <span id="1862373742"></span> 
+ <div class="u_1731746908 graphicWidget" data-widget-type="graphic" id="1731746908" data-element-type="graphic" data-layout="graphic-style-2"> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1124898350" class="svg u_1124898350" data-icon-custom="true"> <title id="1615312090">A black and white drawing of a stick figure sitting under a tree.</title> 
+ <g> <path d="m20.852 32.602c-0.67578-0.16797-1.3789-0.26562-2.1016-0.26562-5.1719 0-9.375 4.5547-9.375 10.156 0 3.7031 1.8438 6.9414 4.5859 8.7148-1.8242 1.4336-3.0234 3.6328-3.0234 6.1289v4.6875c0 0.28516 0.078125 0.5625 0.22266 0.80469l9.375 15.625c0.015625 0.023437 0.035156 0.039063 0.046875 0.0625 0.039063 0.058594 0.085938 0.11328 0.13281 0.16797 0.042968 0.046875 0.085937 0.09375 0.13281 0.13672 0.019532 0.015626 0.03125 0.035157 0.050782 0.050782l7.8125 6.25c0.41406 0.33203 0.96875 0.43359 1.4688 0.26172l13.285-4.4297 15.742 11.805c0.87891 0.66016 1.9258 0.98438 2.9688 0.98438 1.2812 0 2.5547-0.48828 3.5117-1.4453 0.97656-0.97656 1.5039-2.3281 1.4453-3.7109-0.058593-1.3789-0.69531-2.6836-1.75-3.5742l-17.5-14.809c-0.28125-0.23828-0.64062-0.36719-1.0078-0.36719h-11.5l-1.1328-2.4492 7.4688-2.4609c2.2266-0.73438 3.4492-3.0664 2.7812-5.3125-0.33594-1.1289-1.0938-2.0508-2.1406-2.5938-1.043-0.54688-2.2344-0.64062-3.3516-0.26562l-7.9883 2.6602 12.062-26.801 14.309-4.4727c-0.73437 3.2695-1.1328 6.4805-1.1328 9.3594 0 11.965 6.8828 14.672 14.062 15.375v15.875c0 0.86328 0.69922 1.5625 1.5625 1.5625h9.375c0.86328 0 1.5625-0.69922 1.5625-1.5625v-15.875c7.1797-0.69922 14.062-3.4102 14.062-15.375 0-13.523-8.7227-34.375-20.312-34.375-8.2266 0-15.008 10.512-18.25 21.449l-16.117 5.0391-9.0117-2.8828c0-0.73438-0.15234-1.4688-0.48828-2.1406-0.62109-1.2383-1.7461-2.1406-3.0898-2.4766-1.9492-0.49219-3.9102 0.28516-5.0195 1.8633l-20.984-6.7148-0.95312 2.9766 20.609 6.5938zm38.523 4.8984c0-3.2109 0.53516-6.8281 1.4844-10.449l5.2461-1.6406 4.207 15.426v8.8984c-6.7969-0.73047-10.938-3.3086-10.938-12.234zm20.312 29.688h-6.25v-26.562c0-0.14062-0.019531-0.27734-0.054688-0.41016l-4.2969-15.762 1.8555-0.61719 4.1602 11.09c0.22656 0.60547 0.80859 1.0117 1.4609 1.0117s1.2344-0.40625 1.4648-1.0117l4.1602-11.09 1.8555 0.61719-4.2969 15.762c-0.039063 0.13281-0.058594 0.26953-0.058594 0.41016zm-14.992-50.23c3.5039-6.8047 7.8281-10.707 11.867-10.707 9.3203 0 17.188 19.195 17.188 31.25 0 8.9258-4.1406 11.504-10.938 12.23v-8.8984l4.6328-16.984c0.21875-0.80078-0.22656-1.6328-1.0117-1.8906l-4.6875-1.5625c-0.79688-0.26562-1.6602 0.14844-1.957 0.93359l-3.2266 8.5977-3.2227-8.6016c-0.29688-0.78516-1.1562-1.1953-1.957-0.93359l-4.6719 1.5586-4.7383 1.4805c0.76562-2.2422 1.6719-4.4375 2.7227-6.4727zm-40.988 16.918 2.5352-6.0859 3.1016 0.99219-3.1484 7.5586c-0.007812-0.011719-0.015624-0.019532-0.023437-0.03125-0.32031-0.45312-0.67969-0.875-1.0664-1.2617-0.039063-0.039063-0.074219-0.074219-0.11328-0.10938-0.37891-0.36719-0.78125-0.70312-1.2109-1-0.023438-0.019531-0.046875-0.042969-0.074219-0.0625zm3.5508 18.371c-0.46094-1-1.2578-1.7812-2.2148-2.2461 1.8867-1.8594 3.082-4.5312 3.082-7.5078 0-0.73438-0.078125-1.4531-0.21484-2.1406l4.4219-10.613 7.5234 2.4062-10.801 24zm-14.758-9.7539c0-3.875 2.8047-7.0312 6.25-7.0312 0.83594 0 1.6328 0.19141 2.3672 0.53125 0.42187 0.19531 0.82422 0.44531 1.1953 0.73437 0.050781 0.039063 0.089844 0.089844 0.14062 0.12891 0.3125 0.26172 0.60547 0.55078 0.86719 0.87109 0.070313 0.085938 0.13281 0.18359 0.20313 0.27344 0.21875 0.29688 0.42187 0.60938 0.59766 0.94531 0.0625 0.11719 0.11719 0.23438 0.17188 0.35547 0.15234 0.33594 0.28125 0.6875 0.38281 1.0508 0.19141 0.67969 0.32422 1.3906 0.32422 2.1406 0 3.875-2.8047 7.0312-6.25 7.0312s-6.25-3.1523-6.25-7.0312zm16.48 38.84-4.2227-3.3789 6.7578-3.3789zm34.383 6.0664c0.39453 0.33594 0.625 0.80469 0.64844 1.3203 0.023437 0.51562-0.16797 1.0039-0.53516 1.3711-0.63672 0.64062-1.6641 0.71484-2.3906 0.16797l-16.398-12.297c-0.27344-0.20703-0.60547-0.3125-0.9375-0.3125-0.16406 0-0.33203 0.027343-0.49219 0.082031l-10.953 3.6484 3.1562-8.418h10.844zm-31.043-16.719-9.8516 4.9258-8.4062-14.016v-4.2539c0-2.5859 2.1016-4.6875 4.6875-4.6875h4.25c0.60938 0 1.1641 0.35937 1.418 0.90625l2.1914 4.75-0.46484-0.46875c-1.4531-1.457-3.75-1.6875-5.4609-0.54688-1.082 0.71875-1.7773 1.875-1.9062 3.1719-0.12891 1.293 0.32422 2.5625 1.2422 3.4805l5.4219 5.4297c0.13281 0.13281 0.28906 0.22656 0.45703 0.30469 0.046874 0.019531 0.089843 0.035157 0.13672 0.054688 0.14062 0.050781 0.28516 0.078125 0.43359 0.085937 0.027344 0 0.050781 0.015625 0.078125 0.015625 0.011719 0 0.019531-0.003906 0.03125-0.003906 0.15234-0.003906 0.30859-0.023437 0.46094-0.074219l4.2188-1.3906zm7.6719-10.965c0.30859-0.10156 0.63281-0.074219 0.91797 0.074218 0.28516 0.14844 0.49219 0.40234 0.58594 0.71484 0.18359 0.61719-0.15234 1.2539-0.76172 1.4531l-9.1289 3.0078-4.625 1.5234-4.7422-4.75c-0.34766-0.34766-0.36719-0.75391-0.34375-0.96484 0.019531-0.21094 0.11719-0.60547 0.53125-0.87891 0.10938-0.074219 0.23047-0.12109 0.35156-0.15625 0.039062-0.011719 0.082031-0.011719 0.125-0.015625 0.078125-0.011718 0.16016-0.019531 0.23828-0.015625 0.097656 0.003907 0.19531 0.027344 0.28906 0.054688 0.046874 0.015625 0.09375 0.019531 0.13672 0.039062 0.13672 0.058594 0.26562 0.14062 0.37109 0.25l3.0703 3.082c0.41797 0.42188 1.0391 0.56641 1.6016 0.37891l1.6797-0.55859zm-11.152-34.574c0.28516 0.070313 0.51953 0.23047 0.71875 0.42578l-1.3828-0.44141c0.21875-0.035156 0.44141-0.039062 0.66406 0.015625z"></path> 
+ <path d="m77.258 85.676c0.35547 0.23438 0.79688 0.32031 1.2109 0.22656 0.41797-0.09375 0.77734-0.35547 0.99609-0.71875l3.0664-5.1094 1.9531 4.8867c0.19531 0.48828 0.62109 0.84375 1.1367 0.94922 0.51562 0.10547 1.0469-0.054687 1.418-0.42578l3.4141-3.4141 3.6094 4.8047 2.5-1.875-4.6875-6.25c-0.27344-0.36328-0.6875-0.58984-1.1406-0.62109-0.44531-0.03125-0.89453 0.13281-1.2148 0.45312l-3.0117 3.0117-2.2461-5.6133c-0.21875-0.55469-0.73438-0.92969-1.3281-0.97656-0.59375-0.039062-1.1602 0.24609-1.4648 0.75391l-3.8438 6.4062-3.3242-2.2148c-0.62109-0.41406-1.4453-0.33203-1.9727 0.19531l-4.6875 4.6875 2.2109 2.2109 3.7812-3.7812z"></path> 
+ <path d="m8.0117 92.637 3.6211 2.4141c0.35547 0.23438 0.79297 0.32031 1.2109 0.22656s0.77734-0.35547 0.99609-0.71875l3.0664-5.1094 1.9531 4.8867c0.19531 0.48828 0.62109 0.84375 1.1367 0.94922 0.51562 0.10547 1.0469-0.054687 1.418-0.42578l3.4141-3.4141 3.6094 4.8047 2.5-1.875-4.6875-6.25c-0.27344-0.36328-0.6875-0.58984-1.1406-0.62109-0.44531-0.039062-0.89453 0.13281-1.2148 0.45312l-3.0117 3.0117-2.2461-5.6133c-0.21875-0.55469-0.73438-0.92969-1.3281-0.97656-0.59375-0.039062-1.1602 0.24609-1.4648 0.75391l-3.8438 6.4062-3.3242-2.2148c-0.62109-0.41797-1.4453-0.33203-1.9727 0.19531l-4.6875 4.6875 2.2109 2.2109z"></path> 
+ <path d="m44.727 7c-1.1719-2.2734-3.9688-3.875-7.2266-3.875-2.9961 0-5.6719 1.375-6.9727 3.4336-0.77734-0.20312-1.5898-0.30859-2.4023-0.30859-4.3086 0-7.8125 2.8047-7.8125 6.25s3.5039 6.25 7.8125 6.25h20.312c4.3086 0 7.8125-2.8047 7.8125-6.25s-3.5039-6.25-7.8125-6.25c-1.3203 0-2.5859 0.25781-3.7109 0.75zm8.3984 5.5c0 1.6953-2.1484 3.125-4.6875 3.125h-20.312c-2.5391 0-4.6875-1.4297-4.6875-3.125s2.1484-3.125 4.6875-3.125c0.89844 0 1.7969 0.19141 2.5898 0.55469 0.42188 0.19531 0.91016 0.1875 1.3281-0.011719 0.41797-0.20312 0.72656-0.57812 0.83984-1.0312 0.375-1.5039 2.3594-2.6367 4.6172-2.6367 2.5 0 4.6211 1.3867 4.6875 3.043-0.003906 0.03125-0.003906 0.054687-0.003906 0.082031-0.023438 0.62109 0.32422 1.1992 0.88281 1.4648 0.55859 0.27344 1.2266 0.17969 1.6992-0.22266 0.91406-0.78906 2.2539-1.2422 3.6719-1.2422 2.5391 0 4.6875 1.4297 4.6875 3.125z"></path> 
+</g> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1213884579 dmRespCol small-12 large-5 medium-5" id="1213884579"> <span id="1063104937"></span> 
+ <div class="u_1895245113 dmNewParagraph" id="1895245113" style="display: block;" data-element-type="paragraph" data-version="5"> <h4><span style="font-weight: bold; color: rgb(40, 64, 83); display: initial;">Zip Line &amp; Challenge Course</span></h4> 
+</div></div> 
+ <div class="u_1822479824 dmRespCol small-12 large-1 medium-1" id="1822479824"> <span id="1181872312"></span> 
+ <div class="u_1175180369 graphicWidget" data-widget-type="graphic" id="1175180369" data-element-type="graphic" data-layout="graphic-style-2"> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1076585702" class="svg u_1076585702" data-icon-custom="true"> <title id="1639306017">A black and white drawing of a kayak with paddles on a white background.</title> 
+ <path d="m76.672 78.883-3.7656-3.7656c0.27734-0.43359 0.60938-0.84375 0.98828-1.2227 0.37891-0.37891 0.78906-0.70703 1.2188-0.98828l3.7695 3.7656zm-1.5586-5.9766-7.4062-7.4062c2.8906-3.043 5.4727-6.3828 7.6953-9.9766 7.1328-11.523 11.609-24.488 13.105-37.957l0.54297-4.8945c0.054688-0.47266-0.10938-0.94141-0.44531-1.2773-0.33594-0.33594-0.80859-0.5-1.2773-0.44922l-4.8945 0.54688c-13.469 1.4961-26.434 5.9727-37.957 13.105-3.5938 2.2227-6.9336 4.8047-9.9766 7.6953l-7.4062-7.4062c1.875-2.8906 1.5469-6.793-0.98828-9.3242l-8.332-8.332c-0.60938-0.61328-1.6016-0.61328-2.2109 0l-8.332 8.332c-0.60938 0.60938-0.60938 1.5977 0 2.2109l8.332 8.332c2.5312 2.5312 6.4336 2.8633 9.3203 0.98828l7.4102 7.4102c-2.8906 3.0391-5.4727 6.3789-7.6953 9.9727-7.1328 11.523-11.609 24.488-13.105 37.957l-0.54688 4.8945c-0.050781 0.47266 0.11328 0.94141 0.44922 1.2773 0.33594 0.33594 0.80469 0.5 1.2773 0.44922l4.8906-0.54688c13.473-1.4961 26.438-5.9727 37.961-13.105 3.5938-2.2227 6.9336-4.8047 9.9727-7.6953l7.4102 7.4102c-1.875 2.8867-1.543 6.7891 0.98828 9.3203l8.332 8.3359c0.60938 0.60937 1.6016 0.60937 2.2109 0l8.332-8.3359c0.60938-0.60938 0.60938-1.5977 0-2.2109l-8.332-8.332c-2.5312-2.5312-6.4336-2.8633-9.3242-0.98828zm-50.23-45.812c0.43359-0.28125 0.84375-0.60938 1.2227-0.98828 0.37891-0.37891 0.70703-0.78906 0.98828-1.2188l-3.7656-3.7695-2.2109 2.2109zm28.996 45.652c3.3867-2.0977 6.5352-4.5273 9.4062-7.25l-2.2227-2.2227c-6.3906 5.3359-15.734 5.3359-22.125 0l-3.3945 3.3906 4.4531 4.4531-2.2109 2.2109-11.109-11.113 2.207-2.207 4.4492 4.4492 3.3945-3.3945c-5.3359-6.3906-5.3359-15.734 0-22.125l-2.2227-2.2266c-2.7227 2.875-5.1523 6.0234-7.25 9.4102-4.6445 7.5039-8.125 15.645-10.34 24.137l12.828 12.828c8.4922-2.2148 16.633-5.6953 24.137-10.34zm18.863-18.867c-2.0938 3.3867-4.5234 6.5391-7.2461 9.4102l-2.2266-2.2266c5.3398-6.3906 5.3398-15.734 0-22.125l11.73-11.73 6.8438 6.8438c-2.1953 6.9414-5.2461 13.602-9.1016 19.828zm-12.734-13.887c5.1523 5.1562 5.5 13.293 1.043 18.848l-19.891-19.891c5.5547-4.457 13.691-4.1094 18.848 1.043zm-24.102 8.7266c0.24219-2.6953 1.2578-5.332 3.043-7.5586l19.891 19.891c-2.2266 1.7852-4.8633 2.8008-7.5625 3.043 1.1914-2.7266 0.67188-6.0234-1.5625-8.2539l-5.5547-5.5547c-2.2305-2.2344-5.5273-2.7539-8.2539-1.5664zm25.156-11.992c-6.3906-5.3359-15.734-5.3359-22.125 0.003907l-2.2266-2.2266c2.8711-2.7227 6.0234-5.1523 9.4102-7.25 6.2227-3.8516 12.887-6.9023 19.824-9.0977l6.8438 6.8438zm24.668-22.457-2.9492 0.32812c-4.5469 0.50391-9.0312 1.3594-13.418 2.5547l13.484 13.484c1.1953-4.3867 2.0508-8.8711 2.5547-13.418zm-59.559 69.668-3.9492-3.9492-5.4688 5.4688 0.46484-0.054687c3.0156-0.33203 6.0039-0.82422 8.9531-1.4648zm-10.109-10.109 3.9492 3.9492-5.4688 5.4688 0.054687-0.46484c0.33203-3.0156 0.82422-6.0039 1.4648-8.9531zm48.109-48.543-5.5547 5.5547 2.2109 2.2109 5.5547-5.5586zm2.7773 13.887 5.5547-5.5547 2.2109 2.2109-5.5547 5.5547zm-34.723 39.711-11.109-11.109 2.2109-2.2109 11.109 11.109z" fill-rule="evenodd"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1468308524 dmRespCol small-12 large-5 medium-5" id="1468308524"> <span id="1121142352"></span> 
+ <div class="u_1961795269 dmNewParagraph" id="1961795269" style="display: block;" data-element-type="paragraph" data-version="5"> <h4><span style="font-weight: bold; color: rgb(40, 64, 83); display: initial;">Kayak &amp; Paddle Boarding</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1994723563 dmRespRow" style="text-align: center;" id="1994723563" data-page-element-type="section" data-page-element-id="1430345484"> <div class="dmRespColsWrapper" id="1311480224"> <div class="u_1247644247 dmRespCol small-12 large-1 medium-1" id="1247644247"> <span id="1505685990"></span> 
+ <div class="u_1018043818 graphicWidget" data-widget-type="graphic" id="1018043818" data-element-type="graphic" data-layout="graphic-style-2"> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1873855058" class="svg u_1873855058" data-icon-custom="true"> <title id="1258248498">A black and white drawing of a palette and a brush.</title> 
+ <path d="m50 13.012c-4.3906 0-7.9648 3.5703-7.9648 7.9609s3.5742 7.9648 7.9648 7.9648 7.9648-3.5703 7.9648-7.9609c0-4.3945-3.5742-7.9648-7.9648-7.9648zm0 12.801c-2.668 0-4.8398-2.1719-4.8398-4.8359 0-2.6719 2.1719-4.8398 4.8398-4.8398s4.8398 2.1719 4.8398 4.8359c0 2.668-2.1719 4.8398-4.8398 4.8398z"></path> 
+ <path d="m21.664 26.223c-2.8203 3.3633-2.3789 8.3945 0.98438 11.219 1.4883 1.25 3.3047 1.8594 5.1133 1.8594 2.2734 0 4.5352-0.96484 6.1055-2.8398 1.3672-1.6289 2.0195-3.6953 1.8359-5.8125-0.1875-2.1211-1.1875-4.0391-2.8164-5.4062-3.3672-2.8203-8.3984-2.3789-11.223 0.98047zm9.8086 8.2305c-1.7148 2.043-4.7734 2.3125-6.8164 0.59766-2.043-1.7148-2.3086-4.7734-0.59766-6.8164 0.95703-1.1406 2.3281-1.7266 3.7109-1.7266 1.0977 0 2.2031 0.37109 3.1055 1.1289 0.99219 0.83203 1.5977 1.9961 1.7109 3.2852 0.10937 1.2852-0.28516 2.5391-1.1133 3.5312z"></path> 
+ <path d="m77.355 37.441c3.3633-2.8242 3.8047-7.8555 0.98047-11.219-2.8242-3.3633-7.8555-3.8008-11.219-0.98047-1.6289 1.3672-2.6289 3.2852-2.8164 5.4062-0.18359 2.1172 0.46875 4.1836 1.8359 5.8125 1.5703 1.875 3.832 2.8398 6.1055 2.8398 1.8086 0 3.6211-0.60938 5.1133-1.8594zm-8.8281-2.9883c-0.82812-0.99219-1.2266-2.2461-1.1133-3.5312 0.11328-1.2891 0.71875-2.4531 1.7109-3.2852 0.90625-0.75781 2.0078-1.1289 3.1055-1.1289 1.3828 0 2.7539 0.58594 3.7109 1.7266 1.7148 2.043 1.4492 5.1016-0.59375 6.8164-2.0469 1.7109-5.1016 1.4453-6.8203-0.59766z"></path> 
+ <path d="m25.98 48.52c-1.7422-1.2188-3.8594-1.6875-5.9492-1.3203-2.0938 0.37109-3.9219 1.5312-5.1406 3.2734-1.2188 1.7422-1.6875 3.8555-1.3164 5.9492 0.67969 3.8594 4.0508 6.582 7.8398 6.582 0.45703 0 0.92188-0.039062 1.3867-0.12109 4.3242-0.76172 7.2188-4.8984 6.457-9.2227-0.37109-2.0977-1.5352-3.9219-3.2773-5.1406zm-3.7266 11.285c-2.6289 0.46094-5.1406-1.2969-5.6055-3.9219-0.22266-1.2734 0.0625-2.5586 0.80078-3.6172 0.74219-1.0586 1.8477-1.7656 3.125-1.9883 0.28516-0.050782 0.56641-0.074219 0.85156-0.074219 0.98438 0 1.9414 0.30078 2.7656 0.875 1.0586 0.74219 1.7656 1.8516 1.9883 3.1211 0.46094 2.6289-1.2969 5.1406-3.9258 5.6055z"></path> 
+ <path d="m79.969 47.199c-2.0898-0.36719-4.207 0.097656-5.9492 1.3203-1.7422 1.2188-2.9062 3.0469-3.2734 5.1406-0.76172 4.3242 2.1328 8.4609 6.457 9.2227 0.46484 0.082032 0.92969 0.12109 1.3867 0.12109 3.7891 0 7.1562-2.7227 7.8398-6.582 0.37109-2.0938-0.097657-4.207-1.3203-5.9492-1.2227-1.7422-3.0469-2.9062-5.1406-3.2734zm3.3828 8.6797c-0.46484 2.6289-2.9805 4.3867-5.6055 3.9258-2.625-0.46484-4.3867-2.9766-3.9258-5.6055 0.22266-1.2734 0.92969-2.3828 1.9883-3.1211 0.82422-0.57422 1.7812-0.875 2.7656-0.875 0.28125 0 0.56641 0.023437 0.85156 0.074219 1.2734 0.22266 2.3828 0.92969 3.125 1.9883 0.73828 1.0586 1.0234 2.3398 0.80078 3.6133z"></path> 
+ <path d="m94.305 45.461c-2.0508-20.715-18.543-37.414-39.215-39.707-12.855-1.4336-25.215 2.4961-34.781 11.059-9.4297 8.4414-14.84 20.539-14.84 33.188 0 11.359 4.2812 22.176 12.062 30.461 1.4922 1.5859 3.6016 2.4766 5.7422 2.3984 2.1133-0.0625 4.1055-1.0312 5.4609-2.6562 4.1797-5.0156 9.9141-8.3203 16.273-9.4766l0.85547 19.84c0.09375 2.2227 1.9102 3.9648 4.1367 3.9648s4.043-1.7422 4.1367-3.9648l0.85547-19.84c6.3594 1.1562 12.094 4.4648 16.273 9.4766 1.3555 1.6289 3.3477 2.5977 5.4688 2.6602 0.074219 0.003907 0.14844 0.003907 0.22266 0.003907 2.0703 0 4.0625-0.86328 5.4922-2.3828 8.8125-9.375 13.133-22.141 11.855-35.023zm-42.988 4.3633h-2.6367c-1.043-0.49609-1.7695-1.5508-1.7695-2.7812 0-1.7461 0.69531-2.8516 1.6562-4.3789 0.66406-1.0586 1.4375-2.2773 2.0664-3.9062 1.1562 1.918 2.4531 4.8359 2.4531 8.2852 0.003906 1.2305-0.72656 2.2852-1.7695 2.7812zm-1.3164 3.4336c0.12891 0 0.25-0.03125 0.375-0.039062l1.5078 8.8047h-3.7656l1.5078-8.8047c0.125 0.007812 0.24609 0.039062 0.375 0.039062zm0 38.148c-0.54688 0-0.99219-0.42969-1.0156-0.97266l-1.0898-25.281h4.2109l-1.0898 25.281c-0.023437 0.54297-0.46875 0.97266-1.0156 0.97266zm30.172-13.066c-0.87109 0.92578-2.1211 1.4414-3.3438 1.3984-1.2422-0.035156-2.3633-0.58203-3.1602-1.5391-4.7422-5.6914-11.289-9.4023-18.535-10.617l0.16797-3.9297c0.003907-0.10938 0-0.22266-0.019531-0.33203l-1.8984-11.078c1.7031-1.1094 2.8359-3.0234 2.8359-5.2031 0-7.4727-4.875-12.66-5.0859-12.875-0.40625-0.42578-1.0156-0.58594-1.5781-0.41797-0.5625 0.16797-0.98438 0.64062-1.0898 1.2188-0.51172 2.8164-1.543 4.4492-2.5391 6.0352-1.0508 1.668-2.1367 3.3945-2.1367 6.043 0 2.1797 1.1328 4.0938 2.8359 5.2031l-1.8984 11.078c-0.019531 0.10938-0.027343 0.21875-0.019531 0.33203l0.16797 3.9297c-7.2461 1.2148-13.793 4.9258-18.535 10.617-0.79688 0.95312-1.918 1.4961-3.1562 1.5352-1.2539 0.007813-2.4922-0.48047-3.3711-1.4141-7.2344-7.707-11.219-17.762-11.219-28.324 0-11.762 5.0312-23.012 13.801-30.863 8.8906-7.957 20.375-11.609 32.352-10.281 19.211 2.1328 34.543 17.656 36.449 36.91 1.1875 11.988-2.832 23.859-11.023 32.574z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1698383622 dmRespCol small-12 large-5 medium-5" id="1698383622"> <span id="1245284133"></span> 
+ <div class="u_1059897457 dmNewParagraph" id="1059897457" style="display: block;" data-element-type="paragraph" data-version="5"> <h4><span style="display: initial; color: rgb(40, 64, 83); font-weight: bold;">Arts &amp; Crafts</span></h4> 
+</div></div> 
+ <div class="u_1397212762 dmRespCol small-12 large-1 medium-1" id="1397212762"> <span id="1421748819"></span> 
+ <div class="u_1899952656 graphicWidget" data-widget-type="graphic" id="1899952656" data-element-type="graphic" data-layout="graphic-style-2"> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1031390544" class="svg u_1031390544" data-icon-custom="true"> <title id="1830624646">A black and white drawing of a person swimming in the water.</title> 
+ <g> <path d="m68.672 38.434c-3.8164 2.4062-5.8047 6.875-5.043 11.32 0.76172 4.4453 4.125 7.9922 8.5234 8.9922 0.81641 0.18359 1.6523 0.27734 2.4883 0.27734 3.5039-0.007813 6.8008-1.6602 8.9023-4.4609 2.1016-2.8047 2.7656-6.4297 1.7891-9.7969-0.97656-3.3633-3.4766-6.0781-6.75-7.3203-3.2773-1.2461-6.9453-0.87891-9.9102 0.98828zm13.773 11.207v0.003906c-0.71094 3.1758-3.2695 5.6094-6.4805 6.1641-3.207 0.55469-6.4336-0.88281-8.1719-3.6367-1.7344-2.7539-1.6406-6.2852 0.24219-8.9414 1.8828-2.6562 5.1836-3.9141 8.3594-3.1875 2.0742 0.46875 3.8789 1.7461 5.0156 3.5469 1.1328 1.8008 1.5078 3.9766 1.0352 6.0547z"></path> 
+ <path d="m91.605 63.945-5.1602 2.0703c-3.9453 1.5664-8.3984 1.207-12.043-0.97656-2.9492-1.7773-6.3789-2.5977-9.8125-2.3477l-12.91-20.457 18.668-10.465c1.6328-0.90625 2.7852-2.4844 3.1484-4.3164 0.36328-1.832-0.097656-3.7305-1.2617-5.1914-1.9141-2.3594-5.2148-3.0664-7.9297-1.6992l-24.41 12.699c-3.8789 2.0352-5.3789 6.8242-3.3516 10.711l3.7656 7.1602-20.777 12.238-7.957 1.3242c-0.85156 0.14063-1.4258 0.94531-1.2852 1.7969 0.14063 0.85156 0.94531 1.4258 1.7969 1.2852l18.637-3.0977h0.003906c3.1641-0.52344 6.4141 0.085937 9.1719 1.7305l1.8398 1.0977c4.7383 2.832 10.57 3.1328 15.574 0.80469l2.7656-1.2852v0.003906c4.0859-1.9023 8.8516-1.6445 12.711 0.68359 4.4805 2.6875 9.9609 3.1328 14.82 1.1992l5.1602-2.0703c0.80078-0.32031 1.1875-1.2305 0.86719-2.0312-0.32031-0.80078-1.2305-1.1875-2.0312-0.86719zm-32.844 0.25-2.7656 1.2852c-4.0664 1.8906-8.8047 1.6445-12.656-0.65625l-1.8398-1.0977c-3.3906-2.0234-7.3906-2.7773-11.289-2.1289l-2.1055 0.35156 15.07-8.8789 0.003907-0.003906c0.71875-0.42188 0.97656-1.3359 0.58984-2.0742l-4.457-8.4727c-1.2305-2.3516-0.32031-5.2539 2.0273-6.4883l24.398-12.691h0.003907c1.3867-0.70312 3.0742-0.33984 4.0508 0.87109 0.58984 0.73437 0.82422 1.6914 0.64062 2.6172-0.18359 0.94141-0.77344 1.75-1.6094 2.2148l-20.109 11.27c-0.375 0.21094-0.64844 0.56641-0.75391 0.98047-0.10156 0.41406-0.035157 0.85547 0.19531 1.2188l13.117 20.781c-0.85938 0.23438-1.6992 0.53516-2.5117 0.90234z"></path> 
+ <path d="m87.59 73.988-5.1602 2.0703c-3.9492 1.5664-8.4023 1.207-12.047-0.97266-4.7461-2.8672-10.609-3.1836-15.641-0.84375l-2.7617 1.2812c-4.0664 1.8906-8.8086 1.6484-12.66-0.65234l-1.8398-1.0977c-3.3906-2.0234-7.3906-2.7773-11.285-2.1328l-18.641 3.1016c-0.85156 0.14062-1.4258 0.94531-1.2852 1.7969 0.14453 0.85156 0.94922 1.4258 1.8008 1.2852l18.637-3.0977v-0.003906c3.168-0.52344 6.4141 0.089844 9.1719 1.7305l1.8398 1.0977v0.003907c4.7383 2.8281 10.57 3.1289 15.574 0.80469l2.7656-1.2852c4.0859-1.8984 8.8516-1.6406 12.711 0.6875 4.4844 2.6836 9.9648 3.1289 14.82 1.1953l5.1602-2.0664c0.80078-0.32031 1.1914-1.2305 0.86719-2.0312-0.32031-0.80078-1.2266-1.1914-2.0273-0.87109z"></path> 
+</g> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1782977554 dmRespCol small-12 large-5 medium-5" id="1782977554"> <span id="1290708398"></span> 
+ <div class="u_1457564731 dmNewParagraph" id="1457564731" style="display: block;" data-element-type="paragraph" data-version="5"> <h4><span style="display: initial; color: rgb(40, 64, 83); font-weight: bold;">Pool &amp; Ocean Front Swimming</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1513470052 dmRespRow" style="text-align: center;" id="1513470052" data-page-element-type="section" data-page-element-id="1430345484"> <div class="dmRespColsWrapper" id="1436907309"> <div class="u_1392872492 dmRespCol small-12 large-1 medium-1" id="1392872492"> <span id="1348948356"></span> 
+ <div class="u_1298958673 graphicWidget" data-widget-type="graphic" id="1298958673" data-element-type="graphic" data-layout="graphic-style-2"> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1239259524" class="svg u_1239259524" data-icon-custom="true" data-icon-name="Archery_6799738.svg"> <g> <path d="m51.805 42.703c0.83594 0.21094 1.6875-0.29688 1.8984-1.1328 0.21094-0.83594-0.29688-1.6875-1.1328-1.8945-3.5977-0.90234-7.4688 0.16406-10.117 2.7891-4.1367 4.1562-4.1367 10.922 0.007813 15.086 2.0781 2.0703 4.8047 3.1016 7.5391 3.1016 2.7305 0 5.4648-1.0352 7.5469-3.1094 2.6211-2.6367 3.6875-6.5117 2.7812-10.109-0.21094-0.83594-1.0586-1.3438-1.8984-1.1328-0.83594 0.21094-1.3438 1.0586-1.1328 1.8984 0.64062 2.5391-0.11328 5.2773-1.9609 7.1367-2.9453 2.9297-7.7266 2.9297-10.664 0.003906-2.9297-2.9414-2.9297-7.7266-0.007813-10.664 1.8633-1.8516 4.5977-2.6055 7.1406-1.9688z"></path> 
+ <path d="m62.387 33.125c0.45703-0.73047 0.23438-1.6953-0.49609-2.1523-8.8984-5.5742-20.312-4.2734-27.766 3.1562-8.7344 8.75-8.7344 22.988 0.003906 31.742 4.375 4.3672 10.121 6.5508 15.867 6.5508 5.75 0 11.496-2.1836 15.875-6.5547 7.4336-7.4492 8.7305-18.871 3.1562-27.777-0.45703-0.73438-1.4219-0.95312-2.1523-0.49609-0.73438 0.45703-0.95312 1.4219-0.49609 2.1523 4.7969 7.6641 3.6797 17.496-2.7148 23.906-7.5312 7.5195-19.789 7.5234-27.32 0-7.5195-7.5312-7.5195-19.789-0.003906-27.32 6.4141-6.3945 16.238-7.5156 23.898-2.7188 0.73438 0.45703 1.6953 0.23438 2.1523-0.49609z"></path> 
+ <path d="m66.594 21.039c0.39453-0.76953 0.089844-1.7109-0.67969-2.1016-13.527-6.9297-29.836-4.3672-40.586 6.3828-13.605 13.621-13.613 35.766-0.015625 49.363 6.8047 6.8047 15.742 10.207 24.684 10.207 8.9375 0 17.875-3.4023 24.684-10.207 10.75-10.75 13.312-27.066 6.3789-40.598-0.26562-0.52344-0.80469-0.85156-1.3906-0.85156h-0.015625c-0.86328 0-1.5547 0.69922-1.5547 1.5625 0 0.30078 0.085938 0.58203 0.23438 0.82031 6.2422 12.301 3.8945 27.098-5.8633 36.855-12.395 12.391-32.555 12.391-44.945 0-12.379-12.379-12.375-32.543 0.015624-44.945 9.7852-9.7852 24.633-12.121 36.949-5.8086 0.77344 0.39453 1.7109 0.089844 2.1016-0.67969z"></path> 
+ <path d="m50 96.852c12.008 0 24.012-4.5664 33.152-13.699 14.551-14.562 17.879-37.355 8.0977-55.426-0.41016-0.75781-1.3594-1.043-2.1172-0.62891-0.75781 0.41016-1.0391 1.3594-0.62891 2.1172 9.1289 16.863 6.0234 38.133-7.5586 51.727-17.062 17.047-44.824 17.047-61.883 0-8.2578-8.2656-12.809-19.254-12.805-30.938 0.003907-11.688 4.5547-22.672 12.82-30.93 13.578-13.598 34.848-16.715 51.711-7.5742 0.75781 0.41016 1.7109 0.12891 2.1172-0.62891 0.41406-0.75781 0.12891-1.707-0.62891-2.1172-18.07-9.793-40.863-6.4609-55.414 8.1094-8.8555 8.8477-13.734 20.617-13.738 33.137 0 12.52 4.8711 24.293 13.723 33.148 9.1406 9.1328 21.145 13.699 33.152 13.699z"></path> 
+ <path d="m68.117 18.949 1.8164 8.9023-21.039 21.039c-0.60938 0.60938-0.60938 1.5977 0 2.2109 0.30469 0.30469 0.70312 0.45703 1.1055 0.45703 0.39844 0 0.80078-0.15234 1.1055-0.45703l21.039-21.039 8.9062 1.8203c0.10156 0.019532 0.21094 0.03125 0.3125 0.03125 0.41016 0 0.80859-0.16406 1.1055-0.45703l10.555-10.555c0.40625-0.40625 0.55469-1.0039 0.39062-1.5547-0.16406-0.55078-0.62109-0.96484-1.1836-1.082l-8.7188-1.7773-1.7773-8.7188c-0.11328-0.5625-0.53125-1.0195-1.0781-1.1836-0.54688-0.16406-1.1484-0.015626-1.5547 0.39062l-10.555 10.555c-0.37109 0.37109-0.53125 0.90234-0.42578 1.418zm12.734 9.7031-6.0625-1.2383 7.9062-7.9062 6.0625 1.2344-7.9062 7.9062zm-1.5977-17.41 1.2383 6.0547-7.9062 7.9062-1.2344-6.0586 7.9062-7.9062z"></path> 
+</g> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1709323599 dmRespCol small-12 large-5 medium-5" id="1709323599"> <span id="1812504885"></span> 
+ <div class="u_1750884658 dmNewParagraph" id="1750884658" style="display: block;" data-element-type="paragraph" data-version="5"> <h4><strong style="display: initial; color: rgb(40, 64, 83); font-weight: bold;">Archery Field</strong></h4> 
+</div></div> 
+ <div class="u_1949222497 dmRespCol small-12 large-1 medium-1" id="1949222497"> <span id="1300138550"></span> 
+ <div class="u_1930985132 graphicWidget" data-widget-type="graphic" id="1930985132" data-element-type="graphic" data-layout="graphic-style-2"> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1043939396" class="svg u_1043939396" data-icon-custom="true"> <title id="1458842592">A black and white drawing of a person in a canoe.</title> 
+ <path d="m90.625 0c-2.8789 0-5.2188 2.0195-5.9336 4.6875h-1.8789c-2.5703 0-4.6875 2.1172-4.6875 4.6875s2.1172 4.6875 4.6875 4.6875h12.5c2.5703 0 4.6875-2.1172 4.6875-4.6875 0-2.043-1.4883-3.4844-3.3281-4.1211-0.49609-2.9453-2.9648-5.2539-6.0469-5.2539zm0 3.125c1.7461 0 3.125 1.3789 3.125 3.125 0 0.86328 0.69922 1.5625 1.5625 1.5625 0.89453 0 1.5625 0.66797 1.5625 1.5625s-0.66797 1.5625-1.5625 1.5625h-12.5c-0.89453 0-1.5625-0.66797-1.5625-1.5625s0.66797-1.5625 1.5625-1.5625h3.125c0.86328 0 1.5625-0.69922 1.5625-1.5625 0-1.7461 1.3789-3.125 3.125-3.125zm-68.75 6.25c-2.8789 0-5.2188 2.0195-5.9336 4.6875h-1.8789c-2.5703 0-4.6875 2.1172-4.6875 4.6875s2.1172 4.6875 4.6875 4.6875h12.5c2.5703 0 4.6875-2.1172 4.6875-4.6875 0-2.043-1.4883-3.4844-3.3281-4.1211-0.49609-2.9453-2.9648-5.2539-6.0469-5.2539zm0 3.125c1.7461 0 3.125 1.3789 3.125 3.125 0 0.86328 0.69922 1.5625 1.5625 1.5625 0.89453 0 1.5625 0.66797 1.5625 1.5625s-0.66797 1.5625-1.5625 1.5625h-12.5c-0.89453 0-1.5625-0.66797-1.5625-1.5625s0.66797-1.5625 1.5625-1.5625h3.125c0.86328 0 1.5625-0.69922 1.5625-1.5625 0-1.7461 1.3789-3.125 3.125-3.125zm22.047 11.223c-5.1602 0-9.375 4.2148-9.375 9.375s4.2148 9.375 9.375 9.375 9.375-4.2148 9.375-9.375-4.2148-9.375-9.375-9.375zm0 3.125c3.4688 0 6.25 2.7812 6.25 6.25s-2.7812 6.25-6.25 6.25-6.25-2.7812-6.25-6.25 2.7812-6.25 6.25-6.25zm34.203 1.2773c-2.8789 0-5.2188 2.0195-5.9336 4.6875h-1.8789c-2.5703 0-4.6875 2.1172-4.6875 4.6875s2.1172 4.6875 4.6875 4.6875h12.5c2.5703 0 4.6875-2.1172 4.6875-4.6875 0-2.043-1.4883-3.4844-3.3281-4.1211-0.49609-2.9453-2.9648-5.2539-6.0469-5.2539zm0 3.125c1.7461 0 3.125 1.3789 3.125 3.125 0 0.86328 0.69922 1.5625 1.5625 1.5625 0.89453 0 1.5625 0.66797 1.5625 1.5625s-0.66797 1.5625-1.5625 1.5625h-12.5c-0.89453 0-1.5625-0.66797-1.5625-1.5625s0.66797-1.5625 1.5625-1.5625h3.125c0.86328 0 1.5625-0.69922 1.5625-1.5625 0-1.7461 1.3789-3.125 3.125-3.125zm-47.637 7.3047c-2.7773-0.023438-5.3516 1.832-6.1016 4.6289-0.25 0.9375-0.26953 1.8828-0.097657 2.7812l-5.4336 13.359c-0.96875 2.3828 0.39844 5.1367 2.8828 5.8008l4.8867 1.3086-1.1523 4.293c-0.41406 1.5391-1.0273 3.0195-1.8242 4.4023l-3.5156 6.0898c-1.1758 1.9922-1.1055 4.3906-0.03125 6.2812h-0.76172c-1.3125 0-2.6055 0.34375-3.7422 1.0039l-14.82 8.582c-0.60938 0.35547-0.90625 1.0742-0.72266 1.7578s0.80078 1.1562 1.5078 1.1562h96.875c0.86328 0 1.5625-0.69922 1.5625-1.5625v-23.508c0-0.55859-0.29688-1.0742-0.78125-1.3516s-1.0781-0.27734-1.5625 0l-6.8633 3.9609c-0.66406 0.38281-1.4141 0.58594-2.1797 0.58594h-24.953c-0.058594 0-0.11328 0.011719-0.17188 0.011719l-0.4375-4.4297-1.5234-15.41c1.4297-0.80859 2.4062-2.3398 2.4062-4.082 0-2.0703-1.375-3.8477-3.2539-4.457l-0.45313-4.6484c-0.085937-0.85938-0.85156-1.4883-1.707-1.4023-0.41406 0.039063-0.79297 0.24219-1.0586 0.5625-0.26172 0.32031-0.38672 0.73438-0.34766 1.1484l0.40625 4.1094h-8.2344c-0.035156 0-0.070312-0.015625-0.089844-0.046875-0.011718-0.019531-0.027343-0.035157-0.039062-0.054688-1.6016-2.0625-3.8711-3.4961-6.4219-4.0625l-2.2539-0.60547c-1.2891-0.34375-2.5938-0.33594-3.8125-0.042968-0.046875-2.7188-1.8828-5.2109-4.6289-5.9492-0.51953-0.14062-1.0391-0.20703-1.5547-0.21094zm-0.19531 3.1211c0.30859-0.011719 0.625 0.023438 0.94141 0.10547 1.6836 0.45312 2.6602 2.1406 2.2109 3.8281-0.22656 0.84375-0.76172 1.5078-1.4492 1.9062l-0.003906 0.003906h-0.003907c-0.019531 0.011719-0.042969 0.023438-0.0625 0.035157-0.67578 0.36719-1.4961 0.48828-2.3086 0.26953-1.0625-0.28516-1.8398-1.0625-2.1562-2.0195h-0.003907c-0.019531-0.097657-0.046875-0.1875-0.082031-0.27734-0.11328-0.48438-0.10938-1.0117 0.03125-1.5312 0.36719-1.3672 1.5508-2.2695 2.8867-2.3164zm7.9883 5.9375c0.45703-0.015625 0.92578 0.035157 1.3945 0.16016l2.3164 0.62109-0.003907 0.003907c0.023438 0.003906 0.042969 0.011718 0.066407 0.015624 1.8398 0.41016 3.4766 1.4453 4.6328 2.9336l-0.035156-0.054687c0.60547 0.85156 1.5898 1.3594 2.6328 1.3594h9.9648c0.88281 0 1.5625 0.67969 1.5625 1.5625 0 0.88281-0.67969 1.5625-1.5625 1.5625h-13.34c-0.50391 0-0.99609 0.082031-1.457 0.24219-0.015625-0.011719-0.035156-0.023437-0.050781-0.03125l-4.75-2.7461c-0.35938-0.20703-0.78516-0.26563-1.1875-0.15625-0.40234 0.10547-0.74219 0.36719-0.94922 0.73047-0.42969 0.74609-0.17188 1.6992 0.57422 2.1328l3.0234 1.7461-10.305 5.1914 3.1719-11.824c0.54297-2.0273 2.3125-3.3711 4.2969-3.4453zm-12.031 1.8281c0.71094 0.64453 1.5742 1.1328 2.5586 1.3984 0.51953 0.14062 1.043 0.20703 1.5586 0.21094l-3.2852 12.266-4.5273-1.2109c-0.72266-0.19141-1.082-0.91797-0.80078-1.6094zm19.66 9.457h12.543l1.4922 15.113-0.003906 0.003906v0.003906l0.48047 4.8594c-0.16797 0.082032-0.33984 0.15234-0.50391 0.24609l-2.0508 1.1836c0.007812-1.0859-0.25-2.1836-0.82813-3.1875l-4.207-7.2852c-0.94922-1.6445-2.3125-3.0078-3.9531-3.957l-5.1367-2.9648 0.79687-2.9648c0.16797-0.62891 0.71875-1.0547 1.3672-1.0547zm-4.957 2.375-0.35156 1.3086-0.18359 0.68359v0.003906c-0.18359 0.67969 0.11719 1.4023 0.72656 1.7539l6.1719 3.5625c1.168 0.67578 2.1367 1.6445 2.8125 2.8125l4.207 7.2852c0.88281 1.5312 0.375 3.4414-1.1523 4.3281-1.5195 0.85156-3.3945 0.32812-4.25-1.1875v0.003906c-0.003906-0.007813-0.007813-0.011719-0.011719-0.015625l-2.9492-5.1094c-0.94922-1.6445-2.3125-3.0078-3.957-3.957l-3.9492-2.2812c-0.11719-0.066406-0.24609-0.12109-0.37891-0.15625l-0.72656-0.19531-3.7188-0.99609-2.6641-0.71484h-0.003906v-0.003906c-0.64844-0.17188-1.0117-0.79297-0.85547-1.4375l0.007812-0.035157zm-12.297 9.668c0.33984 0.20703 0.71484 0.36719 1.1133 0.47656l2.6641 0.71484 2.2109 0.59375-0.43359 1.6172c-0.41406 1.5391-1.0234 3.0195-1.8203 4.4023l-4.1406 7.1719c-0.54688 0.94141-1.4766 1.4961-2.4688 1.582h-0.50781c-0.46094-0.035156-0.92188-0.17188-1.3516-0.41797-1.4961-0.89062-1.9805-2.7773-1.0938-4.2773 0.003906-0.003907 0.003906-0.007813 0.007813-0.011719l3.5234-6.1016c0.93359-1.6172 1.6523-3.3516 2.1367-5.1562zm8.9375 2.8555 2.8633 1.6523c1.168 0.67578 2.1367 1.6445 2.8125 2.8125l2.9453 5.0938c0.57031 1.0117 1.3906 1.7969 2.3359 2.3359l-2.1133 1.2188c-0.67188 0.39062-1.4219 0.58984-2.1875 0.58984h-13.309c0.003906-0.007812 0.007813-0.011719 0.011719-0.019531l4.1406-7.1719c0.93359-1.6172 1.6484-3.3516 2.1328-5.1562zm59.285 3.8359-0.003906 19.242h-89.492l9.7852-5.6641c0.66016-0.38281 1.4102-0.58594 2.1758-0.58594h24.91c1.3125 0 2.6055-0.34766 3.7422-1.0039l6.7305-3.8867h-0.003906c0.003906 0 0.007813-0.003906 0.015625-0.007813l6.7461-3.8945c0.66406-0.38281 1.4141-0.58203 2.1797-0.58203h24.953c1.3125 0 2.6055-0.34766 3.7422-1.0039z" fill-rule="evenodd"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1470689340 dmRespCol small-12 large-5 medium-5" id="1470689340"> <span id="1827179318"></span> 
+ <div class="u_1424897743 dmNewParagraph" id="1424897743" style="display: block;" data-element-type="paragraph" data-version="5"> <h4><span style="font-weight: bold; color: rgb(40, 64, 83); display: initial;">Hiking Trips</span></h4> 
+</div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1424092409" id="1424092409"> <div class="dmRespColsWrapper" id="1541293312"> <div class="dmRespCol large-12 medium-12 small-12" id="1686285172"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1058554144" style="transition: opacity 1s ease-in-out;"> <h2 class="text-align-center"><span style="color: var(--color_4); display: unset;">Summer Camp Open House</span></h2> 
+ <h2 class="text-align-center"><span style="display: initial; color: rgb(217, 28, 32);">RESCHEDULED!</span></h2> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1186672317" style="transition: opacity 1s ease-in-out;"><p class="m-size-14 text-align-center size-18"><strong class="m-font-size-14 font-size-18" style="font-weight: bold; color: var(--color_4); display: initial;">See what Camp Mokule'ia is all about!</strong></p><p class="m-size-14 text-align-center size-18"><strong class="m-font-size-14 font-size-18" style="text-decoration: line-through; font-weight: bold; color: var(--color_4); display: initial;">April 12, 2026</strong></p><p class="m-size-19 text-align-center size-24"><strong class="m-font-size-19 font-size-24" style="font-weight: bold; color: rgb(215, 20, 20); display: initial;">April 26, 2026</strong></p><p class="m-size-14 text-align-center size-18"><strong class="m-font-size-14 font-size-18" style="font-weight: bold; color: var(--color_4); display: initial;">2-4PM</strong></p><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="color: var(--color_4); display: initial;">Due to the storm, we have rescheduled our summer camp open house to Sunday, April 26!</span></p><p class="text-align-center"><br/></p><p class="text-align-center"><span style="color: var(--color_4); display: initial;"><span class="ql-cursor">﻿</span>Visit our facilities, meet our staff, and learn more about what our summer camp has to offer! We will be hosting tours every 15 minutes, led by our amazing staff members, to show you all of our facilities, provide information on how our summer camp programs are offered, and see what activities your camper can experience while at camp. Refreshments will be provided.</span></p><p class="text-align-center"><span style="display: initial;"><br/></span></p><p class="text-align-center"><span style="color: var(--color_4); display: initial;">Save $50 in registration fees by attending our Open House. Code provided on-site.</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1016006671" id="1016006671"> <div class="dmRespColsWrapper" id="1119425438"> <div class="dmRespCol small-12 large-6 medium-6 u_1686725836" id="1686725836"> <div class="dmRespRow u_1536641194" id="1536641194"> <div class="dmRespColsWrapper" id="1820608231"> <div class="dmRespCol small-12 medium-12 large-12 u_1550374326" id="1550374326"> <div class="u_1496126818 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1496126818" style="transition: opacity 1s ease-in-out 0s;"> <h3><span style="display: unset;">Registration Link</span></h3> 
+</div> 
+ <div class="u_1436452539 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1436452539" style="transition: opacity 1s ease-in-out 0s;"><p><span class="" style="display: initial;"><span style="display: initial;">For registration questions, please contact Tara Lee Tani at</span> 
+</span><a href="mailto:tara@campmokuleia.org" target="_blank" type="email" style="display: initial;">tara@campmokuleia.org</a><span style="display: initial;">.</span></p><p><span style="display: initial;"><br/></span></p><p><span class="" style="display: initial;"><span style="display: initial;">For programming questions, please contact Rachel Martin at</span> 
+</span><a href="mailto:rachel@campmokuleia.org" type="email" style="display: initial;" runtime_url="mailto:rachel@campmokuleia.org">Rachel@campmokuleia.org</a><span style="display: initial;">.<br/></span></p></div> 
+ <a data-display-type="block" class="u_1588903731 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="http://cwngui.campwise.com/Customer/mokuleia/browser-check-reg.html" data-element-type="dButtonLinkId" id="1588903731" target="_blank"> <span class="iconBg" aria-hidden="true" id="1647210377"> <span class="icon hasFontIcon icon-star" id="1664407527"></span> 
+</span> 
+ <span class="text" id="1187840875">SUMMER CAMP REGISTRATION</span> 
+</a> 
+ <a data-display-type="block" class="u_1593836236 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="http://cwngui.campwise.com/Customer/mokuleia/browser-check-reg.html" data-element-type="dButtonLinkId" id="1593836236" target="_blank"> <span class="iconBg" aria-hidden="true" id="1071412673"> <span class="icon hasFontIcon icon-star" id="1688896112"></span> 
+</span> 
+ <span class="text" id="1433644042">ACCESS TO CAMPER PORTAL</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12 u_1690932688" id="1690932688"> <div class="u_1929588184 flex-container dmImageSlider dmNoMargin dmNoMark hasFullWidth" data-widget-type="imageSlider" dmle_volatile_widget="true" data-element-type="dSliderId" id="1929588184"> <div class="flexslider ed-version" sliderscriptparams="{ stretch: true, animation: true, randomize: false, directionNav: true, isAutoPlay: true, isFade: true, controlNav: false, slideshowSpeed: 7000, animationDuration: 600, pausePlay: true }" id="1138017645"> <ul class="slides" id="1754712345"> <li layout="center" position="center" animation="fadeInUp" show-content="true" color-overlay="true" text-background="true" id="1603591275" class="u_1603591275" show-caption="false"><img dm="true" src="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/IMG_0481-cf8ea3aa-65455651-1920w.jpg" id="1283265930" class="" alt="A group of people are in a yellow raft in the ocean" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1414812382"></div> 
+ <div class="slide-inner" id="1985195852"> <div class="text-wrapper" id="1163204860"> <div class="slide-text richText u_1560152225" id="1560152225"><br/></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-invisible" id="1319846646"> <span class="iconBg" id="1059579079"> <span class="icon hasFontIcon icon-star" id="1451011068"></span> 
+</span> 
+ <span class="text" id="1026982677">Button</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1632155419 hasBackgroundOverlay" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1063824722 dmRespCol small-12 medium-6 large-6" id="1063824722"> <div class="u_1901167991 imageWidget align-center" data-widget-type="image" id="1901167991" data-element-type="image"> <a href="/" id="1067941554"><img src="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/camp+mokule-ia-1920w.png" id="1669146944" class="" data-dm-image-path="https://irp.cdn-website.com/da499350/dms3rep/multi/camp+mokule-ia.png" width="1920" height="605" alt="Camp Mokule`ia" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <a data-display-type="block" class="u_1328399206 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="https://visitor.r20.constantcontact.com/manage/optin?v=001SfydN-oIx5SBhmBnnT8r-MuMPxaFP1PzHCAZPKgB28flnE12nwwIg13jdI0lw5ddxnjz_ERjDQfQnKFaK7YcOuIX70zKLd6CpBnrCva9ctg%3D" data-element-type="dButtonLinkId" id="1328399206" target="_blank"> <span class="iconBg" aria-hidden="true" id="1482564860"> <span class="icon hasFontIcon icon-star" id="1457134956"></span> 
+</span> 
+ <span class="text" id="1039477958">SIGN UP FOR OUR NEWSLETTER</span> 
+</a> 
+ <div class="u_1828413538 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1828413538"><img src="https://lirp.cdn-website.com/da499350/dms3rep/multi/opt/4color-accreditation-white--1920w.png" alt="" id="1778754153" class="" width="200" height="124" data-dm-image-path="https://irp.cdn-website.com/da499350/dms3rep/multi/4color-accreditation-white-.png" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="u_1809117918 dmRespCol small-12 medium-6 large-6" id="1809117918"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1753069594" style="transition: opacity 1s ease-in-out 0s;"> <h5 class="text-align-center"><span style="display: unset;">Contact Information</span></h5> 
+</div> 
+ <div class="u_1102795195 dmNewParagraph" data-element-type="paragraph" id="1102795195" style="transition: none 0s ease 0s; text-align: center;" data-version="5" new-inline-bind-applied="true" data-diy-text=""><p class="m-size-14 size-14"><span class="font-size-14 m-font-size-14" m-font-size-set="true" style="display: initial;">68-729 Farrington Hwy,</span></p><p class="m-size-14 size-14"><span class="font-size-14 m-font-size-14" m-font-size-set="true" style="display: initial;">Waialua, HI 96791-8333</span></p><p><span m-font-size-set="true" style="display: initial;" class="m-font-size-14"><br/></span></p><p class="m-size-14 size-14"><span class="font-size-14 m-font-size-14" m-font-size-set="true" style="display: initial; font-weight: bold;">Phone:</span> <span single-space="true" class="font-size-14 m-font-size-14" style="display: initial;"> <span class="font-size-14 m-font-size-14" style="display: initial;" m-font-size-set="true"></span> 
+</span> 
+<span class="font-size-14 m-font-size-14" m-font-size-set="true" style="color: var(--color_2); text-decoration: underline; display: initial;"><span class="inline-data-binding" data-encoded-value="KDgwOCkgNjM3LTYyNDE=" data-inline-binding="content_library.global.phone.phone"><a class="inlineBindingLink" target="_blank" href="tel:(808) 637-6241">(808) 637-6241</a></span></span></p><p class="m-size-14 size-14"><span class="font-size-14 m-font-size-14" m-font-size-set="true" style="display: initial; font-weight: bold;">Fax:</span> <span single-space="true" class="font-size-14 m-font-size-14" style="display: initial;"> <span class="font-size-14 m-font-size-14" style="display: initial;" m-font-size-set="true"></span> 
+</span> 
+<span class="font-size-14 m-font-size-14" m-font-size-set="true" style="color: var(--color_2); text-decoration: underline; display: initial;"><span class="inline-data-binding" data-encoded-value="KDgwOCkgNjM3LTU1MDU=" data-inline-binding="content_library.global.phone.fax"><a class="inlineBindingLink" target="_blank" href="tel:(808) 637-5505">(808) 637-5505</a></span></span></p></div> <div class="u_1418745144 align-center text-align-center dmSocialHub gapSpacing" id="1418745144" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:info@campmokuleia.org" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://facebook.com/campmokuleianorthshore/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://twitter.com/1campmokuleia?lang=en" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://instagram.com/campmokuleia/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://tripadvisor.com/Hotel_Review-g60660-d13838077-Reviews-Camp_Mokuleia-Waialua_Oahu_Hawaii.html" target="_blank" dm_dont_rewrite_url="true" aria-label="tripadvisor" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Tripadvisor&apos;)"> <span class="dmSocialTripadvisor dm-social-icons-tripadvisor oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1842738839" id="1842738839"> <div class="dmRespColsWrapper" id="1567960967"> <div class="dmRespCol large-12 medium-12 small-12" id="1468806534"> <div class="widget-1f5975 u_1399684577 dmCustomWidget" data-lazy-load="" data-title="" id="1399684577" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="25" data-widget-config="eyJyZXZlcnNlRmxhZyI6bnVsbCwiY29weXJpZ2h0VGV4dCI6IjxwIGNsYXNzPVwicnRlQmxvY2tcIj5BbGwgUmlnaHRzIFJlc2VydmVkIHwgQ2FtcCBNb2t1bMSTyrtpYTwvcD4ifQ=="> <div class="copyright"> <div>&copy; 2026&nbsp;</div> 
+ <div><p class="rteBlock">All Rights Reserved | Camp Mokulēʻia</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["fe423e4512d946889e8986702bff0bea~5"] = function (element, data, api) {
+        let shapes = {
+    'waves': `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>`,
+    'clouds': `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>`,
+    'curves': `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+    </svg>`,
+    'triangle': `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+    </svg>`,
+    'tilt': `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>`,
+    'arrow': `<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+    </svg>`,
+}
+
+// let el = document.querySelector('[duda_id="' + data.elementId + '"]');
+// // el.querySelector('.dividerEx').innerHTML = shapes[data.config.shape];
+// if(data.config.flip_x) el.querySelector('.dividerEx').setAttribute('style', 'transform: rotateY(180deg)');
+// if(data.config.flip_y) el.querySelector('.dividerEx svg').setAttribute('style', 'transform: rotate(180deg)');
+
+// {{#if flip_y}}style="transform: rotatex(180deg)"{{/if}}
+    };
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~25"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_6346";
+    var build = "2026-04-09T13_55_15";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2026-04-09T13_55_15";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/6346';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/6346';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.pages.links.disable.listeners"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["contact.form.custom.errors.enabled"] =false;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["runtime.ssr.runtime.filter-sort.newFilterSortWidgetWithOptions.enabled"] =true;
+    rtFlags["runtime.ssr.ssrSlider.jumpThreshold.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/6346/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/6346/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_campaign">
+    (function() {
+        if (!window.location.search) {
+            return;
+        }
+        const cleanParams = window.location.search.substring(1); // Strip ?
+        const queryParams = cleanParams.split('&');
+
+        const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+        const domain = 'domain=' + window.location.hostname;
+        const path = "path=/";
+
+        queryParams.forEach((param) => {
+            const [key, value = ''] = param.split('=');
+            if (key.startsWith('utm_')) {
+                const cookieName = "_dm_rt_" + key.substring(4);
+                const cookie = cookieName + "=" + value;
+                const joined = [cookie, expires, domain, path].join(";");
+                document.cookie = joined;
+            }
+        });
+    }());
+</script>
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+<script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+        p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+        };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+        n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+
+    dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+        appId: 'da499350'
+    });
+
+    // snowplow queries element styles so we wait until CSS calculations are done.
+    requestAnimationFrame(() => {
+        dmsnowplow('trackPageView');
+        _dm_insite.forEach((rule) => {
+            // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+            // the tracking is in popup.js
+            if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+            window?.waitForDeferred?.('dmAjax', () => {
+                $.DM.events.trigger('event-ruleTriggered', {value: rule});
+            });
+        });
+    });
+</script>
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: da499350 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

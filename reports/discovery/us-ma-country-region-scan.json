@@ -1,0 +1,344 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "MA",
+    "city": null
+  },
+  "queries_used": [
+    "\"top 15 overnight summer camps in Massachusetts\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Frank A. Day",
+      "translated_name_hint": null,
+      "operator_name": "West Suburban YMCA",
+      "venue_name": "Camp Frank A. Day",
+      "city": "East Brookfield",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://wsymca.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer sessions",
+      "overnight_evidence": {
+        "snippet": "classic experience with activities like water sports... overnight",
+        "url": "https://wsymca.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 7-16.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Grotonwood Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Grotonwood Camp",
+      "city": "Groton",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://grotonwood.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer sessions",
+      "overnight_evidence": {
+        "snippet": "nonprofit camp located on a lakefront property... overnight",
+        "url": "https://grotonwood.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 5-17.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Emerson",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Emerson",
+      "city": "Hinsdale",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://campemerson.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "co-ed"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multiple weeks",
+      "overnight_evidence": {
+        "snippet": "overnight camps... Located in the Berkshires",
+        "url": "https://campemerson.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Operating for over 50 years.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Danbee",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Danbee",
+      "city": "Hinsdale",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://campdanbee.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "girls"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multiple weeks",
+      "overnight_evidence": {
+        "snippet": "all-girls sleepaway camp",
+        "url": "https://campdanbee.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Girls camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Favorite",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of Eastern Massachusetts",
+      "venue_name": "Camp Favorite",
+      "city": "Brewster",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://gsema.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["girl-scouts", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "overnight camps... Cape Cod",
+        "url": "https://gsema.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Sailing and windsurfing focus.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Wind in the Pines",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of Eastern Massachusetts",
+      "venue_name": "Camp Wind in the Pines",
+      "city": "Plymouth",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://gsema.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["girl-scouts", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "classic camp traditions... overnight",
+        "url": "https://gsema.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Girl scouts camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "LARP Adventure Program",
+      "translated_name_hint": null,
+      "operator_name": "LARP Adventure Program",
+      "venue_name": "LARP Adventure",
+      "city": "Various",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://larpadventureprogram.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty-camps"],
+      "camp_type_tags": ["larp", "specialty"],
+      "candidate_shape": "multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "specialty camp for children ages 9-16... overnight",
+        "url": "https://larpadventureprogram.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Live-action role-playing.",
+      "validation_needs": ["find specific overnight venue"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Odyssey Teen Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Odyssey Teen Camp",
+      "city": "Berkshires",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://odysseyteencamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["teen", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "monthly",
+      "overnight_evidence": {
+        "snippet": "traditional camp experience with a focus on personal growth... teens",
+        "url": "https://odysseyteencamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Designed for teens 12-18.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Mah-Kee-Nac",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Mah-Kee-Nac",
+      "city": "Lenox",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://campmkn.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "boys"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "top overnight camp in Massachusetts for boys",
+        "url": "https://campmkn.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Classic boys camp in the Berkshires.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Romaca",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Romaca",
+      "city": "Hinsdale",
+      "region": "MA",
+      "country": "US",
+      "canonical_url": "https://campromaca.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "girls"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "premier girls sleepaway camp",
+        "url": "https://campromaca.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Classic girls camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "manifest_records": 162,
+  "matched_candidates": 10,
+  "matched_rows": 11,
+  "source_file": "data/staging/discovered-searxng-by-state.jsonl",
+  "outputs": {
+    "matches": "reports/discovery/pending_dossier_searxng_prior_sweep_matches_2026-04-13.jsonl",
+    "summary": "reports/discovery/pending_dossier_searxng_prior_sweep_matches_2026-04-13_summary.json"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "ID",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Idaho\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "YMCA Camp at Horsethief Reservoir",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Horsethief Reservoir",
+      "city": "Cascade",
+      "region": "ID",
+      "country": "US",
+      "canonical_url": "https://ymcatvidaho.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Sunday to Friday",
+      "overnight_evidence": {
+        "snippet": "Offers traditional overnight summer camp programs (typically Sunday to Friday)",
+        "url": "https://ymcatvidaho.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Focusing on outdoor skills, character building.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Twinlow Camp and Retreat Center",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Twinlow Camp",
+      "city": "Rathdrum",
+      "region": "ID",
+      "country": "US",
+      "canonical_url": "https://twinlow.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "offers overnight programs for children... Christian values",
+        "url": "https://twinlow.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "1st through 12th grade.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Paradise Point Camp",
+      "translated_name_hint": null,
+      "operator_name": "Episcopal Diocese of Idaho",
+      "venue_name": "Paradise Point Camp",
+      "city": "McCall",
+      "region": "ID",
+      "country": "US",
+      "canonical_url": "https://paradisepointcamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["episcopal", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "rustic camp situated on a peninsula... offers overnight programs",
+        "url": "https://paradisepointcamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 7-17.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

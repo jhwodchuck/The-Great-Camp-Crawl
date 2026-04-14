@@ -1,0 +1,680 @@
+{
+  "scan_type": "university_expansion",
+  "scope": {
+    "country": "US",
+    "region": "TX",
+    "city": null
+  },
+  "queries_used": [
+    "Rice University Tapia Camp residential",
+    "Rice Architecture Summer Immersion residential",
+    "SMU summer residential high school",
+    "TCU summer residential high school",
+    "Baylor summer residential high school",
+    "UNT summer residential music camp",
+    "University of Houston summer residential"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Tapia STEM Camps (Rice University)",
+      "translated_name_hint": null,
+      "operator_name": "Rice University",
+      "venue_name": "Rice University Campus",
+      "city": "Houston",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://tapiacenter.rice.edu/tapia-stem-camps",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["STEM", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "6-day/5-night",
+      "overnight_evidence": {
+        "snippet": "6-day/5-night program... campers live in the dormitories.",
+        "url": "https://tapiacenter.rice.edu/tapia-stem-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 registration open.",
+        "url": "https://tapiacenter.rice.edu/tapia-stem-camps",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Rice Architecture Summer Immersion",
+      "translated_name_hint": null,
+      "operator_name": "Rice University",
+      "venue_name": "Rice University Campus",
+      "city": "Houston",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://arch.rice.edu/events/summer-immersion",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Architecture", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "twelve-day/eleven-night",
+      "overnight_evidence": {
+        "snippet": "twelve-day/eleven-night residential program.",
+        "url": "https://arch.rice.edu/events/summer-immersion"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 session dates announced.",
+        "url": "https://arch.rice.edu/events/summer-immersion",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Engineering Design Experience (SMU Lyle Engineering)",
+      "translated_name_hint": null,
+      "operator_name": "Southern Methodist University",
+      "venue_name": "SMU Campus",
+      "city": "Dallas",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.smu.edu/lyle/centers-and-institutes/caruth/youth-programs-and-camps/engineering-summer-camps/engineering-design-experience",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Engineering", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "typically one week",
+      "overnight_evidence": {
+        "snippet": "This residential camp is designed for rising juniors and seniors... stay in the dorms.",
+        "url": "https://www.smu.edu/lyle/centers-and-institutes/caruth/youth-programs-and-camps/engineering-summer-camps/engineering-design-experience"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2024–2025 program cycle.",
+        "url": "https://www.smu.edu/lyle/centers-and-institutes/caruth/youth-programs-and-camps/engineering-summer-camps/engineering-design-experience",
+        "date_text": "2025"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "SMU Debate Camp",
+      "translated_name_hint": null,
+      "operator_name": "Southern Methodist University",
+      "venue_name": "SMU Campus",
+      "city": "Dallas",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.smudebate.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Debate", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "variable",
+      "overnight_evidence": {
+        "snippet": "Residential campers are housed in SMU dorms.",
+        "url": "https://www.smudebate.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 2026 camp sessions.",
+        "url": "https://www.smudebate.com/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Model UN Camp (MUN Institute) at SMU",
+      "translated_name_hint": null,
+      "operator_name": "Best Delegate / SMU",
+      "venue_name": "SMU Campus",
+      "city": "Dallas",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://mun.bestdelegate.com/camp-locations/dallas/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Academic", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one week",
+      "overnight_evidence": {
+        "snippet": "stay in the dorms and experience campus life.",
+        "url": "https://mun.bestdelegate.com/camp-locations/dallas/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer sessions.",
+        "url": "https://mun.bestdelegate.com/camp-locations/dallas/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "TCU Nurse Camp",
+      "translated_name_hint": null,
+      "operator_name": "Texas Christian University",
+      "venue_name": "TCU Campus",
+      "city": "Fort Worth",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://harriscollege.tcu.edu/stories/2025/2025nursecamp.php",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Medicine", "Nursing", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5 nights",
+      "overnight_evidence": {
+        "snippet": "includes housing for five nights in TCU housing.",
+        "url": "https://harriscollege.tcu.edu/stories/2025/2025nursecamp.php"
+      },
+      "recent_activity_evidence": {
+        "snippet": "January 2025 announcement for upcoming cycle.",
+        "url": "https://harriscollege.tcu.edu/stories/2025/2025nursecamp.php",
+        "date_text": "2025"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "TCU Band Camp",
+      "translated_name_hint": null,
+      "operator_name": "Texas Christian University",
+      "venue_name": "TCU Campus",
+      "city": "Fort Worth",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.tcu.edu/outreach/summer-music-institute/band-camp.php",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "variable",
+      "overnight_evidence": {
+        "snippet": "Campers stay in TCU dormitories.",
+        "url": "https://music.tcu.edu/outreach/summer-music-institute/band-camp.php"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 2026 dates listed.",
+        "url": "https://music.tcu.edu/outreach/summer-music-institute/band-camp.php",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Schieffer Summer Journalism Camp (TCU)",
+      "translated_name_hint": null,
+      "operator_name": "Texas Christian University",
+      "venue_name": "TCU Campus",
+      "city": "Fort Worth",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://schiefferschool.tcu.edu/about/schieffer-summer-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Journalism", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "residency program",
+      "overnight_evidence": {
+        "snippet": "intensive residency program, campus housing provided.",
+        "url": "https://schiefferschool.tcu.edu/about/schieffer-summer-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 21-26, 2026.",
+        "url": "https://schiefferschool.tcu.edu/about/schieffer-summer-camp/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Baylor Examined Life Scholars",
+      "translated_name_hint": null,
+      "operator_name": "Baylor University",
+      "venue_name": "Baylor Campus",
+      "city": "Waco",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://news.web.baylor.edu/news/story/2026/january/baylor-receives-teagle-foundation-grant-expand-examined-life-secondary-school",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Academic", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "variable",
+      "overnight_evidence": {
+        "snippet": "expansion into a residential program.",
+        "url": "https://news.web.baylor.edu/news/story/2026/january/baylor-receives-teagle-foundation-grant-expand-examined-life-secondary-school"
+      },
+      "recent_activity_evidence": {
+        "snippet": "January 2026 grant announcement for expansion.",
+        "url": "https://news.web.baylor.edu/news/story/2026/january/baylor-receives-teagle-foundation-grant-expand-examined-life-secondary-school",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Baylor Innovate (ECS)",
+      "translated_name_hint": null,
+      "operator_name": "Baylor University",
+      "venue_name": "Baylor Campus",
+      "city": "Waco",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.ecs.baylor.edu/prospective-undergraduate/innovate",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Engineering", "Computer Science", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "week-long",
+      "overnight_evidence": {
+        "snippet": "week-long residential camp at Baylor University.",
+        "url": "https://www.ecs.baylor.edu/prospective-undergraduate/innovate"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Innovate 2026 sessions.",
+        "url": "https://www.ecs.baylor.edu/prospective-undergraduate/innovate",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "High School Band & Orchestra Camp (Baylor University)",
+      "translated_name_hint": null,
+      "operator_name": "Baylor University",
+      "venue_name": "Baylor Campus",
+      "city": "Waco",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.baylor.edu/community/summer-camps/high-school-band-orchestra-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one week",
+      "overnight_evidence": {
+        "snippet": "Students will be housed in regular Baylor dormitories.",
+        "url": "https://music.baylor.edu/community/summer-camps/high-school-band-orchestra-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 7-13, 2026.",
+        "url": "https://music.baylor.edu/community/summer-camps/high-school-band-orchestra-camp",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UH Bauer Step Forward Residential Program",
+      "translated_name_hint": null,
+      "operator_name": "University of Houston",
+      "venue_name": "UH Campus",
+      "city": "Houston",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.bauer.uh.edu/summer-camps/step-forward/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Business", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "five-day",
+      "overnight_evidence": {
+        "snippet": "five-day residential program providing housing.",
+        "url": "https://www.bauer.uh.edu/summer-camps/step-forward/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 program cycle.",
+        "url": "https://www.bauer.uh.edu/summer-camps/step-forward/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UH Bauer EXPLORE Business Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": "University of Houston",
+      "venue_name": "UH Campus",
+      "city": "Houston",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.bauer.uh.edu/summer-camps/explore/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Business", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "variable",
+      "overnight_evidence": {
+        "snippet": "residential business camp for high school students.",
+        "url": "https://www.bauer.uh.edu/summer-camps/explore/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 program cycle.",
+        "url": "https://www.bauer.uh.edu/summer-camps/explore/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UNT International Summer Music Institute (ISMI)",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/ismi.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "June 1-12",
+      "overnight_evidence": {
+        "snippet": "Overnight camper fee includes Housing.",
+        "url": "https://music.unt.edu/camps/ismi.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 1-12, 2026.",
+        "url": "https://music.unt.edu/camps/ismi.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UNT Jazz Combo Workshop",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/jazz-combo-workshop.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Jazz", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "July 12-17",
+      "overnight_evidence": {
+        "snippet": "Overnight camper option includes Housing and three meals.",
+        "url": "https://music.unt.edu/camps/jazz-combo-workshop.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "July 12-17, 2026.",
+        "url": "https://music.unt.edu/camps/jazz-combo-workshop.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UNT All-State Choir Camp",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/choir-camp.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Choir", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "June 10-13",
+      "overnight_evidence": {
+        "snippet": "Overnight camper ($550) includes Housing.",
+        "url": "https://music.unt.edu/camps/choir-camp.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 10-13, 2026.",
+        "url": "https://music.unt.edu/camps/choir-camp.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UNT Summer Piano Camp",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/summer-piano-camp.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Piano", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "June 3-7",
+      "overnight_evidence": {
+        "snippet": "housing and meal packages are included for convenience.",
+        "url": "https://music.unt.edu/camps/summer-piano-camp.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 3-7, 2026.",
+        "url": "https://music.unt.edu/camps/summer-piano-camp.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UNT Marching Percussion Camp",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/marching-percussion-camp.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Percussion", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "May 31 - June 4",
+      "overnight_evidence": {
+        "snippet": "Overnight camper option with Housing and meals.",
+        "url": "https://music.unt.edu/camps/marching-percussion-camp.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "May 31 - June 4, 2026.",
+        "url": "https://music.unt.edu/camps/marching-percussion-camp.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Lynn Seaton Jazz Double Bass Workshop (UNT)",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/jazz-bass-workshop.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Jazz", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "June 7-12",
+      "overnight_evidence": {
+        "snippet": "Overnight camper fee includes Housing.",
+        "url": "https://music.unt.edu/camps/jazz-bass-workshop.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 7-12, 2026.",
+        "url": "https://music.unt.edu/camps/jazz-bass-workshop.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UNT Summer Organ Academy",
+      "translated_name_hint": null,
+      "operator_name": "University of North Texas",
+      "venue_name": "UNT Campus",
+      "city": "Denton",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://music.unt.edu/camps/summer-organ-academy.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "English",
+      "program_family_tags": ["Arts", "Music", "Organ", "Pre-college"],
+      "camp_type_tags": ["residential", "overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "June 8-13",
+      "overnight_evidence": {
+        "snippet": "Overnight campers will check into the residence hall.",
+        "url": "https://music.unt.edu/camps/summer-organ-academy.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "June 8-13, 2026.",
+        "url": "https://music.unt.edu/camps/summer-organ-academy.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

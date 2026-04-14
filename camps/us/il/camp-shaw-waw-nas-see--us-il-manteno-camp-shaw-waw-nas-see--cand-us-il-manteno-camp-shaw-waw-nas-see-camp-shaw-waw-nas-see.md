@@ -1,0 +1,127 @@
+---
+record_id: cand-us-il-manteno-camp-shaw-waw-nas-see-camp-shaw-waw-nas-see
+camp_id: camp-shaw-waw-nas-see
+venue_id: us-il-manteno-camp-shaw-waw-nas-see
+name: Camp Shaw-waw-nas-see
+display_name: Camp Shaw-waw-nas-see at Camp Shaw-waw-nas-see
+country: US
+country_name: United States
+region: IL
+region_name: Illinois
+city: Manteno
+venue_name: Camp Shaw-waw-nas-see
+program_family:
+- traditional-overnight-camps
+- traditional
+camp_types:
+- traditional
+priority_flags:
+  college_precollege: false
+  one_week_plus: true
+languages_found:
+- en
+source_language_primary: en
+activity_status: unknown
+activity_evidence_window_months: 24
+duration:
+  min_days: null
+  max_days: null
+pricing:
+  currency: USD
+  amount_min: null
+  amount_max: null
+  boarding_included: null
+ages:
+  min: null
+  max: null
+grades:
+  min: null
+  max: null
+operator:
+  name: ''
+  type: camp-operator
+website:
+  canonical_url: https://campshaw.org
+  admissions_url: null
+  session_dates_url: https://campshaw.org
+  pricing_url: null
+contact:
+  email: null
+  phone: null
+location:
+  address: null
+  postal_code: null
+  latitude: null
+  longitude: null
+verification:
+  overnight_confirmed: true
+  active_past_2_years_confirmed: false
+  confidence: medium
+  last_verified: '2026-04-13'
+evidence:
+  overnight_source_url: https://campshaw.org
+  recent_activity_source_url: null
+  duration_source_url: null
+  pricing_source_url: null
+tags:
+- us
+- il
+- manteno
+- traditional-overnight-camps
+- traditional
+draft_status: draft
+---
+
+# Camp Shaw-waw-nas-see at Camp Shaw-waw-nas-see
+
+## Quick Take
+Camp Shaw-waw-nas-see is a draft venue dossier for a traditional-overnight-camps, traditional program in Manteno, IL.
+
+## Verified Facts
+- Operator: Unknown
+- Venue: Camp Shaw-waw-nas-see
+- Location: Manteno, IL
+- Canonical URL: https://campshaw.org/
+- Program family: traditional-overnight-camps, traditional
+
+## Overnight Evidence
+mix of traditional camp activities... overnight summer camps
+
+## Recent Activity Evidence
+Active programs
+
+## Program Overview
+Camp Shaw-waw-nas-see is a draft venue dossier for a traditional-overnight-camps, traditional program in Manteno, IL.
+
+## Ages and Grades
+Ages and grades not yet captured.
+
+## Session Length and Structure
+Duration guess: unknown.
+
+This record is flagged as one-week-plus priority.
+
+## Pricing
+Pricing not yet captured.
+
+## Location and Venue Notes
+Venue anchor: Camp Shaw-waw-nas-see.
+
+City/region anchor: Manteno, IL.
+
+Notes: O v e r 7 5 y a s o f h i t . Over 75 years of history.
+
+## Contact and Enrollment
+Official site: https://campshaw.org/
+
+Contact details still need to be captured from the official site.
+
+## Open Questions
+- Exact ages or grade bands still need confirmation.
+- The exact session duration still needs confirmation.
+- Recent activity within the last 24 months still needs confirmation.
+- Official contact details still need to be captured.
+- Official pricing still needs to be captured.
+
+## Sources
+- https://campshaw.org

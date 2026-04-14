@@ -9,7 +9,7 @@ from lib.search_pipeline import build_query_specs, search_duckduckgo
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Seed discovery using DuckDuckGo Instant Answer API")
+    parser = argparse.ArgumentParser(description="Seed discovery using configured search providers")
     parser.add_argument("seed_query", nargs="*", help="Base query or queries to search")
     parser.add_argument("--query-file", help="One query per line; blank lines and comments are ignored")
     parser.add_argument("--output", default="data/staging/discovered-ddg.jsonl")
@@ -23,7 +23,7 @@ def main() -> int:
     parser.add_argument(
         "--providers",
         default="instant_answer,lite_html",
-        help="Comma-separated search providers. Supported: instant_answer,lite_html",
+        help="Comma-separated search providers. Supported: instant_answer,lite_html,google_cdp",
     )
     parser.add_argument("--timeout", type=int, default=20)
     parser.add_argument("--retries", type=int, default=3)

@@ -1,0 +1,1905 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "ND",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"North Dakota\"",
+    "\"residential summer camp\" \"North Dakota\"",
+    "\"family camp\" \"North Dakota\"",
+    "\"youth retreat\" \"North Dakota\" overnight",
+    "site:.edu \"North Dakota\" \"pre-college\" residential"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Best Overnight Summer Camps in North Dakota - Sleepawayz",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://sleepawayz.com/locations/north-dakota-summer-camps/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Explore top sleepaway summer camps in North Dakota on Sleepawayz. Find the perfect overnight camp for your kids or teens with our easy search.",
+        "url": "https://sleepawayz.com/locations/north-dakota-summer-camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "North Dakota Summer Camps for Kids - Summer Kids Guide",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://summerkidsguide.com/north-dakota.php",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find the best in-person and online summer camps for your kids in North Dakota! Summer Kids Guide makes planning summer fun a breeze for busy parents!",
+        "url": "https://summerkidsguide.com/north-dakota.php"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "North Dakota Summer Camps | Summercamps | Coed Camps",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.camppage.com/states/north-dakota",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Online Camps Day Camps Residential Coed Camps Residential Boys' Camps Residential Girls' Camps Adventure-Travel Camps Conference and Retreat Centers Organization Camps Religious Camps Special Interest Summer Camps Special Needs Summer Camps",
+        "url": "https://www.camppage.com/states/north-dakota"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Summer Camps in North Dakota - MySummerCamps",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.mysummercamps.com/camps/north-dakota-summer-camps.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Discover and compare 15 Summer Camps in North Dakota. More than 2 million parents every year book their perfect camp on MySummerCamps. Find your camp today!",
+        "url": "https://www.mysummercamps.com/camps/north-dakota-summer-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Exciting Overnight Summer Camps for Kids",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://camprokiwan.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Join us for a summer filled with adventure, creativity, and new friendships. Sign up today! ... We love our community, so feel free to visit during normal business hours. 118 Camp Rokiwan Road, Jamestown, North Dakota 58401, United States",
+        "url": "https://camprokiwan.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Metigoshe Ministries | Summer Camp & Retreat Center In North Dakota",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://metigosheministries.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Join us at Metigoshe Ministries for the best ELCA summer camp and retreat center experience in Bottineau, North Dakota, north of Minot.",
+        "url": "https://metigosheministries.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "TRIANGLE Y CAMP | minot-family-ymca",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.ymcaminot.org/triangle-y-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Campers will learn about North Dakota's ecology through fun activities and by the end of camp they will earn their Hunters Safety certification from a North Dakota Game & Fish Instructor.",
+        "url": "https://www.ymcaminot.org/triangle-y-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "North Dakota Association for Gifted Children - Learning Opportunities",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://ndagc.org/learning-opportunities",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Gateway to Science STEM Adventure · Belin Blank Center Summer Student Programs",
+        "url": "https://ndagc.org/learning-opportunities"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Triangle Y Camp | North Dakota | Minot Family YMCA",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.triangleycamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Triangle Y Camp is operated in order to aid in the development of character and Christian philosophy of life by providing activities and services which will contribute to the spiritual, social, mental, and physical growth of boys, girls, men, ...",
+        "url": "https://www.triangleycamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "15 Summer Programs in North Dakota for High Schoolers in 2025 | CollegeVine Blog",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://blog.collegevine.com/6-summer-programs-in-north-dakota-for-high-schoolers",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "In this week-long residential program, girls learn about the government and how it functions through a simulation that includes running for office, holding elections, writing ordinances/laws, and various other activities. North Dakota Boys State is a similar program offered to young men in North Dakota. ... The Northern Plains Writing Project and Minot State University have teamed up to offer three- to five-day summer workshops to students of all ages.",
+        "url": "https://blog.collegevine.com/6-summer-programs-in-north-dakota-for-high-schoolers"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "North Dakota Summer Camps | Find the Best Summer Camps in North Dakota",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.northdakotakidsguide.com/Summer_Camps.php",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "North Dakota Summer Camps | North Dakota day camps, overnight camps, sports camps, family camps, academic camps, art camps, technology camps, winter camps, and special needs camps!",
+        "url": "https://www.northdakotakidsguide.com/Summer_Camps.php"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Best North Dakota Overnight Camps | Best Overnight Camps .com | Best North Dakota Summer Overnight Camps 2026 Directory",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://bestovernightcamps.com/best-north-dakota-overnight-camps.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "CAMP INSTRUCTIONAL ACTIVITIES OFFERED: ... Prep For Musicians ... CAMP LOCATION: Summer location is 45 miles north of Rugby, ND on the North Dakota/Manitoba Border....",
+        "url": "https://bestovernightcamps.com/best-north-dakota-overnight-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Two Rivers Activity Center - Jamestown, ND | Summer Camps",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://tracjamestown.com/summer-camps/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "TRAC will be holding weekly summer camps during the school year break for school age kids. REGISTRATION WILL OPEN ON MARCH 9th FOR 2026 CAMPS. Children must have completed kindergarten to register for summer camps.",
+        "url": "https://tracjamestown.com/summer-camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "The 7 Best Camps In North Dakota Today",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.momswhothink.com/the-best-camps-in-north-dakota-today/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "The programs help children develop independence and personal development skills. The camp is located on 80 acres of property in Washburn. The residential camp has a ton of amenities for campers.",
+        "url": "https://www.momswhothink.com/the-best-camps-in-north-dakota-today/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Summer Camps & Activities in Fargo | 2026",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://fargomom.com/summer-camps-in-fargo/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Girl Scouts Dakota Horizons · International Music Camp · Koronis Ministries · Lake Beauty Bible Camp · Laketrails Base Camp · Luther Crest Bible Camp · ND Farmers Union Camps · Northern Pines Camp · Park River Bible Camp · Pathways Bible Camp · Tamahay Camp for Girls · Trinity Youth Camp · YMCA Camp Cormorant · Did we miss any summer camps in Fargo?",
+        "url": "https://fargomom.com/summer-camps-in-fargo/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Best Outdoors Camps in North Dakota | Kampspire",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.kampspire.com/best-camps/north-dakota/outdoors",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find the outdoor camps that connect children with nature in North Dakota. Helpful tips for parents to choose the best local summer camps for their children.",
+        "url": "https://www.kampspire.com/best-camps/north-dakota/outdoors"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "The best summer camps in North Dakota.",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.kampspire.com/best-camps/north-dakota",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Many camps foster strong camper-to-staff connections in small group settings · Seasonal weather allows for varied activities from hiking to fishing ... North Dakota summers are warm with daytime highs typically in the mid 70s°F to low 80s°F. The weather is generally dry, with occasional thunderstorms.",
+        "url": "https://www.kampspire.com/best-camps/north-dakota"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Summer Camps exploring the Outdoors",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.northdakotawildlife.org/post/summer-camps-exploring-the-outdoors",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "North Dakota 4-H has great scholarship opportunities for youth to attend camp. Check out the 4-H website and check with your county agent for scholarships. The camps are held at the 4-H facility in Washburn, ND. The North Dakota 4-H Camp is on ...",
+        "url": "https://www.northdakotawildlife.org/post/summer-camps-exploring-the-outdoors"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Summer Camp Programs For Teens in North Dakota 2026 | CampNavigator",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.campnavigator.com/State/northdakota-summer-camps.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Choose from 28 camps. Average camp costs in North Dakota $100/day. Share this rate with friends ... Since 1990, Camp Invention has taken summer fun and transformed it from ordinary to extraordinary! In partnership with the Na...",
+        "url": "https://www.campnavigator.com/State/northdakota-summer-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "SOLT St. Ann's Summer Camp | Society of Our Lady of the Most Holy Trinity",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://solt.net/summercamp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Ann's Summer Camp July 4th: 4th of July Celebration July 5th-6th: Rest Day and Silent Retreat July 7th: Departure Day · Optional July 13th- July 17th: SOLT Regional Assembly in Corpus Christi, Texas · Location: Belcourt, North Dakota We are ...",
+        "url": "https://solt.net/summercamp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Join Camp - North Dakota Farmers Union",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://ndfu.org/join-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "James River Camp is in Jamestown, ... ND 58401). For more information on getting to this camp, visit here. Junior Camp costs $159, but $135 if you register by May 15th. Senior Camp costs $199, but $175 if you register by May 15th. Register here today to take advantage of early bird pricing!",
+        "url": "https://ndfu.org/join-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "North Dakota Summer Camps on the Camp Channel",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.campchannel.com/North-Dakota/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "You will leave encouraged in your life and faith with some great new friends and super memories. Camp FaHoCha is a life changing experience! ... U.S. States: North Dakota ... North Dakota’s warm summer climate is ideal for outdoor activities, ...",
+        "url": "https://www.campchannel.com/North-Dakota/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Top 10 Summer Camps in North Dakota | WorldCamps",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://world-camps.org/top-10-summer-camps-in-north-dakota/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Looking for the best summer camps in North Dakota for your kids or teens? Discover why parents choose a summer camps adventure. See the leading summer camps in North Dakota 2025.",
+        "url": "https://world-camps.org/top-10-summer-camps-in-north-dakota/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Welcome to Park River Bible Camp - Park River Bible Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.parkriverbiblecamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "We’re preparing a beautiful space and incredible experience for your camper, family, church, or group right now. PRBC is a year-round ministry located a few miles outside of Park River, ND. We’re proud to serve eastern North Dakota and beyond with opportunities for summer camp, retreats, ...",
+        "url": "https://www.parkriverbiblecamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp 2025 — North Dakota Ministry Network",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "http://www.nddcag.com/events/2025/6/20/family-camp-2025",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Family Camp is a highlight of the summer for people across North Dakota and beyond. Providing dynamic ministry, unique recreation opportunities, and fun for people of all ages. There is nothing like Family Camp!",
+        "url": "http://www.nddcag.com/events/2025/6/20/family-camp-2025"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Mulai menggunakan Family Link - Bantuan Google For Families",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=id",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Penting: Family Link mungkin hanya tersedia di negara atau wilayah tertentu. iPhone, iPad, dan komputer selain Chromebook tidak dapat diawasi dengan Family Link. Akun Google Workspace for …",
+        "url": "https://support.google.com/families/answer/7101025?hl=id"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Understand YouTube & YouTube Kids options for your child",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/10495678?hl=en",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "When you use Family Link to manage a Google Account for your child, you can set up parental controls on: YouTube Kids: If available in your location. Learn where YouTube Kids is available.",
+        "url": "https://support.google.com/families/answer/10495678?hl=en"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Начало работы с Family Link - Cправка - Google For Families",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=ru",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "На устройствах iPhone и iPad, а также на компьютерах, за исключением Chromebook, настроить родительский контроль с помощью Family Link нельзя. Аккаунтами Google Workspace for …",
+        "url": "https://support.google.com/families/answer/7101025?hl=ru"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Wypróbuj Family Link - Google For Families - Pomoc",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=pl",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Wypróbuj Family Link Za pomocą aplikacji Family Link możesz utworzyć konto Google dla dziecka w wieku poniżej 13 lat (lub poniżej innego wieku obowiązującego w Twoim kraju). Z Family Link możesz …",
+        "url": "https://support.google.com/families/answer/7101025?hl=pl"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Manage your family on Google - Android - Google For Families Help",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/6286986?hl=en&co=GENIE.Platform%3DAndroid",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "As the family manager, you can invite up to 5 people to join your family group. You can also remove people from your family group, or delete the family group. Learn more about what happens when you …",
+        "url": "https://support.google.com/families/answer/6286986?hl=en&co=GENIE.Platform%3DAndroid"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp RV Reservations 2025 | North Dakota District UPCI",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://ndupci.org/pages/family-camp-rv-reservations-2025",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Camp Principal · Send Email · David Puckett · District Superintendent · Send Email · Michael Woods · District Secretary · Send Email · 3531 41st St NE Esmond , ND 58332 View on Google Maps · PO Box 103 Jamestown, ND 58401-0103 · Email: info@ndupci.org · © 2025 North Dakota District UPCI.",
+        "url": "https://ndupci.org/pages/family-camp-rv-reservations-2025"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Çocuğunuzun Google Hesabı'nı Family Link ile yönetme - Google For ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7103262?hl=tr",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aile grubunuzdaki ebeveynler, çocuğunuzun Google Hesabındaki hesap ayarlarını yönetmek için Family Link'i kullanabilir. Çocuğunuzun Google Hesabı ayarlarını kontrol etme Family Link'te yönetici …",
+        "url": "https://support.google.com/families/answer/7103262?hl=tr"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Network Family Camp — North Dakota Ministry Network",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "http://www.nddcag.com/events/familycamp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Family Camp is one of the best parts about summer! Join us at Lakewood Park Bible Camp for a big Network family reunion.",
+        "url": "http://www.nddcag.com/events/familycamp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Best North Dakota Family Camps | Best Family Camps .com | Best North Dakota Summer Family Camps 2026 Directory",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://bestfamilycamps.com/best-north-dakota-family-camps.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Best North Dakota Family Camps ... Camps, Best North Dakota Family Resort Camps, and other great family vacation camps in North Dakota. Our North Dakota Family Camp Directory also includes information on 2026 North Dakota Family Camp Jobs, Camp Scholarships and Financial Aid, ...",
+        "url": "https://bestfamilycamps.com/best-north-dakota-family-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Camp — Freedom Church",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://hellofreedomchurch.com/camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Family Camp at Lakewood Park Bible Camp provides an opportunity for people of all ages to experience renewal and reconnection with the family of God across North Dakota.",
+        "url": "https://hellofreedomchurch.com/camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Youth Camps - Camp Bentley",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.campbentleynd.org/Camps/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "If you are registering a first time camper, use coupon code First2026 for a FREE weekend at camp. If you attend an American Baptist Church in North Dakota, contact your church or pastor for a coupon code. ... To register for Family Camp, please click below to complete the online registration.",
+        "url": "https://www.campbentleynd.org/Camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Administra la Cuenta de Google de tu hijo o hija con Family Link ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7103262?hl=es-419",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Los padres del grupo familiar pueden administrar la configuración de la Cuenta de Google de su hijo con Family Link. Verifica la configuración de la Cuenta de Google de tu hijo o hija Como administrador …",
+        "url": "https://support.google.com/families/answer/7103262?hl=es-419"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp – Mount Carmel Ministries",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.mountcarmelministries.com/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "At Mount Carmel Ministries, we provide just that – a space for family, fun, and faith without all the distractions of daily life. We bring together campers of all ages for a time of rest, renewal, and recreation where Jesus is at the center of all we do. You will laugh together, cry together, ...",
+        "url": "https://www.mountcarmelministries.com/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Link'i kullanmaya başlama - Google For Families Yardım",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=tr",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Önemli: Family Link tüm ülke veya bölgelerde kullanılamayabilir. Chromebook'lar dışındaki bilgisayarlar ve iPhone'lar ile iPad'ler Family Link ile gözetim altında bulundurulamaz. Google Workspace for …",
+        "url": "https://support.google.com/families/answer/7101025?hl=tr"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Get started with Family Link - Google For Families Help",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://support.google.com/families/answer/7101025?hl=en",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Get started with Family Link You can use the Family Link App to create a Google Account for your child under 13 (or the applicable age in your country). You can also use Family Link to add supervision to …",
+        "url": "https://support.google.com/families/answer/7101025?hl=en"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "ESL Conversation Questions - Family (I-TESL-J)",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "http://iteslj.org/questions/family.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Conversation Questions Family A Part of Conversation Questions for the ESL Classroom. Are friends more important than family? What do you think? Are chores assigned to children in your family? Are …",
+        "url": "http://iteslj.org/questions/family.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"North Dakota\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "UNICEF x Youth",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/unicef-and-youth",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Young people have long stood at the forefront of calls for peace, justice and equity. They have an internationally recognized right to be heard on matters that affect them. That’s why UNICEF engages …",
+        "url": "https://www.unicef.org/unicef-and-youth"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "5 pathways towards an optimistic future, according to today's youth",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/08/youth-priorities-global-shapers-annual-summit/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aug 4, 2025 · The youth climate agenda extends beyond emissions reduction to encompass biodiversity protection, circular economy principles and climate-resilient infrastructure, with policies designed with …",
+        "url": "https://www.weforum.org/stories/2025/08/youth-priorities-global-shapers-annual-summit/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Youth for climate action - UNICEF",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/environment-and-climate-change/youth-action",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Sep 19, 2019 · We also work with youth to spread the message offline, through initiatives like UNICEF’s first-ever Climate Comic Contest. Sathviga ‘Sona’ Sridhar, a 21-year-old artist from Chennai, India, …",
+        "url": "https://www.unicef.org/environment-and-climate-change/youth-action"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Meaningful Youth Engagement in the Multilateral System",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/innocenti/media/9701/file/UNICEF-Innocenti-Meaningful-Youth-Engagement-2024.pdf",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "But unfortunately, despite their engagement in the multilateral sphere, youth continue to exert little influence over decision making on sustainable development, the maintenance of peace and security, …",
+        "url": "https://www.unicef.org/innocenti/media/9701/file/UNICEF-Innocenti-Meaningful-Youth-Engagement-2024.pdf"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Yutopia - A Public, Private & Youth Collective | UNICEF India",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/india/yutopia-public-private-youth-collective",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Yutopia - A Public, Private & Youth Collective Partnering with Governments, Corporates and CSOs to unlock a youth-powered India of the future. About Yutopia India’s 371 million young people aren’t just …",
+        "url": "https://www.unicef.org/india/yutopia-public-private-youth-collective"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "15 years on, building the Global Shapers youth movement",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/08/building-a-global-youth-movement/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aug 12, 2025 · From climate justice to digital inclusion, young people are organizing, innovating and leading real solutions to the world’s most urgent challenges. Founded on a belief that young people …",
+        "url": "https://www.weforum.org/stories/2025/08/building-a-global-youth-movement/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "From hustle culture to systems change: How youth in the Global South ...",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/08/youth-global-south-social-innovation/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Aug 14, 2025 · Young people in the Global South can spearhead social innovation – if they are appropriately supported by capital, community and context-sensitive education.",
+        "url": "https://www.weforum.org/stories/2025/08/youth-global-south-social-innovation/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Who are the youth of today? Generation unlimited - UNICEF",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/cuba/en/publications/who-are-the-youth-today-generation-unlimited",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Nov 26, 2020 · Who are the youth of today? Generation unlimited We have approached several young people to understand their vision and how they look at the society they live in and make it their own, …",
+        "url": "https://www.unicef.org/cuba/en/publications/who-are-the-youth-today-generation-unlimited"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Why UNGA 2025 was historic for youth leadership at the UN",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.weforum.org/stories/2025/11/un-general-assembly-turning-point-for-youth-leadership/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Nov 5, 2025 · UNGA represented a landmark moment for youth leadership at the UN, with progress in embedding institutional youth participation and youth-led innovations.",
+        "url": "https://www.weforum.org/stories/2025/11/un-general-assembly-turning-point-for-youth-leadership/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Ruwa Social Innovation Hub: Empowering Youth - UNICEF",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "ND",
+      "country": "US",
+      "canonical_url": "https://www.unicef.org/zimbabwe/stories/ruwa-social-innovation-hub-empowering-youth",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Oct 24, 2024 · Ruwa Social Innovation Hub fosters youth creativity, developing eco-friendly solutions and enhancing communication for children with hearing impairments.",
+        "url": "https://www.unicef.org/zimbabwe/stories/ruwa-social-innovation-hub-empowering-youth"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"youth retreat\" \"North Dakota\" overnight",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

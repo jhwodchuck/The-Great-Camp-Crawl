@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "KS",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Kansas\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Wood YMCA",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Camp Wood",
+      "city": "Elmdale",
+      "region": "KS",
+      "country": "US",
+      "canonical_url": "https://kansascityymca.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "offers traditional overnight experiences for youth",
+        "url": "https://kansascityymca.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Located in the Flint Hills.",
+      "validation_needs": ["check canonical URL, it may be its own website"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Wildwood Outdoor Education Center",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Wildwood Center",
+      "city": "La Cygne",
+      "region": "KS",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["outdoor-education"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "two-week",
+      "overnight_evidence": {
+        "snippet": "provides overnight camp programs for grades 3-12, including two-week leadership camps",
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Also hosts Camp Quest.",
+      "validation_needs": ["Find exact canonical URL"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Sunflower",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Sunflower",
+      "city": "Wichita",
+      "region": "KS",
+      "country": "US",
+      "canonical_url": "https://campsunflower.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty-camps"],
+      "camp_type_tags": ["LGBTQ+", "specialty"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "week-long",
+      "overnight_evidence": {
+        "snippet": "week-long overnight camp specifically designed for LGBTQ+ youth",
+        "url": "https://campsunflower.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Operations active",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Entering 7th-12th grade.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

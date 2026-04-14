@@ -1,0 +1,1091 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "NV",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Nevada\"",
+    "\"residential summer camp\" \"Nevada\"",
+    "\"family camp\" \"Nevada\"",
+    "\"youth retreat\" \"Nevada\" overnight",
+    "site:.edu \"Nevada\" \"pre-college\" residential"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Gifted Summer Programs | Davidson Institute",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.davidsongifted.org/gifted-programs/summer-opportunities/davidson-summer-programs/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "cademically challenging residential summer camps designed exclusively for Davidson Young Scholars ages 8-13, hosted on the University of Nevada, Reno Campus!",
+        "url": "https://www.davidsongifted.org/gifted-programs/summer-opportunities/davidson-summer-programs/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Summer Programs - Davidson Academy",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.davidsonacademy.unr.edu/student-life/summer-programs/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Academically challenging residential summer camps designed exclusively for Davidson students ages 8-13, hosted on the University of Nevada, Reno Campus!",
+        "url": "https://www.davidsonacademy.unr.edu/student-life/summer-programs/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"residential summer camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Summer Family Camp | Stanford Alumni Association",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://alumni.stanford.edu/sierra-programs/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Grab your family and escape to Stanford Sierra Camp for a week in the magnificent Sierra Nevada filled with nonstop educational fun, new experiences, and memories that will last your family a lifetime.",
+        "url": "https://alumni.stanford.edu/sierra-programs/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Camp Augusta Family Camp Weekend Information Pack",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://campaugusta.org/wp-content/uploads/2024/02/Camp-Augusta-Family-Camp-Info-Pack.pdf",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Find all the swings around camp and play on them… (Oak bathhouse / Cedar · bathhouse / Bottom of Pine / top of Manzanita village) ... Over 30 games from 1950 and before! See separate handout on this delight. ... East, towards Sacramento. Just before ... Grass Valley. Next you will pass through Nevada",
+        "url": "https://campaugusta.org/wp-content/uploads/2024/02/Camp-Augusta-Family-Camp-Info-Pack.pdf"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camps in Las Vegas Nevada at Summer Camps 2026",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.summercamps.com/camp/category/family/united-states/nevada/las-vegas/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Most common in Las Vegas, day camps offer structure without sleepovers. Run by recreation centers, schools, YMCAs, or private groups, these are great for younger kids or first-timers.Some are hosted by universities like UNLV and Nevada State College or local makerspaces.",
+        "url": "https://www.summercamps.com/camp/category/family/united-states/nevada/las-vegas/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "WoHeLo Family Camp - Camp Fire Golden Empire",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.campfiregoldenempire.org/wohelo-family-camp-at-gold-hollow/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Located 10 minutes outside of Nevada City/Grass Valley, 90 minutes from Sacramento. Beautifully situated in a natural pine and oak forest next to a small lake. The terrain is a combination of level, mixed with small hills.",
+        "url": "https://www.campfiregoldenempire.org/wohelo-family-camp-at-gold-hollow/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "family camp | Davis Forest School",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://davisforestschool.org/programs/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Our Family Camp will take place at Bear Valley Y Camp in Nevada City, just 95 miles northeast of Davis and 80 miles from Sacramento. There are shared rustic cabins, which will be on a first come, first serve basis, or plentiful tent camping space!",
+        "url": "https://davisforestschool.org/programs/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Camp Fire Golden Empire Club & Camp Programs at Gold Hollow Camp Fire Club and Camps - Camp Fire Golden Empire",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.campfiregoldenempire.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "WoHeLo Camp – for families living ... Family Camping experience! Alumni Events – For Alumni from Camp Fire Camps far and wide. Just YOU and I and the campfire, and the songs we love to sing.",
+        "url": "https://www.campfiregoldenempire.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp - Okizu",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://okizu.org/programs/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "September 4 – 7 Family Camp 5 at Camp Del Oro in Nevada City, CA (Open to all families – Labor Day)",
+        "url": "https://okizu.org/programs/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Best Nevada Family Camps Directory | Best Family Camps .com | Best Nevada Summer Family Camps 2023 Directory",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://bestfamilycamps.com/best-nevada-family-camps.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Best Nevada Family Camps | Our 2023 Best Nevada Family Summer Camps Directory will include information on some of the Best Day and Overnight Summer Family Camps in Nevada, including: Best Nevada Overnight Family Camps, Best Nevada Family Adventure Camps, Best Nevada Christian Family Camps, Best Nevada Family Sports Camps, Best Nevada Family Summer Vacation Camps, Best Nevada All-Inclusive Family Vacation Camps, Best Nevada Family Resort Camps, and other great family vacation camps in Nevada.",
+        "url": "https://bestfamilycamps.com/best-nevada-family-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "California-Nevada Conference of The UMC | Shasta Family Camp Provides Transformational Community for All Ages",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.cnumc.org/post/shasta-family-camp-provides-transformational-community-for-all-ages-13143094",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "There were new songbooks this year, so the campers enjoyed lots of singing as well as hiking, swimming in area lakes, stargazing, baseball, a talent show, and movie night. Attendees represented a wide spectrum of ages, from retirees in their 80s to elementary school-aged children: The age difference often the most inspirational aspect of the family camp.",
+        "url": "https://www.cnumc.org/post/shasta-family-camp-provides-transformational-community-for-all-ages-13143094"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "About Our Camp | Sierra Nevada Journeys",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.sierranevadajourneys.org/about-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "With 16 cabins and four yurts, we have plenty of accommodations to fit groups of up to 264 people. Sierra Nevada Journeys follows local public health and American Camp Association guidelines in planning and hosting programs at camp.",
+        "url": "https://www.sierranevadajourneys.org/about-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Overview: Weekend Programs - Camp Tawonga",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://tawonga.org/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "This year, Family Camps are offered in May, August, September, October, and December; and our Adult Retreats are offered in October. Our weekends offer relaxation and rejuvenation for adults and fun for kids in the stunning beauty of the Sierra ...",
+        "url": "https://tawonga.org/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp 2026",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://cowboysrest.org/family-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Pack up the whole crew—from toddlers ... sky. Family Camp mixes relaxed mornings and wild afternoons: paddle the lake, tackle the challenge course, wander the trails, and laugh your way through games on the field....",
+        "url": "https://cowboysrest.org/family-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "5 amazing family camping spots in Nevada | KSL.com",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.ksl.com/article/50623128/5-amazing-family-camping-spots-in-nevada",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "You can get details and make reservations through Recreation.gov. Located in southeastern Nevada, between I-15 and Lake Mead, the Valley of Fire State Park got its name when an AAA official witnessed a sunset here back in the 1920s.",
+        "url": "https://www.ksl.com/article/50623128/5-amazing-family-camping-spots-in-nevada"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Overnight Camps | City of Berkeley",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "The City of Berkeley offers overnight camps for families, youth, and adults, and seniors at two locations in the Sierra Nevada: Echo Lake Camp near South Lake Tahoe, or Tuolumne Camp near Yosemite.",
+        "url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Register now for summer overnight camps for families, youth and adults | City of Berkeley",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://berkeleyca.gov/community-recreation/news/register-now-summer-overnight-camps-families-youth-and-adults",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Berkeley residents can apply for scholarships covering up to 100%. Escape to the Sierra Nevada mountains this summer with the City of Berkeley's overnight camps for youth, families, and adults aged 50 and older.You can swim in a clear lake or ...",
+        "url": "https://berkeleyca.gov/community-recreation/news/register-now-summer-overnight-camps-families-youth-and-adults"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Nevada Outdoor School Family Camp • All Ages • Registration Required • Free – What in the Mucc",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://whatinthemucc.com/event/nevada-outdoor-school-family-camp-all-ages-registration-required-free/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Event Categories: Community Building, Family, Free, Kids, Outdoors, Registration Required Space Limited · Website: https://nevadaoutdoorschool.org/nature-explorers?fbclid=IwY2xjawKcYD1leHRuA2FlbQIxMABicmlkETFncUtrVFQ4b0lUR0tMcmhRAR5ZrrAQhGYhKNVMAIx4Fnc-_-Wv4NXs7_xYuNrBbVr15mOD8HnoKCRYd5QH6A_aem_DoDejsWWBJ4AtFEsiQECzQ",
+        "url": "https://whatinthemucc.com/event/nevada-outdoor-school-family-camp-all-ages-registration-required-free/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp - Cal Alumni Association",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://alumni.berkeley.edu/camp-at-the-lair/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "The Lair of the Golden Bear will ... entire family. Lair campers of all ages enjoy a multitude of staff-led activities during each day of their stay. Others find adventure on their own. By the time departure day arrives, you will have fallen in love with our special corner of the Sierra Nevada...",
+        "url": "https://alumni.berkeley.edu/camp-at-the-lair/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Northern California Family Camp – California Hands & Voices",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://cahandsandvoices.org/northern-california/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Camp is held from Friday evening to Sunday mid-day, in the fall. New in 2024, we moved to a beautiful new location of at Lions Camp Ross Relles, in Nevada City, CA .",
+        "url": "https://cahandsandvoices.org/northern-california/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "N. CALIFORNIA CAMP 2025 | Nvc Family Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.nvcfamilycamp.org/n-california-camp-2025",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "We are hosting a smaller, more intimate NVC family camp for 5 days on June 10-15, 2025. Come join us in the Sierra foothills of northers California, just 15 minutes from the nourishing Yuba River & Nevada City & 6 minuted outside of Grass Valley.",
+        "url": "https://www.nvcfamilycamp.org/n-california-camp-2025"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Camp - Nevada Baptist Church",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.nevadabaptist.com/ministries/camp.cfm",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "High Camp, Senior High Camp, Men's and Ladies Retreats, Winter Retreats, and Family Camp.",
+        "url": "https://www.nevadabaptist.com/ministries/camp.cfm"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Campout | State Parks",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "http://parks.nv.gov/events/family-campout",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Families will learn the basics of camping while enjoying the outdoors in a safe and fun environment. Activities include: campfire cooking, hiking, camp crafts and more. Limited camping supplies (i.e. tents, sleeping bags, and sleeping pads) may be available for use during the event.",
+        "url": "http://parks.nv.gov/events/family-campout"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Whispering River Ranch RV Park | Northern NV Camping",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://wrrrvp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Welcome to peaceful family camping along the banks of the Walker River at Whispering River Ranch RV Park! Family owned and operated camping in Nevada.",
+        "url": "https://wrrrvp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Leoni Meadows - Christian Summer Camp and Retreat Center",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://leonimeadows.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "No matter what camp you choose - Base Camp, Cowboy, Wrangler in Training, Aquatics, or - you’ll have an incredible time at camp this summer! Not ready to send the kids off yet, or wanting to join in the fun yourself? Our Family Camp weeks are always popular and open to all ages!",
+        "url": "https://leonimeadows.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp - Run For Fun",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.runforfuncamps.com/summer-camps-and-school-holiday-camps/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Families can request to be placed in a cabin with another family of their choice, or we can happily match you with a family in your cabin. ... Stateline, NV. 89449 · (Located just beyond the Stateline in South Lake Tahoe) Run for Fun Camps will provide Dinner starting Friday night through ...",
+        "url": "https://www.runforfuncamps.com/summer-camps-and-school-holiday-camps/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Family Camp - Nevada Diabetes Association",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://diabetesnv.org/event/family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Set in the breathtaking beauty of Lake Tahoe, this camp is perfect for newly diagnosed families or those looking to expand their diabetes knowledge. Diabetes professional will be educating in a setting unlike any other, it’s the ideal way to learn, connect, and grow while surrounded by nature. ... The Nevada Diabetes Association has spent over 30 years redefining the diabetes experience, empowering individuals through inclusive programs, education, and support to help them lead healthier, longer lives.",
+        "url": "https://diabetesnv.org/event/family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Grand-Family Camp - Camp Newman",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://campnewman.org/year-round/grand-family-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "The Lodge, also knows as Village 2, is a brand new upscale, hotel-style building with 28-double occupancy rooms that sleep up to 4 people each. Centrally located at the heart of camp, steps from the Dining Hall and all that main camp has to offer.",
+        "url": "https://campnewman.org/year-round/grand-family-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    },
+    {
+      "candidate_name": "Mount Hermon » Events » Family Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "NV",
+      "country": "US",
+      "canonical_url": "https://www.mounthermon.org/events/family-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "Mount Hermon Family Camp provides awesome activities and teaching for every age camper and deeply connects families.",
+        "url": "https://www.mounthermon.org/events/family-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": "searxng | query: \"family camp\" \"Nevada\"",
+      "validation_needs": [
+        "confirm_overnight",
+        "confirm_active",
+        "confirm_venue"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

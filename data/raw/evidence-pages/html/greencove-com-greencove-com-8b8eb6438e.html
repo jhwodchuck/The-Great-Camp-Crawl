@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Camp Green Cove, Summer Camp for Girls in North Carolina</title>
+  <meta name="description" content="Camp Green Cove is a traditional and unique summer camp for girls, ages 6 – 17, founded in 1945 and located in Tuxedo, North Carolina.">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="p:domain_verify" content="379ea6158a8dbf3e7d65c10a39f22600"/>
+<meta name="facebook-domain-verification" content="s3r1z45c5dl0xrkw8f7l4ogq6c95jw" />
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script><![endif]-->
+
+<link rel="stylesheet" href="https://d1b48phb7m9k7p.cloudfront.net/css/1b7dd327-e928-4321-922f-e221de292426/screen-3117008838.css" media="screen" />
+
+<link href="https://d1b48phb7m9k7p.cloudfront.net/u/1b7dd327-e928-4321-922f-e221de292426/f-ico/12/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<link href="https://d1b48phb7m9k7p.cloudfront.net/u/1b7dd327-e928-4321-922f-e221de292426/f-png/12/favicon.png" type="image/x-icon" rel="icon" />
+<link rel="apple-touch-icon-precomposed" href="https://d1b48phb7m9k7p.cloudfront.net/u/1b7dd327-e928-4321-922f-e221de292426/f-png-high/12/apple-touch-icon-precomposed.png">
+
+
+<script src="https://d1b48phb7m9k7p.cloudfront.net/js/libs/mod_select_gix.js"></script>
+<!--
+<script src="https://d1b48phb7m9k7p.cloudfront.net/js/libs/modernizr.js"></script>
+<script src="https://d1b48phb7m9k7p.cloudfront.net/js/libs/css_browser_selector.js"></script>
+<script src="https://d1b48phb7m9k7p.cloudfront.net/js/libs/imgix.js"></script>
+-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-84818410-2', 'auto'); ga('send', 'pageview');
+</script>
+<script>
+
+// Polyfill for IE<11:
+Array.prototype.forEach||(Array.prototype.forEach=function(d,e){var c=Object(this),g=c.length>>>0,f,a,b,h;if("function"!==typeof d)throw new TypeError;f=e?e:void 0;for(a=0;a<g;){b=a.toString();if(h=c.hasOwnProperty(b))b=c[b],d.call(f,b,a,c);a+=1}});
+
+function triggerWindowResize() {
+  var evt = window.document.createEvent('UIEvents');evt.initUIEvent('resize', true, false, window, 0);window.dispatchEvent(evt);
+}
+// ImgIX
+var bgOptions = { 
+  fluidClass: 'imgix-fluid-bg', 
+  updateOnResizeDown: true, 
+  updateOnPinchZoom: true,
+  onChangeParamOverride: function(w, h, p, el) { p.fit = 'crop'; return p; }
+};
+var imgOptions = {
+  fluidClass: 'imgix-fluid-img',
+  onChangeParamOverride: function(w, h, p, el) {
+    if(el.getAttribute('data-ratio') !== null) {
+      return { "h": parseInt(Math.ceil(w/el.getAttribute('data-ratio'))) };
+    }
+  }
+};
+
+var slideFitOptions = {
+  fluidClass: 'responsive-slide-img',
+  updateOnPinchZoom: true,
+  updateOnResizeDown: true,
+  onChangeParamOverride: function(w, h, params, el) {
+    var slideRatio = ".668"; // Default slide ratio
+    params.auto = 'format';
+    params.crop = 'faces';
+    if(params.dpr > 2) { params.dpr = 2; }
+    // Check for overlay slide ratio:
+    if(el.getAttribute('slide-type') !== null) {
+      var orientation = (window.innerWidth / window.innerHeight >= 1) ? 'landscape' : 'portrait';
+      slideRatio = 0.4285;
+      if(window.innerWidth < 992 && orientation === 'portrait') { slideRatio = 1.2; }
+    }
+    params.h = Math.ceil(w * slideRatio);
+    params.crop = 'faces';
+    return params;
+  }
+};
+
+
+imgix.onready(function() {
+  var overlay_slides = [].slice.call(document.getElementsByClassName('block-69'));
+  var arh = 0.4285;
+  if(window.innerWidth < 1024) { arh = 1.2; }
+  overlay_slides.forEach(function(el){
+    var slides = [].slice.call(el.getElementsByClassName('slick-slide'));
+    slides.forEach(function(slide) {
+      var src = slide.children[0].getAttribute('src').replace('h=240', 'h='+Math.ceil(320*arh)); // Make the images fit!
+      slide.children[0].setAttribute('src', src);
+      slide.children[0].setAttribute('data-src', src);
+      slide.children[0].setAttribute('slide-type', 'overlay');
+    });
+  });
+
+  // Set the slideshow sizes:
+  var slideHeight = "374"; // Ratio: 2400/1120
+  var slideRatio = "arh=.668";
+  var bodyClasses = document.getElementsByTagName("body")[0].className;
+  var indexPage = (bodyClasses.match(/index/) !== null || bodyClasses.match(/tagged/) !== null || bodyClasses.match(/ type /) !== null);
+  if((bodyClasses.match(/grid/) !== null && indexPage) || bodyClasses.match(/users/) !== null) { slideRatio = "arh=.565"; }
+
+  // Slideshow: set the height to a ratio.
+  var normal_slides = [].slice.call(document.getElementsByClassName('block-19'));
+  normal_slides.forEach(function(el){
+    var slides = [].slice.call(el.getElementsByClassName('slick-slide'));
+    slides.forEach(function(slide) {
+      var src = slide.children[0].getAttribute('src').replace('h=240', slideRatio); // Make the images fit!
+      slide.children[0].setAttribute('src', src);
+      slide.children[0].setAttribute('data-src', src);
+    });
+  });
+
+  var hero_hs = [].slice.call(document.getElementsByClassName('block-1'));
+  hero_hs.forEach(function(el){
+    var container = el.children[0];
+    var dataSrc = container.getAttribute('data-src');
+    dataSrc = dataSrc.split('?')[0];
+    container.setAttribute('data-src', dataSrc+"?auto=format");
+  });
+
+  imgix.fluid(bgOptions); imgix.fluid(imgOptions); setTimeout(function() { imgix.fluid(slideFitOptions); }, 1000);
+  // Trigger some resizing.
+  triggerWindowResize();
+  setTimeout(triggerWindowResize, 1000);
+});
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K0MSGNSQ3X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K0MSGNSQ3X');
+</script>
+
+<!-- Google tag (gtag.js) Added by NR Apr 2023 --> 
+<script async src=https://www.googletagmanager.com/gtag/js?id=AW-11131312886></script> 
+<script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'AW-11131312886'); 
+</script>
+
+
+
+</head>
+<body class="pages index page-home no-children is-root ">
+
+  <nav id="primary-nav">
+  <nav id="primary-navbar" class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="max-width-wrapper">
+      <a class="navbar-brand" href="/">Green Cove</a>
+      <nav class="navbar-links mobile">
+        <a id="menu-toggle" href="#menu">
+          <span id="menu-text">Menu</span>
+          <span id="hamburger">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span></span>
+        </a>
+      </nav>
+
+      <div id="links-wrapper">
+        <div id="links-wrapper-outer">
+          <div id="links-wrapper-inner">
+            <div id="site-links">
+              <nav id="important-links">
+                <a href="tel:828-692-6355">(828) 692-6355</a>
+              </nav>
+
+              <ul class="nav nav-level-1 navbar-nav"><li class="nav-item nav-item-level-1 nav-item-id-285 current-path active"><a class="nav-link nav-link-level-1" href="/">Home</a></li><li class="nav-item nav-item-level-1 nav-item-id-313 nav-has-children nav-collapsed"><a class="nav-link nav-link-level-1" href="/program">Program</a><button class="nav-child-toggle" aria-label="toggle menu section"><span></span></button><ul class="nav nav-level-2 nav-childnav"><li class="nav-item nav-item-level-2 nav-item-id-384"><a class="nav-link nav-link-level-2" href="/program/philosophy">Philosophy</a></li><li class="nav-item nav-item-level-2 nav-item-id-379"><a class="nav-link nav-link-level-2" href="/program/activities">Activities</a></li><li class="nav-item nav-item-level-2 nav-item-id-312"><a class="nav-link nav-link-level-2" href="/program/wilderness-trips">Wilderness Trips</a></li><li class="nav-item nav-item-level-2 nav-item-id-386"><a class="nav-link nav-link-level-2" href="/program/location">Location</a></li><li class="nav-item nav-item-level-2 nav-item-id-380"><a class="nav-link nav-link-level-2" href="/program/safety">Safety</a></li><li class="nav-item nav-item-level-2 nav-item-id-412"><a class="nav-link nav-link-level-2" href="/program/daily-schedule">Daily Schedule</a></li><li class="nav-item nav-item-level-2 nav-item-id-458"><a class="nav-link nav-link-level-2" href="/program/camp-video">Camp Video</a></li></ul></li><li class="nav-item nav-item-level-1 nav-item-id-6937"><a class="nav-link nav-link-level-1" href="/2026-dates-and-rates">2026 Dates and Rates</a></li><li class="nav-item nav-item-level-1 nav-item-id-6614"><a class="nav-link nav-link-level-1" href="/info-sessions">Info Sessions</a></li><li class="nav-item nav-item-level-1 nav-item-id-382 nav-has-children nav-collapsed"><a class="nav-link nav-link-level-1" href="/parents">Parents</a><button class="nav-child-toggle" aria-label="toggle menu section"><span></span></button><ul class="nav nav-level-2 nav-childnav"><li class="nav-item nav-item-level-2 nav-item-id-383"><a class="nav-link nav-link-level-2" href="/parents/history">History</a></li><li class="nav-item nav-item-level-2 nav-item-id-385"><a class="nav-link nav-link-level-2" href="/parents/our-staff">Our Staff and Leadership</a></li><li class="nav-item nav-item-level-2 nav-item-id-387"><a class="nav-link nav-link-level-2" href="/parents/testimonials">Testimonials</a></li><li class="nav-item nav-item-level-2 nav-item-id-388"><a class="nav-link nav-link-level-2" href="/parents/faqs">FAQs</a></li><li class="nav-item nav-item-level-2 nav-item-id-392"><a class="nav-link nav-link-level-2" href="/parents/camp-profile-forms">Camp Profile &amp; Forms</a></li><li class="nav-item nav-item-level-2 nav-item-id-409"><a class="nav-link nav-link-level-2" href="/parents/summer-photos">Summer Photos</a></li><li class="nav-item nav-item-level-2 nav-item-id-408"><a class="nav-link nav-link-level-2" href="/parents/directions">Directions</a></li><li class="nav-item nav-item-level-2 nav-item-id-393"><a class="nav-link nav-link-level-2" href="/parents/pay-online">Pay Online</a></li><li class="nav-item nav-item-level-2 nav-item-id-983"><a class="nav-link nav-link-level-2" href="/parents/packing-for-camp">Packing for Camp</a></li><li class="nav-item nav-item-level-2 nav-item-id-6069"><a class="nav-link nav-link-level-2" href="/parents/accommodations">Accommodations</a></li><li class="nav-item nav-item-level-2 nav-item-id-6050"><a class="nav-link nav-link-level-2" href="/parents/privacy">Privacy</a></li></ul></li><li class="nav-item nav-item-level-1 nav-item-id-394 nav-has-children nav-collapsed"><a class="nav-link nav-link-level-1" href="/employment">Summer Camp Jobs</a><button class="nav-child-toggle" aria-label="toggle menu section"><span></span></button><ul class="nav nav-level-2 nav-childnav"><li class="nav-item nav-item-level-2 nav-item-id-395"><a class="nav-link nav-link-level-2" href="/employment/instruction">Instruction</a></li><li class="nav-item nav-item-level-2 nav-item-id-396"><a class="nav-link nav-link-level-2" href="/employment/cabin-responsibilities">Cabin Responsibilities</a></li><li class="nav-item nav-item-level-2 nav-item-id-397"><a class="nav-link nav-link-level-2" href="/employment/salary-benefits-and-other-details">Salary, Benefits and Other Details</a></li><li class="nav-item nav-item-level-2 nav-item-id-400"><a class="nav-link nav-link-level-2" href="/employment/how-to-apply">How to Apply</a></li></ul></li><li class="nav-item nav-item-level-1 nav-item-id-401 nav-has-children nav-collapsed"><a class="nav-link nav-link-level-1" href="/alumni">Alumni</a><button class="nav-child-toggle" aria-label="toggle menu section"><span></span></button><ul class="nav nav-level-2 nav-childnav"><li class="nav-item nav-item-level-2 nav-item-id-6755"><a class="nav-link nav-link-level-2" href="/alumni/green-cove-80th-reunion">Green Cove 80th Reunion</a></li><li class="nav-item nav-item-level-2 nav-item-id-403"><a class="nav-link nav-link-level-2" href="/alumni/alumni-database-message-board">Alumni Database</a></li><li class="nav-item nav-item-level-2 nav-item-id-456"><a class="nav-link nav-link-level-2" href="/alumni/facebook">Facebook</a></li><li class="nav-item nav-item-level-2 nav-item-id-5396"><a class="nav-link nav-link-level-2" href="/alumni/instagram">Instagram</a></li><li class="nav-item nav-item-level-2 nav-item-id-5335"><a class="nav-link nav-link-level-2" href="/alumni/giving">Giving</a></li><li class="nav-item nav-item-level-2 nav-item-id-444 nav-has-children nav-collapsed"><a class="nav-link nav-link-level-2" href="/alumni/historical-photos">Historical Photos</a><button class="nav-child-toggle" aria-label="toggle menu section"><span></span></button><ul class="nav nav-level-3 nav-childnav"><li class="nav-item nav-item-level-3 nav-item-id-524"><a class="nav-link nav-link-level-3" href="/alumni/historical-photos/early-brochures">Early Brochures</a></li><li class="nav-item nav-item-level-3 nav-item-id-445"><a class="nav-link nav-link-level-3" href="/alumni/historical-photos/1940s">1940&#39;s</a></li><li class="nav-item nav-item-level-3 nav-item-id-446"><a class="nav-link nav-link-level-3" href="/alumni/historical-photos/1950s">1950&#39;s</a></li><li class="nav-item nav-item-level-3 nav-item-id-447"><a class="nav-link nav-link-level-3" href="/alumni/historical-photos/1960s">1960&#39;s</a></li><li class="nav-item nav-item-level-3 nav-item-id-448"><a class="nav-link nav-link-level-3" href="/alumni/historical-photos/1970s">1970&#39;s</a></li></ul></li><li class="nav-item nav-item-level-2 nav-item-id-6756"><a class="nav-link nav-link-level-2" href="/alumni/friends-and-family-weekend-2026">Friends and Family Weekend 2026</a></li></ul></li><li class="nav-item nav-item-level-1 nav-item-id-406"><a class="nav-link nav-link-level-1" href="/blog">Blog</a></li><li class="nav-item nav-item-level-1 nav-item-id-407"><a class="nav-link nav-link-level-1" href="/contact-us">Contact Us</a></li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</nav>
+
+
+  <div id="blocks-wrapper">
+    <div id="content-blocks">
+
+  
+
+<section id="block-id-15235" class="container-fluid block block-69 photo-slideshow full-width has-content ">
+  <div class="container">
+    <div class="row">
+
+      <div class="slideshow-wrapper">
+        <div class="slideshow-responsive">
+          
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23461/IMG_3139.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23454/CHF_8668.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23489/IMGP0072.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23456/DSC_0152.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23462/CHF_5878.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23458/DSC_0043.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23783/IMG_8374.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23477/CHF_4935.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23782/CHF_0991.JPG?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+          <div class="slick-slide">
+            <img class="ofi" srcset="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=75&w=100&fit=crop&auto=format%2Ccompress&crop=faces 100w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=87&w=116&fit=crop&auto=format%2Ccompress&crop=faces 116w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=101&w=135&fit=crop&auto=format%2Ccompress&crop=faces 135w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=117&w=156&fit=crop&auto=format%2Ccompress&crop=faces 156w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=136&w=181&fit=crop&auto=format%2Ccompress&crop=faces 181w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=158&w=210&fit=crop&auto=format%2Ccompress&crop=faces 210w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=184&w=244&fit=crop&auto=format%2Ccompress&crop=faces 244w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=213&w=283&fit=crop&auto=format%2Ccompress&crop=faces 283w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=247&w=328&fit=crop&auto=format%2Ccompress&crop=faces 328w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=286&w=380&fit=crop&auto=format%2Ccompress&crop=faces 380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=332&w=441&fit=crop&auto=format%2Ccompress&crop=faces 441w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=385&w=512&fit=crop&auto=format%2Ccompress&crop=faces 512w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=447&w=594&fit=crop&auto=format%2Ccompress&crop=faces 594w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=518&w=689&fit=crop&auto=format%2Ccompress&crop=faces 689w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=601&w=799&fit=crop&auto=format%2Ccompress&crop=faces 799w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=697&w=927&fit=crop&auto=format%2Ccompress&crop=faces 927w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=808&w=1075&fit=crop&auto=format%2Ccompress&crop=faces 1075w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=937&w=1247&fit=crop&auto=format%2Ccompress&crop=faces 1247w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=1087&w=1446&fit=crop&auto=format%2Ccompress&crop=faces 1446w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=1261&w=1678&fit=crop&auto=format%2Ccompress&crop=faces 1678w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=1462&w=1946&fit=crop&auto=format%2Ccompress&crop=faces 1946w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=1696&w=2257&fit=crop&auto=format%2Ccompress&crop=faces 2257w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=1968&w=2619&fit=crop&auto=format%2Ccompress&crop=faces 2619w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=2283&w=3038&fit=crop&auto=format%2Ccompress&crop=faces 3038w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=2648&w=3524&fit=crop&auto=format%2Ccompress&crop=faces 3524w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=3071&w=4087&fit=crop&auto=format%2Ccompress&crop=faces 4087w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=3562&w=4741&fit=crop&auto=format%2Ccompress&crop=faces 4741w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=4132&w=5500&fit=crop&auto=format%2Ccompress&crop=faces 5500w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=4793&w=6380&fit=crop&auto=format%2Ccompress&crop=faces 6380w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=5560&w=7401&fit=crop&auto=format%2Ccompress&crop=faces 7401w,
+https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=6154&w=8192&fit=crop&auto=format%2Ccompress&crop=faces 8192w" sizes="100vw" src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23717/campfire_1.jpg?ixlib=rails-4.3.1&h=675&w=900&fit=crop&auto=format%2Ccompress&crop=faces" />
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="slideshow-text">
+        <div class="content col-sm-11 col-md-10 col-lg-8">
+          <div class="content-inner">
+          <img src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23121/green-cove_logomark.svg?fit=&w=&h=">
+          <h1>80 Summers of Adventure</h1>
+<p>Founded in 1945, Camp Green Cove is a traditional and unique summer camp for girls, ages 6 to 17.</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="block-id-53876" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  
+<section id="block-id-12298" class="container-fluid block block-24 count-3 full-width ">
+  <div class="container nav-blocks">
+    <div class="row">
+      <nav>
+        <ul>
+          
+          <li class="frontend-bg-img imgix-fluid-bg" data-src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23490/IMG_0055.JPG?fit=clip&w=500&h=400" style="background-image: url(https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23490/IMG_0055.JPG?crop=faces&fit=crop&h=400&w=500&auto=format,compress);"><a href="https://greencove.campintouch.com/ui/forms/application/camper/App"><span>Come to Green Cove this summer</span><em>Register Online</em></a></li>
+          
+          <li class="frontend-bg-img imgix-fluid-bg" data-src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/18788/hiking-trail.jpg?fit=clip&w=500&h=400" style="background-image: url(https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/18788/hiking-trail.jpg?crop=faces&fit=crop&h=400&w=500&auto=format,compress);"><a href="http://www.mondamin.com"><span>Visit our brother camp:</span><em>Camp Mondamin</em></a></li>
+          
+          <li class="frontend-bg-img imgix-fluid-bg" data-src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23496/_HF_4842.JPG?fit=clip&w=500&h=400" style="background-image: url(https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23496/_HF_4842.JPG?crop=faces&fit=crop&h=400&w=500&auto=format,compress);"><a href="https://greencove.campintouch.com/v2/family/inquiryForm.aspx"><em>Request Information</em></a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="block-id-12304" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  
+  <section id="block-id-12299" class="container-fluid block block-3 full-width ">
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-12">
+          <p>Located in the Mountains of Western North Carolina for 80 years, we emphasize outdoor activities such as horseback riding, hiking, kayaking, canoeing, sailing, mountain biking, and rock climbing. We believe in fun, adventure, safety, and great instruction.</p>
+<p>Our program is non-competitive, which encourages experimentation, and non-regimented, which fosters self-direction. Our strengths lie in the quality of our staff and the depth of our program. We value diversity, attracting campers from all 50 states and several other countries.</p>
+<p>We recommend that you explore the <strong>“Program”</strong> section of our website first, followed by the <strong>“Parents”</strong> section, and on from there!</p>
+<p>If you would like to speak to someone about camp, please don’t hesitate to call us.</p>
+<p><strong>Calla Bell Williamson</strong><br><em>Director</em></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="block-id-138771" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  
+  <section id="block-id-138772" class="container-fluid block block-3 full-width ">
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-12">
+          <h2>Watch our new short video below!</h2>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="block-id-138773" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  
+<section id="block-id-138774" class="container-fluid block block-21 video-embed topo-brown anchor-camp-video full-width ">
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-12">
+          <iframe src="https://player.vimeo.com/video/1125643586?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <section id="block-id-138775" class="container-fluid block block-3 full-width ">
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-12">
+          <h2>Watch our full camp movie below!</h2>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="block-id-138776" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  
+<section id="block-id-12301" class="container-fluid block block-21 video-embed anchor-camp-video topo-brown ">
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-12">
+          <iframe src="https://player.vimeo.com/video/1043242931" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="block-id-12302" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  
+<section id="block-id-15453" class="container-fluid block block-24 count-2 full-width ">
+  <div class="container nav-blocks">
+    <div class="row">
+      <nav>
+        <ul>
+          
+          <li class="frontend-bg-img imgix-fluid-bg" data-src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/137886/IMG_0053.JPG?fit=crop&w=800&h=640&crop=faces" style="background-image: url(https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/137886/IMG_0053.JPG?crop=faces&fit=crop&h=400&w=500&auto=format,compress);"><a href="/#block-id-12301"><span>Watch The</span><em>Camp Video</em></a></li>
+          
+          <li class="frontend-bg-img imgix-fluid-bg" data-src="https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23491/DSC_0020.JPG?fit=clip&w=500&h=400" style="background-image: url(https://typewriter.imgix.net/u/1b7dd327-e928-4321-922f-e221de292426/p/23491/DSC_0020.JPG?crop=faces&fit=crop&h=400&w=500&auto=format,compress);"><a href="https://greencove.campintouch.com/ui/forms/application/camper/App"><em>Register Online</em></a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="block-id-12306" class="container-fluid block block-28 full-width ">
+  <div class="container">
+    <div class="row"><div class="content col-sm-12"></div></div>
+  </div>
+</section>
+
+
+  <section id="block-id-12303" class="container-fluid block block-20 next-link  full-width " >
+  <div class="container">
+    <div class="row">
+      <div class="next-link-wrapper">
+        <div class="next-link-sub-wrapper">
+          <a class="next-link-title" href="/program"><span>Our Program at Green Cove</span></a>
+          <span class="next-link-descriptive-text">Our goal is to build self-esteem while teaching community living skills, respect for the environment, and a love for the outdoors.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
+
+
+
+
+  </div>
+
+  <div id="footer" class="max-width-wrapper">
+  <div class="social-media-links">
+    
+      
+       
+      <a class="social facebook" href="http://www.facebook.com/campgreencove">Visit our Facebook page.</a>
+      
+    
+      
+       
+      <a class="social pinterest" href="https://www.pinterest.com/campgreencove/">Visit our Pinterest page.</a>
+      
+    
+      
+       
+      <a class="social instagram" href="https://www.instagram.com/campgreencove/">Visit our Instagram page.</a>
+      
+    
+      
+      
+    
+  </div>
+  
+  <div class="footer-links">
+    <ul>
+      <li><a class="phone" href="tel:828-692-6355">(828) 692-6355</a></li>
+      <li><script type="text/javascript">
+      //<![CDATA[
+      <!--
+      var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+      "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+      " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!21)2t{yrx{=+;x+ll" +
+      "=};acct(h)e}{f}roi(l=1-i;=>;0-i)-o{=+.xhcratAi(;)r}teru n.oussbrt0(o,)l};(f" +
+      ")\\\"26\\\\,'\\\"!+:0w)(:}~>rxjoboezlF`r`aleo33\\\\07\\\\01\\\\\\\\33\\\\0E" +
+      "\\\\%X+Z0K02\\\\\\\\30\\\\07\\\\00\\\\\\\\33\\\\05\\\\00\\\\\\\\MP0200\\\\\\"+
+      "\\03\\\\00\\\\01\\\\\\\\4D01\\\\\\\\36\\\\00\\\\01\\\\\\\\05\\\\03\\\\01\\\\"+
+      "\\\\01\\\\06\\\\00\\\\\\\\20\\\\06\\\\00\\\\\\\\: 2(5?<?0*:l? 0;m=22\\\\06\\"+
+      "\\01\\\\\\\\TTGB16\\\\0L\\\\20\\\\0t\\\\\\\\\\\\02\\\\0G\\\\BDLRTV14\\\\0U\\"+
+      "\\zNhs77\\\\1t\\\\\\\\~(\\\"}fo;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomf" +
+      "rg.intr=So+7;12%=;y=iy+6)=2i=f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\" +
+      "\\o=i,r va){,y(x fontincfu)\\\"\")"                                          ;
+      while(x=eval(x));
+      //-->
+      //]]>
+      </script></li>
+        <li><a href="/contact-us">Contact Us</a></li>
+    </ul>
+    <p class="copyright copyright--desktop">Copyright &copy; Camp Green Cove <span class="footer-current-year"></span> <a href="/site-map">Site Map</a></p>
+  </div>
+  
+  <div class="ncyca">
+    <p class="ncyca__heading">Member of</p>
+    <a class="ncyca__logo-link" href="https://www.nccamps.org/" target="_blank" rel="noopener">
+      <img src="https://d1b48phb7m9k7p.cloudfront.net/u/68fed2ef-0e63-4b79-a96e-e80b38da4ecd/fi/svg/4651/logo__NCYCA.svg" alt="North Carolina Youth Camp Association" />
+    </a>
+  </div>
+  
+  <div class="sibling-cta">
+    <p>Visit our<br>brother camp</p>
+    <a href="https://www.mondamin.com/" class="btn sibling">Mondamin</a>
+    <a href="https://www.mondamin.com/" class="sibling-logo">Mondamin</a>
+  </div>
+
+  <p class="copyright copyright--mobile">Copyright &copy; Camp Mondamin <span class="footer-current-year"></span> <a href="/site-map">Site Map</a></p>
+  
+  <script>
+    Array.from(document.querySelectorAll('.footer-current-year')).forEach(footerCurrentYear => {
+      footerCurrentYear.innerHTML = new Date().getFullYear();
+    })    
+  </script>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+<script src="https://d1b48phb7m9k7p.cloudfront.net/js/1b7dd327-e928-4321-922f-e221de292426/main-scripts-5696590638.js"></script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1072447260;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+var google_conversion_format = 3;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072447260/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Bing -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5437903"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5437903&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '555303494655783');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=555303494655783&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+</body>
+</html>

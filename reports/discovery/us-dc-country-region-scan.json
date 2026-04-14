@@ -1,0 +1,423 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "DC",
+    "city": null
+  },
+  "queries_used": [
+    "site:.edu \"District of Columbia\" \"pre-college\" residential summer program",
+    "Georgetown University pre-college summer residential programs 2024 2025",
+    "George Washington University Pre-College Summer residential programs",
+    "Howard University residential summer programs high school 2025",
+    "American University summer pre-college residential program",
+    "National Student Leadership Conference NSLC programs in Washington DC 2025 residential",
+    "Catholic University of America residential summer high school programs 2025 experience architecture"
+  ],
+  "next_queries": [
+    "\"Capitol Debate\" Washington DC residential summer 2025",
+    "\"Congressional Camp\" District of Columbia residency evidence",
+    "\"National Cathedral School\" summer residential intensive",
+    "\"Sidwell Friends\" summer residential programs"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "Georgetown University - Hoya Summer High School Sessions (College Prep Program)",
+      "translated_name_hint": null,
+      "operator_name": "Georgetown University",
+      "venue_name": "Georgetown University Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://summer.georgetown.edu/programs/SHS01/college-prep-program",
+      "supporting_urls": [
+        "https://summer.georgetown.edu/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "college-pre-college",
+        "academic"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5 weeks",
+      "overnight_evidence": {
+        "snippet": "This five-week, residential-only program for high school students allows you to take a university course while participating in College Prep Seminars.",
+        "url": "https://summer.georgetown.edu/programs/SHS01/college-prep-program"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Season Information: Information for the upcoming summer of 2026 is available.",
+        "url": "https://summer.georgetown.edu/",
+        "date_text": "April 2026"
+      },
+      "notes": "Focuses on SAT/ACT prep and college readiness skills.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Georgetown University - Summer Academies",
+      "translated_name_hint": null,
+      "operator_name": "Georgetown University",
+      "venue_name": "Georgetown University Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://summer.georgetown.edu/academies",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "college-pre-college",
+        "specialty"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1, 2, or 3 weeks",
+      "overnight_evidence": {
+        "snippet": "Accelerated, hands-on learning experiences... Students focus on a single subject area through collaborative work, simulations, discussions, and field trips. Includes residential options.",
+        "url": "https://summer.georgetown.edu/academies"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Information for the upcoming summer of 2026 is available.",
+        "url": "https://summer.georgetown.edu/",
+        "date_text": "April 2026"
+      },
+      "notes": "Subjects include Law, Forensic Science, International Relations, etc.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "George Washington University - Pre-College Summer Immersion",
+      "translated_name_hint": null,
+      "operator_name": "George Washington University",
+      "venue_name": "GWU Foggy Bottom Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://summer.gwu.edu/precollege",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "college-pre-college",
+        "academic"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2 weeks",
+      "overnight_evidence": {
+        "snippet": "Students have the opportunity to live on campus, allowing them to participate in social and recreational activities while forming connections with peers from around the world.",
+        "url": "https://summer.gwu.edu/precollege"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Check the official GW Pre-College website for the most current information for the upcoming season.",
+        "url": "https://summer.gwu.edu/precollege",
+        "date_text": "April 2026"
+      },
+      "notes": "Integrates lecture-based instruction with experiential learning using DC as a 'living classroom'.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "George Washington University - Caminos al Futuro",
+      "translated_name_hint": null,
+      "operator_name": "GWU Cisneros Hispanic Leadership Institute",
+      "venue_name": "GWU Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://cisneros.gwu.edu/caminos-al-futuro",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "leadership",
+        "academic"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "3 weeks",
+      "overnight_evidence": {
+        "snippet": "A selective, fully-funded, three-week intensive residential program for rising high school seniors.",
+        "url": "https://cisneros.gwu.edu/caminos-al-futuro"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Applications for future summers are typically handled via the Cisneros Institute.",
+        "url": "https://cisneros.gwu.edu/caminos-al-futuro",
+        "date_text": "April 2026"
+      },
+      "notes": "Focuses on leadership development for Hispanic and Latino students.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "American University - Community of Scholars",
+      "translated_name_hint": null,
+      "operator_name": "American University (School of International Service)",
+      "venue_name": "American University Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://www.american.edu/sis/precollege/community-of-scholars/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "college-pre-college",
+        "international-relations"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "3 weeks (2 weeks on-campus, 1 week online)",
+      "overnight_evidence": {
+        "snippet": "Students live in AU residence halls, dine on campus, and participate in field trips to D.C.-area government agencies, embassies, and global organizations.",
+        "url": "https://www.american.edu/sis/precollege/community-of-scholars/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Visit the official AU Pre-College Programs website for the most current information.",
+        "url": "https://www.american.edu",
+        "date_text": "April 2026"
+      },
+      "notes": "Hybrid format with heavy residential component.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Howard University - Upward Bound Summer Academy",
+      "translated_name_hint": null,
+      "operator_name": "Howard University",
+      "venue_name": "Howard University Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://howard.edu",
+      "supporting_urls": [
+        "https://www.prepscholar.com/sat/s/howard-university-pre-college-summer-programs"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "college-pre-college",
+        "academic"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Unknown (Standard Upward Bound is 6 weeks)",
+      "overnight_evidence": {
+        "snippet": "Often includes a residential component on Howard's campus where students receive academic instruction and college preparation support.",
+        "url": "https://howard.edu"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Information regarding summer sessions is updated annually on the Howard University website.",
+        "url": "https://howard.edu",
+        "date_text": "April 2026"
+      },
+      "notes": "Targeted primarily toward local DC and Prince George's County students.",
+      "validation_needs": [
+        "Confirm exact duration and current residential status for 2026"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "National Student Leadership Conference (NSLC) - Washington DC Sessions",
+      "translated_name_hint": null,
+      "operator_name": "National Student Leadership Conference",
+      "venue_name": "American University / Georgetown University",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://www.nslcleaders.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "leadership",
+        "career-exploration"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "9-10 days",
+      "overnight_evidence": {
+        "snippet": "NSLC programs are primarily residential, meaning high school students are generally required to live in supervised campus dormitories.",
+        "url": "https://www.nslcleaders.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "The website provides current information for upcoming programs and application cycles.",
+        "url": "https://www.nslcleaders.org/",
+        "date_text": "April 2026"
+      },
+      "notes": "Programs in DC include Law & Advocacy, International Diplomacy, National Security, and Intelligence.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Junior Statesmen of America (JSA) - Georgetown Summer School",
+      "translated_name_hint": null,
+      "operator_name": "Junior State of America",
+      "venue_name": "Georgetown University",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://www.jsa.org/summer-programs",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "civics",
+        "leadership"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "3 weeks",
+      "overnight_evidence": {
+        "snippet": "JSA offers residential summer programs on major university campuses including Georgetown.",
+        "url": "https://www.jsa.org/summer-programs"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Website reflects upcoming summer leadership opportunities.",
+        "url": "https://www.jsa.org/",
+        "date_text": "April 2026"
+      },
+      "notes": "Highly focused on public policy, debate, and civics.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Envision Experience - NYLF programs at American University",
+      "translated_name_hint": null,
+      "operator_name": "WorldStrides (Envision)",
+      "venue_name": "American University",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://www.envisionexperience.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "career-exploration",
+        "leadership"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "Career-focused residential programs hosted on university campuses.",
+        "url": "https://www.envisionexperience.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Programs available for 2025/2026 summer seasons.",
+        "url": "https://www.envisionexperience.com/",
+        "date_text": "April 2026"
+      },
+      "notes": "National Youth Leadership Forums (NYLF) are a major part of their offering in DC.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Catholic University of America - Experiences in Architecture (EiA)",
+      "translated_name_hint": null,
+      "operator_name": "Catholic University of America",
+      "venue_name": "CUA Campus",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "canonical_url": "https://summer.catholic.edu/experiences-in-architecture.html",
+      "supporting_urls": [
+        "https://summer.catholic.edu/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "specialty",
+        "architecture"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2 weeks",
+      "overnight_evidence": {
+        "snippet": "The program typically offers both residential and commuting options. Dates: July 6 - July 17, 2026. Room & Board fee listed.",
+        "url": "https://summer.catholic.edu/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "July 6, 2026 – July 17, 2026 dates posted.",
+        "url": "https://summer.catholic.edu/",
+        "date_text": "April 2026"
+      },
+      "notes": "Intense pre-college workshop for rising 10th-12th graders.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

@@ -47,6 +47,39 @@ def infer_program_family(text: str) -> list[str]:
     return families or ["unspecified"]
 
 
+def _nested_string(record: dict[str, Any], key: str, field: str) -> str | None:
+    value = record.get(key)
+    if not isinstance(value, dict):
+        return None
+    nested = value.get(field)
+    if nested is None:
+        return None
+    return str(nested)
+
+
+def _normalize_record_basis(value: str | None) -> str | None:
+    mapping = {
+        "single_venue_candidate": "venue_candidate",
+        "venue_unconfirmed": "venue_candidate_pending_confirmation",
+        "multi_venue_candidate": "multi_venue_candidate",
+        "venue_candidate": "venue_candidate",
+        "venue_candidate_pending_confirmation": "venue_candidate_pending_confirmation",
+    }
+    normalized = compact_whitespace(value or "").lower()
+    return mapping.get(normalized)
+
+
+def _normalize_priority_flags(value: Any) -> dict[str, Any] | None:
+    if not isinstance(value, dict):
+        return None
+    if "college_precollege" in value or "one_week_plus" in value:
+        return value
+    return {
+        "college_precollege": value.get("likely_college_precollege"),
+        "one_week_plus": value.get("likely_one_week_plus"),
+    }
+
+
 def infer_camp_types(text: str) -> list[str]:
     haystack = text.lower()
     camp_types: list[str] = []
@@ -211,8 +244,14 @@ def extract_input_fields(record: dict[str, Any], defaults: dict[str, Any]) -> di
     country = record.get("country") or defaults.get("country") or "US"
     venue_name = defaults.get("venue_name") or record.get("venue_name")
     canonical_url = record.get("canonical_url") or record.get("url")
-    overnight_snippet = record.get("overnight_evidence_snippet") or record.get("snippet")
-    recent_snippet = record.get("recent_activity_evidence_snippet")
+    overnight_snippet = (
+        record.get("overnight_evidence_snippet")
+        or _nested_string(record, "overnight_evidence", "snippet")
+        or record.get("snippet")
+    )
+    recent_snippet = record.get("recent_activity_evidence_snippet") or _nested_string(
+        record, "recent_activity_evidence", "snippet"
+    )
     source_language = record.get("source_language")
     uncertainty = record.get("uncertainty")
     text = compact_whitespace(
@@ -252,16 +291,34 @@ def normalize_candidate_record(record: dict[str, Any], defaults: dict[str, Any] 
     defaults = defaults or {}
     extracted = extract_input_fields(record, defaults)
     text = extracted["combined_text"]
-    provisional_tags = [str(tag) for tag in (record.get("provisional_program_family_tags") or [])]
+    provisional_tags = [
+        *[str(tag) for tag in (record.get("provisional_program_family_tags") or [])],
+        *[str(tag) for tag in (record.get("program_family_tags") or [])],
+        *[str(tag) for tag in (record.get("camp_type_tags") or [])],
+    ]
     provisional_families, provisional_camp_types, provisional_duration = _parse_provisional_tags(provisional_tags)
-    families = _merge_unique(list(record.get("program_family") or []) + provisional_families + infer_program_family(text))
-    camp_types = _merge_unique(list(record.get("camp_types") or []) + provisional_camp_types + infer_camp_types(text))
+    families = _merge_unique(
+        list(record.get("program_family") or [])
+        + list(record.get("program_family_tags") or [])
+        + provisional_families
+        + infer_program_family(text)
+    )
+    camp_types = _merge_unique(
+        list(record.get("camp_types") or [])
+        + list(record.get("camp_type_tags") or [])
+        + provisional_camp_types
+        + infer_camp_types(text)
+    )
     if len(families) > 1 and "unspecified" in families:
         families = [family for family in families if family != "unspecified"]
     if len(camp_types) > 1 and "unknown" in camp_types:
         camp_types = [camp_type for camp_type in camp_types if camp_type != "unknown"]
-    duration_guess = record.get("duration_guess") or provisional_duration or infer_duration(" ".join([text, *provisional_tags]))
-    record_basis = record.get("record_basis") or detect_record_basis(
+    duration_guess = (
+        record.get("duration_guess")
+        or provisional_duration
+        or infer_duration(" ".join([text, str(record.get("duration_hint_text") or ""), *provisional_tags]))
+    )
+    record_basis = _normalize_record_basis(record.get("record_basis") or record.get("candidate_shape")) or detect_record_basis(
         extracted["venue_name"], extracted["uncertainty"], extracted["city"]
     )
     activity_status = record.get("activity_status_guess") or infer_activity_status(text)
@@ -297,7 +354,7 @@ def normalize_candidate_record(record: dict[str, Any], defaults: dict[str, Any] 
             )
         )
     )
-    priority_flags = record.get("priority_flags") or {
+    priority_flags = _normalize_priority_flags(record.get("priority_flags")) or {
         "college_precollege": "college-pre-college" in families,
         "one_week_plus": bool((duration_guess.get("min_days") or 0) >= 7),
     }

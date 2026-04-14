@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "GA",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Georgia\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Blue Ridge",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Blue Ridge",
+      "city": "Blue Ridge",
+      "region": "GA",
+      "country": "US",
+      "canonical_url": "https://blueridgecamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "family-operated"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer sessions",
+      "overnight_evidence": {
+        "snippet": "coed, family-operated, accredited traditional camp... overnight",
+        "url": "https://blueridgecamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 5-16 in Blue Ridge Mountains.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Woodmont",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Woodmont",
+      "city": "Cloudland",
+      "region": "GA",
+      "country": "US",
+      "canonical_url": "https://campwoodmont.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "christian-based"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one-week or two-week",
+      "overnight_evidence": {
+        "snippet": "family-owned Christian-based camp for boys and girls... overnight summer camp",
+        "url": "https://campwoodmont.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Situated on Lookout Mountain, ages 6-15.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Evergreen",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Evergreen",
+      "city": "Clarkesville",
+      "region": "GA",
+      "country": "US",
+      "canonical_url": "https://campevergreen.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "wilderness"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "wilderness-centered Christian camp located in the North Georgia mountains",
+        "url": "https://campevergreen.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Unplugged nature-based experience for ages 6-14.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

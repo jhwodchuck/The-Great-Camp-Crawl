@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T15:24:34Z",
+  "generated_at": "2026-04-13T21:49:00Z",
   "reports_ingested": [
     {
       "source_report": "reports/discovery/gt_georgia_tech_starter_dump_2026-04-13.json",
@@ -60,33 +60,162 @@
         "split_queue": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_split_queue.jsonl",
         "split_stubs": "reports/discovery/texas_gifted_talented_full_starter_dump_2026-04-13_split_stubs.jsonl"
       }
+    },
+    {
+      "source_report": "reports/discovery/us-as-country-region-scan.json",
+      "records": 0,
+      "outputs": {
+        "normalized": "reports/discovery/us-as-country-region-scan_normalized.jsonl",
+        "followup": "reports/discovery/us-as-country-region-scan_followup_queue.jsonl",
+        "split_queue": "reports/discovery/us-as-country-region-scan_split_queue.jsonl",
+        "split_stubs": "reports/discovery/us-as-country-region-scan_split_stubs.jsonl"
+      }
     }
   ],
   "normalized_reports_used": [
     "canada-french-singleq-live-2026-04-13_normalized.jsonl",
     "canada-hebergement-singleq-live-2026-04-13_normalized.jsonl",
+    "deep_research_report_2_normalized.jsonl",
+    "deep_research_report_normalized.jsonl",
+    "dossier_render_skipped_2026-04-13_normalized.jsonl",
+    "great_camp_crawl_gt_overnight_wave_100_normalized.jsonl",
+    "great_camp_crawl_wave1_normalized.jsonl",
+    "great_camp_crawl_wave2_normalized.jsonl",
+    "great_camp_crawl_wave3_normalized.jsonl",
+    "great_camp_crawl_wave4_normalized.jsonl",
     "gt_georgia_tech_starter_dump_2026-04-13_normalized.jsonl",
     "gt_gifted_talented_institutional_leads_2026-04-13_normalized.jsonl",
     "gt_gifted_talented_math_stem_expansion_2026-04-13_normalized.jsonl",
     "gt_gifted_talented_starter_dump_2026-04-13_normalized.jsonl",
     "jhu_ei_live_probe_2026-04-13_normalized.jsonl",
     "mexico-singleq-live-2026-04-13_normalized.jsonl",
+    "pending_dossier_resolutions_2026-04-13_normalized.jsonl",
     "starter_research_dump_2026-04-13_normalized.jsonl",
     "texas_gifted_talented_full_starter_dump_2026-04-13_normalized.jsonl",
+    "us-ak-country-region-scan_normalized.jsonl",
+    "us-al-country-region-scan_normalized.jsonl",
+    "us-ar-country-region-scan_normalized.jsonl",
+    "us-as-country-region-scan_normalized.jsonl",
+    "us-az-country-region-scan_normalized.jsonl",
+    "us-ca-country-region-scan-aca_normalized.jsonl",
+    "us-co-country-region-scan_normalized.jsonl",
     "us-college-precollege-national-live-2026-04-13_normalized.jsonl",
+    "us-college-precollege-wave1-us-ak-college-precollege_normalized.jsonl",
+    "us-college-precollege-wave1-us-al-college-precollege_normalized.jsonl",
+    "us-ct-country-region-scan_normalized.jsonl",
+    "us-dc-country-region-scan_normalized.jsonl",
+    "us-de-country-region-scan_normalized.jsonl",
+    "us-fl-country-region-scan_normalized.jsonl",
+    "us-ga-country-region-scan_normalized.jsonl",
+    "us-hi-country-region-scan_normalized.jsonl",
+    "us-ia-country-region-scan_normalized.jsonl",
+    "us-id-country-region-scan_normalized.jsonl",
+    "us-il-country-region-scan_normalized.jsonl",
+    "us-in-country-region-scan_normalized.jsonl",
+    "us-ks-country-region-scan_normalized.jsonl",
+    "us-ky-country-region-scan_normalized.jsonl",
+    "us-la-country-region-scan-02_normalized.jsonl",
+    "us-la-country-region-scan-03_normalized.jsonl",
+    "us-la-country-region-scan_normalized.jsonl",
+    "us-ma-country-region-scan_normalized.jsonl",
+    "us-ma-google-cdp-probe-2026-04-13_normalized.jsonl",
     "us-md-college-precollege-live-2026-04-13_normalized.jsonl",
+    "us-md-country-region-scan_normalized.jsonl",
     "us-md-targeted-live-2026-04-13_normalized.jsonl",
+    "us-me-country-region-scan_normalized.jsonl",
+    "us-mi-country-region-scan_normalized.jsonl",
+    "us-mn-country-region-scan_normalized.jsonl",
+    "us-mo-country-region-scan_normalized.jsonl",
+    "us-ms-country-region-scan_normalized.jsonl",
+    "us-mt-country-region-scan_normalized.jsonl",
+    "us-nc-country-region-scan_normalized.jsonl",
+    "us-ny-country-region-scan-aca_normalized.jsonl",
+    "us-ok-country-region-scan_normalized.jsonl",
     "us-precollege-singleq-live-2026-04-13_normalized.jsonl",
     "us-precollege-summerres-singleq-live-2026-04-13_normalized.jsonl",
-    "us_candidates_2026-04-13_normalized.jsonl"
+    "us-tx-country-region-scan-02_normalized.jsonl",
+    "us-tx-country-region-scan-03_normalized.jsonl",
+    "us-tx-country-region-scan-04_normalized.jsonl",
+    "us-tx-country-region-scan-05_normalized.jsonl",
+    "us-tx-country-region-scan-06_normalized.jsonl",
+    "us-tx-country-region-scan-07_normalized.jsonl",
+    "us-tx-country-region-scan_normalized.jsonl",
+    "us-tx-university-expansion-02_normalized.jsonl",
+    "us-tx-university-expansion_normalized.jsonl",
+    "us-ut-country-region-scan_normalized.jsonl",
+    "us-wy-aca-crawl_normalized.jsonl",
+    "us_candidates_2026-04-13_normalized.jsonl",
+    "us_nationwide_pull_2026-04-13_aggregate_normalized.jsonl",
+    "us_nationwide_pull_2026-04-13_deduped_normalized.jsonl"
   ],
   "counts": {
-    "aggregate_candidates": 110,
-    "aggregate_followups": 551,
-    "aggregate_split_tasks": 7,
-    "duplicate_candidate_ids": 0
+    "aggregate_candidates": 803,
+    "aggregate_followups": 3166,
+    "aggregate_split_tasks": 40,
+    "duplicate_candidate_ids": 10
   },
-  "duplicates": [],
+  "duplicates": [
+    {
+      "candidate_id": "hcssim-hampshire-college-amherst-ma",
+      "source_report": "great_camp_crawl_wave1_normalized.jsonl",
+      "canonical_url": "https://hcssim.org/",
+      "name": "HCSSiM"
+    },
+    {
+      "candidate_id": "promys-boston-university-boston-ma",
+      "source_report": "great_camp_crawl_wave1_normalized.jsonl",
+      "canonical_url": "https://promys.org/programs/promys",
+      "name": "PROMYS"
+    },
+    {
+      "candidate_id": "purdue-step-west-lafayette-in",
+      "source_report": "great_camp_crawl_wave3_normalized.jsonl",
+      "canonical_url": "https://engineering.purdue.edu/Honors/SeminarforTopEngineeringProspects",
+      "name": "Seminar for Top Engineering Prospects"
+    },
+    {
+      "candidate_id": "cand-us-tx-fort-worth-tcu-band-camp-tcu-campus",
+      "source_report": "us-tx-university-expansion-02_normalized.jsonl",
+      "canonical_url": "https://music.tcu.edu/outreach/summer-music-institute/band-camp.php",
+      "name": "TCU Band Camp"
+    },
+    {
+      "candidate_id": "hcssim-hampshire-college-amherst-ma",
+      "source_report": "us_nationwide_pull_2026-04-13_aggregate_normalized.jsonl",
+      "canonical_url": "https://hcssim.org/",
+      "name": "HCSSiM"
+    },
+    {
+      "candidate_id": "promys-boston-university-boston-ma",
+      "source_report": "us_nationwide_pull_2026-04-13_aggregate_normalized.jsonl",
+      "canonical_url": "https://promys.org/programs/promys",
+      "name": "PROMYS"
+    },
+    {
+      "candidate_id": "purdue-step-west-lafayette-in",
+      "source_report": "us_nationwide_pull_2026-04-13_aggregate_normalized.jsonl",
+      "canonical_url": "https://engineering.purdue.edu/Honors/SeminarforTopEngineeringProspects",
+      "name": "Seminar for Top Engineering Prospects (STEP)"
+    },
+    {
+      "candidate_id": "hcssim-hampshire-college-amherst-ma",
+      "source_report": "us_nationwide_pull_2026-04-13_deduped_normalized.jsonl",
+      "canonical_url": "https://hcssim.org/",
+      "name": "HCSSiM"
+    },
+    {
+      "candidate_id": "promys-boston-university-boston-ma",
+      "source_report": "us_nationwide_pull_2026-04-13_deduped_normalized.jsonl",
+      "canonical_url": "https://promys.org/programs/promys",
+      "name": "PROMYS"
+    },
+    {
+      "candidate_id": "purdue-step-west-lafayette-in",
+      "source_report": "us_nationwide_pull_2026-04-13_deduped_normalized.jsonl",
+      "canonical_url": "https://engineering.purdue.edu/Honors/SeminarforTopEngineeringProspects",
+      "name": "Seminar for Top Engineering Prospects (STEP)"
+    }
+  ],
   "outputs": {
     "discovered_candidates": "data/staging/discovered-candidates.jsonl",
     "followup_queue": "data/staging/discovery-followup-queue.jsonl",

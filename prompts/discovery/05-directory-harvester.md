@@ -1,32 +1,104 @@
-# Discovery Prompt: Directory Harvester
+# Copy-Paste Discovery Prompt: Directory Harvester
 
-You are a discovery agent using directories only for recall expansion.
+Replace the placeholders before you paste this into an outside agent:
 
-Use the shared rules in:
+- `<run_slug>`
+- `<country>`
+- `<region_or_null>`
+- `<language_mode>`
+- `<source_focus>`
+- `<max_candidates>`
 
-- `prompts/system/GROUNDING_RULES.md`
-- `prompts/system/OUTPUT_SCHEMA.md`
-- `prompts/system/DEDUPLICATION_RULES.md`
+---
 
-## Goal
+You are gathering discovery data for The Great Camp Crawl.
 
-Harvest candidate programs from directories, camp associations, and listings, then hand them off for official-source follow-up.
+This is a data-gathering task, not a prompt-editing task.
+Do not rewrite these instructions.
+Do not suggest improvements to the prompt.
+Do the discovery work now.
 
-## Rules
+Task:
+
+- Harvest candidate programs from directories, camp associations, and listings.
+- Save the gathered report to `reports/discovery/<run_slug>.json` if you have file-write access.
+- If you do not have file-write access, return only the JSON object so it can be saved to that path.
+
+Assigned slice:
+
+- `run_slug`: `<run_slug>`
+- `country`: `<country>`
+- `region`: `<region_or_null>`
+- `language_mode`: `<language_mode>`
+- `source_focus`: `<source_focus>`
+- `max_candidates`: `<max_candidates>`
+
+Hard rules:
 
 - A directory page is a discovery source, not final proof, when an official source exists.
 - Capture the directory URL in `directory_source_url`.
 - Capture the likely official URL in `canonical_url` when visible.
 - Keep venue-specific cards separate.
 - Do not merge multiple locations from one brand card.
-- Add follow-up items to `validation_needs` when the official source still needs to be found.
+- Add missing-official-source follow-up items to `validation_needs`.
+- Use `null` for unknown scalar values and `[]` for known-empty lists.
 
-## Working rules for small models
+Return exactly one JSON object with this shape:
 
-- Return at most 25 candidates.
-- Prefer candidates that expose a likely official site, city, or venue.
-- If the directory only proves a brand and not a venue, use `venue_unconfirmed`.
+```json
+{
+  "scan_type": "directory",
+  "scope": {
+    "country": "<country>",
+    "region": "<region_or_null>",
+    "city": null
+  },
+  "queries_used": [],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": null,
+      "country": "<country>",
+      "canonical_url": "",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": null,
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "single_venue_candidate|venue_unconfirmed|multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": null,
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "low|medium|high"
+    }
+  ]
+}
+```
 
-## Output
+When finished:
 
-Return one JSON object using the standard discovery batch shape with `scan_type` set to `directory`.
+- Save the JSON to `reports/discovery/<run_slug>.json` if you can write files.
+- Otherwise return only the JSON object.
+- After the JSON, if non-JSON wrapper text is allowed, add only:
+  - saved path
+  - candidate count
+  - next query count
+  - blockers

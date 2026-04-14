@@ -1,0 +1,431 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "LA",
+    "city": null
+  },
+  "queries_used": [
+    "Camp Ch-Yo-Ca West Monroe LA official website",
+    "Camp Caney Minden LA official website",
+    "Covey Rise Lodge Husser LA summer youth camps",
+    "King's Camp Mer Rouge LA official website",
+    "Live Oak Wilderness Camp Louisiana official website",
+    "Med-Camps of Louisiana West Monroe LA official website",
+    "Camp Marydale Girl Scouts Louisiana East official website",
+    "Dry Creek Baptist Camp LA official website",
+    "Clara Springs Baptist Camp LA official website",
+    "Louisiana Lions Camp Leesville LA official website"
+  ],
+  "next_queries": [
+    "Louisiana pre-college residential programs 2026",
+    "Louisiana specialty arts overnight camps 2026",
+    "Louisiana faith-based youth retreats overnight 2026"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "Camp Ch-Yo-Ca",
+      "translated_name_hint": null,
+      "operator_name": "Camp Ch-Yo-Ca",
+      "venue_name": "Camp Ch-Yo-Ca",
+      "city": "Calhoun",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://campchyoca.org/",
+      "supporting_urls": [
+        "https://campchyoca.org/campchyocadates"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "religious"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week (various sessions)",
+      "overnight_evidence": {
+        "snippet": "Fun–Packed Overnight Schedule",
+        "url": "https://campchyoca.org/campchyocadates"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Session 1: May 31–5",
+        "url": "https://campchyoca.org/campchyocadates",
+        "date_text": "2026-05-31"
+      },
+      "notes": "Located near West Monroe. Church-affiliated traditional overnight camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Caney",
+      "translated_name_hint": null,
+      "operator_name": "Camp Caney",
+      "venue_name": "Camp Caney",
+      "city": "Minden",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://campcaney.com/",
+      "supporting_urls": [
+        "https://campcaney.com/summercamp/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "religious"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "The cabins have nice air conditioning and comfortable beds.",
+        "url": "https://campcaney.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Pre-Camp 1 and 2 + Elementary Camp 1 and 2 + Jr. High Camp + Sr. High Camp",
+        "url": "https://campcaney.com/summercamp/",
+        "date_text": "2026"
+      },
+      "notes": "Located in Kisatchie National Forest.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Covey Rise Lodge Summer Youth Camps",
+      "translated_name_hint": null,
+      "operator_name": "Covey Rise Lodge",
+      "venue_name": "Covey Rise Lodge",
+      "city": "Husser",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.coveyriselodge.com/youth-camps",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "specialty",
+        "outdoors"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth",
+        "hunting"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week",
+      "overnight_evidence": {
+        "snippet": "Campers are housed in the Main Lodge. Every bedroom contains three or four beds and has a private bath.",
+        "url": "https://www.coveyriselodge.com/youth-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Basic Summer Camps + 2026 Advanced Summer Camps",
+        "url": "https://www.coveyriselodge.com/youth-camps",
+        "date_text": "2026"
+      },
+      "notes": "Focus on outdoor skills and hunting. High-end facility.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "King's Camp",
+      "translated_name_hint": null,
+      "operator_name": "King's Camp",
+      "venue_name": "King's Camp",
+      "city": "Mer Rouge",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.kingscamp.net/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "religious",
+        "outdoors"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "6-day sessions",
+      "overnight_evidence": {
+        "snippet": "Grades 3-4 Session 1: June 1 - June 6",
+        "url": "https://www.kingscamp.net/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Our weeks for King’s Camp 2026 are: Grades 3-4 Session 1: June 1 - June 6",
+        "url": "https://www.kingscamp.net/",
+        "date_text": "2026-06-01"
+      },
+      "notes": "Christian outdoor adventure camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Live Oak Wilderness Camp",
+      "translated_name_hint": null,
+      "operator_name": "Live Oak Camp",
+      "venue_name": "Live Oak Camp",
+      "city": "New Orleans",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.liveoakcamp.com/",
+      "supporting_urls": [
+        "https://www.liveoakcamp.com/for-families/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "leadership"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Two week sessions",
+      "overnight_evidence": {
+        "snippet": "At Live Oak, we are building a diverse community of New Orleans's future leaders through sleep-away camp",
+        "url": "https://www.liveoakcamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Fees & Scholarships",
+        "url": "https://www.liveoakcamp.com/for-families/",
+        "date_text": "2026"
+      },
+      "notes": "Focus on leadership and community for New Orleans youth.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Med-Camps of Louisiana",
+      "translated_name_hint": null,
+      "operator_name": "MedCamps of Louisiana",
+      "venue_name": "Camp Alabama",
+      "city": "Choudrant",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://medcamps.org/",
+      "supporting_urls": [
+        "https://medcamps.org/registration/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "special-needs"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth",
+        "medical"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Various one-week sessions by condition",
+      "overnight_evidence": {
+        "snippet": "Camping is an American tradition that epitomizes normalcy... special recreational and educational camping experiences",
+        "url": "https://medcamps.org/registration/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "REGISTRATION FOR ALL 2026 CAMPS IS NOW OPEN!!",
+        "url": "https://medcamps.org/registration/",
+        "date_text": "2026"
+      },
+      "notes": "Accredited by ACA. Free for qualifying campers with chronic illnesses/disabilities.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Marydale",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts Louisiana East",
+      "venue_name": "Camp Marydale",
+      "city": "St. Francisville",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.gsle.org/en/camp-and-outdoors/summer-camp.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "youth"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "girls-only"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "We offer day camps, overnight sessions, and half-day sessions.",
+        "url": "https://www.gsle.org/en/camp-and-outdoors/summer-camp.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration for GSLE 2026 Summer Camp is NOW OPEN!",
+        "url": "https://www.gsle.org/en/camp-and-outdoors/summer-camp.html",
+        "date_text": "2026"
+      },
+      "notes": "Large 400-acre camp with equestrian center.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Dry Creek Baptist Camp",
+      "translated_name_hint": null,
+      "operator_name": "Dry Creek Baptist Camp",
+      "venue_name": "Dry Creek Baptist Camp",
+      "city": "Dry Creek",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://drycreek.net/",
+      "supporting_urls": [
+        "https://drycreek.net/summer-camps/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "religious"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week (Impact) or 4-day sessions",
+      "overnight_evidence": {
+        "snippet": "Dorm lodging to hold 240 campers.",
+        "url": "https://drycreek.net/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "February 27-28,2026... March 20-21, 2026... April 17-18, 2026",
+        "url": "https://drycreek.net/camp-events/",
+        "date_text": "2026-02-27"
+      },
+      "notes": "Church-affiliated multi-program camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Clara Springs Baptist Camp",
+      "translated_name_hint": null,
+      "operator_name": "Clara Springs Baptist Camp",
+      "venue_name": "Clara Springs Baptist Camp",
+      "city": "Pelican",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "http://clarasprings.com/",
+      "supporting_urls": [
+        "http://clarasprings.com/2026-summer-camp-info"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "traditional",
+        "religious"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "Homesick for Your Camper? Email them at campers@clarasprings.com",
+        "url": "http://clarasprings.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer Camp Info",
+        "url": "http://clarasprings.com/",
+        "date_text": "2026"
+      },
+      "notes": "Located in Pelican, LA.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Louisiana Lions Camp",
+      "translated_name_hint": null,
+      "operator_name": "Lions Clubs of Louisiana",
+      "venue_name": "Louisiana Lions Camp",
+      "city": "Anacoco",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://lionscamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": [
+        "special-needs"
+      ],
+      "camp_type_tags": [
+        "overnight",
+        "youth",
+        "medical"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Weeklong sessions",
+      "overnight_evidence": {
+        "snippet": "To provide an outdoor summer camp experience for the youth of Louisiana with respiratory disorders, special needs, juvenile diabetes, and childhood cancer.",
+        "url": "https://lionscamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration for 2026",
+        "url": "https://lionscamp.org/",
+        "date_text": "2026"
+      },
+      "notes": "Free of charge for qualifying campers sponsored by local Lions Clubs. Near Leesville.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

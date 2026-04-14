@@ -1,0 +1,73 @@
+{
+  "run_timestamp": "2026-04-14T01:19:38Z",
+  "input_file": "data/staging/discovered-candidates.jsonl",
+  "total_candidates": 803,
+  "enrichment_types": {
+    "pricing": {
+      "total": 803,
+      "output_file": "data/enrichment/pricing_enrichment.jsonl",
+      "status_counts": {
+        "found": 100,
+        "missing": 684,
+        "partial": 19
+      },
+      "confidence_counts": {
+        "high": 100,
+        "low": 703
+      }
+    },
+    "duration": {
+      "total": 803,
+      "output_file": "data/enrichment/duration_enrichment.jsonl",
+      "status_counts": {
+        "found": 546,
+        "missing": 234,
+        "partial": 23
+      },
+      "confidence_counts": {
+        "high": 458,
+        "low": 257,
+        "medium": 88
+      }
+    },
+    "age_grade": {
+      "total": 803,
+      "output_file": "data/enrichment/age_grade_enrichment.jsonl",
+      "status_counts": {
+        "found": 311,
+        "partial": 35,
+        "missing": 457
+      },
+      "confidence_counts": {
+        "high": 311,
+        "low": 492
+      }
+    },
+    "contact": {
+      "total": 803,
+      "output_file": "data/enrichment/contact_enrichment.jsonl",
+      "status_counts": {
+        "partial": 798,
+        "missing": 5
+      },
+      "confidence_counts": {
+        "medium": 572,
+        "low": 231
+      }
+    },
+    "taxonomy": {
+      "total": 803,
+      "output_file": "data/enrichment/taxonomy_enrichment.jsonl",
+      "status_counts": {
+        "found": 749,
+        "missing": 54
+      },
+      "confidence_counts": {
+        "high": 506,
+        "medium": 243,
+        "low": 54
+      }
+    }
+  },
+  "followup_count": 686
+}

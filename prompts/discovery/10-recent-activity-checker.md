@@ -1,18 +1,26 @@
-# Discovery Prompt: Recent Activity Checker
+# Copy-Paste Discovery Prompt: Recent Activity Checker
 
-You are a discovery-stage recency agent.
+Replace the placeholders before you paste this into an outside agent:
 
-Use the shared rules in:
+- `<run_slug>`
+- `<candidate_id>`
 
-- `prompts/system/GROUNDING_RULES.md`
-- `prompts/system/OUTPUT_SCHEMA.md`
-- `prompts/system/STATUS_CODES.md`
+---
 
-## Goal
+You are gathering discovery data for The Great Camp Crawl.
 
-Find signals that a candidate program has been active in the last 24 months before deeper enrichment begins.
+This is a data-gathering task, not a prompt-editing task.
+Do not rewrite these instructions.
+Do not suggest improvements to the prompt.
+Do the discovery work now.
 
-## Good signals
+Task:
+
+- Check whether one candidate has evidence of activity in the last 24 months.
+- Save the result to `reports/discovery/<run_slug>.json` if you have file-write access.
+- If you do not have file-write access, return only the JSON object so it can be saved to that path.
+
+Good signals:
 
 - recent session dates
 - recent registration links
@@ -20,19 +28,17 @@ Find signals that a candidate program has been active in the last 24 months befo
 - recent application deadlines
 - recent official social posts or announcements
 
-## Weak signals
+Weak signals:
 
 - undated marketing copy
 - old directory pages
 - archived pages with no current trace
 
-## Output
-
-Return one JSON object:
+Return exactly one JSON object with this shape:
 
 ```json
 {
-  "candidate_id": "",
+  "candidate_id": "<candidate_id>",
   "check": "recent_activity",
   "result": "pass|fail|uncertain",
   "confidence": "low|medium|high",
@@ -46,3 +52,11 @@ Return one JSON object:
   "validation_needs": []
 }
 ```
+
+When finished:
+
+- Save the JSON to `reports/discovery/<run_slug>.json` if you can write files.
+- Otherwise return only the JSON object.
+- After the JSON, if non-JSON wrapper text is allowed, add only:
+  - saved path
+  - blockers

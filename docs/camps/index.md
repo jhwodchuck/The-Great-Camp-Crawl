@@ -2,21 +2,53 @@
 
 This section is the browsable entry point for venue-level Markdown dossiers.
 
-## Design rule
+## Regions
 
-One record represents one physical venue or session location.
-
-## Why this matters
-
-The same operator can run:
-- multiple campuses
-- multiple camp properties
-- multiple branded programs at the same site
-
-Venue-level tracking keeps local details, pricing, and eligibility cleaner over time.
-
-## Seeded regions
-
-- [US / Maryland](us/md.md)
-- [Canada / Ontario](canada/on.md)
-- [Mexico / Jalisco](mexico/jal.md)
+- [CANADA / BC](canada/bc.md)
+- [CANADA / NS](canada/ns.md)
+- [CANADA / ON](canada/on.md)
+- [CANADA / SK](canada/sk.md)
+- [MEXICO / BCS](mexico/bcs.md)
+- [MEXICO / GTO](mexico/gto.md)
+- [MEXICO / JAL](mexico/jal.md)
+- [MEXICO / MEX](mexico/mex.md)
+- [US / AK](us/ak.md)
+- [US / AL](us/al.md)
+- [US / AR](us/ar.md)
+- [US / AZ](us/az.md)
+- [US / CA](us/ca.md)
+- [US / CO](us/co.md)
+- [US / CT](us/ct.md)
+- [US / DC](us/dc.md)
+- [US / DE](us/de.md)
+- [US / FL](us/fl.md)
+- [US / GA](us/ga.md)
+- [US / HI](us/hi.md)
+- [US / IA](us/ia.md)
+- [US / ID](us/id.md)
+- [US / IL](us/il.md)
+- [US / IN](us/in.md)
+- [US / KS](us/ks.md)
+- [US / KY](us/ky.md)
+- [US / LA](us/la.md)
+- [US / MA](us/ma.md)
+- [US / MD](us/md.md)
+- [US / ME](us/me.md)
+- [US / MI](us/mi.md)
+- [US / MN](us/mn.md)
+- [US / MO](us/mo.md)
+- [US / NC](us/nc.md)
+- [US / NH](us/nh.md)
+- [US / NJ](us/nj.md)
+- [US / NV](us/nv.md)
+- [US / NY](us/ny.md)
+- [US / OH](us/oh.md)
+- [US / OK](us/ok.md)
+- [US / PA](us/pa.md)
+- [US / RI](us/ri.md)
+- [US / TN](us/tn.md)
+- [US / TX](us/tx.md)
+- [US / UT](us/ut.md)
+- [US / VA](us/va.md)
+- [US / WA](us/wa.md)
+- [US / WI](us/wi.md)

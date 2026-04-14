@@ -1,0 +1,411 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "TX",
+    "city": null
+  },
+  "queries_used": [
+    "\"ACA accredited\" \"Texas\" overnight camps",
+    "\"Texas\" resident camps ACA"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "YMCA Camp Cullen",
+      "translated_name_hint": null,
+      "operator_name": "YMCA of Greater Houston",
+      "venue_name": null,
+      "city": "Trinity",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.ymcacampcullen.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["ymca", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "premier sleepaway camp in Texas... ACA accredited",
+        "url": "https://www.ymcacampcullen.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Register for Summer 2026",
+        "url": "https://www.ymcacampcullen.org/",
+        "date_text": "2026"
+      },
+      "notes": "Ages 7-17",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Aranzazu",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Rockport",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://camparanzazu.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["special needs"],
+      "camp_type_tags": ["inclusive", "medical"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "varies",
+      "overnight_evidence": {
+        "snippet": "ACA-accredited residential camp facility for children and adults with special needs",
+        "url": "https://camparanzazu.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 scheduling",
+        "url": "https://camparanzazu.org/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Greene Family Camp",
+      "translated_name_hint": null,
+      "operator_name": "Union for Reform Judaism",
+      "venue_name": null,
+      "city": "Bruceville",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://greene.urjcamps.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based"],
+      "camp_type_tags": ["jewish", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2.5 to 3.5 weeks",
+      "overnight_evidence": {
+        "snippet": "Jewish residential camp in the heart of Texas",
+        "url": "https://greene.urjcamps.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Dates and Rates",
+        "url": "https://greene.urjcamps.org/",
+        "date_text": "2026"
+      },
+      "notes": "ACA accredited",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Blessing Texas",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Brenham",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://campblessing.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["special needs", "faith-based"],
+      "camp_type_tags": ["inclusive", "christian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "ACA accredited residential Christian summer camp for children with disabilities",
+        "url": "https://campblessing.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Apply for summer 2026",
+        "url": "https://campblessing.org/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "SeaWorld San Antonio Resident Camp",
+      "translated_name_hint": null,
+      "operator_name": "SeaWorld",
+      "venue_name": "SeaWorld San Antonio",
+      "city": "San Antonio",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://seaworld.com/san-antonio/educational-programs/summer-camps/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty"],
+      "camp_type_tags": ["marine biology"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5-night",
+      "overnight_evidence": {
+        "snippet": "ACA accredited resident camp... campers stay in dorms",
+        "url": "https://seaworld.com/san-antonio/educational-programs/summer-camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Resident Camps",
+        "url": "https://seaworld.com/san-antonio/educational-programs/summer-camps/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Agnes Arnold",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of San Jacinto",
+      "venue_name": null,
+      "city": "Conroe",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.gssjc.org/en/camp/our-camps/agnes-arnold.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["girl scouts", "outdoors"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 to 2 weeks",
+      "overnight_evidence": {
+        "snippet": "ACA accredited... resident camp features Shadow Lake, platform tents and cabins",
+        "url": "https://www.gssjc.org/en/camp/our-camps/agnes-arnold.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer Resident Camp",
+        "url": "https://www.gssjc.org/en/camp/our-camps/agnes-arnold.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Casa Mare",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of San Jacinto",
+      "venue_name": null,
+      "city": "Seabrook",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.gssjc.org/en/camp/our-camps/casa-mare.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["girl scouts", "sailing"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 to 2 weeks",
+      "overnight_evidence": {
+        "snippet": "ACA accredited overnight property located on Galveston Bay",
+        "url": "https://www.gssjc.org/en/camp/our-camps/casa-mare.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer Resident Camp",
+        "url": "https://www.gssjc.org/en/camp/our-camps/casa-mare.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Misty Meadows Ranch",
+      "translated_name_hint": null,
+      "operator_name": "Girl Scouts of San Jacinto",
+      "venue_name": null,
+      "city": "Conroe",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.gssjc.org/en/camp/our-camps/misty-meadows.html",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["girl scouts", "equestrian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 to 2 weeks",
+      "overnight_evidence": {
+        "snippet": "ACA accredited resident equestrian camp with dormitories and cabins",
+        "url": "https://www.gssjc.org/en/camp/our-camps/misty-meadows.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer Resident Camp",
+        "url": "https://www.gssjc.org/en/camp/our-camps/misty-meadows.html",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Frontier Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Grapeland",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://frontiercamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "ACA accredited Christian summer youth camp in East Texas",
+        "url": "https://frontiercamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Register for 2026 Summer",
+        "url": "https://frontiercamp.org/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp OTX",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Bandera",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://campotx.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 to 2 weeks",
+      "overnight_evidence": {
+        "snippet": "Texas premier premier Hill Country overnight camp",
+        "url": "https://campotx.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Enroll for Summer 2026",
+        "url": "https://campotx.com/",
+        "date_text": "2026"
+      },
+      "notes": "Sister camp to Camp Ozark (AR)",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "His Hill Ranch Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Comfort",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://www.hishill.org/summer-camp",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based"],
+      "camp_type_tags": ["christian"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "Christian overnight camp located in the Texas Hill Country... ACA accredited",
+        "url": "https://www.hishill.org/summer-camp"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Register for 2026 Session",
+        "url": "https://www.hishill.org/summer-camp",
+        "date_text": "2026"
+      },
+      "notes": "Ages 8-18",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Stoney Creek Ranch",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "New Ulm",
+      "region": "TX",
+      "country": "US",
+      "canonical_url": "https://stoneycreekranch.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5-day",
+      "overnight_evidence": {
+        "snippet": "Urban youth camp and retreat center... overnight cabins",
+        "url": "https://stoneycreekranch.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 Dates",
+        "url": "https://stoneycreekranch.org/",
+        "date_text": "2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

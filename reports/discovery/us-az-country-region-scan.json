@@ -1,0 +1,114 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "AZ",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Arizona\"",
+    "site:.edu \"Arizona\" \"pre-college\" residential summer"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Friendly Pines Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Friendly Pines Camp",
+      "city": "Prescott",
+      "region": "AZ",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "independent"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "one-week or more",
+      "overnight_evidence": {
+        "snippet": "overnight summer camps in Arizona... independent, family-owned camp",
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 6-14.",
+      "validation_needs": ["find canonical url"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Tuku",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Tuku",
+      "city": "Rimrock",
+      "region": "AZ",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["mindfulness", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "traditional sleep-away camp with a mindfulness approach",
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 6-17",
+      "validation_needs": ["find canonical url"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "St. Joseph's Youth Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "St. Joseph's Youth Camp",
+      "city": "Flagstaff",
+      "region": "AZ",
+      "country": "US",
+      "canonical_url": "https://sjycaz.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "teen weeks and traditional weeks",
+      "overnight_evidence": {
+        "snippet": "offers traditional overnight programs",
+        "url": "https://sjycaz.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": "https://sjycaz.com/",
+        "date_text": "2026"
+      },
+      "notes": "Ages 6-12 and teen weeks 13-14.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

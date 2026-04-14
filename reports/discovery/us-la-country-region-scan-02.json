@@ -1,0 +1,371 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "LA",
+    "city": null
+  },
+  "queries_used": [
+    "overnight summer camp Louisiana",
+    "residential summer camp Louisiana",
+    "family camp Louisiana",
+    "youth retreat Louisiana overnight",
+    "site:.edu Louisiana pre-college residential",
+    "LSU Pre-college residential overnight",
+    "Tulane Pre-college residential overnight",
+    "Xavier University of Louisiana SOAR X residential",
+    "University of Louisiana at Lafayette Summer Design Discovery Camp",
+    "Southern University and A&M College TMCF SOAR JEEI",
+    "LSMSA Summer program residential"
+  ],
+  "next_queries": [
+    "site:.edu Louisiana pre-college residential 2026",
+    "Louisiana 4-H overnight summer camp 2026 schedule",
+    "Camp Bon Coeur Louisiana 2026 dates",
+    "Dry Creek Baptist Camp Louisiana 2026 dates",
+    "Louisiana Lions Camp overnight evidence",
+    "MedCamps of Louisiana residential sessions 2025"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "LSU Pre-College",
+      "translated_name_hint": null,
+      "operator_name": "Louisiana State University",
+      "venue_name": "LSU Campus",
+      "city": "Baton Rouge",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://precollege.lsu.edu/",
+      "supporting_urls": [
+        "https://precollege.lsu.edu/courses?on-campus"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem", "arts"],
+      "camp_type_tags": ["college-pre-college", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One to two weeks",
+      "overnight_evidence": {
+        "snippet": "Residential option: Fee plus $1550 room & board",
+        "url": "https://precollege.lsu.edu/courses?on-campus"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Cybersecurity ... July 13th - July 24th, 2026",
+        "url": "https://precollege.lsu.edu/courses?on-campus",
+        "date_text": "July 13, 2026"
+      },
+      "notes": "Offers various programs like Cybersecurity and Energy AI with residential options.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Tulane Pre-College",
+      "translated_name_hint": null,
+      "operator_name": "Tulane University",
+      "venue_name": "Tulane University Campus",
+      "city": "New Orleans",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://summer.tulane.edu/",
+      "supporting_urls": [
+        "https://summer.tulane.edu/residential-experience"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem"],
+      "camp_type_tags": ["college-pre-college", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Two weeks",
+      "overnight_evidence": {
+        "snippet": "TSSP is primarily a residential program, designed for complete campus immersion.",
+        "url": "https://summer.tulane.edu/tulane-science-scholars-program"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Louisiana Center for College Access Summer Program: June 14-27, 2026",
+        "url": "https://summer.tulane.edu/residential-experience",
+        "date_text": "June 14, 2026"
+      },
+      "notes": "Includes the Tulane Science Scholars Program (TSSP).",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Xavier University of Louisiana SOAR X",
+      "translated_name_hint": null,
+      "operator_name": "Xavier University of Louisiana",
+      "venue_name": "Xavier University of Louisiana",
+      "city": "New Orleans",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.xula.edu/pre-college-programs/precollege-soarx.html",
+      "supporting_urls": [
+        "https://www.xula.edu/pre-college-programs/precollege-faqs.html"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["academic", "stem", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4 weeks",
+      "overnight_evidence": {
+        "snippet": "SOAR X participants live with a roommate on Xavier’s campus for four weeks.",
+        "url": "https://www.xula.edu/pre-college-programs/precollege-soarx.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "In 2026, we are expanding these exploratory tracks...",
+        "url": "https://www.xula.edu/pre-college-programs/precollege-soarx.html",
+        "date_text": "Summer 2026"
+      },
+      "notes": "Flagship pre-college program; SOAR stands for Stress On Analytical Reasoning.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Southern University and A&M College TMCF SOAR (JEEI)",
+      "translated_name_hint": null,
+      "operator_name": "Southern University and A&M College",
+      "venue_name": "Southern University (Baton Rouge)",
+      "city": "Baton Rouge",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.subr.edu/page/8550",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["academic", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "The TMCF SOAR Program at Southern University and A&M College is a free, one-week residential summer experience",
+        "url": "https://www.subr.edu/page/8550"
+      },
+      "recent_activity_evidence": {
+        "snippet": "SOAR HBCU SCHOLARS PROGRAM... July 12 - 17, 2026",
+        "url": "https://www.subr.edu/page/8550",
+        "date_text": "July 12, 2026"
+      },
+      "notes": "JEEI: Jaguar Educational and Empowerment Initiative.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "University of Louisiana at Lafayette Summer Design Discovery Camp",
+      "translated_name_hint": null,
+      "operator_name": "University of Louisiana at Lafayette",
+      "venue_name": "UL Lafayette campus",
+      "city": "Lafayette",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://louisiana.edu/architecture/school-architecture-design-admission/visit-school-architecture-design",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["arts", "architecture", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week",
+      "overnight_evidence": {
+        "snippet": "You’ll stay in campus dorms (or commute daily) while working in the School of Architecture and Design’s own Fletcher Hall.",
+        "url": "https://louisiana.edu/architecture/school-architecture-design-admission/visit-school-architecture-design"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Architecture Summer Camp: Design Discovery June 1 – 7, 2025",
+        "url": "https://louisiana.edu/architecture/school-architecture-design-admission/visit-school-architecture-design",
+        "date_text": "June 1, 2025"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Louisiana School for Math, Science, and the Arts (LSMSA) Summer program",
+      "translated_name_hint": null,
+      "operator_name": "LSMSA",
+      "venue_name": "LSMSA campus",
+      "city": "Natchitoches",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.lsmsa.edu/summer/summer-lsmsa",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem"],
+      "camp_type_tags": ["academic", "arts", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions",
+      "overnight_evidence": {
+        "snippet": "the residential experience at LSMSA offers your child a unique opportunity...",
+        "url": "https://www.lsmsa.edu/summer/summer-lsmsa"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 Camp Course Offerings",
+        "url": "https://www.lsmsa.edu/summer/summer-lsmsa",
+        "date_text": "Summer 2026"
+      },
+      "notes": "Also referred to as Summer @ LSMSA.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Abbey",
+      "translated_name_hint": null,
+      "operator_name": "Catholic Archdiocese of New Orleans",
+      "venue_name": "Camp Abbey",
+      "city": "Covington",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.campabbey.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "faith-based"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week",
+      "overnight_evidence": {
+        "snippet": "Overnight Summer Camp - $550 per week/per child",
+        "url": "https://www.campabbey.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Boy's Camp Week 1: May 31 - June 6, 2026",
+        "url": "https://www.campabbey.org/",
+        "date_text": "May 31, 2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Hardtner",
+      "translated_name_hint": null,
+      "operator_name": "Episcopal Diocese of Western Louisiana",
+      "venue_name": "Camp Hardtner",
+      "city": "Pollock",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://camphardtner.org/",
+      "supporting_urls": [
+        "https://camphardtner.org/camp/dates-rates/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "faith-based"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Five to six nights",
+      "overnight_evidence": {
+        "snippet": "This six night session is full of traditional camp fun",
+        "url": "https://camphardtner.org/camp/dates-rates/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "High Camp: June 28 - July 4, 2026",
+        "url": "https://camphardtner.org/camp/dates-rates/",
+        "date_text": "June 28, 2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Istrouma",
+      "translated_name_hint": null,
+      "operator_name": "Camp Istrouma and Retreat Center",
+      "venue_name": "Camp Istrouma",
+      "city": "Greenwell Springs",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.campistrouma.com/",
+      "supporting_urls": [
+        "https://www.campistrouma.com/datesandrates"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "faith-based"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week",
+      "overnight_evidence": {
+        "snippet": "Overnight camp for campers entering 3rd-5th grade",
+        "url": "https://www.campistrouma.com/datesandrates"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Camp Istrouma 2026 ... June 1 - July 31, 2026",
+        "url": "https://www.campistrouma.com/datesandrates",
+        "date_text": "June 1, 2026"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Grant Walker",
+      "translated_name_hint": null,
+      "operator_name": "LSU AgCenter",
+      "venue_name": "Grant Walker 4-H Educational Center",
+      "city": "Pollock",
+      "region": "LA",
+      "country": "US",
+      "canonical_url": "https://www.lsuagcenter.com/topics/kids_teens/events/camps/grant_walker",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "academic", "stem"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4 days / 3 nights",
+      "overnight_evidence": {
+        "snippet": "ten weeks of summer camp to all 64 parishes in Louisiana",
+        "url": "https://www.lsuagcenter.com/topics/kids_teens/events/camps/grant_walker"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 Camp Dates ... June 29 - July 2, 2026",
+        "url": "https://www.lsuagcenter.com/topics/kids_teens/events/camps/grant_walker",
+        "date_text": "June 29, 2026"
+      },
+      "notes": "LSU AgCenter 4-H camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://jacobscamp.org/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0ow.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aX8.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 500;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk_RkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 500;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0oA&skey=2d3c1187d5eede0f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aXw&skey=7bc19f711c0de8f&v=v31) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 500;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk_RkWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg&skey=743457fe2cc29280&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 500;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ&skey=62c1cbfccc78b4b2&v=v44) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: italic;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXZ0pg.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 100;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 500;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 800;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Montserrat';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w3aXo.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 500;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk_RkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 500;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO plugin v19.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Summer 2026 Dates and Rates - URJ Jacobs Camp</title>
+	<link rel="canonical" href="https://jacobscamp.org/summer/dates-and-rates/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Summer 2026 Dates and Rates - URJ Jacobs Camp" />
+	<meta property="og:url" content="https://jacobscamp.org/summer/dates-and-rates/" />
+	<meta property="og:site_name" content="URJ Jacobs Camp" />
+	<meta property="article:modified_time" content="2025-09-11T15:11:50+00:00" />
+	<meta property="og:image" content="https://jacobscamp.org/wp-content/uploads/sites/17/2025/06/IMG_9056-scaled-e1751030160881.jpg" />
+	<meta property="og:image:width" content="2560" />
+	<meta property="og:image:height" content="960" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://jacobscamp.org/#website","url":"https://jacobscamp.org/","name":"URJ Jacobs Camp","description":"A URJ Summer Camp","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://jacobscamp.org/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://jacobscamp.org/summer/dates-and-rates/#primaryimage","url":"https://jacobscamp.org/wp-content/uploads/sites/17/2025/06/IMG_9056-scaled-e1751030160881.jpg","contentUrl":"https://jacobscamp.org/wp-content/uploads/sites/17/2025/06/IMG_9056-scaled-e1751030160881.jpg","width":2560,"height":960},{"@type":"WebPage","@id":"https://jacobscamp.org/summer/dates-and-rates/#webpage","url":"https://jacobscamp.org/summer/dates-and-rates/","name":"Summer 2026 Dates and Rates - URJ Jacobs Camp","isPartOf":{"@id":"https://jacobscamp.org/#website"},"primaryImageOfPage":{"@id":"https://jacobscamp.org/summer/dates-and-rates/#primaryimage"},"datePublished":"2020-08-28T18:52:38+00:00","dateModified":"2025-09-11T15:11:50+00:00","breadcrumb":{"@id":"https://jacobscamp.org/summer/dates-and-rates/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://jacobscamp.org/summer/dates-and-rates/"]}]},{"@type":"BreadcrumbList","@id":"https://jacobscamp.org/summer/dates-and-rates/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jacobscamp.org/"},{"@type":"ListItem","position":2,"name":"Welcome Home to Jacobs Camp!","item":"https://jacobscamp.org/summer/"},{"@type":"ListItem","position":3,"name":"Summer 2026 Dates and Rates"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="URJ Jacobs Camp &raquo; Feed" href="https://jacobscamp.org/feed/" />
+<meta content="Divi v.4.22.1" name="generator"/><link rel='stylesheet' id='ai1ec_style-css'  href='//jacobscamp.org/wp-content/plugins/all-in-one-event-calendar/public/themes-ai1ec/vortex/css/ai1ec_parsed_css.css?ver=3.0.0' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}body { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://jacobscamp.org/wp-includes/css/dashicons.min.css?ver=6.0.9' type='text/css' media='all' />
+<link rel='stylesheet' id='zoom-instagram-widget-css'  href='https://jacobscamp.org/wp-content/plugins/instagram-widget-by-wpzoom/css/instagram-widget.css?ver=1.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://jacobscamp.org/wp-content/plugins/instagram-widget-by-wpzoom/assets/frontend/magnific-popup/magnific-popup.css?ver=1.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-css-css'  href='https://jacobscamp.org/wp-content/plugins/instagram-widget-by-wpzoom/assets/frontend/swiper/swiper.css?ver=1.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://jacobscamp.org/wp-content/plugins/tablepress/css/build/default.css?ver=2.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css'  href='//jacobscamp.org/wp-content/uploads/sites/17/pum/pum-site-styles-17.css?generated=1774035189&#038;ver=1.16.7' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-pum-css'  href='https://jacobscamp.org/wp-content/themes/Divi/style-static.min.css?ver=4.22.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://jacobscamp.org/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+</script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/jq-sticky-anything.min.js?ver=2.1.1' id='stickyAnythingLib-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-includes/js/underscore.min.js?ver=1.13.3' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-includes/js/wp-util.min.js?ver=6.0.9' id='wp-util-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/plugins/urj-cdn/js/urj-cdn.js?ver=6.0.9' id='urj-cdn-js-js'></script>
+<link rel="https://api.w.org/" href="https://jacobscamp.org/wp-json/" /><link rel="alternate" type="application/json" href="https://jacobscamp.org/wp-json/wp/v2/pages/3147" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jacobscamp.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://jacobscamp.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 6.0.9" />
+<link rel='shortlink' href='https://jacobscamp.org/?p=3147' />
+<link rel="alternate" type="application/json+oembed" href="https://jacobscamp.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacobscamp.org%2Fsummer%2Fdates-and-rates%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://jacobscamp.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjacobscamp.org%2Fsummer%2Fdates-and-rates%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><script>
+jQuery(function($){
+    $('.et_pb_accordion .et_pb_toggle_open').addClass('et_pb_toggle_close').removeClass('et_pb_toggle_open');
+
+    $('.et_pb_accordion .et_pb_toggle').click(function() {
+      $this = $(this);
+      setTimeout(function(){
+         $this.closest('.et_pb_accordion').removeClass('et_pb_accordion_toggling');
+      },700);
+    });
+});
+</script>
+<script>
+(function($) {
+    $(window).on('load resize', function() {
+        $('.et_fullscreen_slider').each(function() {
+            et_fullscreen_slider($(this));
+        });
+    });
+    function et_fullscreen_slider(et_slider) {
+        var et_viewport_height = $(window).height(),
+            et_slider_height = $(et_slider).find('.et_pb_slider_container_inner').innerHeight(),
+            $admin_bar = $('#wpadminbar'),
+            $main_header = $('#main-header'),
+            $top_header = $('#top-header');
+        $(et_slider).height('auto');
+        if ($admin_bar.length) {
+            var et_viewport_height = et_viewport_height - $admin_bar.height();
+        }
+        if ($top_header.length) {
+            var et_viewport_height = et_viewport_height - $top_header.height();
+        }
+        if (!$('.et_transparent_nav').length && !$('.et_vertical_nav').length) {
+            var et_viewport_height = et_viewport_height - $main_header.height();
+        }
+        if (et_viewport_height > et_slider_height) {
+            $(et_slider).height(et_viewport_height);
+        }
+    }
+})(jQuery);
+</script>
+<script src="https://kit.fontawesome.com/8377c9f954.js" crossorigin="anonymous"></script>
+<script async="" src="https://giving.classy.org/embedded/api/sdk/js/54094"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4T8LMJDM49"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4T8LMJDM49');
+</script><link rel="icon" href="https://jacobscamp.org/wp-content/uploads/sites/17/2022/10/cropped-Jacobs-Fav-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://jacobscamp.org/wp-content/uploads/sites/17/2022/10/cropped-Jacobs-Fav-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://jacobscamp.org/wp-content/uploads/sites/17/2022/10/cropped-Jacobs-Fav-180x180.png" />
+<meta name="msapplication-TileImage" content="https://jacobscamp.org/wp-content/uploads/sites/17/2022/10/cropped-Jacobs-Fav-270x270.png" />
+<link rel="stylesheet" id="et-core-unified-tb-12883-tb-393-3147-cached-inline-styles" href="https://jacobscamp.org/wp-content/uploads/sites/17/et-cache/3147/et-core-unified-tb-12883-tb-393-3147.min.css?ver=1774902176" /><link rel="stylesheet" id="et-core-unified-3147-cached-inline-styles" href="https://jacobscamp.org/wp-content/uploads/sites/17/et-cache/3147/et-core-unified-3147.min.css?ver=1774902175" /><link rel="stylesheet" id="et-core-unified-tb-12883-tb-393-deferred-3147-cached-inline-styles" href="https://jacobscamp.org/wp-content/uploads/sites/17/et-cache/3147/et-core-unified-tb-12883-tb-393-deferred-3147.min.css?ver=1774902176" /></head>
+<body class="page-template-default page page-id-3147 page-child parent-pageid-19 et-tb-has-template et-tb-has-body et-tb-has-footer et_pb_button_helper_class et_transparent_nav et_fullwidth_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+				<div id="top-header">
+		<div class="container clearfix">
+
+		
+			<div id="et-secondary-menu">
+			<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="https://www.facebook.com/urjjacobscamp" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="https://www.instagram.com/urjjacobscamp/" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+
+</ul><ul id="et-secondary-nav" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13391"><a target="_blank" rel="noopener" href="https://urjjacobs.campintouch.com/v2/login/login.aspx">CampInTouch Login</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13707"><a href="https://jacobscamp.org/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="https://jacobscamp.org/work-at-camp/">Work at Camp</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14935"><a href="https://jacobscamp.org/info-sessions/">Info Sessions</a></li>
+<li class="donate-top menu-item menu-item-type-custom menu-item-object-custom menu-item-13584"><a target="_blank" rel="noopener" href="https://donate.reformjudaism.org/give/765647/#!/donation/checkout?c_src=Jacobs-2026-AC&#038;c_src2=DonateButton">Donate</a></li>
+</ul>			</div>
+
+		</div>
+	</div>
+
+
+	<header id="main-header" data-height-onload="66">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="https://jacobscamp.org/">
+				<img src="https://jacobscamp.org/wp-content/uploads/sites/17/2020/09/Jacobs-Logo-2015.png" width="657" height="310" alt="URJ Jacobs Camp" id="logo" data-height-percentage="100" />
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13104"><a href="https://jacobscamp.org/blog/">Jacobs Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13708"><a href="https://jacobscamp.org/summer/our-programs/">Our Programs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3136"><a href="https://jacobscamp.org/request-info/">Request Information</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14708"><a href="https://jacobscamp.org/register/">Register for Camp!</a></li>
+</ul>					</nav>
+				
+				
+				
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+			</header> <!-- #main-header -->
+<div id="et-main-area">
+	
+    <div id="main-content">
+    <div class="et-l et-l--body">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_body et_pb_fullwidth_section et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_fullwidth_post_title_0_tb_body et_pb_post_title  et_pb_text_align_left et_pb_bg_layout_dark et_pb_featured_bg"   >
+				
+				
+				
+				
+				
+				<div class="et_pb_title_container">
+					<h1 class="entry-title">Summer 2026 Dates and Rates</h1>
+				</div>
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1_tb_body et_pb_with_background et_pb_fullwidth_section et_section_regular et_pb_section--with-menu" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_fullwidth_menu et_pb_fullwidth_menu_0_tb_body et_pb_bg_layout_dark  et_pb_text_align_left et_dropdown_animation_fade et_pb_fullwidth_menu_fullwidth et_pb_fullwidth_menu--without-logo et_pb_fullwidth_menu--style-centered">
+					
+					
+					
+					
+					<div class="et_pb_row clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav fullwidth-menu-nav"><ul id="menu-summer-information" class="et-menu fullwidth-menu nav"><li id="menu-item-3174" class="et_pb_menu_page_id-3145 menu-item menu-item-type-post_type menu-item-object-page menu-item-3174"><a href="https://jacobscamp.org/summer/new-families/">New Families &gt;</a></li>
+<li id="menu-item-3160" class="et_pb_menu_page_id-3146 menu-item menu-item-type-post_type menu-item-object-page menu-item-3160"><a href="https://jacobscamp.org/summer/registered-families/">Registered Families &gt;</a></li>
+<li id="menu-item-3159" class="et_pb_menu_page_id-3147 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3147 current_page_item menu-item-3159"><a href="https://jacobscamp.org/summer/dates-and-rates/" aria-current="page">Dates &amp; Rates &gt;</a></li>
+<li id="menu-item-3158" class="et_pb_menu_page_id-3148 menu-item menu-item-type-post_type menu-item-object-page menu-item-3158"><a href="https://jacobscamp.org/summer/summer-camp-faqs/">FAQs &gt;</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2_tb_body et_pb_fullwidth_section et_section_regular et_pb_section--with-menu" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_fullwidth_menu et_pb_fullwidth_menu_1_tb_body et_pb_bg_layout_light  et_pb_text_align_left et_dropdown_animation_fade et_pb_fullwidth_menu--without-logo et_pb_fullwidth_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_row clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav fullwidth-menu-nav"><ul id="menu-summer-information-1" class="et-menu fullwidth-menu nav"><li class="et_pb_menu_page_id-3145 menu-item menu-item-type-post_type menu-item-object-page menu-item-3174"><a href="https://jacobscamp.org/summer/new-families/">New Families &gt;</a></li>
+<li class="et_pb_menu_page_id-3146 menu-item menu-item-type-post_type menu-item-object-page menu-item-3160"><a href="https://jacobscamp.org/summer/registered-families/">Registered Families &gt;</a></li>
+<li class="et_pb_menu_page_id-3147 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3147 current_page_item menu-item-3159"><a href="https://jacobscamp.org/summer/dates-and-rates/" aria-current="page">Dates &amp; Rates &gt;</a></li>
+<li class="et_pb_menu_page_id-3148 menu-item menu-item-type-post_type menu-item-object-page menu-item-3158"><a href="https://jacobscamp.org/summer/summer-camp-faqs/">FAQs &gt;</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3_tb_body et_section_regular section_has_divider et_pb_bottom_divider" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_body  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
+				
+				
+				
+				
+				<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center">Summer 2026 Dates</h2>
+<p style="text-align: center"></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0">
+				
+				
+				
+				
+				<div class="et_pb_code_inner">
+<table id="tablepress-9" class="tablepress tablepress-id-9">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">Program</th><th class="column-2">Current Grade</th><th class="column-3">Waitlist</th><th class="column-4">Opening Day</th><th class="column-5">Closing Day</th><th class="column-6">Length</th><th class="column-7">Tuition Rate</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">Kochavim Spring (New Camper Weekend)</td><td class="column-2">1, 2, 3, 4, 5, 6</td><td class="column-3"></td><td class="column-4">Sat, March 7</td><td class="column-5">Sun, March 8</td><td class="column-6">1 night</td><td class="column-7">$150</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Taste of Jacobs</td><td class="column-2">1, 2</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Sun, June 14</td><td class="column-6">1 week</td><td class="column-7">$1800</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">Olim A</td><td class="column-2">1, 2</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Sun, June 21</td><td class="column-6">2 weeks</td><td class="column-7">$3450</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">Olim A+ (returning campers only with approval from camp)</td><td class="column-2">2</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Wed, July 1</td><td class="column-6">3.5 weeks</td><td class="column-7">$6000</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Garin Session 1</td><td class="column-2">3, 4</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Wed, July 1</td><td class="column-6">3.5 weeks</td><td class="column-7">$6000</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">Garin Session 1-2 weeks </td><td class="column-2">3,4</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Sun, June 21</td><td class="column-6">2 weeks</td><td class="column-7">$3600</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">Maskilim Session 1</td><td class="column-2">5, 6</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Wed, July 1</td><td class="column-6">3.5 weeks</td><td class="column-7">$6150</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">Talmidim Session 1</td><td class="column-2">7, 8</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Wed, July 1</td><td class="column-6">3.5 weeks</td><td class="column-7">$6300</td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1">Olim B</td><td class="column-2">1, 2</td><td class="column-3"></td><td class="column-4">Sun, July 5</td><td class="column-5">Sun, July 19</td><td class="column-6">2 weeks</td><td class="column-7">$3450</td>
+</tr>
+<tr class="row-11 odd">
+	<td class="column-1">Garin Session 2</td><td class="column-2">3, 4</td><td class="column-3"><strong> Waitlist Warning Garin Boys </strong></td><td class="column-4">Sun, July 5</td><td class="column-5">Wed, July 29</td><td class="column-6">3.5 weeks</td><td class="column-7">$6000</td>
+</tr>
+<tr class="row-12 even">
+	<td class="column-1">Maskilim Session 2</td><td class="column-2">5, 6</td><td class="column-3"></td><td class="column-4">Sun, July 5</td><td class="column-5">Wed, July 29</td><td class="column-6">3.5 weeks</td><td class="column-7">$6150</td>
+</tr>
+<tr class="row-13 odd">
+	<td class="column-1">Talmidim Session 2</td><td class="column-2">7, 8</td><td class="column-3"></td><td class="column-4">Sun, July 5</td><td class="column-5">Wed, July 29</td><td class="column-6">3.5 weeks</td><td class="column-7">$6300</td>
+</tr>
+<tr class="row-14 even">
+	<td class="column-1">Chalutzim</td><td class="column-2">9</td><td class="column-3"></td><td class="column-4">Sun, June 21</td><td class="column-5">Wed, July 29</td><td class="column-6">6 weeks</td><td class="column-7">$8275</td>
+</tr>
+<tr class="row-15 odd">
+	<td class="column-1">Solelim</td><td class="column-2">11</td><td class="column-3"></td><td class="column-4">Sun, June 7</td><td class="column-5">Wed, July 1 + Jr Counselor</td><td class="column-6">4, 6, or 8 weeks</td><td class="column-7">$2750</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-9 from cache --></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div id="terms" class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><b>Deposit, Payment, Refund and Change of Session Policies:</b></p>
+<p><b>Deposit</b></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">I agree to submit at time of registration via electronic payment method (Credit Card, Debit Card, or E-Check (ACH)) a $500 per Camper/per session NON-REFUNDABLE deposit (except as otherwise provided below) in order to have Camper’s application processed.</span></li>
+</ul>
+<p><b>Security Fee</b></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Camper safety is our top priority. This $180 security fee helps to offset the significant increase in our safety and security costs which include trained security personal and enhanced surveillance systems.</span></li>
+</ul>
+<p><b>Payments</b></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400"><strong>January 11</strong> 150 days prior to Camp’s first session start date – 25% of tuition payment is due</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400"><strong>March 11</strong> 90 days prior to Camp’s first session start date – an additional 50% of tuition payment is due (75% of tuition paid); </span></li>
+<li style="font-weight: 400"><span style="font-weight: 400"><strong>April 25</strong> 45 days prior to Camp’s first session start date – final payment is due. </span></li>
+</ul>
+<p><b>Refunds</b></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Cancellation by 90 days or more prior to the first session start date – 100% of tuition is refundable, except for the Non-Refundable Deposit</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Cancellation between 90 days and 45 days prior to the first session start date – 75% of tuition is refundable.</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Cancellation by 45 days or less prior to the first session start date – no refunds will be given unless stated below. Camp reserves the right to refund any eligible refund in multiple installments as determined by Camp. Credit card refunds will generally be processed on or about the 1st and 15th of each month and can take up to ten business days to clear your bank account.</span></li>
+</ul>
+<p><span style="font-weight: 400">Refunds Given:</span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Refunds will be given without penalty (including Non-Refundable Deposit):</span>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">for campers on a “Waiting List” (those not able to be placed in their desired session at Camp) upon request if at any time they choose to be removed from the list, or if they are ultimately unable to be placed;</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">if Camp is unable or elects not to open because of government regulations, orders or guidelines;</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">if Camp is required to cancel the session of a Camper with a pre-existing health condition;</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">If Camp is unable to secure a rental facility for a rented Camp property;</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">if Camp is unable or chooses not to open, in its sole discretion.</span></li>
+</ul>
+</li>
+</ul>
+<p><span style="font-weight: 400">Refunds not given:</span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Refunds will not be made if Camper has attended any portion of the session at Camp. This covers all circumstances, including, but not limited to:</span>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Camper’s homesickness</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Camper’s refusal or inability to participate in the normal activities at Camp</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Camper’s violation of any rules, regulations, or policies at Camp for which Camper has been provided notice, and as described below in “Camper’s Participation and Camp Program Expectations” section</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Parent/Guardian’s decision to remove Camper from Camp for any reason</span></li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><b>Change of Session</b></p>
+<p><span style="font-weight: 400">If Camp is required to make a change to Camper session prior to summer, You will be notified by Camp in writing. Camp will provide an opportunity at that time for You to cancel Camper’s session without penalty (including return of any deposit). You will also be eligible for this change of session refund for all children in Your household who are registered at Camp regardless if the sessions of the sibling(s) were not changed.</span></p>
+<p><span style="font-weight: 400">A change to the Camper session is defined as one or more of the following: a change of session dates, session cost, or, for regional camps, a camp geographic location change.</span></p>
+<p><strong>Application Policies:</strong> As the final step of the registration process, families will need to indicate their agreement with our <a href="https://jacobscamp.org/wp-content/uploads/sites/17/2025/09/2026-Terms-and-Conditions.pdf">Jacobs Camp Application Policies</a>. Please review these policies before you begin the registration process.</p></div>
+			</div><div class="et_pb_heading_container et_pb_module et_pb_heading et_pb_heading_0 et_pb_text_align_ et_pb_bg_layout_">
+					
+					
+					
+					
+					
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div>		</div>
+	</div>
+	    </div>
+    
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters2">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_cta_0_tb_footer et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_promo_description"><h2 class="et_pb_module_header">Get more information</h2><div><p>Like what you see and want to learn more? Fill out our inquiry form and we&#8217;ll be in touch!</p></div></div>
+				<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://jacobscamp.org/request-information/">Request Info</a></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_cta_1_tb_footer et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_promo_description"><h2 class="et_pb_module_header">MAKING CAMP AFFORDABLE</h2><div><p>We are committed to ensuring that no child is denied a Jewish summer experience at URJ Jacobs Camp.</p></div></div>
+				<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://jacobscamp.org/financial-assistance/">LEARN MORE</a></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_cta_2_tb_footer et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_promo_description"><h2 class="et_pb_module_header">Ready to register?</h2><div><p><span>Jacobs offers a fun, supportive environment where campers can explore, challenge themselves, and develop their passions.</span></p></div></div>
+				<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://jacobscamp.org/register/">Register Now</a></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1_tb_footer et_pb_equal_columns et_pb_gutters2">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div id="footer" class="et_pb_module et_pb_cta_3_tb_footer et_pb_promo  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_promo_description"><h2 class="et_pb_module_header">Contact Us</h2><div><p style="text-align: left;"><b>Camp Address</b></p>
+<p>3863 Morrison Road<br />Utica, Mississippi 39175</p>
+<p><strong>Phone:</strong> (601) 885-6042</p>
+<p><span><i class="fa fa-envelope-square"></i></span> <a href="mailto:jacobscamp@urj.org">Send us an Email</a></p>
+<p><span><i>(Our year-round business office<br />is located at camp)</i></span></p>
+<p><b></b></p>
+<p>&nbsp;</p>
+<p style="text-align: left;"><b></b></p></div></div>
+				
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="1080" height="1080" src="https://jacobscamp.org/wp-content/uploads/sites/17/2024/09/CampSafe-Badge-2024-4-002.png" alt="" title="CampSafe Badge 2024 (4) (002)" srcset="https://jacobscamp.org/wp-content/uploads/sites/17/2024/09/CampSafe-Badge-2024-4-002.png 1080w, https://jacobscamp.org/wp-content/uploads/sites/17/2024/09/CampSafe-Badge-2024-4-002-980x980.png 980w, https://jacobscamp.org/wp-content/uploads/sites/17/2024/09/CampSafe-Badge-2024-4-002-480x480.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" class="wp-image-375420" /></span>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_1_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="505" height="660" src="https://jacobscamp.org/wp-content/uploads/sites/17/2025/06/alonim_logo_english__version1.jpeg-1.jpg" alt="" title="alonim_logo_english__version1.jpeg (1)" srcset="https://jacobscamp.org/wp-content/uploads/sites/17/2025/06/alonim_logo_english__version1.jpeg-1.jpg 505w, https://jacobscamp.org/wp-content/uploads/sites/17/2025/06/alonim_logo_english__version1.jpeg-1-480x627.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 505px, 100vw" class="wp-image-376612" /></span>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_cta_4_tb_footer et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_promo_description"><div><p><img loading="lazy" src="https://osrui.org/wp-content/uploads/sites/9/2024/01/URJ_Web_White_Logo-01.png" width="184" height="119" alt="" class="wp-image-3107 alignnone size-full" style="margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: left;">Jacobs Camps is part of the <a href="http://www.urj.org" target="_new" rel="noopener noreferrer">Union for Reform Judaism</a> family of camps and youth programs.</p>
+<p style="text-align: left;">Find information on Jewish rituals, culture, holidays, and more at:</p>
+<div style="text-align: center;"><a href="https://reformjudaism.org/" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="alignnone size-full wp-image-299" src="https://jacobscamp.org/wp-content/uploads/sites/17/2020/01/reformjudaismdotorglogo1.png" alt="" width="206" height="24" /><br /></a></div>
+<p>&nbsp;</p></div></div>
+				
+			</div><div class="et_pb_module et_pb_image et_pb_image_2_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" width="97" height="60" src="https://jacobscamp.org/wp-content/uploads/sites/17/2024/09/ACA-Logo.png" alt="" title="ACA-Logo" class="wp-image-375428" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_2_tb_footer et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_7_tb_footer  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_8_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>&nbsp;</p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_9_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3_tb_footer">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_10_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>© 2026 Union for Reform Judaism</p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_11_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<li
+            class='et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook'><a
+              href='https://www.facebook.com/urjjacobscamp'
+              class='icon et_pb_with_border'
+              title='Follow on Facebook'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li><li
+            class='et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter'><a
+              href='https://twitter.com/urjjacobscamp'
+              class='icon et_pb_with_border'
+              title='Follow on Twitter'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li><li
+            class='et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram'><a
+              href='https://www.instagram.com/urjjacobscamp/'
+              class='icon et_pb_with_border'
+              title='Follow on Instagram'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<div id="pum-375824" class="pum pum-overlay pum-theme-3072 pum-theme-lightbox popmake-overlay click_open" data-popmake="{&quot;id&quot;:375824,&quot;slug&quot;:&quot;capital-campaign-vimeo&quot;,&quot;theme_id&quot;:3072,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;.vimeo-popup&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" role="dialog" aria-hidden="true" >
+
+	<div id="popmake-375824" class="pum-container popmake theme-3072 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+
+				
+
+		
+
+				<div class="pum-content popmake-content" tabindex="0">
+			<p><iframe loading="lazy" title="Our Camp. Our Home. Our Future. FINAL Full Video" src="https://player.vimeo.com/video/1175282723?dnt=1&amp;app_id=122963" width="1080" height="570" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+		</div>
+
+
+				
+
+				            <button type="button" class="pum-close popmake-close" aria-label="Close">
+			×            </button>
+		
+	</div>
+
+</div>
+<script type='text/javascript' id='stickThis-js-extra'>
+/* <![CDATA[ */
+var sticky_anything_engage = {"element":"#sticky","topspace":"150","minscreenwidth":"800","maxscreenwidth":"999999","zindex":"1","legacymode":"","dynamicmode":"","debugmode":"","pushup":"#policiesresources","adminbar":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/stickThis.js?ver=2.1.1' id='stickThis-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/jacobscamp.org\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/jacobscamp.org\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/jacobscamp.org\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"617ee1a58d","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"a611f8f804","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3147","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"https:\/\/jacobscamp.org\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#9a592a","waypoints_options":{"context":[".pum-overlay"]}};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/themes/Divi/js/scripts.min.js?ver=4.22.1' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/themes/Divi/js/smoothscroll.js?ver=4.22.1' id='smoothscroll-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='popup-maker-site-js-extra'>
+/* <![CDATA[ */
+var pum_vars = {"version":"1.16.7","pm_dir_url":"https:\/\/jacobscamp.org\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/jacobscamp.org\/wp-admin\/admin-ajax.php","restapi":"https:\/\/jacobscamp.org\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"3077","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"analytics_route":"analytics","analytics_api":"https:\/\/jacobscamp.org\/wp-json\/pum\/v1"};
+var pum_sub_vars = {"ajaxurl":"https:\/\/jacobscamp.org\/wp-admin\/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-375824":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".vimeo-popup"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"3072","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"lightbox","id":375824,"slug":"capital-campaign-vimeo"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//jacobscamp.org/wp-content/uploads/sites/17/pum/pum-site-scripts-17.js?defer&#038;generated=1774035189&#038;ver=1.16.7' id='popup-maker-site-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/themes/Divi/core/admin/js/common.js?ver=4.22.1' id='et-core-common-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/plugins/tablepress/js/jquery.datatables.min.js?ver=2.1.7' id='tablepress-datatables-js'></script>
+<script type='text/javascript' src='https://jacobscamp.org/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.22.1' id='fitvids-js'></script>
+<script type="text/javascript">
+jQuery(function($){
+var DT_language={"en_US":{}};
+$('#tablepress-9').DataTable({"language":DT_language["en_US"],"stripeClasses":["even","odd"],"ordering":false,"paging":false,"searching":false,"info":false});
+});
+</script>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>

@@ -1,0 +1,344 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "MS",
+    "city": null
+  },
+  "queries_used": [
+    "\"top 15 overnight summer camps in Mississippi\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Wesley Pines",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Wesley Pines",
+      "city": "Gallman",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://wesleypines.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["methodist", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "adventurous outdoor experience... overnight",
+        "url": "https://wesleypines.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Faith based.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Lake Stephens",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Lake Stephens",
+      "city": "Oxford",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://camplakestephens.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "long-standing camp focusing on faith... overnight",
+        "url": "https://camplakestephens.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Outdoor adventure.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Twin Lakes Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": "First Presbyterian Church",
+      "venue_name": "Twin Lakes",
+      "city": "Florence",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://twinlakescamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "ministry of First Presbyterian Church... overnight camp",
+        "url": "https://twinlakescamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Of The Rising Son",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Of The Rising Son",
+      "city": "French Camp",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://campoftherisingson.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "focus on outdoor activities and spiritual growth... overnight",
+        "url": "https://campoftherisingson.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Garaywa",
+      "translated_name_hint": null,
+      "operator_name": "Woman's Missionary Union",
+      "venue_name": "Camp Garaywa",
+      "city": "Clinton",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://garaywa.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "girls"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "year-round retreat center and summer camp",
+        "url": "https://garaywa.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Henry S. Jacobs Camp",
+      "translated_name_hint": null,
+      "operator_name": "URJ",
+      "venue_name": "Henry S. Jacobs Camp",
+      "city": "Utica",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://jacobscamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["jewish", "urj"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "well-known Jewish summer camp serving the Deep South",
+        "url": "https://jacobscamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "URJ Camp.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Warner-Tully YMCA Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Warner-Tully YMCA",
+      "city": "Port Gibson",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": ["https://kidvoyage.com/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "wooded setting, offering traditional camp activities... sleepaway",
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": ["find canonical url"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Stanislaus",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Stanislaus",
+      "city": "Bay Saint Louis",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://campstanislaus.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "recreational and learning activities on the Gulf Coast... resident camp",
+        "url": "https://campstanislaus.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Bratton-Green",
+      "translated_name_hint": null,
+      "operator_name": "Episcopal Diocese of Mississippi",
+      "venue_name": "Gray Center",
+      "city": "Canton",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://graycenter.org/camp-bratton-green/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["episcopal", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "inclusive camp known for its community-focused spirit... resident camp",
+        "url": "https://graycenter.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Strong River Camp & Farm",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Strong River Camp",
+      "city": "Pinola",
+      "region": "MS",
+      "country": "US",
+      "canonical_url": "https://strongriver.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional", "farm"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "traditional camp experience for children and teens... sleepaway",
+        "url": "https://strongriver.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

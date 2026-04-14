@@ -22,7 +22,16 @@ def main() -> int:
         _, country, region, *_ = parts
         grouped[(country, region)].append(path)
 
-    for (country, region), files in grouped.items():
+    root_lines = [
+        "# Venue Records",
+        "",
+        "This section is the browsable entry point for venue-level Markdown dossiers.",
+        "",
+        "## Regions",
+        "",
+    ]
+
+    for (country, region), files in sorted(grouped.items()):
         out_dir = DOCS_CAMPS_ROOT / country
         out_dir.mkdir(parents=True, exist_ok=True)
         index_path = out_dir / f"{region}.md"
@@ -32,6 +41,10 @@ def main() -> int:
             rel = Path("../../..") / file
             lines.append(f"- [{label}]({rel.as_posix()})")
         index_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        root_lines.append(f"- [{country.upper()} / {region.upper()}]({country}/{region}.md)")
+
+    DOCS_CAMPS_ROOT.mkdir(parents=True, exist_ok=True)
+    (DOCS_CAMPS_ROOT / "index.md").write_text("\n".join(root_lines) + "\n", encoding="utf-8")
 
     print("Generated regional indexes.")
     return 0

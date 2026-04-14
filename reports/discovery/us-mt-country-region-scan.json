@@ -1,0 +1,344 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "MT",
+    "city": null
+  },
+  "queries_used": [
+    "\"top 15 overnight summer camps in Montana\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Alpengirl Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Alpengirl",
+      "city": "Bozeman",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://alpengirlcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["adventure", "girls"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "outdoor adventure camps specifically for girls... overnight",
+        "url": "https://alpengirlcamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Hiking, rafting, horseback.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Yellowstone Alliance Adventures",
+      "translated_name_hint": null,
+      "operator_name": "Yellowstone Alliance",
+      "venue_name": "Yellowstone Alliance",
+      "city": "Bozeman",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://yaacamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "traditional overnight experiences including ziplining... faith-based",
+        "url": "https://yaacamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Gallatin Valley.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Bighorn",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Bighorn",
+      "city": "Plains",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://campbighorn.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
+      "camp_type_tags": ["christian", "adventure"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "focus on adventure and character building in a mountain setting... overnight",
+        "url": "https://campbighorn.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Trail's End Ranch",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Trail's End Ranch",
+      "city": "Ekalaka",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://trailsendranch.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["ranch", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "traditional ranch-style camp experience... overnight",
+        "url": "https://trailsendranch.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Montana Learning Center Camps",
+      "translated_name_hint": null,
+      "operator_name": "Montana Learning Center",
+      "venue_name": "Canyon Ferry Lake",
+      "city": "Helena",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://montanalearning.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic-and-stem-camps"],
+      "camp_type_tags": ["stem", "aerospace"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "STEM, aerospace, and science-based camps... overnight",
+        "url": "https://montanalearning.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Connects students with NASA initiatives.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Moonlight",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Moonlight",
+      "city": "Big Sky",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://campmoonlight.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic-and-stem-camps"],
+      "camp_type_tags": ["environmental", "education"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly",
+      "overnight_evidence": {
+        "snippet": "education and wilderness-based program... overnight",
+        "url": "https://campmoonlight.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Legendary Lodge",
+      "translated_name_hint": null,
+      "operator_name": "Diocese of Helena",
+      "venue_name": "Legendary Lodge",
+      "city": "Seeley Swan Valley",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://legendarylodge.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["catholic", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "Catholic summer camp on Salmon Lake... resident",
+        "url": "https://legendarylodge.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Beartooth Christian Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Beartooth Christian Camp",
+      "city": "Fishtail",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://beartoothchristiancamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["christian", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "youth camps set in a mountain environment... overnight",
+        "url": "https://beartoothchristiancamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Christikon",
+      "translated_name_hint": null,
+      "operator_name": "Lutheran",
+      "venue_name": "Christikon",
+      "city": "McLeod",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://christikon.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["lutheran", "wilderness"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "Lutheran-affiliated camp focused on wilderness experience... resident camp",
+        "url": "https://christikon.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Flathead Lutheran Bible Camp",
+      "translated_name_hint": null,
+      "operator_name": "Lutheran",
+      "venue_name": "Flathead Lutheran Bible Camp",
+      "city": "Lakeside",
+      "region": "MT",
+      "country": "US",
+      "canonical_url": "https://flbc.net/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
+      "camp_type_tags": ["lutheran", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-day",
+      "overnight_evidence": {
+        "snippet": "youth development through faith and immersion in the Rocky Mountain outdoors... overnight",
+        "url": "https://flbc.net/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active programs",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

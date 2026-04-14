@@ -1,0 +1,113 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "FL",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Florida\""
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Camp Frontier",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Frontier",
+      "city": "Haines City",
+      "region": "FL",
+      "country": "US",
+      "canonical_url": "https://campfrontier.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "sessions throughout summer",
+      "overnight_evidence": {
+        "snippet": "features a traditional sleepaway experience with facilities like air-conditioned bunk rooms",
+        "url": "https://campfrontier.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Ages 7-17 in Central Florida.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Circle F Dude Ranch",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Circle F Dude Ranch",
+      "city": "Lake Wales",
+      "region": "FL",
+      "country": "US",
+      "canonical_url": "https://circlefduderanchcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["ranch", "traditional"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multi-week",
+      "overnight_evidence": {
+        "snippet": "combines traditional summer camp activities with Western-themed experiences... sleepaway camp",
+        "url": "https://circlefduderanchcamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Children ages 6-16.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "4-H Camp Timpoochee",
+      "translated_name_hint": null,
+      "operator_name": "Florida 4-H",
+      "venue_name": "Camp Timpoochee",
+      "city": "Niceville",
+      "region": "FL",
+      "country": "US",
+      "canonical_url": "https://florida4h.ifas.ufl.edu/camps/camp-timpoochee/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional-overnight-camps"],
+      "camp_type_tags": ["4-H", "outdoor"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "themed weekly sessions",
+      "overnight_evidence": {
+        "snippet": "part of the Florida 4-H program. It offers themed weekly sessions for youth",
+        "url": "https://florida4h.ifas.ufl.edu/camps/camp-timpoochee/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active operations",
+        "url": null,
+        "date_text": "2026"
+      },
+      "notes": "Youth aged 8-16.",
+      "validation_needs": [],
+      "confidence": "high"
+    }
+  ]
+}

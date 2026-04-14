@@ -1,0 +1,112 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "MX",
+    "region": "BCN",
+    "city": null
+  },
+  "queries_used": [
+    "campamento de verano con alojamiento Baja California",
+    "campamento residencial Baja California",
+    "campamento juvenil Baja California",
+    "retiro juvenil Baja California hospedaje",
+    "Baja California programa residencial preuniversitario",
+    "Sunset Bay Academy Tijuana internado",
+    "campamento juvenil Tijuana",
+    "campamento residencial Tijuana",
+    "campamento de verano Tijuana",
+    "internado Baja California",
+    "campamento con alojamiento Tijuana",
+    "internado Tijuana Baja California",
+    "programa residencial adolescente Tijuana",
+    "campamento retiro juvenil Tijuana alojamiento",
+    "internados en Baja California Tijuana"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Sunset Bay Academy",
+      "translated_name_hint": null,
+      "operator_name": "Sunset Bay Academy",
+      "venue_name": "Sunset Bay Academy Tijuana",
+      "city": "Tijuana",
+      "region": "BCN",
+      "country": "MX",
+      "canonical_url": "https://es.sunsetbayacademy.com/",
+      "supporting_urls": [
+        "https://es.sunsetbayacademy.com/conoce-un-internado-para-adolescentes-rebeldes-en-tijuana/"
+      ],
+      "directory_source_url": null,
+      "source_language": "es",
+      "program_family_tags": [
+        "specialty"
+      ],
+      "camp_type_tags": [
+        "internado",
+        "residential"
+      ],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "tratamiento residencial a largo plazo",
+      "overnight_evidence": {
+        "snippet": "somos una escuela para jóvenes con problemas de conducta, en donde brindamos tratamiento residencial a largo plazo.",
+        "url": "https://es.sunsetbayacademy.com/conoce-un-internado-para-adolescentes-rebeldes-en-tijuana/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Conoce un Internado para adolescentes rebeldes en Tijuana.",
+        "url": "https://es.sunsetbayacademy.com/conoce-un-internado-para-adolescentes-rebeldes-en-tijuana/",
+        "date_text": null
+      },
+      "notes": "Official Tijuana internado site; program page uses Tijuana location and describes residential adolescent treatment.",
+      "validation_needs": [
+        "confirm age range and session dates",
+        "verify exact venue address and on-site housing details"
+      ],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Rancho Del Cielo Santa Fe",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Rancho Del Cielo Santa Fe",
+      "city": "Tijuana",
+      "region": "BCN",
+      "country": "MX",
+      "canonical_url": "https://ranchodelcielo.com.mx/bienvenidos-a-rancho-del-cielo-santa-fe-tijuana-mex/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "es",
+      "program_family_tags": [
+        "faith-based"
+      ],
+      "camp_type_tags": [
+        "retreat",
+        "camp"
+      ],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": "RETIROS, CAMPAMENTOS Y ENCUENTROS CON DIOS Ubicado al Sur Oeste de la ciudad de Tijuana... El Rancho, sirve de 'campo base' para la capacitación, alojamiento...",
+        "url": "https://ranchodelcielo.com.mx/bienvenidos-a-rancho-del-cielo-santa-fe-tijuana-mex/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Bienvenidos a Rancho Del Cielo Santa Fe, Tijuana, Mex | Rancho del Cielo",
+        "url": "https://ranchodelcielo.com.mx/bienvenidos-a-rancho-del-cielo-santa-fe-tijuana-mex/",
+        "date_text": null
+      },
+      "notes": "Venue page lists campamentos y retiros con alojamiento in Tijuana, Baja California; program-specific youth sessions should be confirmed.",
+      "validation_needs": [
+        "confirm whether youth camp sessions are offered",
+        "verify overnight youth session dates and age range"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

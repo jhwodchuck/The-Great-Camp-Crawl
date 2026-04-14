@@ -1,0 +1,418 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "CO",
+    "city": null
+  },
+  "queries_used": [
+    "\"overnight summer camp\" \"Colorado\"",
+    "\"University of Colorado Boulder\" pre-college summer residential",
+    "\"Colorado State University\" pre-college residential",
+    "\"youth retreat\" \"Colorado\" overnight"
+  ],
+  "next_queries": [
+    "\"special needs overnight camp\" Colorado",
+    "\"family camp\" Colorado summer",
+    "\"University of Denver\" pre-college residential",
+    "\"Colorado College\" summer residential program"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "Camp Granite Lake",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Golden",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://campgranitelake.com/",
+      "supporting_urls": [],
+      "directory_source_url": "https://colorado-summer-camps.com",
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["traditional", "adventure"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Multi-week sessions",
+      "overnight_evidence": {
+        "snippet": "classic sleepaway experience with rustic cabins",
+        "url": "https://campgranitelake.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active summer camp operations",
+        "url": "https://campgranitelake.com/",
+        "date_text": "2025"
+      },
+      "notes": "Offers traditional camp experience near Denver.",
+      "validation_needs": ["Verify precise dates for 2025", "Verify exact venue address"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Santa Maria",
+      "translated_name_hint": null,
+      "operator_name": "YMCA of Northern Colorado",
+      "venue_name": null,
+      "city": "Grant",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.ymcanoco.org/camp-santa-maria",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["traditional", "ymca"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One to two week sessions",
+      "overnight_evidence": {
+        "snippet": "classic sleepaway experience in the Rocky Mountains",
+        "url": "https://www.ymcanoco.org/camp-santa-maria"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Running summer sessions actively",
+        "url": "https://www.ymcanoco.org/camp-santa-maria",
+        "date_text": "2025"
+      },
+      "notes": "Classic overnight YMCA camp.",
+      "validation_needs": ["Confirm 2025/2026 rates and schedules"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "CU Boulder Precollegiate Development Program",
+      "translated_name_hint": null,
+      "operator_name": "University of Colorado Boulder",
+      "venue_name": "CU Boulder Campus",
+      "city": "Boulder",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.colorado.edu/precollege/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_precollege"],
+      "camp_type_tags": ["academic"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "five-week summer residential program",
+      "overnight_evidence": {
+        "snippet": "five-week summer residential program on the CU Boulder campus before their senior year",
+        "url": "https://www.colorado.edu/precollege/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active recruitment for high school academic enhancement",
+        "url": "https://www.colorado.edu/precollege/",
+        "date_text": "2025"
+      },
+      "notes": "Targets first-generation students from specific counties.",
+      "validation_needs": ["Confirm funding/housing models for 2025"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "CU Boulder Summer Bridge Scholars Program",
+      "translated_name_hint": null,
+      "operator_name": "University of Colorado Boulder",
+      "venue_name": "CU Boulder Campus",
+      "city": "Boulder",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.colorado.edu/summerbridge/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_precollege"],
+      "camp_type_tags": ["academic", "transition"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "four-week academic and residential experience",
+      "overnight_evidence": {
+        "snippet": "four-week academic and residential experience ... offering college credit, housing, and meals",
+        "url": "https://www.colorado.edu/summerbridge/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active admissions and programming",
+        "url": "https://www.colorado.edu/summerbridge/",
+        "date_text": "2025"
+      },
+      "notes": "Program is focused on transitioned or admitted students.",
+      "validation_needs": ["Verify if participants remain high schoolers at time of camp"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "CSU Global Business Academy",
+      "translated_name_hint": null,
+      "operator_name": "Colorado State University",
+      "venue_name": "CSU Main Campus",
+      "city": "Fort Collins",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://summerprograms.colostate.edu/",
+      "supporting_urls": ["https://admissions.colostate.edu/summer-camps/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_precollege"],
+      "camp_type_tags": ["business", "academic"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "10-day intensive program",
+      "overnight_evidence": {
+        "snippet": "reside in university dormitories and engage with faculty",
+        "url": "https://summerprograms.colostate.edu/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer programs portal currently listing academies for grades 9-12",
+        "url": "https://summerprograms.colostate.edu/",
+        "date_text": "2025"
+      },
+      "notes": "Pre-college program focused on international business and leadership.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "CSU Native Education Forum",
+      "translated_name_hint": null,
+      "operator_name": "Colorado State University",
+      "venue_name": "CSU Main Campus",
+      "city": "Fort Collins",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://admissions.colostate.edu/summer-camps/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_precollege"],
+      "camp_type_tags": ["academic", "leadership"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "five-day program",
+      "overnight_evidence": {
+        "snippet": "residential summer programs that provide high school students with an opportunity to experience campus life, reside in university dormitories",
+        "url": "https://admissions.colostate.edu/summer-camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Listed as an active part of current K-12 offerings",
+        "url": "https://admissions.colostate.edu/summer-camps/",
+        "date_text": "2025"
+      },
+      "notes": "Targeted at rising juniors and seniors.",
+      "validation_needs": ["Confirm exact dates available"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Highlands Camp & Retreat Center",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Allenspark",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.highlandscamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based_camps", "youth_retreat"],
+      "camp_type_tags": ["retreat", "faith"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "Weekend to week-long",
+      "overnight_evidence": {
+        "snippet": "accommodates up to 220 overnight guests... features dormitory-style cabins",
+        "url": "https://www.highlandscamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active facilities for youth and church groups",
+        "url": "https://www.highlandscamp.org/",
+        "date_text": "2025"
+      },
+      "notes": "Retreat center offering youth camps and group retreats.",
+      "validation_needs": ["Confirm hosted camp schedules vs outside rentals"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "High Peak Camp & Conference Center",
+      "translated_name_hint": null,
+      "operator_name": "Salvation Army",
+      "venue_name": null,
+      "city": "Estes Park",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.highpeaktsa.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based_camps", "youth_retreat"],
+      "camp_type_tags": ["faith", "retreat"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "varies by program",
+      "overnight_evidence": {
+        "snippet": "offers a mix of modern dorms and lodge rooms",
+        "url": "https://www.highpeaktsa.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active retreat programs",
+        "url": "https://www.highpeaktsa.org/",
+        "date_text": "2025"
+      },
+      "notes": "Large capacity retreat area near Rocky Mountain National Park.",
+      "validation_needs": ["Find exact summer camp session dates for youth"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Cathedral Ridge",
+      "translated_name_hint": null,
+      "operator_name": "Episcopal Church in Colorado",
+      "venue_name": null,
+      "city": "Woodland Park",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://cathedralridge.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based_camps", "youth_retreat"],
+      "camp_type_tags": ["faith", "retreat"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "weekend to week",
+      "overnight_evidence": {
+        "snippet": "overnight retreat center hosted in mountain setting",
+        "url": "https://cathedralridge.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active booking and summer program hosting",
+        "url": "https://cathedralridge.org/",
+        "date_text": "2025"
+      },
+      "notes": "Episcopal retreat center.",
+      "validation_needs": ["Verify if primary summer programs are 7+ days"],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Quaker Ridge Camp & Conference Center",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Woodland Park",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://quakerridgecamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based_camps", "traditional_overnight_camp"],
+      "camp_type_tags": ["faith", "retreat"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer youth camps",
+      "overnight_evidence": {
+        "snippet": "hosts youth camps in the summer and retreat groups throughout the year in Pike National Forest",
+        "url": "https://quakerridgecamp.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Year-round active operations",
+        "url": "https://quakerridgecamp.org/",
+        "date_text": "2025"
+      },
+      "notes": "Christian venue that runs its own programming alongside rentals.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Sky Ranch Lutheran Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Fort Collins",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://skyranchcolorado.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based_camps", "traditional_overnight_camp"],
+      "camp_type_tags": ["faith", "outdoor"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "weekly summer sessions",
+      "overnight_evidence": {
+        "snippet": "rustic mountain experience... Christ-centered outdoor ministries and provide facilities for church retreats",
+        "url": "https://skyranchcolorado.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active summer camp list",
+        "url": "https://skyranchcolorado.org/",
+        "date_text": "2025"
+      },
+      "notes": "Traditional Lutheran camp setting.",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Bird Conservancy of the Rockies Bird Camp",
+      "translated_name_hint": null,
+      "operator_name": "Bird Conservancy of the Rockies",
+      "venue_name": null,
+      "city": "Brighton",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.birdconservancy.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty_camps"],
+      "camp_type_tags": ["nature", "science"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer sessions",
+      "overnight_evidence": {
+        "snippet": "focus on conservation, ecology, and environmental education overnight options",
+        "url": "https://www.birdconservancy.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Active annual summer programming",
+        "url": "https://www.birdconservancy.org/",
+        "date_text": "2025"
+      },
+      "notes": "Need to confirm if their programs still run as overnight or day camps.",
+      "validation_needs": ["Confirm overnight component for 2025", "Identify precise venue"],
+      "confidence": "medium"
+    }
+  ]
+}

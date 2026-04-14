@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import time
+import urllib.parse
 from dataclasses import dataclass
 from html import unescape
 from pathlib import Path
@@ -8,6 +10,7 @@ from typing import Any, Iterable
 from urllib.parse import parse_qs, unquote, urljoin, urlsplit
 
 import requests
+import websocket
 from bs4 import BeautifulSoup
 
 from lib.common import USER_AGENT, load_line_file, utc_now_iso, write_jsonl
@@ -16,6 +19,9 @@ from lib.url_utils import extract_host, is_host_allowed, normalize_url
 
 DDG_API = "https://api.duckduckgo.com/"
 DDG_LITE_HTML = "https://lite.duckduckgo.com/lite/"
+GOOGLE_CDP = "http://localhost:9222"
+GOOGLE_SEARCH = "https://www.google.com/search?q={q}&num=10&hl=en"
+SEARXNG_BASE = "http://localhost:8080"
 
 DEFAULT_EXPANSIONS = [
     "{seed}",
@@ -184,6 +190,68 @@ def _parse_ddg_lite_url(href: str) -> str:
     return absolute
 
 
+def _create_cdp_target(cdp_base: str, url: str) -> str:
+    response = requests.put(f"{cdp_base}/json/new?{url}", timeout=10)
+    response.raise_for_status()
+    payload = response.json()
+    ws_url = payload.get("webSocketDebuggerUrl")
+    if not ws_url:
+        raise RuntimeError("missing webSocketDebuggerUrl from Chrome target response")
+    return str(ws_url)
+
+
+def _cdp_send(ws: websocket.WebSocket, method: str, params: dict[str, Any] | None = None, msg_id: int = 1) -> dict[str, Any]:
+    ws.send(json.dumps({"id": msg_id, "method": method, "params": params or {}}))
+    while True:
+        data = json.loads(ws.recv())
+        if data.get("id") == msg_id:
+            return data
+
+
+def _wait_for_page_load(ws: websocket.WebSocket, timeout: float = 15.0) -> None:
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        data = json.loads(ws.recv())
+        if data.get("method") in {"Page.loadEventFired", "Page.frameStoppedLoading"}:
+            return
+
+
+def _wait_for_google_results(ws: websocket.WebSocket, timeout: float = 15.0) -> None:
+    deadline = time.time() + timeout
+    expression = (
+        "JSON.stringify({"
+        "href: location.href,"
+        "ready: document.readyState,"
+        "headings: document.querySelectorAll('h3').length,"
+        "cards: document.querySelectorAll('div.MjjYud, div.g').length"
+        "})"
+    )
+    while time.time() < deadline:
+        result = _cdp_send(ws, "Runtime.evaluate", {"expression": expression, "returnByValue": True}, msg_id=30)
+        payload_raw = result.get("result", {}).get("result", {}).get("value")
+        try:
+            payload = json.loads(payload_raw or "{}")
+        except json.JSONDecodeError:
+            payload = {}
+        href = str(payload.get("href") or "")
+        ready = str(payload.get("ready") or "")
+        headings = int(payload.get("headings") or 0)
+        cards = int(payload.get("cards") or 0)
+        if "google." in href and "/search" in href and ready == "complete" and (headings > 0 or cards > 0):
+            return
+        time.sleep(0.5)
+
+
+def _get_page_html(ws: websocket.WebSocket) -> str:
+    result = _cdp_send(
+        ws,
+        "Runtime.evaluate",
+        {"expression": "document.documentElement.outerHTML", "returnByValue": True},
+        msg_id=20,
+    )
+    return result.get("result", {}).get("result", {}).get("value", "")
+
+
 def _is_noise_result(url: str, title: str) -> bool:
     normalized_url = normalize_url(url)
     host = extract_host(normalized_url)
@@ -299,6 +367,123 @@ def _search_lite_html(
     return results
 
 
+def _search_google_cdp(
+    spec: QuerySpec,
+    timeout: int,
+    query_index: int,
+    searched_at: str,
+    cdp_base: str = GOOGLE_CDP,
+) -> list[dict[str, Any]]:
+    search_url = GOOGLE_SEARCH.format(q=urllib.parse.quote_plus(spec.query))
+    ws_url = _create_cdp_target(cdp_base, "about:blank")
+    ws = websocket.create_connection(ws_url, timeout=timeout, suppress_origin=True)
+    try:
+        _cdp_send(ws, "Page.enable", msg_id=10)
+        _cdp_send(ws, "Runtime.enable", msg_id=11)
+        _cdp_send(ws, "Page.navigate", {"url": search_url}, msg_id=12)
+        _wait_for_google_results(ws, timeout=float(timeout))
+        html = _get_page_html(ws)
+    finally:
+        ws.close()
+
+    soup = BeautifulSoup(html, "html.parser")
+    results: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    rank = 0
+    for heading in soup.select("h3"):
+        link = heading.find_parent("a", href=True)
+        if link is None:
+            continue
+        url = (link.get("href") or "").strip()
+        if not url.startswith("http"):
+            continue
+        normalized_url = normalize_url(url)
+        if extract_host(normalized_url) == "google.com":
+            continue
+        if normalized_url in seen_urls:
+            continue
+        seen_urls.add(normalized_url)
+        rank += 1
+        title = heading.get_text(" ", strip=True) or url
+        snippet = ""
+        result_block = heading.find_parent(class_="MjjYud")
+        if result_block is not None:
+            snippet_node = result_block.select_one(".VwiC3b")
+            if snippet_node is not None:
+                snippet = snippet_node.get_text(" ", strip=True)
+        results.append(
+            {
+                "query": spec.query,
+                "query_source": spec.source,
+                "query_parent": spec.parent_query,
+                "query_index": query_index,
+                "search_timestamp": searched_at,
+                "title": title,
+                "url": url,
+                "normalized_url": normalized_url,
+                "snippet": snippet,
+                "source": "google_search_cdp",
+                "source_section": "organic_results",
+                "provider": "google_cdp",
+                "provider_rank": rank,
+                "host": extract_host(normalized_url),
+                "status": "discovered_raw",
+            }
+        )
+    return results
+
+
+def _search_searxng(
+    session: requests.Session,
+    spec: QuerySpec,
+    timeout: int,
+    retries: int,
+    backoff_seconds: float,
+    query_index: int,
+    searched_at: str,
+    searxng_base: str = SEARXNG_BASE,
+    searxng_engines: str | None = None,
+) -> list[dict[str, Any]]:
+    params = {
+        "q": spec.query,
+        "format": "json",
+        "language": "en",
+        "safesearch": 0,
+    }
+    if searxng_engines:
+        params["engines"] = searxng_engines
+    response = _request_json(session, f"{searxng_base}/search", params, timeout, retries, backoff_seconds)
+    payload = response.json()
+    results: list[dict[str, Any]] = []
+    for rank, item in enumerate(payload.get("results", []), start=1):
+        url = (item.get("url") or "").strip()
+        if not url:
+            continue
+        normalized_url = normalize_url(url)
+        title = item.get("title") or url
+        snippet = item.get("content") or ""
+        results.append(
+            {
+                "query": spec.query,
+                "query_source": spec.source,
+                "query_parent": spec.parent_query,
+                "query_index": query_index,
+                "search_timestamp": searched_at,
+                "title": title,
+                "url": url,
+                "normalized_url": normalized_url,
+                "snippet": snippet,
+                "source": "searxng",
+                "source_section": "organic_results",
+                "provider": "searxng",
+                "provider_rank": rank,
+                "host": extract_host(normalized_url),
+                "status": "discovered_raw",
+            }
+        )
+    return results
+
+
 def search_duckduckgo(
     queries: list[QuerySpec],
     output_path: str | None = None,
@@ -309,6 +494,8 @@ def search_duckduckgo(
     retries: int = 3,
     backoff_seconds: float = 1.0,
     sleep_seconds: float = 0.0,
+    searxng_base: str = SEARXNG_BASE,
+    searxng_engines: str | None = None,
 ) -> dict[str, Any]:
     allow_hosts = allow_hosts or []
     deny_hosts = deny_hosts or []
@@ -331,6 +518,14 @@ def search_duckduckgo(
                 elif provider == "lite_html":
                     provider_results = _search_lite_html(
                         session, spec, timeout, retries, backoff_seconds, query_index, searched_at
+                    )
+                elif provider == "google_cdp":
+                    provider_results = _search_google_cdp(spec, timeout, query_index, searched_at)
+                elif provider == "searxng":
+                    provider_results = _search_searxng(
+                        session, spec, timeout, retries, backoff_seconds, query_index, searched_at,
+                        searxng_base=searxng_base,
+                        searxng_engines=searxng_engines,
                     )
                 else:
                     raise ValueError(f"unsupported provider: {provider}")

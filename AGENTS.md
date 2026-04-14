@@ -58,7 +58,8 @@ LLMs are still appropriate later for:
 Use these first:
 
 - `scripts/run_discovery_pipeline.py`
-- `scripts/search_duckduckgo.py`
+- `scripts/search_searxng.py` — preferred high-recall provider via local SearXNG instance
+- `scripts/search_duckduckgo.py` — DDG fallback when SearXNG is unavailable
 - `scripts/html_to_markdown.py`
 - `scripts/capture_to_evidence_index.py`
 - `scripts/normalize_existing_discovery_report.py`
@@ -112,12 +113,39 @@ python scripts/capture_to_evidence_index.py \
 
 ## Search Guidance
 
-Current default search provider chain:
+### Preferred provider: SearXNG
 
-- `instant_answer`
-- `lite_html`
+SearXNG running locally consistently returns more results per query than DuckDuckGo and has no rate-limiting concerns. Use it as the default when the local instance is running on `http://localhost:8080`.
 
-DuckDuckGo is a **seed-discovery layer**, not an exhaustive search engine.
+Start the instance if not already running:
+
+```bash
+docker start searxng
+```
+
+Per-state sweep (saves to `data/staging/`):
+
+```bash
+python scripts/search_searxng.py \
+  "overnight residential summer camp" \
+  --country US --region TX \
+  --output data/staging/discovered-searxng-tx.jsonl
+```
+
+SearXNG is also available as a provider inside `search_duckduckgo.py` and `run_discovery_pipeline.py`:
+
+```bash
+python scripts/search_duckduckgo.py \
+  "pre-college residential program" \
+  --providers searxng \
+  --country US --region MA
+```
+
+### Fallback: DuckDuckGo
+
+DuckDuckGo is a **seed-discovery layer**, not an exhaustive search engine. Use it when SearXNG is unavailable.
+
+Default provider chain: `instant_answer` → `lite_html`.
 
 When Instant Answer is weak, use Lite HTML directly:
 
@@ -162,7 +190,7 @@ Do not force a candidate into validated status just because it looks plausible.
 
 The repo now supports:
 
-- deterministic search
+- deterministic search via SearXNG (preferred), DuckDuckGo, or Google CDP
 - evidence capture to Markdown
 - evidence indexing
 - normalization of gathered reports

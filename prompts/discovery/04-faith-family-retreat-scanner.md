@@ -1,36 +1,115 @@
-# Discovery Prompt: Faith, Family, and Retreat Scanner
+# Copy-Paste Discovery Prompt: Faith, Family, And Retreat Scanner
 
-You are a discovery agent focused on family camps, faith-based camps, and youth retreats that include lodging.
+Replace the placeholders before you paste this into an outside agent:
 
-Use the shared rules in:
+- `<run_slug>`
+- `<country>`
+- `<region_or_null>`
+- `<language_mode>`
+- `<source_focus>`
+- `<max_candidates>`
 
-- `prompts/system/GROUNDING_RULES.md`
-- `prompts/system/OUTPUT_SCHEMA.md`
+---
 
-## Goal
+You are gathering discovery data for The Great Camp Crawl.
 
-Find qualifying overnight or residential programs while excluding venue-only properties.
+This is a data-gathering task, not a prompt-editing task.
+Do not rewrite these instructions.
+Do not suggest improvements to the prompt.
+Do the discovery work now.
 
-## Include
+Task:
+
+- Find qualifying overnight or residential family camps, faith-based camps, and youth retreats.
+- Save the gathered report to `reports/discovery/<run_slug>.json` if you have file-write access.
+- If you do not have file-write access, return only the JSON object so it can be saved to that path.
+
+Assigned slice:
+
+- `run_slug`: `<run_slug>`
+- `country`: `<country>`
+- `region`: `<region_or_null>`
+- `language_mode`: `<language_mode>`
+- `source_focus`: `<source_focus>`
+- `max_candidates`: `<max_candidates>`
+
+Include:
 
 - family camps with lodging
 - church camps
 - youth retreats with overnight stays
 - religious summer camps
 
-## Exclude
+Exclude:
 
 - campgrounds with no defined youth or family program
 - retreat centers that only advertise rentable space
 - conference centers with no program evidence
 
-## Working rules
+Hard rules:
 
 - Require evidence of a program, not just a property.
 - Preserve venue specificity.
 - Capture recent-activity evidence when visible.
-- Use `camp_type_tags` and `program_family_tags` conservatively.
+- Use tags conservatively.
+- Use `null` for unknown scalar values and `[]` for known-empty lists.
 
-## Output
+Return exactly one JSON object with this shape:
 
-Return one JSON object using the standard discovery batch shape with `scan_type` set to `faith_family_retreat`.
+```json
+{
+  "scan_type": "faith_family_retreat",
+  "scope": {
+    "country": "<country>",
+    "region": "<region_or_null>",
+    "city": null
+  },
+  "queries_used": [],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": null,
+      "country": "<country>",
+      "canonical_url": "",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": null,
+      "program_family_tags": [],
+      "camp_type_tags": [],
+      "candidate_shape": "single_venue_candidate|venue_unconfirmed|multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": null,
+      "overnight_evidence": {
+        "snippet": null,
+        "url": null
+      },
+      "recent_activity_evidence": {
+        "snippet": null,
+        "url": null,
+        "date_text": null
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "low|medium|high"
+    }
+  ]
+}
+```
+
+When finished:
+
+- Save the JSON to `reports/discovery/<run_slug>.json` if you can write files.
+- Otherwise return only the JSON object.
+- After the JSON, if non-JSON wrapper text is allowed, add only:
+  - saved path
+  - candidate count
+  - next query count
+  - blockers

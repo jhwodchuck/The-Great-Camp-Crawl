@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-04-13T21:22:53Z",
+  "input": "reports/discovery/dossier_render_skipped_2026-04-13.jsonl",
+  "outputs": {
+    "query_file": "reports/discovery/pending_dossier_searxng_2026-04-13_queries.txt",
+    "manifest": "reports/discovery/pending_dossier_searxng_2026-04-13_manifest.jsonl",
+    "query_map": "reports/discovery/pending_dossier_searxng_2026-04-13_query_map.jsonl",
+    "summary": "reports/discovery/pending_dossier_searxng_2026-04-13_summary.json"
+  },
+  "selected_records": 162,
+  "selected_queries": 486,
+  "reason_counts": {
+    "pending_venue_confirmation": 84,
+    "unknown_venue": 129,
+    "unknown_city": 84
+  },
+  "record_basis_counts": {
+    "venue_candidate_pending_confirmation": 84,
+    "venue_candidate": 78
+  },
+  "included_reasons": [
+    "pending_venue_confirmation",
+    "unknown_venue",
+    "unknown_city"
+  ],
+  "excluded_record_bases": [
+    "multi_venue_candidate"
+  ]
+}
