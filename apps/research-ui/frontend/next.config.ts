@@ -5,16 +5,20 @@ const API_HOST =
 
 const nextConfig: NextConfig = {
   async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: `${API_HOST}/api/:path*`,
-      },
-      {
-        source: "/health",
-        destination: `${API_HOST}/health`,
-      },
-    ];
+    return {
+      // beforeFiles ensures these rewrites run before Next.js's own /api/* handling,
+      // so requests to /api/* are proxied to the backend rather than returning 404.
+      beforeFiles: [
+        {
+          source: "/api/:path*",
+          destination: `${API_HOST}/api/:path*`,
+        },
+        {
+          source: "/health",
+          destination: `${API_HOST}/health`,
+        },
+      ],
+    };
   },
 };
 
