@@ -12,7 +12,7 @@ from schemas import FavoriteCreate, FavoriteOut, FavoriteUpdate
 router = APIRouter(prefix="/api/favorites", tags=["favorites"])
 
 
-@router.get("", response_model=list[FavoriteOut])
+@router.get("/", response_model=list[FavoriteOut])
 def list_favorites(
     user: User = Depends(get_current_user),
     db: Session = Depends(get_db),

@@ -15,7 +15,7 @@ from schemas import CampListOut, CampOut, CampStatsOut
 router = APIRouter(prefix="/api/camps", tags=["camps"])
 
 
-@router.get("", response_model=CampListOut)
+@router.get("/", response_model=CampListOut)
 def list_camps(
     page: int = Query(1, ge=1),
     page_size: int = Query(25, ge=1, le=100),
