@@ -32,16 +32,25 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900">🏕️ The Great Camp Crawl</h1>
         <p className="text-lg text-gray-600">
           Breadth-first overnight camp research across the US, Canada, and Mexico.
-          Over 350 venue-level dossiers covering traditional camps, specialty programs,
-          arts &amp; music camps, and college pre-college residential programs.
+          Browse the live catalog of dossier-backed records and discovery-stage candidates,
+          then sign in to review, edit, and add new findings.
         </p>
 
-        <a
-          href="https://jhwodchuck.github.io/The-Great-Camp-Crawl/"
-          className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition-colors"
-        >
-          Browse the Camp Catalog →
-        </a>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Link
+            href="/camps"
+            className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-xl shadow transition-colors"
+          >
+            Browse the Live Catalog →
+          </Link>
+
+          <Link
+            href="/login"
+            className="inline-block bg-white hover:bg-gray-50 text-green-700 font-semibold px-8 py-3 rounded-xl shadow border border-green-200 transition-colors"
+          >
+            Sign In to Contribute
+          </Link>
+        </div>
 
         <p className="text-sm text-gray-400 pt-4">
           Research contributor?{" "}
@@ -53,5 +62,4 @@ export default function Home() {
     </div>
   );
 }
-
 

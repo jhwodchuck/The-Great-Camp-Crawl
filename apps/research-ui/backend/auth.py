@@ -27,6 +27,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = TOKEN_EXPIRE_MINUTES
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
+optional_oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login", auto_error=False)
 
 
 def hash_password(password: str) -> str:
@@ -65,6 +66,23 @@ def get_current_user(
     if user is None:
         raise credentials_exc
     return user
+
+
+def get_current_user_optional(
+    token: str | None = Depends(optional_oauth2_scheme),
+    db: Session = Depends(get_db),
+) -> models.User | None:
+    if not token:
+        return None
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            return None
+    except JWTError:
+        return None
+
+    return db.query(models.User).filter(models.User.username == username).first()
 
 
 def require_parent(current_user: models.User = Depends(get_current_user)) -> models.User:

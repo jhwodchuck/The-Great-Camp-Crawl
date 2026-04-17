@@ -42,6 +42,10 @@ export default function DashboardPage() {
 
   if (!user) return null;
 
+  const editableContribs = myContribs.filter(
+    (c) => c.status === "draft" || c.status === "changes_requested"
+  );
+
   return (
     <div className="space-y-8">
       <div className="bg-white rounded-2xl shadow p-6">
@@ -55,6 +59,31 @@ export default function DashboardPage() {
             ? "Pick a mission and start adding camps you find!"
             : "Review contributions from your child and manage research missions."}
         </p>
+      </div>
+
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <QuickAction
+          href="/camps"
+          title="Browse Catalog"
+          description="Open the published camp research and drill into camp pages."
+          tone="blue"
+        />
+        <QuickAction
+          href="/missions"
+          title="Add Or Update Camp Info"
+          description="Pick a mission, then add a new camp or update details for one you found."
+          tone="green"
+        />
+        <QuickAction
+          href={user.role === "parent" ? "/review" : "/contributions"}
+          title={user.role === "parent" ? "Review Contributions" : "Continue Editing"}
+          description={
+            user.role === "parent"
+              ? "Open the review queue and approve or request changes."
+              : "Jump back into your saved drafts and requested changes."
+          }
+          tone="orange"
+        />
       </div>
 
       {/* Quick stats */}
@@ -72,6 +101,47 @@ export default function DashboardPage() {
           <StatCard icon="📋" label="Awaiting Review" value={reviewQueue.length} href="/review" color="orange" />
         )}
       </div>
+
+      {user.role === "child" && (
+        <div>
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-lg font-semibold text-gray-700">Continue Editing</h2>
+            <Link href="/contributions" className="text-blue-600 hover:underline text-sm">
+              See all drafts →
+            </Link>
+          </div>
+          {editableContribs.length === 0 ? (
+            <div className="bg-white rounded-xl p-6 text-center text-gray-400">
+              No draft contributions yet.{" "}
+              <Link href="/missions" className="text-blue-600 hover:underline">
+                Open a mission to add one.
+              </Link>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {editableContribs.slice(0, 3).map((c) => (
+                <Link
+                  key={c.id}
+                  href={`/contributions/${c.id}`}
+                  className="block bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <div className="font-medium text-gray-800">{c.camp_name}</div>
+                      <div className="text-sm text-gray-400">
+                        {c.status === "changes_requested" ? "Needs changes" : "Draft"}{" "}
+                        {c.city ? `· ${c.city}` : ""}
+                        {c.region ? ` · ${c.region}` : ""}
+                      </div>
+                    </div>
+                    <span className="text-sm text-blue-600">Open draft →</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Active missions */}
       <div>
@@ -117,6 +187,34 @@ export default function DashboardPage() {
         </div>
       )}
     </div>
+  );
+}
+
+function QuickAction({
+  href,
+  title,
+  description,
+  tone,
+}: {
+  href: string;
+  title: string;
+  description: string;
+  tone: "blue" | "green" | "orange";
+}) {
+  const toneClass = {
+    blue: "border-blue-200 bg-blue-50 text-blue-800",
+    green: "border-green-200 bg-green-50 text-green-800",
+    orange: "border-orange-200 bg-orange-50 text-orange-800",
+  }[tone];
+
+  return (
+    <Link
+      href={href}
+      className={`rounded-2xl border p-4 shadow-sm transition-shadow hover:shadow-md ${toneClass}`}
+    >
+      <div className="font-semibold">{title}</div>
+      <div className="mt-1 text-sm opacity-80">{description}</div>
+    </Link>
   );
 }
 

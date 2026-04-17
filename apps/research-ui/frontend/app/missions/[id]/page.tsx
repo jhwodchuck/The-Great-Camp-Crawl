@@ -1,22 +1,46 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth";
 import { api, Mission, Contribution, ScrapeResult } from "@/lib/api";
+import {
+  buildContributionPrefillNotes,
+  hasContributionPrefill,
+  readContributionPrefill,
+} from "@/lib/contribution-prefill";
 
 export default function MissionDetailPage() {
+  return (
+    <Suspense fallback={<div className="text-gray-400 text-center mt-20">Loading…</div>}>
+      <MissionDetailPageContent />
+    </Suspense>
+  );
+}
+
+function MissionDetailPageContent() {
   const { user, loading } = useAuth();
   const router = useRouter();
   const params = useParams();
+  const searchParams = useSearchParams();
   const missionId = Number(params.id);
+  const contributionPrefill = readContributionPrefill(searchParams);
+  const hasPrefill = hasContributionPrefill(contributionPrefill);
 
   const [mission, setMission] = useState<Mission | null>(null);
   const [contributions, setContributions] = useState<Contribution[]>([]);
   const [fetching, setFetching] = useState(true);
-  const [showNewForm, setShowNewForm] = useState(false);
-  const [newCamp, setNewCamp] = useState({ camp_name: "", website_url: "", region: "", city: "", overnight_confirmed: "unknown", notes: "" });
+  const [showNewForm, setShowNewForm] = useState(hasPrefill);
+  const [newCamp, setNewCamp] = useState(() => ({
+    camp_name: contributionPrefill.campName || "",
+    website_url: contributionPrefill.websiteUrl || "",
+    region: contributionPrefill.region || "",
+    city: contributionPrefill.city || "",
+    venue_name: contributionPrefill.venueName || "",
+    overnight_confirmed: "unknown",
+    notes: buildContributionPrefillNotes(contributionPrefill),
+  }));
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
   const [scrapeUrl, setScrapeUrl] = useState("");
@@ -44,9 +68,10 @@ export default function MissionDetailPage() {
         mission_id: missionId,
         camp_name: newCamp.camp_name,
         website_url: newCamp.website_url || undefined,
-        country: mission?.country || "US",
+        country: contributionPrefill.country || mission?.country || "US",
         region: newCamp.region || mission?.region || undefined,
         city: newCamp.city || undefined,
+        venue_name: newCamp.venue_name || undefined,
         overnight_confirmed: newCamp.overnight_confirmed,
         notes: newCamp.notes || undefined,
       });
@@ -109,16 +134,28 @@ export default function MissionDetailPage() {
         </div>
       </div>
 
-      {/* Child: Add a camp button */}
-      {user?.role === "child" && (
+      {hasPrefill && (
+        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 text-sm text-blue-900">
+          Adding or correcting information for{" "}
+          <span className="font-medium">
+            {contributionPrefill.campName || contributionPrefill.recordId}
+          </span>.
+          The form below has been prefilled from the camp page.
+        </div>
+      )}
+
+      {/* Add a camp button */}
+      {user && (
         <div>
           {!showNewForm ? (
             <button onClick={() => setShowNewForm(true)} className="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 text-lg">
-              🏕️ Add a Camp I Found!
+              {hasPrefill ? "✏️ Add Or Update Info For This Camp" : "🏕️ Add a Camp I Found!"}
             </button>
           ) : (
             <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-              <h2 className="font-bold text-blue-800 mb-4">Tell us about the camp you found! 🎉</h2>
+              <h2 className="font-bold text-blue-800 mb-4">
+                {hasPrefill ? "Update this camp with better evidence or details" : "Tell us about the camp you found! 🎉"}
+              </h2>
 
               {/* Scrape URL auto-fill */}
               <form onSubmit={handleScrape} className="mb-4 p-3 bg-white rounded-lg border border-blue-100">
@@ -175,6 +212,16 @@ export default function MissionDetailPage() {
                   </div>
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Venue Name</label>
+                  <input
+                    type="text"
+                    value={newCamp.venue_name}
+                    onChange={e => setNewCamp(f => ({ ...f, venue_name: e.target.value }))}
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Residence hall, ranch, campus, lake site..."
+                  />
+                </div>
+                <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Do kids sleep there? 🌙</label>
                   <select value={newCamp.overnight_confirmed} onChange={e => setNewCamp(f => ({ ...f, overnight_confirmed: e.target.value }))} className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
                     <option value="unknown">I&apos;m not sure yet</option>
@@ -204,7 +251,7 @@ export default function MissionDetailPage() {
         </h2>
         {contributions.length === 0 ? (
           <div className="bg-white rounded-xl p-8 text-center text-gray-400">
-            {user?.role === "child" ? "Click the button above to add your first camp! 🏕️" : "No contributions yet for this mission."}
+            Click the button above to add the first contribution for this mission.
           </div>
         ) : (
           <div className="space-y-2">

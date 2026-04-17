@@ -1,1 +1,0 @@
-{"record_id":"us-md-baltimore-homewood-campus-jhu-engineering-innovation","camp_id":"johns-hopkins-engineering-innovation","venue_id":"us-md-baltimore-homewood-campus","missing_fields":["pricing.amount_min","pricing.amount_max","contact.email"],"next_actions":["pricing_enrichment","contact_enrichment"],"status":"enrichment_pending"}

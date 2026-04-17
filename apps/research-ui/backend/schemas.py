@@ -242,6 +242,11 @@ class CampOut(BaseModel):
     contact_email: Optional[str] = None
     contact_phone: Optional[str] = None
     draft_status: Optional[str] = None
+    is_excluded: Optional[bool] = None
+    exclusion_reason: Optional[str] = None
+    exclusion_notes: Optional[str] = None
+    excluded_at: Optional[datetime] = None
+    excluded_by_user_id: Optional[int] = None
     description_md: Optional[str] = None
     last_verified: Optional[str] = None
     source: str
@@ -261,6 +266,12 @@ class CampStatsOut(BaseModel):
     by_country: dict[str, int]
     by_region: dict[str, int]
     by_program_family: dict[str, int]
+
+
+class CampModerationUpdate(BaseModel):
+    is_excluded: bool
+    reason: Optional[str] = None
+    notes: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------

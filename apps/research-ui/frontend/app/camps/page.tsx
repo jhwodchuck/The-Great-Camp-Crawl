@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { api, Camp, CampListResponse, CampStats } from "@/lib/api";
 
@@ -27,33 +27,45 @@ export default function CampCatalogPage() {
   const [page, setPage] = useState(1);
 
   // Filters
+  const [searchInput, setSearchInput] = useState("");
   const [search, setSearch] = useState("");
   const [country, setCountry] = useState("");
   const [region, setRegion] = useState("");
   const [overnightOnly, setOvernightOnly] = useState(false);
 
-  const fetchCamps = useCallback(async () => {
-    setLoading(true);
-    try {
-      const result = await api.camps.list({
-        page,
-        page_size: PAGE_SIZE,
-        q: search || undefined,
-        country: country || undefined,
-        region: region || undefined,
-        overnight: overnightOnly ? true : undefined,
-      });
-      setData(result);
-    } catch (err) {
-      console.error("Failed to load camps", err);
-    } finally {
-      setLoading(false);
-    }
-  }, [page, search, country, region, overnightOnly]);
-
   useEffect(() => {
-    fetchCamps();
-  }, [fetchCamps]);
+    let cancelled = false;
+
+    async function loadCamps() {
+      setLoading(true);
+      try {
+        const result = await api.camps.list({
+          page,
+          page_size: PAGE_SIZE,
+          q: search || undefined,
+          country: country || undefined,
+          region: region || undefined,
+          overnight: overnightOnly ? true : undefined,
+        });
+        if (!cancelled) {
+          setData(result);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          console.error("Failed to load camps", err);
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    void loadCamps();
+    return () => {
+      cancelled = true;
+    };
+  }, [page, search, country, region, overnightOnly]);
 
   useEffect(() => {
     api.camps.stats().then(setStats).catch(console.error);
@@ -62,7 +74,7 @@ export default function CampCatalogPage() {
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
     setPage(1);
-    fetchCamps();
+    setSearch(searchInput);
   }
 
   const totalPages = data ? Math.ceil(data.total / PAGE_SIZE) : 0;
@@ -81,8 +93,8 @@ export default function CampCatalogPage() {
         <form onSubmit={handleSearch} className="flex gap-2">
           <input
             type="text"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
+            value={searchInput}
+            onChange={e => setSearchInput(e.target.value)}
             placeholder="Search by name, city, or operator..."
             className="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
           />

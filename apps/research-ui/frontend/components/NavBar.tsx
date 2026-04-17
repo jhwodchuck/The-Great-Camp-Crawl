@@ -16,12 +16,23 @@ export default function NavBar() {
 
       {user && (
         <>
+          <Link href="/camps" className="hover:underline text-sm">
+            Catalog
+          </Link>
+
           <Link href="/missions" className="hover:underline text-sm">
             Missions
           </Link>
 
+          <Link href="/contributions" className="hover:underline text-sm">
+            Contributions
+          </Link>
+
           {user.role === "parent" && (
             <>
+              <Link href="/missions" className="hover:underline text-sm">
+                + Add or Update Camp
+              </Link>
               <Link href="/review" className="hover:underline text-sm">
                 Review Queue
               </Link>
@@ -32,8 +43,8 @@ export default function NavBar() {
           )}
 
           {user.role === "child" && (
-            <Link href="/contributions" className="hover:underline text-sm">
-              My Contributions
+            <Link href="/missions" className="hover:underline text-sm">
+              + Add or Update Camp
             </Link>
           )}
 

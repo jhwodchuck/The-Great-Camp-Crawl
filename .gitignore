@@ -13,4 +13,5 @@ site/
 apps/research-ui/frontend/.next/
 apps/research-ui/frontend/node_modules/
 data/staging/research_ui.db
+data/raw/evidence-pages/
 .vercel

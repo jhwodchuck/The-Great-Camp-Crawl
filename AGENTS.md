@@ -22,6 +22,17 @@ Included families:
 - faith-based camps and retreats
 - college-run pre-college residential programs
 
+## Source of Truth
+
+The **production PostgreSQL database** (Neon) is the source of truth for all camp data.
+
+- ~4,900 records as of April 2025
+- Connection: `RESEARCH_UI_DATABASE_URL` in `.vercel/.env.production.local`
+- Read/write via SQLAlchemy or raw SQL
+- See `prompts/discovery/00-db-connection.md` for connection details
+
+Do **not** use JSONL staging files as long-term data stores. The DB is canonical.
+
 ## Core Rules
 
 1. One final record per **physical venue or session location**.
@@ -31,171 +42,127 @@ Included families:
 5. Preserve non-English sources during discovery.
 6. Do not collapse multi-venue operators into a fake single-venue record.
 
-## Raw Discovery Policy
+## Standard Workflows
 
-Raw discovery and evidence capture should be **code-first and deterministic**.
+### 1. Assess coverage gaps (start here)
 
-Use scripts for:
+Before any new discovery, check what's in the DB:
 
-- seed search
-- evidence capture
-- normalization
-- follow-up queue generation
-- split-task generation
-- staging
+```bash
+source .venv/bin/activate
+source .vercel/.env.production.local
+```
 
-Do **not** rely on prompt-only discovery for raw gathering when the pipeline can do the work.
+Then follow `prompts/discovery/01-gap-analysis.md`.
 
-LLMs are still appropriate later for:
+### 2. Triage untriaged records
 
-- validation assistance
-- enrichment review
-- gap analysis
-- writing polished dossiers
+Most records are untriaged. Run triage before doing more discovery:
+
+```bash
+python scripts/triage_candidates_with_llm.py --db-url "$RESEARCH_UI_DATABASE_URL"
+```
+
+See `prompts/discovery/03-triage.md`.
+
+### 3. Find new candidates (only if gaps exist)
+
+Use script-based search (SearXNG preferred) or web search as backup:
+
+```bash
+# SearXNG (preferred)
+docker start searxng
+python scripts/search_searxng.py \
+  "overnight residential summer camp" \
+  --country US --region TX \
+  --output data/staging/temp-discovery.jsonl
+
+# Import to DB and clean up
+python scripts/import_dossiers_to_db.py --db-url "$RESEARCH_UI_DATABASE_URL"
+rm -f data/staging/temp-discovery.jsonl
+```
+
+See `prompts/discovery/02-find-candidates.md`.
+
+### 4. Validate and enrich
+
+After triage, validate overnight status and enrich with pricing/duration/contact:
+
+- `prompts/discovery/04-enrichment-workflow.md`
+- `prompts/discovery/05-validation-workflow.md`
+
+### 5. Import dossier markdown files
+
+If camp dossiers exist as `.md` files under `camps/`:
+
+```bash
+python scripts/import_dossiers_to_db.py --db-url "$RESEARCH_UI_DATABASE_URL"
+```
 
 ## Main Scripts
 
-Use these first:
-
-- `scripts/run_discovery_pipeline.py`
-- `scripts/search_searxng.py` — preferred high-recall provider via local SearXNG instance
+- `scripts/import_dossiers_to_db.py` — upsert camps to DB from markdown + JSONL
+- `scripts/triage_candidates_with_llm.py` — LLM-based triage of candidates
+- `scripts/run_discovery_pipeline.py` — full discovery pipeline
+- `scripts/search_searxng.py` — preferred high-recall search via local SearXNG
 - `scripts/search_duckduckgo.py` — DDG fallback when SearXNG is unavailable
-- `scripts/html_to_markdown.py`
-- `scripts/capture_to_evidence_index.py`
-- `scripts/normalize_existing_discovery_report.py`
-- `scripts/generate_followup_queue.py`
-- `scripts/split_multi_venue_candidates.py`
-- `scripts/ingest_discovery_reports.py`
-
-## Standard Workflows
-
-### 1. Run a live discovery pass
-
-```bash
-python scripts/run_discovery_pipeline.py \
-  "site:.edu pre-college residential program" \
-  --run-id us-college-precollege-seed \
-  --country US \
-  --region MA \
-  --program-family college-pre-college
-```
-
-### 2. Ingest gathered report dumps
-
-If new discovery data already exists in `reports/discovery/` as `.json` arrays or raw `.jsonl` search-hit files:
-
-```bash
-python scripts/ingest_discovery_reports.py
-```
-
-This will generate:
-
-- `*_normalized.jsonl`
-- `*_followup_queue.jsonl`
-- `*_split_queue.jsonl`
-- `*_split_stubs.jsonl`
-
-And it will refresh aggregate staging files:
-
-- `data/staging/discovered-candidates.jsonl`
-- `data/staging/discovery-followup-queue.jsonl`
-- `data/staging/discovery-split-queue.jsonl`
-- `data/staging/discovery-split-stubs.jsonl`
-- `data/staging/discovery-ingest-summary.json`
-
-### 3. Rebuild the evidence index
-
-```bash
-python scripts/capture_to_evidence_index.py \
-  data/raw/evidence-pages/text \
-  --output data/normalized/evidence_index.jsonl
-```
+- `scripts/run_enrichment_pipeline.py` — batch enrichment
+- `scripts/html_to_markdown.py` — convert captured HTML to markdown
+- `scripts/capture_to_evidence_index.py` — index evidence pages
 
 ## Search Guidance
 
 ### Preferred provider: SearXNG
 
-SearXNG running locally consistently returns more results per query than DuckDuckGo and has no rate-limiting concerns. Use it as the default when the local instance is running on `http://localhost:8080`.
-
-Start the instance if not already running:
-
-```bash
-docker start searxng
-```
-
-Per-state sweep (saves to `data/staging/`):
-
-```bash
-python scripts/search_searxng.py \
-  "overnight residential summer camp" \
-  --country US --region TX \
-  --output data/staging/discovered-searxng-tx.jsonl
-```
-
-SearXNG is also available as a provider inside `search_duckduckgo.py` and `run_discovery_pipeline.py`:
-
-```bash
-python scripts/search_duckduckgo.py \
-  "pre-college residential program" \
-  --providers searxng \
-  --country US --region MA
-```
+SearXNG running locally at `http://localhost:8080`. Start with `docker start searxng`.
 
 ### Fallback: DuckDuckGo
 
-DuckDuckGo is a **seed-discovery layer**, not an exhaustive search engine. Use it when SearXNG is unavailable.
+Use when SearXNG is unavailable. Default chain: `instant_answer` → `lite_html`.
 
-Default provider chain: `instant_answer` → `lite_html`.
+## Prompt Structure
 
-When Instant Answer is weak, use Lite HTML directly:
+All discovery/workflow prompts are in `prompts/discovery/`:
 
-```bash
-python scripts/search_duckduckgo.py \
-  "Johns Hopkins Engineering Innovation residential" \
-  --providers lite_html \
-  --no-expand
-```
+| File | Purpose |
+|------|---------|
+| `00-db-connection.md` | Database connection and query reference |
+| `00-save-contract.md` | How to write new records to the DB |
+| `01-gap-analysis.md` | Assess current coverage gaps |
+| `02-find-candidates.md` | Find new candidates via search |
+| `03-triage.md` | Classify untriaged records |
+| `04-enrichment-workflow.md` | Enrich records with pricing, duration, etc. |
+| `05-validation-workflow.md` | Validate overnight status, venue, activity |
+
+System rules (grounding, dedup, naming, quality bar) remain in `prompts/system/`.
+Enrichment detail prompts remain in `prompts/enrichment/`.
+Validation detail prompts remain in `prompts/validation/`.
 
 ## Canonical Paths
 
 - Final venue dossiers: `camps/<country>/<region>/`
-- Raw run artifacts: `data/raw/discovery-runs/<run-id>/`
-- Raw evidence pages: `data/raw/evidence-pages/`
-- Normalized evidence index: `data/normalized/evidence_index.jsonl`
-- Discovery reports and companions: `reports/discovery/`
-- Aggregate staging handoff: `data/staging/`
+- Seed queries: `data/seed-queries/`
+- Prompt templates: `prompts/`
+- Backend/API: `apps/research-ui/backend/`
 
 ## When Editing Records
 
-- Prefer updating normalized or staging artifacts through scripts rather than manual hand-edits.
-- If you add a new raw report dump, ingest it through `scripts/ingest_discovery_reports.py`.
-- If you add a new live discovery run, keep the run summary and companion outputs together.
-- If a candidate is multi-venue, make sure the split queue reflects that.
+- Write to the DB, not to JSONL files.
+- Use `scripts/import_dossiers_to_db.py` for batch imports.
+- Check for duplicates before inserting (by URL, name+city+region).
+- If a candidate is multi-venue, split it into separate records.
 
 ## Validation and Enrichment Boundary
 
-Discovery-stage records may still be ambiguous.
-
-They should carry:
-
-- `record_basis`
-- `validation_needs`
-- `priority_flags`
-- `duration_guess`
-- raw discovery provenance
-
-Do not force a candidate into validated status just because it looks plausible.
+Discovery-stage records may still be ambiguous. Do not force a candidate into validated status just because it looks plausible. Run triage → validation → enrichment in order.
 
 ## Current Pipeline Status
 
-The repo now supports:
+The DB contains ~4,900 records. Most are untriaged (`candidate_pending`). Priority work:
 
-- deterministic search via SearXNG (preferred), DuckDuckGo, or Google CDP
-- evidence capture to Markdown
-- evidence indexing
-- normalization of gathered reports
-- follow-up queue generation
-- multi-venue split-task generation
-- aggregate staging ingestion
+1. **Triage** — classify untriaged records as likely_camp/likely_not/unclear
+2. **Validate** — confirm overnight status for likely_camp records
+3. **Enrich** — add pricing, duration, age range, contact info
+4. **Gap fill** — only after triage reveals actual coverage gaps
 
 If behavior in docs and scripts diverges, update this file and the corresponding docs together.

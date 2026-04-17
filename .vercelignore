@@ -24,3 +24,6 @@ apps/research-ui/frontend/.next
 apps/research-ui/frontend/node_modules
 apps/research-ui/frontend/AGENTS.md
 apps/research-ui/frontend/CLAUDE.md
+
+!apps/research-ui/frontend/app/camps
+!apps/research-ui/frontend/app/camps/**

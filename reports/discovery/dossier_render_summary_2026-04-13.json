@@ -1,9 +1,0 @@
-{
-  "input_path": "data/staging/discovered-candidates.jsonl",
-  "output_dir": "camps",
-  "input_records": 627,
-  "deduped_records": 529,
-  "rendered": 337,
-  "skipped_existing": 0,
-  "skipped_unrenderable": 192
-}

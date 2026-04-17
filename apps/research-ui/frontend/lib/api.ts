@@ -188,6 +188,11 @@ export interface Camp {
   contact_email: string | null;
   contact_phone: string | null;
   draft_status: string | null;
+  is_excluded: boolean | null;
+  exclusion_reason: string | null;
+  exclusion_notes: string | null;
+  excluded_at: string | null;
+  excluded_by_user_id: number | null;
   description_md: string | null;
   last_verified: string | null;
   source: string;
@@ -207,6 +212,12 @@ export interface CampStats {
   by_country: Record<string, number>;
   by_region: Record<string, number>;
   by_program_family: Record<string, number>;
+}
+
+export interface CampModerationPayload {
+  is_excluded: boolean;
+  reason?: string;
+  notes?: string;
 }
 
 export interface Favorite {
@@ -402,13 +413,20 @@ export const api = {
       if (params?.price_max) qs.set("price_max", String(params.price_max));
       if (params?.overnight !== undefined) qs.set("overnight", String(params.overnight));
       if (params?.q) qs.set("q", params.q);
-      return request(`/api/camps/?${qs}`, {}, true);
+      const query = qs.toString();
+      return request(query ? `/api/camps?${query}` : "/api/camps", {}, true);
     },
     get(recordId: string): Promise<Camp> {
-      return request(`/api/camps/${encodeURIComponent(recordId)}`, {}, true);
+      return request(`/api/camps/${encodeURIComponent(recordId)}`);
     },
     stats(): Promise<CampStats> {
       return request("/api/camps/stats", {}, true);
+    },
+    moderate(recordId: string, payload: CampModerationPayload): Promise<Camp> {
+      return request(`/api/camps/${encodeURIComponent(recordId)}/moderation`, {
+        method: "PATCH",
+        body: JSON.stringify(payload),
+      });
     },
   },
 

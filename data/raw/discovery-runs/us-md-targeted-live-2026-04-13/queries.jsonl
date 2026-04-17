@@ -1,3 +1,0 @@
-{"error": "Expecting value: line 1 column 1 (char 0)", "query": "Johns Hopkins Engineering Innovation residential US MD", "query_parent": "Johns Hopkins Engineering Innovation residential", "query_source": "cli", "search_timestamp": "2026-04-13T14:48:42Z", "status": "error"}
-{"error": "Expecting value: line 1 column 1 (char 0)", "query": "Johns Hopkins CTY residential US MD", "query_parent": "Johns Hopkins CTY residential", "query_source": "cli", "search_timestamp": "2026-04-13T14:48:42Z", "status": "error"}
-{"error": "Expecting value: line 1 column 1 (char 0)", "query": "Maryland pre-college residential program US MD", "query_parent": "Maryland pre-college residential program", "query_source": "cli", "search_timestamp": "2026-04-13T14:48:42Z", "status": "error"}
