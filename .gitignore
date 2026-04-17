@@ -13,5 +13,16 @@ site/
 apps/research-ui/frontend/.next/
 apps/research-ui/frontend/node_modules/
 data/staging/research_ui.db
+data/staging/*.jsonl
+data/staging/*.log
 data/raw/evidence-pages/
+data/raw/discovery-runs/
+data/enrichment/
+reports/discovery/
+*.db
+enrichment-*.jsonl
+triage-results-*.jsonl
+node_modules/
+/package.json
+/package-lock.json
 .vercel
