@@ -11,7 +11,6 @@ from sqlalchemy import (
     Integer,
     String,
     Text,
-    func,
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -152,3 +151,22 @@ class Review(Base):
 
     contribution: Mapped["Contribution"] = relationship("Contribution", back_populates="reviews")
     reviewer: Mapped["User"] = relationship("User", back_populates="reviews")
+
+
+class ExportArtifact(Base):
+    __tablename__ = "export_artifacts"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    contribution_id: Mapped[int] = mapped_column(
+        Integer,
+        ForeignKey("contributions.id"),
+        nullable=False,
+        unique=True,
+    )
+    filename: Mapped[str] = mapped_column(String(512), nullable=False)
+    artifact_path: Mapped[str] = mapped_column(String(2048), nullable=False)
+    payload_json: Mapped[str] = mapped_column(Text, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+    contribution: Mapped["Contribution"] = relationship("Contribution")

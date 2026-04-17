@@ -1,7 +1,9 @@
 /** API base URL – override with NEXT_PUBLIC_API_URL env var.
  *  WARNING: Do NOT use plain HTTP in production; it exposes auth tokens.
  *  Always use HTTPS when deploying. */
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_URL ??
+  (process.env.NODE_ENV === "production" ? "/backend" : "http://localhost:8000");
 
 if (
   typeof window !== "undefined" &&
@@ -65,6 +67,14 @@ export interface Token {
   access_token: string;
   token_type: string;
   user: User;
+}
+
+export interface RegisterOptions {
+  child_self_signup_enabled: boolean;
+  parent_self_signup_enabled: boolean;
+  parent_invite_required: boolean;
+  bootstrap_parent_configured: boolean;
+  message: string | null;
 }
 
 export interface Mission {
@@ -140,6 +150,8 @@ export interface Review {
 export interface ExportResult {
   contribution_id: number;
   artifact_path: string;
+  storage_kind: string;
+  exported_at: string;
   message: string;
 }
 
@@ -149,11 +161,26 @@ export interface ExportResult {
 
 export const api = {
   auth: {
-    register(username: string, displayName: string, password: string, role: Role): Promise<Token> {
+    register(
+      username: string,
+      displayName: string,
+      password: string,
+      role: Role,
+      parentInviteCode?: string
+    ): Promise<Token> {
       return request("/api/auth/register", {
         method: "POST",
-        body: JSON.stringify({ username, display_name: displayName, password, role }),
+        body: JSON.stringify({
+          username,
+          display_name: displayName,
+          password,
+          role,
+          parent_invite_code: parentInviteCode || undefined,
+        }),
       }, true);
+    },
+    registerOptions(): Promise<RegisterOptions> {
+      return request("/api/auth/register-options", {}, true);
     },
     login(username: string, password: string): Promise<Token> {
       const body = new URLSearchParams({ username, password });

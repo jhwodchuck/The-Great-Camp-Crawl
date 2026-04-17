@@ -4,3 +4,13 @@ __pycache__/
 .pytest_cache/
 site/
 .DS_Store
+.secrets/
+.vercel/
+.env
+.env.*
+!/.env.example
+!**/.env.example
+apps/research-ui/frontend/.next/
+apps/research-ui/frontend/node_modules/
+data/staging/research_ui.db
+.vercel

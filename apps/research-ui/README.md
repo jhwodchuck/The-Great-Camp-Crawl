@@ -1,4 +1,4 @@
-# Research UI – Setup & Development Guide
+# Research UI – Setup, Deployment & Operations Guide
 
 A child-friendly camp research collaboration app built with FastAPI (backend) and Next.js (frontend).
 
@@ -35,9 +35,20 @@ apps/research-ui/
         └── NavBar.tsx
 ```
 
+## Deployment Architecture
+
+This app is now structured to deploy as a single Vercel project with two services:
+
+- `web` → `apps/research-ui/frontend` (Next.js)
+- `api` → `apps/research-ui/backend/main.py` (FastAPI) mounted at `/backend`
+
+That means the browser stays on one domain, and the frontend talks to the backend through `/backend/api/...`.
+
 ## Database Schema
 
-SQLite database stored at `data/staging/research_ui.db` (configurable via `RESEARCH_UI_DB` env var).
+Local development can use SQLite at `data/staging/research_ui.db`.
+
+Production on Vercel must use Postgres via `RESEARCH_UI_DATABASE_URL` or Vercel Postgres env vars. SQLite is intentionally rejected on Vercel because it does not preserve child edits reliably across serverless instances.
 
 | Table | Key columns |
 |---|---|
@@ -118,11 +129,20 @@ Interactive docs: http://localhost:8000/docs
 
 | Variable | Default | Description |
 |---|---|---|
-| `RESEARCH_UI_DB` | `data/staging/research_ui.db` | Path to SQLite database |
+| `RESEARCH_UI_DB` | `data/staging/research_ui.db` | Local SQLite path for development only |
+| `RESEARCH_UI_DATABASE_URL` | unset | Production database URL (preferred on Vercel) |
 | `RESEARCH_UI_SECRET` | `dev-secret-change-in-production-please` | JWT signing secret |
 | `TOKEN_EXPIRE_MINUTES` | `480` | JWT expiry (8 hours) |
+| `RESEARCH_UI_CORS_ORIGINS` | `http://localhost:3000,http://127.0.0.1:3000` | Allowed browser origins for local development |
+| `RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME` | unset | Optional pre-created parent username |
+| `RESEARCH_UI_BOOTSTRAP_PARENT_PASSWORD` | unset | Optional pre-created parent password |
+| `RESEARCH_UI_BOOTSTRAP_PARENT_DISPLAY_NAME` | `Parent` | Optional pre-created parent display name |
+| `RESEARCH_UI_PARENT_INVITE_CODE` | unset | Optional invite code required for parent self-registration |
+| `RESEARCH_UI_ALLOW_UNINVITED_FIRST_PARENT` | `true` locally, `false` in production | Whether the first parent can self-register without an invite |
+| `RESEARCH_UI_ENABLE_FILE_EXPORTS` | `true` locally, `false` on Vercel | Mirror approved exports to JSON files when the filesystem is writable |
+| `RESEARCH_UI_EXPORT_DIR` | `data/staging/contributions` | Filesystem export mirror path |
 
-⚠️ **Always set `RESEARCH_UI_SECRET` to a random secret in production.**
+`apps/research-ui/.env.example` contains a deployment-safe template.
 
 ## Frontend Setup
 
@@ -142,7 +162,7 @@ The app will be available at http://localhost:3000.
 
 | Variable | Default | Description |
 |---|---|---|
-| `NEXT_PUBLIC_API_URL` | `http://localhost:8000` | Backend API base URL |
+| `NEXT_PUBLIC_API_URL` | `http://localhost:8000` locally, `/backend` in production fallback | Backend API base URL |
 
 ## Running Tests
 
@@ -155,13 +175,15 @@ python -m pytest tests/research_ui/ -v
 
 ## Promoted Artifacts
 
-When a parent approves and promotes a contribution, a JSON file is written to:
+When a parent approves and promotes a contribution, the export is always stored in the database and can optionally be mirrored to a JSON file in writable environments.
+
+Local file mirror path:
 
 ```
 data/staging/contributions/contrib-{id}-{slug}.json
 ```
 
-This file uses the same `venue_candidate` schema as the existing Python discovery pipeline and can be ingested via `scripts/ingest_discovery_reports.py`.
+The payload uses the same `venue_candidate` schema as the existing Python discovery pipeline and can be ingested via `scripts/ingest_discovery_reports.py`.
 
 ## Security Notes
 
@@ -171,6 +193,32 @@ This file uses the same `venue_candidate` schema as the existing Python discover
 - JWT tokens expire after 8 hours
 - Children can only see and edit their own contributions
 - API enforces role-based access at every endpoint
+- Public parent registration is no longer open by default in production
+- Vercel deployments require an explicit database, JWT secret, and parent bootstrap strategy before startup succeeds
+
+## GitHub Actions
+
+Two workflows are included:
+
+- `Research UI CI` runs backend tests plus frontend lint/build on pull requests and pushes to `main`
+- `Research UI Vercel Deploy` creates preview deployments for pull requests and production deployments from `main`
+
+Set these GitHub Actions secrets before enabling deploys:
+
+- `VERCEL_TOKEN`
+- `VERCEL_ORG_ID`
+- `VERCEL_PROJECT_ID`
+
+## Vercel Setup
+
+1. Create a Vercel project from this repository.
+2. Attach Vercel Postgres or provide `RESEARCH_UI_DATABASE_URL`.
+3. Add required env vars:
+   - `RESEARCH_UI_SECRET`
+   - either `RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME` + `RESEARCH_UI_BOOTSTRAP_PARENT_PASSWORD`
+   - or `RESEARCH_UI_PARENT_INVITE_CODE`
+4. Keep the Vercel project rooted at the repository root so `vercel.json` can route both services.
+5. Copy the project `orgId` and `projectId` into GitHub Actions secrets for deploy automation.
 
 ## Folder Structure for Artifacts
 

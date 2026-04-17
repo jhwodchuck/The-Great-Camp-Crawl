@@ -44,7 +44,22 @@ export default function ReviewDetailPage() {
     if (loading) return;
     if (!user) { router.push("/login"); return; }
     if (user.role !== "parent") { router.push("/dashboard"); return; }
-    load().finally(() => setFetching(false));
+
+    let isActive = true;
+    async function hydrateReview() {
+      try {
+        await load();
+      } finally {
+        if (isActive) {
+          setFetching(false);
+        }
+      }
+    }
+
+    hydrateReview();
+    return () => {
+      isActive = false;
+    };
   }, [user, loading, router, load]);
 
   async function handleReview() {

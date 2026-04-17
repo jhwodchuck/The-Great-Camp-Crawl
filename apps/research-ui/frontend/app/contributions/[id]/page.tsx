@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth";
-import { api, Contribution, Evidence, Answer, GuidedQuestion } from "@/lib/api";
+import { api, Contribution, Evidence, GuidedQuestion } from "@/lib/api";
 
 const STATUS_LABELS: Record<string, string> = {
   draft: "✏️ Draft",
@@ -68,7 +68,22 @@ export default function ContributionDetailPage() {
   useEffect(() => {
     if (loading) return;
     if (!user) { router.push("/login"); return; }
-    load().finally(() => setFetching(false));
+
+    let isActive = true;
+    async function hydrateContribution() {
+      try {
+        await load();
+      } finally {
+        if (isActive) {
+          setFetching(false);
+        }
+      }
+    }
+
+    hydrateContribution();
+    return () => {
+      isActive = false;
+    };
   }, [user, loading, router, load]);
 
   async function handleSaveAnswers() {

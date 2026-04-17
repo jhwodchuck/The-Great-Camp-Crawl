@@ -19,6 +19,7 @@ class UserCreate(BaseModel):
     display_name: str
     password: str
     role: UserRole = UserRole.child
+    parent_invite_code: Optional[str] = None
 
 
 class UserOut(BaseModel):
@@ -35,6 +36,14 @@ class Token(BaseModel):
     access_token: str
     token_type: str = "bearer"
     user: UserOut
+
+
+class RegisterOptions(BaseModel):
+    child_self_signup_enabled: bool = True
+    parent_self_signup_enabled: bool
+    parent_invite_required: bool
+    bootstrap_parent_configured: bool
+    message: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
@@ -192,4 +201,6 @@ class ReviewOut(BaseModel):
 class ExportResult(BaseModel):
     contribution_id: int
     artifact_path: str
+    storage_kind: str
+    exported_at: datetime
     message: str

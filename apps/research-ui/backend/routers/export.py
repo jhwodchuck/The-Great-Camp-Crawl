@@ -13,12 +13,9 @@ import models
 import schemas
 from auth import require_parent
 from database import get_db
+from settings import REPO_ROOT, RESEARCH_UI_ENABLE_FILE_EXPORTS, RESEARCH_UI_EXPORT_DIR
 
 router = APIRouter(prefix="/api/export", tags=["export"])
-
-REPO_ROOT = Path(__file__).resolve().parents[4]
-CONTRIBUTIONS_DIR = REPO_ROOT / "data" / "staging" / "contributions"
-REVIEW_QUEUE_DIR = REPO_ROOT / "data" / "staging" / "review-queue"
 
 
 def _slugify(text: str) -> str:
@@ -65,6 +62,51 @@ def _contribution_to_candidate(c: models.Contribution, evidence: list, answers: 
     }
 
 
+def _display_artifact_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
+
+
+def _persist_export_artifact(db: Session, contribution_id: int, filename: str, candidate: dict) -> tuple[models.ExportArtifact, str]:
+    payload_json = json.dumps(candidate, indent=2, ensure_ascii=False)
+
+    artifact_path = f"db://export-artifacts/{filename}"
+    storage_kind = "database"
+    if RESEARCH_UI_ENABLE_FILE_EXPORTS:
+        try:
+            RESEARCH_UI_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
+            out_path = RESEARCH_UI_EXPORT_DIR / filename
+            out_path.write_text(payload_json, encoding="utf-8")
+            artifact_path = _display_artifact_path(out_path)
+            storage_kind = "database+file"
+        except OSError:
+            storage_kind = "database"
+
+    artifact = (
+        db.query(models.ExportArtifact)
+        .filter(models.ExportArtifact.contribution_id == contribution_id)
+        .first()
+    )
+    if artifact is None:
+        artifact = models.ExportArtifact(
+            contribution_id=contribution_id,
+            filename=filename,
+            artifact_path=artifact_path,
+            payload_json=payload_json,
+        )
+        db.add(artifact)
+    else:
+        artifact.filename = filename
+        artifact.artifact_path = artifact_path
+        artifact.payload_json = payload_json
+
+    db.commit()
+    db.refresh(artifact)
+    return artifact, storage_kind
+
+
 @router.post("/{contribution_id}", response_model=schemas.ExportResult)
 def promote_contribution(
     contribution_id: int,
@@ -83,14 +125,14 @@ def promote_contribution(
     candidate = _contribution_to_candidate(c, evidence, answers)
     slug = _slugify(c.camp_name)
     filename = f"contrib-{c.id}-{slug}.json"
-    out_path = CONTRIBUTIONS_DIR / filename
-    CONTRIBUTIONS_DIR.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(candidate, indent=2, ensure_ascii=False), encoding="utf-8")
+    artifact, storage_kind = _persist_export_artifact(db, c.id, filename, candidate)
 
     return schemas.ExportResult(
         contribution_id=c.id,
-        artifact_path=str(out_path.relative_to(REPO_ROOT)),
-        message=f"Contribution promoted to {filename}",
+        artifact_path=artifact.artifact_path,
+        storage_kind=storage_kind,
+        exported_at=artifact.updated_at,
+        message=f"Contribution exported as {filename}",
     )
 
 

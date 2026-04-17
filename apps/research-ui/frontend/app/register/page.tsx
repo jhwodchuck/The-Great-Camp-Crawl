@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { api, Role } from "@/lib/api";
+import { api, RegisterOptions, Role } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 
 export default function RegisterPage() {
@@ -14,13 +14,29 @@ export default function RegisterPage() {
     displayName: "",
     password: "",
     role: "child" as Role,
+    parentInviteCode: "",
   });
+  const [registerOptions, setRegisterOptions] = useState<RegisterOptions | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    api.auth
+      .registerOptions()
+      .then(setRegisterOptions)
+      .catch(() => {
+        setRegisterOptions(null);
+      });
+  }, []);
 
   function update(field: string, value: string) {
     setForm((f) => ({ ...f, [field]: value }));
   }
+
+  const parentSignupDisabled =
+    registerOptions !== null && !registerOptions.parent_self_signup_enabled;
+  const parentInviteRequired =
+    form.role === "parent" && !!registerOptions?.parent_invite_required;
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -31,7 +47,8 @@ export default function RegisterPage() {
         form.username,
         form.displayName,
         form.password,
-        form.role
+        form.role,
+        form.parentInviteCode
       );
       login(token.access_token, token.user);
       router.push("/dashboard");
@@ -72,12 +89,16 @@ export default function RegisterPage() {
                 value="parent"
                 checked={form.role === "parent"}
                 onChange={() => update("role", "parent")}
+                disabled={parentSignupDisabled}
                 className="sr-only"
               />
               <div className="text-2xl">👨‍👩‍👧</div>
               <div className="text-sm font-medium mt-1">I&apos;m the parent</div>
             </label>
           </div>
+          {registerOptions?.message && (
+            <p className="mt-2 text-xs text-gray-500">{registerOptions.message}</p>
+          )}
         </div>
 
         <div>
@@ -114,6 +135,21 @@ export default function RegisterPage() {
             placeholder="••••••••"
           />
         </div>
+        {parentInviteRequired && (
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Parent Invite Code
+            </label>
+            <input
+              type="password"
+              value={form.parentInviteCode}
+              onChange={(e) => update("parentInviteCode", e.target.value)}
+              required
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Invite code from deployment settings"
+            />
+          </div>
+        )}
         {error && <p className="text-red-500 text-sm">{error}</p>}
         <button
           type="submit"

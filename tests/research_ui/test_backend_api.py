@@ -1,312 +1,376 @@
-"""Tests for the research-ui backend API."""
+"""Router-level integration tests for the research-ui backend."""
 from __future__ import annotations
 
 import os
 import sys
 import tempfile
+from pathlib import Path
 
 # Point to the backend directory
 BACKEND_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "apps", "research-ui", "backend")
 sys.path.insert(0, os.path.abspath(BACKEND_DIR))
 
-# Use a temp file-based SQLite DB for tests (avoids per-connection isolation in :memory:)
+# Use temp filesystem locations so tests never touch repo state.
 _tmp_db = tempfile.NamedTemporaryFile(suffix=".db", delete=False)
 _tmp_db.close()
+_tmp_export_dir = tempfile.TemporaryDirectory()
+
 os.environ["RESEARCH_UI_DB"] = _tmp_db.name
+os.environ["RESEARCH_UI_EXPORT_DIR"] = _tmp_export_dir.name
 
 import pytest
-from fastapi.testclient import TestClient
+from fastapi import HTTPException
+from fastapi.security import OAuth2PasswordRequestForm
 
-from main import app
-from database import Base, engine
-
-Base.metadata.create_all(bind=engine)
-
-client = TestClient(app)
-
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-
-def register_and_login(username: str, password: str = "testpass123", role: str = "parent") -> str:
-    resp = client.post("/api/auth/register", json={
-        "username": username,
-        "display_name": f"User {username}",
-        "password": password,
-        "role": role,
-    })
-    assert resp.status_code == 201, resp.text
-    return resp.json()["access_token"]
+import models
+import schemas
+from auth import get_current_user, require_parent
+from database import Base, SessionLocal, engine
+from main import health
+from routers import answers as answers_router
+from routers import auth as auth_router
+from routers import contributions as contributions_router
+from routers import evidence as evidence_router
+from routers import export as export_router
+from routers import missions as missions_router
+from routers import reviews as reviews_router
 
 
-def auth_headers(token: str) -> dict:
-    return {"Authorization": f"Bearer {token}"}
+@pytest.fixture(autouse=True)
+def reset_db():
+    Base.metadata.drop_all(bind=engine)
+    Base.metadata.create_all(bind=engine)
+
+    export_dir = Path(_tmp_export_dir.name)
+    for artifact in export_dir.glob("*"):
+        artifact.unlink()
+
+    yield
 
 
-# ---------------------------------------------------------------------------
-# Auth tests
-# ---------------------------------------------------------------------------
+@pytest.fixture
+def db():
+    session = SessionLocal()
+    try:
+        yield session
+    finally:
+        session.close()
+
+
+def register_user(
+    db,
+    username: str,
+    password: str = "testpass123",
+    role: models.UserRole = models.UserRole.parent,
+    parent_invite_code: str | None = None,
+):
+    return auth_router.register(
+        schemas.UserCreate(
+            username=username,
+            display_name=f"User {username}",
+            password=password,
+            role=role,
+            parent_invite_code=parent_invite_code,
+        ),
+        db,
+    )
+
+
+def login_user(db, username: str, password: str):
+    form = OAuth2PasswordRequestForm(
+        grant_type="password",
+        username=username,
+        password=password,
+        scope="",
+        client_id=None,
+        client_secret=None,
+    )
+    return auth_router.login(form, db)
+
+
+def token_user(db, token):
+    return get_current_user(token.access_token, db)
 
 
 def test_health():
-    resp = client.get("/health")
-    assert resp.status_code == 200
-    assert resp.json()["status"] == "ok"
+    assert health() == {"status": "ok"}
 
 
-def test_register_and_login():
-    token = register_and_login("parent_user_1")
-    assert token
+def test_register_and_login(db):
+    token = register_user(db, "parent_user_1")
+    assert token.access_token
 
-    # duplicate username is rejected
-    resp = client.post("/api/auth/register", json={
-        "username": "parent_user_1",
-        "display_name": "Dup",
-        "password": "abc",
-        "role": "parent",
-    })
-    assert resp.status_code == 400
+    with pytest.raises(HTTPException) as exc:
+        register_user(db, "parent_user_1")
+    assert exc.value.status_code == 400
 
+    with pytest.raises(HTTPException) as exc:
+        register_user(db, "parent_user_2", role=models.UserRole.parent)
+    assert exc.value.status_code == 403
 
-def test_me_endpoint():
-    token = register_and_login("parent_me_user")
-    resp = client.get("/api/auth/me", headers=auth_headers(token))
-    assert resp.status_code == 200
-    data = resp.json()
-    assert data["username"] == "parent_me_user"
-    assert data["role"] == "parent"
+    login_token = login_user(db, "parent_user_1", "testpass123")
+    assert login_token.user.username == "parent_user_1"
 
 
-def test_login_bad_password():
-    register_and_login("login_test_user")
-    resp = client.post("/api/auth/login", data={"username": "login_test_user", "password": "wrong"})
-    assert resp.status_code == 401
+def test_register_options_reflect_parent_bootstrap_rules(db):
+    initial = auth_router.register_options(db)
+    assert initial.parent_self_signup_enabled is True
+    assert initial.bootstrap_parent_configured is False
+
+    register_user(db, "options_parent")
+
+    after_parent = auth_router.register_options(db)
+    assert after_parent.parent_self_signup_enabled is False
+    assert after_parent.bootstrap_parent_configured is False
 
 
-# ---------------------------------------------------------------------------
-# Mission tests
-# ---------------------------------------------------------------------------
+def test_me_endpoint(db):
+    token = register_user(db, "parent_me_user")
+    current_user = token_user(db, token)
+    me = auth_router.me(current_user)
+    assert me.username == "parent_me_user"
+    assert me.role == models.UserRole.parent
 
 
-def test_missions_crud():
-    parent_token = register_and_login("mission_parent")
-    child_token = register_and_login("mission_child", role="child")
+def test_login_bad_password(db):
+    register_user(db, "login_test_user")
 
-    # Parent creates mission
-    resp = client.post("/api/missions/", json={
-        "title": "Find Maine Camps",
-        "description": "Research overnight camps in Maine",
-        "region": "ME",
-        "country": "US",
-    }, headers=auth_headers(parent_token))
-    assert resp.status_code == 201
-    mission = resp.json()
-    mid = mission["id"]
-    assert mission["title"] == "Find Maine Camps"
-
-    # Child can list missions
-    resp = client.get("/api/missions/", headers=auth_headers(child_token))
-    assert resp.status_code == 200
-    assert any(m["id"] == mid for m in resp.json())
-
-    # Child cannot create missions
-    resp = client.post("/api/missions/", json={
-        "title": "Child attempt",
-    }, headers=auth_headers(child_token))
-    assert resp.status_code == 403
-
-    # Parent can update
-    resp = client.patch(f"/api/missions/{mid}", json={"title": "Updated Maine Camps"}, headers=auth_headers(parent_token))
-    assert resp.status_code == 200
-    assert resp.json()["title"] == "Updated Maine Camps"
-
-    # Parent can soft-delete
-    resp = client.delete(f"/api/missions/{mid}", headers=auth_headers(parent_token))
-    assert resp.status_code == 204
+    with pytest.raises(HTTPException) as exc:
+        login_user(db, "login_test_user", "wrong")
+    assert exc.value.status_code == 401
 
 
-# ---------------------------------------------------------------------------
-# Contribution tests
-# ---------------------------------------------------------------------------
+def test_missions_crud(db):
+    parent = token_user(db, register_user(db, "mission_parent"))
+    child = token_user(db, register_user(db, "mission_child", role=models.UserRole.child))
+
+    mission = missions_router.create_mission(
+        schemas.MissionCreate(
+            title="Find Maine Camps",
+            description="Research overnight camps in Maine",
+            region="ME",
+            country="US",
+        ),
+        db,
+        parent,
+    )
+    assert mission.title == "Find Maine Camps"
+
+    missions = missions_router.list_missions(db, child)
+    assert any(item.id == mission.id for item in missions)
+
+    with pytest.raises(HTTPException) as exc:
+        require_parent(child)
+    assert exc.value.status_code == 403
+
+    updated = missions_router.update_mission(
+        mission.id,
+        schemas.MissionUpdate(title="Updated Maine Camps"),
+        db,
+        parent,
+    )
+    assert updated.title == "Updated Maine Camps"
+
+    missions_router.delete_mission(mission.id, db, parent)
+    assert missions_router.list_missions(db, parent) == []
 
 
-def test_contribution_lifecycle():
-    parent_token = register_and_login("contrib_parent")
-    child_token = register_and_login("contrib_child", role="child")
+def test_contribution_lifecycle(db):
+    parent = token_user(db, register_user(db, "contrib_parent"))
+    child = token_user(db, register_user(db, "contrib_child", role=models.UserRole.child))
 
-    # Create mission
-    mission_resp = client.post("/api/missions/", json={
-        "title": "Test Mission",
-        "description": "desc",
-    }, headers=auth_headers(parent_token))
-    mid = mission_resp.json()["id"]
+    mission = missions_router.create_mission(
+        schemas.MissionCreate(title="Test Mission", description="desc"),
+        db,
+        parent,
+    )
 
-    # Child creates a contribution
-    resp = client.post("/api/contributions/", json={
-        "mission_id": mid,
-        "camp_name": "Camp Happy Trails",
-        "website_url": "https://camphappytrails.example.com",
-        "country": "US",
-        "region": "VT",
-        "city": "Stowe",
-        "overnight_confirmed": "yes",
-        "notes": "Looks great!",
-    }, headers=auth_headers(child_token))
-    assert resp.status_code == 201
-    cid = resp.json()["id"]
-    assert resp.json()["status"] == "draft"
+    contribution = contributions_router.create_contribution(
+        schemas.ContributionCreate(
+            mission_id=mission.id,
+            camp_name="Camp Happy Trails",
+            website_url="https://camphappytrails.example.com",
+            country="US",
+            region="VT",
+            city="Stowe",
+            overnight_confirmed="yes",
+            notes="Looks great!",
+        ),
+        db,
+        child,
+    )
+    assert contribution.status == models.ContributionStatus.draft
 
-    # Child can update the draft
-    resp = client.patch(f"/api/contributions/{cid}", json={"city": "Burlington"}, headers=auth_headers(child_token))
-    assert resp.status_code == 200
-    assert resp.json()["city"] == "Burlington"
+    updated = contributions_router.update_contribution(
+        contribution.id,
+        schemas.ContributionUpdate(city="Burlington"),
+        db,
+        child,
+    )
+    assert updated.city == "Burlington"
 
-    # Child can add evidence
-    resp = client.post(f"/api/contributions/{cid}/evidence/", json={
-        "url": "https://camphappytrails.example.com/about",
-        "snippet": "Campers sleep in cabins under the stars every night.",
-        "capture_notes": "From the About page",
-    }, headers=auth_headers(child_token))
-    assert resp.status_code == 201
-    ev_id = resp.json()["id"]
+    evidence = evidence_router.add_evidence(
+        contribution.id,
+        schemas.EvidenceCreate(
+            url="https://camphappytrails.example.com/about",
+            snippet="Campers sleep in cabins under the stars every night.",
+            capture_notes="From the About page",
+        ),
+        db,
+        child,
+    )
+    assert evidence.id
 
-    # Child can answer guided questions
-    resp = client.put(f"/api/contributions/{cid}/answers/", json=[
-        {"question_key": "overnight_evidence", "answer_text": "Campers sleep in cabins every night."},
-        {"question_key": "why_interesting", "answer_text": "They have a lake and waterslide!"},
-    ], headers=auth_headers(child_token))
-    assert resp.status_code == 200
-    assert len(resp.json()) == 2
+    answers = answers_router.upsert_answers(
+        contribution.id,
+        [
+            schemas.AnswerUpsert(
+                question_key="overnight_evidence",
+                answer_text="Campers sleep in cabins every night.",
+            ),
+            schemas.AnswerUpsert(
+                question_key="why_interesting",
+                answer_text="They have a lake and waterslide!",
+            ),
+        ],
+        db,
+        child,
+    )
+    assert len(answers) == 2
 
-    # Child submits for review
-    resp = client.post(f"/api/contributions/{cid}/submit", headers=auth_headers(child_token))
-    assert resp.status_code == 200
-    assert resp.json()["status"] == "submitted"
+    submitted = contributions_router.submit_contribution(contribution.id, db, child)
+    assert submitted.status == models.ContributionStatus.submitted
 
-    # Child cannot edit after submission
-    resp = client.patch(f"/api/contributions/{cid}", json={"city": "Montpelier"}, headers=auth_headers(child_token))
-    assert resp.status_code == 409
+    with pytest.raises(HTTPException) as exc:
+        contributions_router.update_contribution(
+            contribution.id,
+            schemas.ContributionUpdate(city="Montpelier"),
+            db,
+            child,
+        )
+    assert exc.value.status_code == 409
 
-    # Parent can see review queue
-    resp = client.get("/api/reviews/queue", headers=auth_headers(parent_token))
-    assert resp.status_code == 200
-    assert any(c["id"] == cid for c in resp.json())
+    queue = reviews_router.review_queue(db, parent)
+    assert any(item.id == contribution.id for item in queue)
 
-    # Parent approves
-    resp = client.post(f"/api/reviews/{cid}", json={
-        "action": "approve",
-        "notes": "Great find! Well documented.",
-    }, headers=auth_headers(parent_token))
-    assert resp.status_code == 201
-    assert resp.json()["action"] == "approve"
+    review = reviews_router.post_review(
+        contribution.id,
+        schemas.ReviewCreate(
+            action=models.ReviewAction.approve,
+            notes="Great find! Well documented.",
+        ),
+        db,
+        parent,
+    )
+    assert review.action == models.ReviewAction.approve
 
-    # Contribution status is now approved
-    resp = client.get(f"/api/contributions/{cid}", headers=auth_headers(parent_token))
-    assert resp.json()["status"] == "approved"
+    approved = contributions_router.get_contribution(contribution.id, db, parent)
+    assert approved.status == models.ContributionStatus.approved
 
-    # Parent can promote to staging artifact
-    resp = client.post(f"/api/export/{cid}", headers=auth_headers(parent_token))
-    assert resp.status_code == 200
-    result = resp.json()
-    assert "contrib-" in result["artifact_path"]
-
-
-def test_contribution_changes_requested_flow():
-    parent_token = register_and_login("cr_parent")
-    child_token = register_and_login("cr_child", role="child")
-
-    mission_resp = client.post("/api/missions/", json={"title": "CR Mission"}, headers=auth_headers(parent_token))
-    mid = mission_resp.json()["id"]
-
-    contrib_resp = client.post("/api/contributions/", json={
-        "mission_id": mid,
-        "camp_name": "Camp Needs Work",
-    }, headers=auth_headers(child_token))
-    cid = contrib_resp.json()["id"]
-
-    client.post(f"/api/contributions/{cid}/submit", headers=auth_headers(child_token))
-
-    # Parent requests changes
-    resp = client.post(f"/api/reviews/{cid}", json={
-        "action": "request_changes",
-        "notes": "Please add more evidence of overnight stays.",
-    }, headers=auth_headers(parent_token))
-    assert resp.status_code == 201
-
-    # Contribution is back in changes_requested
-    resp = client.get(f"/api/contributions/{cid}", headers=auth_headers(child_token))
-    assert resp.json()["status"] == "changes_requested"
-
-    # Child can now edit again
-    resp = client.patch(f"/api/contributions/{cid}", json={"notes": "Added more evidence."}, headers=auth_headers(child_token))
-    assert resp.status_code == 200
-
-    # Child can resubmit
-    resp = client.post(f"/api/contributions/{cid}/submit", headers=auth_headers(child_token))
-    assert resp.status_code == 200
-    assert resp.json()["status"] == "submitted"
+    export_result = export_router.promote_contribution(contribution.id, db, parent)
+    assert "contrib-" in export_result.artifact_path
+    assert export_result.storage_kind == "database+file"
+    assert export_result.exported_at
 
 
-def test_child_cannot_access_other_childs_contribution():
-    parent_token = register_and_login("iso_parent")
-    child1_token = register_and_login("iso_child1", role="child")
-    child2_token = register_and_login("iso_child2", role="child")
+def test_contribution_changes_requested_flow(db):
+    parent = token_user(db, register_user(db, "cr_parent"))
+    child = token_user(db, register_user(db, "cr_child", role=models.UserRole.child))
 
-    mission_resp = client.post("/api/missions/", json={"title": "Iso Mission"}, headers=auth_headers(parent_token))
-    mid = mission_resp.json()["id"]
+    mission = missions_router.create_mission(
+        schemas.MissionCreate(title="CR Mission"),
+        db,
+        parent,
+    )
+    contribution = contributions_router.create_contribution(
+        schemas.ContributionCreate(mission_id=mission.id, camp_name="Camp Needs Work"),
+        db,
+        child,
+    )
 
-    contrib_resp = client.post("/api/contributions/", json={
-        "mission_id": mid,
-        "camp_name": "Child1 Camp",
-    }, headers=auth_headers(child1_token))
-    cid = contrib_resp.json()["id"]
+    contributions_router.submit_contribution(contribution.id, db, child)
 
-    # child2 cannot read child1's contribution
-    resp = client.get(f"/api/contributions/{cid}", headers=auth_headers(child2_token))
-    assert resp.status_code == 403
+    review = reviews_router.post_review(
+        contribution.id,
+        schemas.ReviewCreate(
+            action=models.ReviewAction.request_changes,
+            notes="Please add more evidence of overnight stays.",
+        ),
+        db,
+        parent,
+    )
+    assert review.action == models.ReviewAction.request_changes
 
-    # child2 cannot update child1's contribution
-    resp = client.patch(f"/api/contributions/{cid}", json={"notes": "hacked"}, headers=auth_headers(child2_token))
-    assert resp.status_code == 403
+    reloaded = contributions_router.get_contribution(contribution.id, db, child)
+    assert reloaded.status == models.ContributionStatus.changes_requested
 
+    updated = contributions_router.update_contribution(
+        contribution.id,
+        schemas.ContributionUpdate(notes="Added more evidence."),
+        db,
+        child,
+    )
+    assert updated.notes == "Added more evidence."
 
-def test_only_parent_can_review():
-    parent_token = register_and_login("rev_parent")
-    child_token = register_and_login("rev_child", role="child")
-
-    mission_resp = client.post("/api/missions/", json={"title": "Rev Mission"}, headers=auth_headers(parent_token))
-    mid = mission_resp.json()["id"]
-
-    contrib_resp = client.post("/api/contributions/", json={
-        "mission_id": mid,
-        "camp_name": "Camp to Review",
-    }, headers=auth_headers(child_token))
-    cid = contrib_resp.json()["id"]
-    client.post(f"/api/contributions/{cid}/submit", headers=auth_headers(child_token))
-
-    # Child cannot post a review
-    resp = client.post(f"/api/reviews/{cid}", json={"action": "approve"}, headers=auth_headers(child_token))
-    assert resp.status_code == 403
+    resubmitted = contributions_router.submit_contribution(contribution.id, db, child)
+    assert resubmitted.status == models.ContributionStatus.submitted
 
 
-def test_guided_questions_list():
-    parent_token = register_and_login("q_parent")
-    child_token = register_and_login("q_child", role="child")
+def test_child_cannot_access_other_childs_contribution(db):
+    parent = token_user(db, register_user(db, "iso_parent"))
+    child1 = token_user(db, register_user(db, "iso_child1", role=models.UserRole.child))
+    child2 = token_user(db, register_user(db, "iso_child2", role=models.UserRole.child))
 
-    mission_resp = client.post("/api/missions/", json={"title": "Q Mission"}, headers=auth_headers(parent_token))
-    mid = mission_resp.json()["id"]
-    contrib_resp = client.post("/api/contributions/", json={
-        "mission_id": mid,
-        "camp_name": "Q Camp",
-    }, headers=auth_headers(child_token))
-    cid = contrib_resp.json()["id"]
+    mission = missions_router.create_mission(
+        schemas.MissionCreate(title="Iso Mission"),
+        db,
+        parent,
+    )
+    contribution = contributions_router.create_contribution(
+        schemas.ContributionCreate(mission_id=mission.id, camp_name="Child1 Camp"),
+        db,
+        child1,
+    )
 
-    resp = client.get(f"/api/contributions/{cid}/answers/questions", headers=auth_headers(child_token))
-    assert resp.status_code == 200
-    questions = resp.json()
+    with pytest.raises(HTTPException) as exc:
+        contributions_router.get_contribution(contribution.id, db, child2)
+    assert exc.value.status_code == 403
+
+    with pytest.raises(HTTPException) as exc:
+        contributions_router.update_contribution(
+            contribution.id,
+            schemas.ContributionUpdate(notes="hacked"),
+            db,
+            child2,
+        )
+    assert exc.value.status_code == 403
+
+
+def test_only_parent_can_review(db):
+    parent = token_user(db, register_user(db, "rev_parent"))
+    child = token_user(db, register_user(db, "rev_child", role=models.UserRole.child))
+
+    mission = missions_router.create_mission(
+        schemas.MissionCreate(title="Rev Mission"),
+        db,
+        parent,
+    )
+    contribution = contributions_router.create_contribution(
+        schemas.ContributionCreate(mission_id=mission.id, camp_name="Camp to Review"),
+        db,
+        child,
+    )
+    contributions_router.submit_contribution(contribution.id, db, child)
+
+    with pytest.raises(HTTPException) as exc:
+        require_parent(child)
+    assert exc.value.status_code == 403
+
+
+def test_guided_questions_list(db):
+    child = token_user(db, register_user(db, "q_child", role=models.UserRole.child))
+    questions = answers_router.get_questions(child)
     assert len(questions) >= 6
-    keys = [q["key"] for q in questions]
+    keys = [question["key"] for question in questions]
     assert "overnight_evidence" in keys
     assert "why_interesting" in keys

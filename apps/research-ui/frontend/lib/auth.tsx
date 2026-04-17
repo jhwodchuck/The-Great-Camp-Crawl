@@ -30,18 +30,35 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
-    const token = localStorage.getItem("access_token");
-    if (!token) {
-      setLoading(false);
-      return;
-    }
-    api.auth
-      .me()
-      .then(setUser)
-      .catch(() => {
+    let isActive = true;
+
+    async function hydrateSession() {
+      const token = localStorage.getItem("access_token");
+      if (!token) {
+        if (isActive) {
+          setLoading(false);
+        }
+        return;
+      }
+
+      try {
+        const currentUser = await api.auth.me();
+        if (isActive) {
+          setUser(currentUser);
+        }
+      } catch {
         localStorage.removeItem("access_token");
-      })
-      .finally(() => setLoading(false));
+      } finally {
+        if (isActive) {
+          setLoading(false);
+        }
+      }
+    }
+
+    hydrateSession();
+    return () => {
+      isActive = false;
+    };
   }, []);
 
   function login(token: string, userData: User) {

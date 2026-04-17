@@ -13,10 +13,17 @@ from sqlalchemy.orm import Session
 
 import models
 from database import get_db
+from settings import (
+    RESEARCH_UI_BOOTSTRAP_PARENT_DISPLAY_NAME,
+    RESEARCH_UI_BOOTSTRAP_PARENT_PASSWORD,
+    RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME,
+    RESEARCH_UI_SECRET,
+    TOKEN_EXPIRE_MINUTES,
+)
 
-SECRET_KEY = os.environ.get("RESEARCH_UI_SECRET", "dev-secret-change-in-production-please")
+SECRET_KEY = RESEARCH_UI_SECRET
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = int(os.environ.get("TOKEN_EXPIRE_MINUTES", "480"))
+ACCESS_TOKEN_EXPIRE_MINUTES = TOKEN_EXPIRE_MINUTES
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
@@ -64,3 +71,31 @@ def require_parent(current_user: models.User = Depends(get_current_user)) -> mod
     if current_user.role != models.UserRole.parent:
         raise HTTPException(status_code=403, detail="Parent role required")
     return current_user
+
+
+def ensure_bootstrap_parent(db: Session) -> None:
+    """Create the configured bootstrap parent account once, if requested."""
+    if not RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME or not RESEARCH_UI_BOOTSTRAP_PARENT_PASSWORD:
+        return
+
+    existing = (
+        db.query(models.User)
+        .filter(models.User.username == RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME)
+        .first()
+    )
+    if existing:
+        if existing.role != models.UserRole.parent:
+            raise RuntimeError(
+                "RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME already exists with a non-parent role."
+            )
+        return
+
+    db.add(
+        models.User(
+            username=RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME,
+            display_name=RESEARCH_UI_BOOTSTRAP_PARENT_DISPLAY_NAME,
+            password_hash=hash_password(RESEARCH_UI_BOOTSTRAP_PARENT_PASSWORD),
+            role=models.UserRole.parent,
+        )
+    )
+    db.commit()
