@@ -1,47 +1,92 @@
 site_name: The Great Camp Crawl
-site_description: Breadth-first overnight camp research across the US, Canada, and Mexico
+site_description: Breadth-first overnight camp research across the US, Canada, and
+  Mexico
 site_url: https://jhwodchuck.github.io/The-Great-Camp-Crawl/
 repo_url: https://github.com/jhwodchuck/The-Great-Camp-Crawl
 repo_name: jhwodchuck/The-Great-Camp-Crawl
-
 theme:
   name: material
   logo: assets/logo.svg
   features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-
+  - navigation.sections
+  - navigation.expand
+  - navigation.indexes
+  - search.suggest
+  - search.highlight
+  - content.code.copy
 nav:
-  - Home: docs/index.md
-  - Scope: docs/scope.md
-  - Methodology: docs/methodology.md
-  - Workflow: docs/workflow.md
-  - Discovery Pipeline: docs/discovery-pipeline.md
-  - Coverage:
-      - United States: docs/coverage/united-states.md
-      - Canada: docs/coverage/canada.md
-      - Mexico: docs/coverage/mexico.md
-  - Venue Records:
-      - Overview: docs/camps/index.md
-      - US Maryland: docs/camps/us/md.md
-      - Canada Ontario: docs/camps/canada/on.md
-      - Mexico Jalisco: docs/camps/mexico/jal.md
-  - Reference:
-      - Grounding Rules: docs/reference/grounding-rules.md
-      - Output Schema: docs/reference/output-schema.md
-      - Status Codes: docs/reference/status-codes.md
-
+- Home: index.md
+- Scope: scope.md
+- Methodology: methodology.md
+- Workflow: workflow.md
+- Discovery Pipeline: discovery-pipeline.md
+- Coverage:
+  - United States: coverage/united-states.md
+  - Canada: coverage/canada.md
+  - Mexico: coverage/mexico.md
+- Venue Records:
+  - Overview: camps/index.md
+  - United States:
+    - Alaska: camps/us/ak.md
+    - Alabama: camps/us/al.md
+    - Arkansas: camps/us/ar.md
+    - Arizona: camps/us/az.md
+    - California: camps/us/ca.md
+    - Colorado: camps/us/co.md
+    - Connecticut: camps/us/ct.md
+    - District of Columbia: camps/us/dc.md
+    - Delaware: camps/us/de.md
+    - Florida: camps/us/fl.md
+    - Georgia: camps/us/ga.md
+    - Hawaii: camps/us/hi.md
+    - Iowa: camps/us/ia.md
+    - Idaho: camps/us/id.md
+    - Illinois: camps/us/il.md
+    - Indiana: camps/us/in.md
+    - Kansas: camps/us/ks.md
+    - Kentucky: camps/us/ky.md
+    - Louisiana: camps/us/la.md
+    - Massachusetts: camps/us/ma.md
+    - Maryland: camps/us/md.md
+    - Maine: camps/us/me.md
+    - Michigan: camps/us/mi.md
+    - Minnesota: camps/us/mn.md
+    - Missouri: camps/us/mo.md
+    - North Carolina: camps/us/nc.md
+    - New Hampshire: camps/us/nh.md
+    - New Jersey: camps/us/nj.md
+    - Nevada: camps/us/nv.md
+    - New York: camps/us/ny.md
+    - Ohio: camps/us/oh.md
+    - Oklahoma: camps/us/ok.md
+    - Pennsylvania: camps/us/pa.md
+    - Rhode Island: camps/us/ri.md
+    - Tennessee: camps/us/tn.md
+    - Texas: camps/us/tx.md
+    - Utah: camps/us/ut.md
+    - Virginia: camps/us/va.md
+    - Washington: camps/us/wa.md
+    - Wisconsin: camps/us/wi.md
+  - Canada:
+    - British Columbia: camps/canada/bc.md
+    - Nova Scotia: camps/canada/ns.md
+    - Ontario: camps/canada/on.md
+    - Saskatchewan: camps/canada/sk.md
+  - Mexico:
+    - Baja California Sur: camps/mexico/bcs.md
+    - Guanajuato: camps/mexico/gto.md
+    - Jalisco: camps/mexico/jal.md
+    - State of Mexico: camps/mexico/mex.md
+- Reference:
+  - Grounding Rules: reference/grounding-rules.md
+  - Output Schema: reference/output-schema.md
+  - Status Codes: reference/status-codes.md
 markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - tables
-  - toc:
-      permalink: true
-
+- admonition
+- attr_list
+- def_list
+- tables
+- toc:
+    permalink: true
 plugins:
-  - search
+- search
