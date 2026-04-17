@@ -29,6 +29,7 @@ from database import Base, SessionLocal, engine
 from main import health
 from routers import answers as answers_router
 from routers import auth as auth_router
+from routers import camps as camps_router
 from routers import contributions as contributions_router
 from routers import evidence as evidence_router
 from routers import export as export_router
@@ -374,3 +375,52 @@ def test_guided_questions_list(db):
     keys = [question["key"] for question in questions]
     assert "overnight_evidence" in keys
     assert "why_interesting" in keys
+
+
+def test_camp_moderation_hides_excluded_records_from_public_reads(db):
+    parent = token_user(db, register_user(db, "camp_parent"))
+
+    camp = models.Camp(
+        record_id="cand-us-test-not-a-camp",
+        name="Medical Dosage Page",
+        website_url="https://example.com/medical-dosage",
+        draft_status="candidate_pending",
+        source=models.CampSource.discovery_pipeline,
+    )
+    db.add(camp)
+    db.commit()
+
+    public_before = camps_router.list_camps(page=1, page_size=25, db=db)
+    assert public_before.total == 1
+
+    moderated = camps_router.moderate_camp(
+        camp.record_id,
+        schemas.CampModerationUpdate(
+            is_excluded=True,
+            reason="not_a_camp",
+            notes="Clearly a medical article, not a youth camp.",
+        ),
+        db,
+        parent,
+    )
+    assert moderated.is_excluded is True
+    assert moderated.exclusion_reason == "not_a_camp"
+
+    public_after = camps_router.list_camps(page=1, page_size=25, db=db)
+    assert public_after.total == 0
+
+    with pytest.raises(HTTPException) as exc:
+        camps_router.get_camp(camp.record_id, db, None)
+    assert exc.value.status_code == 404
+
+    parent_view = camps_router.get_camp(camp.record_id, db, parent)
+    assert parent_view.is_excluded is True
+
+    restored = camps_router.moderate_camp(
+        camp.record_id,
+        schemas.CampModerationUpdate(is_excluded=False),
+        db,
+        parent,
+    )
+    assert restored.is_excluded is False
+    assert camps_router.list_camps(page=1, page_size=25, db=db).total == 1

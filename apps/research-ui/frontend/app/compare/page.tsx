@@ -43,8 +43,8 @@ function CompareContent() {
       .finally(() => setLoading(false));
   }, [user, authLoading]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (authLoading || loading) return <div className="text-gray-400 text-center mt-20">Loading...</div>;
-  if (!user) return <div className="text-gray-400 text-center mt-20">Please log in to compare camps.</div>;
+  if (authLoading || loading) return <div className="text-gray-400 dark:text-gray-500 text-center mt-20">Loading...</div>;
+  if (!user) return <div className="text-gray-400 dark:text-gray-500 text-center mt-20">Please log in to compare camps.</div>;
 
   const camps = favorites.map(f => ({ ...f.camp, notes: f.notes }));
 
@@ -58,20 +58,20 @@ function CompareContent() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 text-gray-900 dark:text-gray-100">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-800">⚖️ Compare Camps</h1>
-        <Link href="/favorites" className="text-blue-600 hover:underline text-sm">← Favorites</Link>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">⚖️ Compare Camps</h1>
+        <Link href="/favorites" className="text-blue-600 dark:text-blue-400 hover:underline text-sm">← Favorites</Link>
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full bg-white rounded-xl shadow text-sm">
+        <table className="w-full bg-white dark:bg-gray-900 rounded-xl shadow text-sm">
           <thead>
-            <tr className="border-b">
-              <th className="text-left px-4 py-3 text-gray-500 font-medium w-36">Attribute</th>
+            <tr className="border-b border-gray-200 dark:border-gray-700">
+              <th className="text-left px-4 py-3 text-gray-500 dark:text-gray-400 font-medium w-36">Attribute</th>
               {camps.map(c => (
-                <th key={c.id} className="text-left px-4 py-3 font-bold text-gray-800 min-w-[200px]">
-                  <Link href={`/camps/${encodeURIComponent(c.record_id)}`} className="hover:text-blue-600">
+                <th key={c.id} className="text-left px-4 py-3 font-bold text-gray-800 dark:text-gray-100 min-w-[200px]">
+                  <Link href={`/camps/${encodeURIComponent(c.record_id)}`} className="hover:text-blue-600 dark:hover:text-blue-400">
                     {c.display_name || c.name}
                   </Link>
                 </th>
@@ -125,12 +125,12 @@ function CompareRow({ label, values, isLink, isNotes }: {
   isNotes?: boolean;
 }) {
   return (
-    <tr className="border-b last:border-0 hover:bg-gray-50">
-      <td className="px-4 py-2.5 font-medium text-gray-500 whitespace-nowrap">{label}</td>
+    <tr className="border-b border-gray-200 dark:border-gray-700 last:border-0 hover:bg-gray-50 dark:hover:bg-gray-800">
+      <td className="px-4 py-2.5 font-medium text-gray-500 dark:text-gray-400 whitespace-nowrap">{label}</td>
       {values.map((v, i) => (
-        <td key={i} className={`px-4 py-2.5 text-gray-700 ${isNotes ? "italic text-gray-500" : ""}`}>
+        <td key={i} className={`px-4 py-2.5 text-gray-700 dark:text-gray-200 ${isNotes ? "italic text-gray-500 dark:text-gray-400" : ""}`}>
           {isLink && v !== "—" ? (
-            <a href={v} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all text-xs">
+            <a href={v} target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline break-all text-xs">
               {v}
             </a>
           ) : v}

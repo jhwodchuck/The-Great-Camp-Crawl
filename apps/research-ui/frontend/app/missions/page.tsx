@@ -54,11 +54,9 @@ function MissionsPageContent() {
             </p>
           )}
         </div>
-        {user?.role === "parent" && (
-          <Link href="/missions/new" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm font-medium">
-            + New Mission
-          </Link>
-        )}
+        <Link href="/missions/new" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm font-medium">
+          + New Mission
+        </Link>
       </div>
 
       {hasPrefill && (
@@ -72,11 +70,9 @@ function MissionsPageContent() {
         <div className="bg-white rounded-xl p-12 text-center text-gray-400">
           <div className="text-5xl mb-4">🗺️</div>
           <p>No missions yet.</p>
-          {user?.role === "parent" && (
-            <Link href="/missions/new" className="mt-4 inline-block text-blue-600 hover:underline">
-              Create the first mission
-            </Link>
-          )}
+          <Link href="/missions/new" className="mt-4 inline-block text-blue-600 hover:underline">
+            Create the first mission
+          </Link>
         </div>
       ) : (
         <div className="space-y-3">

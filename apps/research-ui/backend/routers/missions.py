@@ -23,7 +23,7 @@ def list_missions(db: Session = Depends(get_db), _: models.User = Depends(get_cu
 def create_mission(
     payload: schemas.MissionCreate,
     db: Session = Depends(get_db),
-    current_user: models.User = Depends(require_parent),
+    current_user: models.User = Depends(get_current_user),
 ):
     mission = models.Mission(**payload.model_dump(), created_by=current_user.id)
     db.add(mission)

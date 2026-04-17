@@ -80,25 +80,25 @@ export default function CampCatalogPage() {
   const totalPages = data ? Math.ceil(data.total / PAGE_SIZE) : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 text-gray-900 dark:text-gray-100">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-800">🏕️ Camp Catalog</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">🏕️ Camp Catalog</h1>
         {stats && (
-          <span className="text-sm text-gray-500">{stats.total} camps</span>
+          <span className="text-sm text-gray-500 dark:text-gray-400">{stats.total} camps</span>
         )}
       </div>
 
       {/* Search + Filters */}
-      <div className="bg-white rounded-2xl shadow p-4 space-y-4">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 space-y-4">
         <form onSubmit={handleSearch} className="flex gap-2">
           <input
             type="text"
             value={searchInput}
             onChange={e => setSearchInput(e.target.value)}
             placeholder="Search by name, city, or operator..."
-            className="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="flex-1 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-          <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+          <button type="submit" className="bg-blue-600 text-white dark:bg-blue-700 dark:text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 dark:hover:bg-blue-800">
             Search
           </button>
         </form>
@@ -107,7 +107,7 @@ export default function CampCatalogPage() {
           <select
             value={country}
             onChange={e => { setCountry(e.target.value); setRegion(""); setPage(1); }}
-            className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm"
+            className="border border-gray-300 dark:border-gray-700 rounded-lg px-3 py-1.5 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800"
           >
             <option value="">All Countries</option>
             {stats && Object.entries(stats.by_country)
@@ -120,7 +120,7 @@ export default function CampCatalogPage() {
           <select
             value={region}
             onChange={e => { setRegion(e.target.value); setPage(1); }}
-            className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm"
+            className="border border-gray-300 dark:border-gray-700 rounded-lg px-3 py-1.5 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800"
           >
             <option value="">All Regions</option>
             {stats && Object.entries(stats.by_region)
@@ -131,12 +131,12 @@ export default function CampCatalogPage() {
               ))}
           </select>
 
-          <label className="flex items-center gap-1.5 text-sm text-gray-700">
+          <label className="flex items-center gap-1.5 text-sm text-gray-700 dark:text-gray-200">
             <input
               type="checkbox"
               checked={overnightOnly}
               onChange={e => { setOvernightOnly(e.target.checked); setPage(1); }}
-              className="rounded"
+              className="rounded border-gray-300 dark:border-gray-700"
             />
             Overnight only
           </label>
@@ -145,9 +145,9 @@ export default function CampCatalogPage() {
 
       {/* Results */}
       {loading ? (
-        <div className="text-gray-400 text-center py-12">Loading camps...</div>
+        <div className="text-gray-400 dark:text-gray-500 text-center py-12">Loading camps...</div>
       ) : !data || data.items.length === 0 ? (
-        <div className="text-gray-400 text-center py-12">No camps found matching your filters.</div>
+        <div className="text-gray-400 dark:text-gray-500 text-center py-12">No camps found matching your filters.</div>
       ) : (
         <>
           <div className="grid gap-4 md:grid-cols-2">
@@ -162,15 +162,15 @@ export default function CampCatalogPage() {
               <button
                 onClick={() => setPage(p => Math.max(1, p - 1))}
                 disabled={page <= 1}
-                className="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:opacity-50 text-sm"
+                className="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 disabled:opacity-50 text-sm text-gray-900 dark:text-gray-100"
               >
                 ← Prev
               </button>
-              <span className="text-sm text-gray-600">Page {page} of {totalPages}</span>
+              <span className="text-sm text-gray-600 dark:text-gray-300">Page {page} of {totalPages}</span>
               <button
                 onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                 disabled={page >= totalPages}
-                className="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:opacity-50 text-sm"
+                className="px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 disabled:opacity-50 text-sm text-gray-900 dark:text-gray-100"
               >
                 Next →
               </button>
@@ -189,37 +189,37 @@ function CampCard({ camp }: { camp: Camp }) {
   return (
     <Link
       href={`/camps/${encodeURIComponent(camp.record_id)}`}
-      className="block bg-white rounded-xl shadow hover:shadow-md transition-shadow p-4 space-y-2"
+      className="block bg-white dark:bg-gray-900 rounded-xl shadow hover:shadow-md transition-shadow p-4 space-y-2"
     >
       <div className="flex items-start justify-between">
-        <h3 className="font-bold text-gray-800 text-base leading-tight">
+        <h3 className="font-bold text-gray-800 dark:text-gray-100 text-base leading-tight">
           {camp.display_name || camp.name}
         </h3>
         {camp.overnight_confirmed && (
-          <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full whitespace-nowrap ml-2">
+          <span className="text-xs bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-2 py-0.5 rounded-full whitespace-nowrap ml-2">
             🌙 Overnight
           </span>
         )}
       </div>
 
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-gray-400">
         {[camp.city, camp.region, camp.country].filter(Boolean).join(", ")}
       </p>
 
       {/* Key stats row */}
-      <div className="flex flex-wrap gap-2 text-xs text-gray-600">
+      <div className="flex flex-wrap gap-2 text-xs text-gray-600 dark:text-gray-300">
         {(camp.ages_min || camp.ages_max) && (
-          <span className="bg-blue-50 px-2 py-0.5 rounded">
+          <span className="bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded">
             Ages {camp.ages_min ?? "?"}–{camp.ages_max ?? "?"}
           </span>
         )}
         {(camp.pricing_min || camp.pricing_max) && (
-          <span className="bg-yellow-50 px-2 py-0.5 rounded">
+          <span className="bg-yellow-50 dark:bg-yellow-900/30 px-2 py-0.5 rounded">
             ${camp.pricing_min ?? "?"}–${camp.pricing_max ?? "?"}
           </span>
         )}
         {(camp.duration_min_days || camp.duration_max_days) && (
-          <span className="bg-purple-50 px-2 py-0.5 rounded">
+          <span className="bg-purple-50 dark:bg-purple-900/30 px-2 py-0.5 rounded">
             {camp.duration_min_days ?? "?"}–{camp.duration_max_days ?? "?"} days
           </span>
         )}
@@ -229,12 +229,12 @@ function CampCard({ camp }: { camp: Camp }) {
       {(families.length > 0 || types.length > 0) && (
         <div className="flex flex-wrap gap-1">
           {families.slice(0, 3).map(f => (
-            <span key={f} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
+            <span key={f} className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 px-2 py-0.5 rounded">
               {formatProgramFamily(f)}
             </span>
           ))}
           {types.slice(0, 3).map(t => (
-            <span key={t} className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded italic">
+            <span key={t} className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-0.5 rounded italic">
               {t}
             </span>
           ))}

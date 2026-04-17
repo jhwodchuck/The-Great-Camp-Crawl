@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { api, Camp } from "@/lib/api";
@@ -316,8 +317,8 @@ export default function CampDetailPage() {
       {camp.description_md && (
         <div className="bg-white rounded-2xl shadow p-6">
           <h2 className="text-lg font-bold text-gray-800 mb-3">📝 Full Dossier</h2>
-          <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-wrap">
-            {camp.description_md}
+          <div className="prose prose-sm max-w-none text-gray-700">
+            <ReactMarkdown>{camp.description_md}</ReactMarkdown>
           </div>
         </div>
       )}

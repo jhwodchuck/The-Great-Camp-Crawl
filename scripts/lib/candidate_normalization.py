@@ -126,6 +126,21 @@ def infer_duration(text: str) -> dict[str, Any]:
     return {"label": "unknown", "min_days": None, "max_days": None}
 
 
+def normalize_duration_guess(value: Any, fallback_text: str = "") -> dict[str, Any]:
+    if isinstance(value, dict):
+        return {
+            "label": value.get("label") or "unknown",
+            "min_days": value.get("min_days"),
+            "max_days": value.get("max_days"),
+        }
+    if isinstance(value, str) and compact_whitespace(value):
+        inferred = infer_duration(value)
+        if inferred.get("label") == "unknown":
+            inferred["label"] = compact_whitespace(value)
+        return inferred
+    return infer_duration(fallback_text)
+
+
 def infer_activity_status(text: str, current_year: int | None = None) -> str:
     year = current_year or datetime.now(timezone.utc).year
     years = {str(year), str(year - 1), str(year - 2)}
@@ -313,10 +328,10 @@ def normalize_candidate_record(record: dict[str, Any], defaults: dict[str, Any] 
         families = [family for family in families if family != "unspecified"]
     if len(camp_types) > 1 and "unknown" in camp_types:
         camp_types = [camp_type for camp_type in camp_types if camp_type != "unknown"]
-    duration_guess = (
-        record.get("duration_guess")
-        or provisional_duration
-        or infer_duration(" ".join([text, str(record.get("duration_hint_text") or ""), *provisional_tags]))
+    duration_source_text = " ".join([text, str(record.get("duration_hint_text") or ""), *provisional_tags])
+    duration_guess = normalize_duration_guess(
+        record.get("duration_guess") or provisional_duration,
+        fallback_text=duration_source_text,
     )
     record_basis = _normalize_record_basis(record.get("record_basis") or record.get("candidate_shape")) or detect_record_basis(
         extracted["venue_name"], extracted["uncertainty"], extracted["city"]
