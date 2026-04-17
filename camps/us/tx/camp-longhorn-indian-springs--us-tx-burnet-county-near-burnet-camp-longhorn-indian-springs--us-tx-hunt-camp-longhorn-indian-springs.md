@@ -1,14 +1,14 @@
 ---
-record_id: us-tx-hunt-camp-longhorn-indian-springs
+record_id: us-tx-burnet-camp-longhorn-indian-springs
 camp_id: camp-longhorn-indian-springs
-venue_id: us-tx-burnet-county-near-burnet-camp-longhorn-indian-springs
+venue_id: us-tx-burnet-camp-longhorn-indian-springs
 name: Camp Longhorn Indian Springs
 display_name: Camp Longhorn Indian Springs at Camp Longhorn Indian Springs
 country: US
 country_name: United States
 region: TX
 region_name: Texas
-city: Burnet County / near Burnet
+city: Burnet
 venue_name: Camp Longhorn Indian Springs
 program_family:
 - adventure
@@ -28,103 +28,125 @@ duration:
   max_days: 21
 pricing:
   currency: USD
-  amount_min: null
-  amount_max: null
+  amount_min: 4678.00
+  amount_max: 6164.70
   boarding_included: null
 ages:
   min: null
   max: null
 grades:
-  min: null
+  min: 2
   max: null
 operator:
   name: Camp Longhorn, Ltd.
   type: camp-operator
 website:
-  canonical_url: https://camplonghorn.com/indiansprings
-  admissions_url: null
-  session_dates_url: https://camplonghorn.com/indiansprings
-  pricing_url: null
+  canonical_url: https://www.camplonghorn.com/indiansprings
+  admissions_url: https://www.camplonghorn.com/apply
+  session_dates_url: https://www.camplonghorn.com/ParentInfo/TuitionAndFees
+  pricing_url: https://www.camplonghorn.com/ParentInfo/TuitionAndFees
 contact:
-  email: null
-  phone: null
+  email: springs@camplonghorn.com
+  phone: 512-756-4650
 location:
-  address: null
-  postal_code: null
+  address: 1000 Indian Springs Road
+  postal_code: '78611'
   latitude: null
   longitude: null
 verification:
   overnight_confirmed: true
   active_past_2_years_confirmed: true
-  confidence: low
-  last_verified: '2026-04-13'
+  confidence: high
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://camplonghorn.com/indiansprings
-  recent_activity_source_url: https://camplonghorn.com/indiansprings
-  duration_source_url: https://camplonghorn.com/indiansprings
-  pricing_source_url: null
+  overnight_source_url: https://www.camplonghorn.com/indiansprings
+  recent_activity_source_url: https://cdn.camplonghorn.com/downloads/Indian%20Springs%20Parents%20Info%202026.pdf
+  duration_source_url: https://www.camplonghorn.com/ParentInfo/TuitionAndFees
+  pricing_source_url: https://www.camplonghorn.com/ParentInfo/TuitionAndFees
 tags:
 - us
 - tx
-- burnet-county-near-burnet
+- burnet
 - adventure
 - sports
 - overnight
+- coed
+- two-week
+- three-week
 draft_status: draft
 ---
 
 # Camp Longhorn Indian Springs at Camp Longhorn Indian Springs
 
 ## Quick Take
-Major Texas overnight camp venue; official site states Indian Springs offers two- and three-week terms; 2026 term dates published for Indian Springs and Inks Lake system.
+Camp Longhorn Indian Springs is Camp Longhorn’s Indian Springs campus in Burnet, Texas. The official branch page says it was founded in 1975, sits on a 500-acre private ranch, and offers two- and three-week terms for boys and girls.
 
 ## Verified Facts
 - Operator: Camp Longhorn, Ltd.
 - Venue: Camp Longhorn Indian Springs
-- Location: Burnet County / near Burnet, TX
-- Canonical URL: https://camplonghorn.com/indiansprings
+- Location: Burnet, TX
+- Address: 1000 Indian Springs Road, Burnet, TX 78611
+- Phone: 512-756-4650
+- Email: springs@camplonghorn.com
+- Canonical URL: https://www.camplonghorn.com/indiansprings
 - Program family: adventure, sports
-- Known duration signal: 2–3 weeks (terms)
-- Recent activity signal: active within the repo's 24-month window heuristic
+- Camp type: overnight
+- Known duration signal: 2-week and 3-week terms
+- Known pricing signal for 2026 standard terms: $4,678.00 to $6,164.70
+- Minimum entry signal: prospective campers must have completed second grade before attending camp
 
 ## Overnight Evidence
-Official Indian Springs page states it 'offers two- and three-week terms for boys and girls.'
+The official Indian Springs page states that Camp Longhorn Indian Springs offers two- and three-week terms for boys and girls. Camp Longhorn’s camp-life page also says campers and counselors sleep in open-air cabins, supporting the overnight/residential classification.
 
 ## Recent Activity Evidence
-Camp Longhorn term dates page includes 2026 dates and pricing across Inks Lake/Indian Springs/C3.
+Camp Longhorn has published 2026 tuition and term dates for Inks Lake and Indian Springs, and also published a 2026 Indian Springs parent information packet with current office contact details and opening-day logistics.
 
 ## Program Overview
-Major Texas overnight camp venue; official site states Indian Springs offers two- and three-week terms; 2026 term dates published for Indian Springs and Inks Lake system.
+Founded in 1975, Camp Longhorn Indian Springs is located on a 500-acre private ranch near Burnet. The official page highlights spring-fed lakes, blobs, water socs, a three-story zip line into the water, pools, a lazy river, and a surf park as part of the branch’s activity mix.
 
 ## Ages and Grades
-Youth camp; specific grade bands vary by term and camp program structure.
+The official application page says prospective campers must have completed the second grade before attending camp. Camp Longhorn’s camp-life page says cabins are assigned by school grade. A clean official upper age or upper grade cutoff for the standard Indian Springs program was not clearly published on the pages reviewed, so those fields remain open.
 
 ## Session Length and Structure
-Duration guess: 2–3 weeks (terms).
+For 2026 standard Inks Lake and Indian Springs terms, Camp Longhorn lists:
+- 1st Term: May 31 – Jun 13 (2 weeks)
+- 2nd Term: Jun 14 – Jul 4 (3 weeks)
+- 3rd Term: Jul 5 – Jul 25 (3 weeks)
+- 4th Term: Jul 26 – Aug 8 (2 weeks)
 
-Min days: 14; max days: 21.
+Min days: 14  
+Max days: 21
 
-This record is flagged as one-week-plus priority.
+This record remains flagged as one-week-plus priority because all standard Indian Springs terms are at least two weeks long.
 
 ## Pricing
-Pricing not yet captured.
+For 2026 standard Inks Lake and Indian Springs terms, Camp Longhorn lists:
+- 2-week term tuition: $4,678.00
+- 3-week term tuition: $6,164.70
+
+The tuition page says the listed amount is all-inclusive except for optional bus fare, and that a $500.00 deposit is required with the application.
 
 ## Location and Venue Notes
-Venue anchor: Camp Longhorn Indian Springs.
-
-City/region anchor: Burnet County / near Burnet, TX.
-
-Notes: City is approximate; verify nearest postal city for venue-level normalization. City is approximate; verify nearest postal city for venue-level normalization.
+The official Camp Longhorn mailing-address and parent-information sources list Indian Springs at 1000 Indian Springs Road, Burnet, TX 78611. The parent packet also gives GPS wording for the same address.
 
 ## Contact and Enrollment
-Official site: https://camplonghorn.com/indiansprings
+Official Indian Springs page: https://www.camplonghorn.com/indiansprings  
+Apply page: https://www.camplonghorn.com/apply  
+Phone: 512-756-4650  
+Email: springs@camplonghorn.com
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- The exact physical venue still needs confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official pricing still needs to be captured.
+- Exact upper age range for the standard Indian Springs program still needs confirmation from an official source.
+- Exact upper grade range for the standard Indian Springs program still needs confirmation from an official source.
+- Latitude and longitude still need a verified source if geocoding is required for the dataset.
+- If you want stricter boarding treatment in the schema, boarding_included can stay null unless you only mark it when explicitly spelled out in admissions or pricing language.
 
 ## Sources
-- https://camplonghorn.com/indiansprings
 - https://www.camplonghorn.com/indiansprings
+- https://www.camplonghorn.com/ParentInfo/TuitionAndFees
+- https://cdn.camplonghorn.com/downloads/Indian%20Springs%20Parents%20Info%202026.pdf
+- https://www.camplonghorn.com/about/contact
+- https://www.camplonghorn.com/apply
+- https://www.camplonghorn.com/about
+- https://www.camplonghorn.com/ParentInfo/PhoneNumbersandAddresses
+- https://www.camplonghorn.com/BULLetin/Entry/Merit_Question_Time

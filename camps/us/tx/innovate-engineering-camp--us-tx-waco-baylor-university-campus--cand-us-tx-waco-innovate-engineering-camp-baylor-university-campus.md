@@ -18,37 +18,37 @@ camp_types:
 - engineering
 priority_flags:
   college_precollege: true
-  one_week_plus: true
+  one_week_plus: false
 languages_found:
 - en
 source_language_primary: en
-activity_status: unknown
+activity_status: active
 activity_evidence_window_months: 24
 duration:
-  min_days: 7
-  max_days: null
+  min_days: 6
+  max_days: 6
 pricing:
   currency: USD
-  amount_min: null
-  amount_max: null
-  boarding_included: null
+  amount_min: 1250
+  amount_max: 1250
+  boarding_included: true
 ages:
   min: null
   max: null
 grades:
-  min: null
-  max: null
+  min: 11
+  max: 12
 operator:
   name: Baylor University School of Engineering & Computer Science
   type: university
 website:
-  canonical_url: https://baylor.edu/ecs/innovate
+  canonical_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
   admissions_url: null
-  session_dates_url: https://baylor.edu/ecs/innovate
-  pricing_url: null
+  session_dates_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
+  pricing_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
 contact:
-  email: null
-  phone: null
+  email: Megan_Glover@baylor.edu
+  phone: (254) 710-4894
 location:
   address: null
   postal_code: null
@@ -56,14 +56,14 @@ location:
   longitude: null
 verification:
   overnight_confirmed: true
-  active_past_2_years_confirmed: false
-  confidence: medium
-  last_verified: '2026-04-13'
+  active_past_2_years_confirmed: true
+  confidence: high
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://baylor.edu/ecs/innovate
-  recent_activity_source_url: null
-  duration_source_url: https://baylor.edu/ecs/innovate
-  pricing_source_url: null
+  overnight_source_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
+  recent_activity_source_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
+  duration_source_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
+  pricing_source_url: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
 tags:
 - us
 - tx
@@ -78,54 +78,85 @@ draft_status: draft
 # Innovate Engineering Camp at Baylor University Campus
 
 ## Quick Take
-Innovate Engineering Camp is a draft venue dossier for a week-based college-pre-college, academic-stem, stem program in Waco, TX.
+Innovate Engineering Camp is an active residential engineering-focused pre-college STEM program in Waco, TX for rising 11th and 12th grade students.
 
 ## Verified Facts
 - Operator: Baylor University School of Engineering & Computer Science
 - Venue: Baylor University Campus
 - Location: Waco, TX
-- Canonical URL: https://baylor.edu/ecs/innovate
+- Canonical URL: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
 - Program family: college-pre-college, academic-stem, stem
-- Known duration signal: week-based
+- Known duration signal: week-long / 6-day sessions
+- Tuition: $1,250 per camper
+- Contact email: Megan_Glover@baylor.edu
+- Contact phone: (254) 710-4894
 
 ## Overnight Evidence
-residential camp for rising 11th and 12th graders to experience life as a Baylor student
+The official page describes Innovate as a “week-long residential camp at Baylor University.” It also says campers will experience life as a Baylor student for a week, and the tuition includes lodging, meals, snacks, and transportation for camp activities.
 
 ## Recent Activity Evidence
-Dates for Summer 2026 to be announced
+The official page has an “Innovate 2026” section with:
+- Session 1: July 12-17, 2026
+- Session 2: July 19-24, 2026
+
+General registration is listed as March 14 - July 6, 2026.
 
 ## Program Overview
-Innovate Engineering Camp is a draft venue dossier for a week-based college-pre-college, academic-stem, stem program in Waco, TX.
+Innovate Engineering Camp is Baylor ECS’s residential summer camp experience for students interested in engineering and computer science. The official page says campers learn from ECS faculty, complete STEM projects, build connections with current students, tour campus and Baylor research facilities, and participate in community-building activities.
 
 ## Ages and Grades
-Ages and grades not yet captured.
+Ages not yet captured.
+
+Grades captured from the official page:
+- Min grade: 11
+- Max grade: 12
+
+The official page says the program is open to rising 11th and 12th grade students.
 
 ## Session Length and Structure
-Duration guess: week-based.
+The official page describes the camp as week-long, but the posted 2026 session windows run July 12-17 and July 19-24, which support a 6-day session length.
 
-Min days: 7; max days: unknown.
+Min days: 6; max days: 6.
 
-This record is flagged as one-week-plus priority.
+This record is not currently flagged as one-week-plus priority.
 
 ## Pricing
-Pricing not yet captured.
+Official pricing is captured.
+
+- Currency: USD
+- Amount min: 1250
+- Amount max: 1250
+- Boarding included: true
+
+The official page says this price includes all camp activities and classroom supplies, lodging, meals, snacks, transportation for camp activities, and camp merchandise.
+
+Additional pricing notes:
+- A $350 deposit is required at registration.
+- Students may apply for a tuition discount of up to $350.
+- Registration is first-come, first-served, with waitlists available.
 
 ## Location and Venue Notes
 Venue anchor: Baylor University Campus.
 
 City/region anchor: Waco, TX.
 
-## Contact and Enrollment
-Official site: https://baylor.edu/ecs/innovate
+The official program page confirms the camp is at Baylor University in Waco, but it does not clearly publish a single camp-specific instructional or residence-hall street address on the page.
 
-Contact details still need to be captured from the official site.
+## Contact and Enrollment
+Official site: https://www.ecs.baylor.edu/prospective-undergraduate/innovate
+
+Captured contact details:
+- Email: Megan_Glover@baylor.edu
+- Phone: (254) 710-4894
+
+The official page says “Questions? Contact Megan_Glover@baylor.edu.”
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Exact ages still need confirmation.
+- Exact residence hall name still needs confirmation.
+- Exact instructional building or campus address still needs confirmation.
+- If you want strict deduplication, this appears to be the same underlying Baylor Innovate ECS program as the earlier Baylor Innovate record, just with different taxonomy and naming.
 
 ## Sources
-- https://baylor.edu/ecs/innovate
-- https://www.baylor.edu/ecs/innovate
+- https://www.ecs.baylor.edu/prospective-undergraduate/innovate
+- https://www.ecs.baylor.edu/person/megan-glover

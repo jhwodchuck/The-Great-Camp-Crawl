@@ -371,6 +371,13 @@ def _http_json(
     timeout: int = 90,
 ) -> dict[str, object]:
     body = json.dumps(payload).encode("utf-8")
+    # Allow overriding the HTTP timeout via environment for long-running local models
+    env_timeout = os.environ.get("ENRICH_HTTP_TIMEOUT")
+    if env_timeout:
+        try:
+            timeout = int(env_timeout)
+        except Exception:
+            pass
     for attempt in range(_MAX_429_RETRIES + 1):
         req = request.Request(
             url,

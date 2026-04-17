@@ -42,26 +42,26 @@ operator:
   name: University of Houston
   type: university
 website:
-  canonical_url: https://bauer.uh.edu/summer-camps/explore
+  canonical_url: https://www.bauer.uh.edu/undergraduate/summercamp/
   admissions_url: null
-  session_dates_url: https://bauer.uh.edu/summer-camps/explore
+  session_dates_url: https://www.bauer.uh.edu/undergraduate/summercamp/
   pricing_url: null
 contact:
-  email: null
-  phone: null
+  email: bauer@bauer.uh.edu
+  phone: '(713) 743-4600'
 location:
-  address: null
-  postal_code: null
+  address: 4250 Martin Luther King Blvd.
+  postal_code: '77204-6021'
   latitude: null
   longitude: null
 verification:
   overnight_confirmed: true
   active_past_2_years_confirmed: false
   confidence: medium
-  last_verified: '2026-04-13'
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://bauer.uh.edu/summer-camps/explore
-  recent_activity_source_url: null
+  overnight_source_url: https://www.bauer.uh.edu/undergraduate/summercamp/
+  recent_activity_source_url: https://www.bauer.uh.edu/undergraduate/summercamp/
   duration_source_url: null
   pricing_source_url: null
 tags:
@@ -78,52 +78,76 @@ draft_status: draft
 # UH Bauer EXPLORE Business Summer Camp at UH Campus
 
 ## Quick Take
-UH Bauer EXPLORE Business Summer Camp is a draft venue dossier for a Business, Pre-college program in Houston, TX.
+UH Bauer EXPLORE Business Summer Camp is currently best treated as an inactive or unconfirmed 2026 record rather than an active 2026 summer camp. The current official Bauer high-school summer-programs page explicitly says the EXPLORE Summer Institute will not be taking place this year.
 
 ## Verified Facts
 - Operator: University of Houston
 - Venue: UH Campus
 - Location: Houston, TX
-- Canonical URL: https://bauer.uh.edu/summer-camps/explore
+- Canonical URL: https://www.bauer.uh.edu/undergraduate/summercamp/
 - Program family: Business, Pre-college
+- Current official status signal: EXPLORE Summer Institute will not take place this year
+- Contact email: bauer@bauer.uh.edu
+- Contact phone: (713) 743-4600
 
 ## Overnight Evidence
-residential business camp for high school students.
+The current Bauer summer-camp page still places EXPLORE under the “Business Summer Institutes for High School Students” area, but the visible current 2026 residential listing on that page is for ACAP, not EXPLORE. Earlier archived Bauer pages and news items indicate EXPLORE historically operated as a residential camp, but the current official page does not present a live 2026 EXPLORE schedule or active registration.
 
 ## Recent Activity Evidence
-2026 program cycle.
+The strongest current official evidence is negative rather than positive:
+- “Unfortunately, our EXPLORE Summer Institute will not be taking place this year.”
+
+The same page then lists a different residential 2026 program:
+- Accelerated Career Awareness Program 2026
+- Dates: July 12 - 17, 2026
+- Method: Residential
+- Open to: Current 9th, 10th, 11th and 12th graders
+
+That ACAP listing should be treated as a separate camp record rather than evidence that EXPLORE itself is active.
 
 ## Program Overview
-UH Bauer EXPLORE Business Summer Camp is a draft venue dossier for a Business, Pre-college program in Houston, TX.
+UH Bauer EXPLORE Business Summer Camp appears to be a historical Bauer high school business institute, but the current official 2026 Bauer summer-program page does not present it as an active offering. Instead, Bauer is currently displaying ACAP 2026 on the same summer-camp page.
 
 ## Ages and Grades
-Ages and grades not yet captured.
+Ages and grades are not currently captured for an active 2026 EXPLORE offering on the official page.
 
 ## Session Length and Structure
 Duration guess: unknown.
 
-This record is flagged as one-week-plus priority.
+The current official page does not publish a 2026 EXPLORE session length because it says the EXPLORE Summer Institute will not take place this year.
+
+This record is still flagged as one-week-plus priority only because the original schema requested it, but the current official evidence does not support a live 2026 duration field for EXPLORE.
 
 ## Pricing
 Pricing not yet captured.
+
+The current official page does not show a 2026 EXPLORE tuition amount because the program is not being offered this year.
 
 ## Location and Venue Notes
 Venue anchor: UH Campus.
 
 City/region anchor: Houston, TX.
 
-## Contact and Enrollment
-Official site: https://bauer.uh.edu/summer-camps/explore
+Structured location captured from the current Bauer page contact block:
+- Address: 4250 Martin Luther King Blvd.
+- Postal code: 77204-6021
 
-Contact details still need to be captured from the official site.
+This appears to be the Bauer College contact/location block rather than a program-specific residence hall address.
+
+## Contact and Enrollment
+Official site: https://www.bauer.uh.edu/undergraduate/summercamp/
+
+Captured contact details:
+- Email: bauer@bauer.uh.edu
+- Phone: (713) 743-4600
+
+The current page does not provide a live 2026 EXPLORE application link. It does provide a live external application link for ACAP 2026, which should be treated as a separate program.
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- The exact session duration still needs confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Whether this record should remain in the dataset at all if your rule is “only camps we can see are active now.”
+- Whether it should be converted into a historical/inactive record instead of a current candidate.
+- Whether a separate 2026 record should be created for ACAP at Bauer, since that is the residential high-school business program currently shown on the official page.
 
 ## Sources
-- https://bauer.uh.edu/summer-camps/explore
-- https://www.bauer.uh.edu/summer-camps/explore
+- https://www.bauer.uh.edu/undergraduate/summercamp/
+- https://www.bauer.uh.edu/news/2019/bauers-explore-summer-institute-introduces-high-school-students-to-business/

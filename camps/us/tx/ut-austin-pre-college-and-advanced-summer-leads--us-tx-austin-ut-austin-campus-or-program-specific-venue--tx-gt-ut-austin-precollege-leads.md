@@ -3,8 +3,7 @@ record_id: tx-gt-ut-austin-precollege-leads
 camp_id: ut-austin-pre-college-and-advanced-summer-leads
 venue_id: us-tx-austin-ut-austin-campus-or-program-specific-venue
 name: UT Austin pre-college and advanced summer leads
-display_name: UT Austin pre-college and advanced summer leads at UT Austin campus
-  or program-specific venue
+display_name: UT Austin pre-college and advanced summer leads at UT Austin campus or program-specific venue
 country: US
 country_name: United States
 region: TX
@@ -12,25 +11,22 @@ region_name: Texas
 city: Austin
 venue_name: UT Austin campus or program-specific venue
 program_family:
-- gifted-talented
 - college-pre-college
 - academic
 - stem
 camp_types:
 - program-dependent
-- overnight
-- residential-academic
 priority_flags:
-  college_precollege: null
+  college_precollege: true
   one_week_plus: false
 languages_found:
 - en
 source_language_primary: en
-activity_status: unknown
+activity_status: active_recent
 activity_evidence_window_months: 24
 duration:
-  min_days: null
-  max_days: null
+  min_days: 4
+  max_days: 35
 pricing:
   currency: USD
   amount_min: null
@@ -46,7 +42,7 @@ operator:
   name: The University of Texas at Austin ecosystem
   type: university
 website:
-  canonical_url: https://utexas.edu
+  canonical_url: https://stemstarts.utexas.edu/programs/
   admissions_url: null
   session_dates_url: null
   pricing_url: null
@@ -59,78 +55,85 @@ location:
   latitude: null
   longitude: null
 verification:
-  overnight_confirmed: true
-  active_past_2_years_confirmed: false
+  overnight_confirmed: false
+  active_past_2_years_confirmed: true
   confidence: medium
-  last_verified: '2026-04-13'
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://utexas.edu
-  recent_activity_source_url: null
-  duration_source_url: null
+  overnight_source_url: null
+  recent_activity_source_url: https://stemstarts.utexas.edu/programs/
+  duration_source_url: https://journalism.utexas.edu/summer-programs-sports
   pricing_source_url: null
 tags:
 - us
 - tx
 - austin
-- gifted-talented
 - college-pre-college
 - academic
 - stem
 - program-dependent
-- overnight
-- residential-academic
 draft_status: draft
 ---
 
 # UT Austin pre-college and advanced summer leads at UT Austin campus or program-specific venue
 
 ## Quick Take
-Large Texas university ecosystem worth dedicated extraction for gifted and talented summer options.
+UT Austin is a strong institutional lead for advanced summer and pre-college opportunities, but this should be treated as an ecosystem record rather than a single camp. Current official offerings span residential, commuter, day, virtual, and longer non-residential academic formats.
 
 ## Verified Facts
 - Operator: The University of Texas at Austin ecosystem
-- Venue: UT Austin campus or program-specific venue
 - Location: Austin, TX
-- Canonical URL: https://utexas.edu/
-- Program family: gifted-talented, college-pre-college, academic, stem
+- Canonical lead URL: https://stemstarts.utexas.edu/programs/
+- Program family: college-pre-college, academic, stem
+- Current official summer ecosystem includes residential, commuter, day, virtual, and non-residential programs
+- Current visible duration signals range from 4-day camps to 5-week programs
 
 ## Overnight Evidence
-Large Texas university ecosystem worth dedicated extraction for gifted and talented summer options.
+This umbrella record should not be classified as overnight-confirmed. Some UT Austin programs are residential or include dorm stays, but others are explicitly commuter, day, virtual, or non-residential.
 
 ## Recent Activity Evidence
-Not yet captured.
+Current official 2026 pages are live across multiple UT Austin units, including Summer Discovery, UT Computer Science Summer Academies, McCombs Summer High School Programs, UTeach Outreach camps, and the School of Journalism and Media summer program.
 
 ## Program Overview
-Large Texas university ecosystem worth dedicated extraction for gifted and talented summer options.
+This record is best used as a discovery lead for UT Austin’s broader advanced summer ecosystem. It is not a single normalized camp and should point downstream to program-specific records for cleaner duration, pricing, and residential modeling.
+
+## Example Current Lead Programs
+- Summer Discovery at UT Austin
+- UT Computer Science Summer Academies
+- McCombs Summer High School Programs
+- High School Research Academy
+- UTeach Outreach STEM camps
+- Verne Lundquist Sports Media Camp
 
 ## Ages and Grades
-Advanced student ecosystem; exact current summer program map needs extraction
+This umbrella record should not force a single age or grade range because current official offerings span multiple audiences, from middle-school STEM pathways to high-school pre-college programs.
 
 ## Session Length and Structure
-Duration guess: unknown.
+A reasonable umbrella capture is:
+- min_days: 4
+- max_days: 35
+
+This reflects current visible official offerings ranging from 4-day journalism programming to 5-week research or STEM pathway experiences.
 
 ## Pricing
-Pricing not yet captured.
+Pricing is too mixed to normalize cleanly at the umbrella level. Current official UT offerings include free programs, paid day programs, paid residential programs, and partner-managed tuition structures.
 
 ## Location and Venue Notes
-Venue anchor: UT Austin campus or program-specific venue.
-
-City/region anchor: Austin, TX.
-
-Notes: Institutional lead rather than validated program family Institutional lead rather than validated program family
+Most offerings are UT Austin campus-based, but some are program-specific, partner-managed, virtual, or hosted under separate schools/units. This should remain a program-dependent venue lead.
 
 ## Contact and Enrollment
-Official site: https://utexas.edu/
-
-Contact details still need to be captured from the official site.
+Use individual program pages for actual enrollment, pricing, and contact details. This umbrella record is best treated as a routing and discovery entry rather than a direct application record.
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- The exact session duration still needs confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Which UT Austin programs should be broken out into separate normalized records
+- Whether to maintain this umbrella record once enough program-specific records exist
+- Exact program-level ages, grades, pricing, and venue details for each downstream lead
 
 ## Sources
-- https://utexas.edu
-- https://www.utexas.edu
+- https://stemstarts.utexas.edu/programs/
+- https://admissions.utexas.edu/summer-discovery/
+- https://www.cs.utexas.edu/engage/k-12-outreach/academies
+- https://www.mccombs.utexas.edu/undergraduate-programs/bba/academics/summer-high-school-programs/
+- https://fri.cns.utexas.edu/community-outreach/summer-high-school-research-academy
+- https://journalism.utexas.edu/summer-programs-sports
+- https://outreach.uteach.utexas.edu/camps

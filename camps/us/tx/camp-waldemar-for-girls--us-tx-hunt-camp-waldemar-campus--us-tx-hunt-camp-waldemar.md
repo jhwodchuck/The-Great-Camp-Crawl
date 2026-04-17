@@ -26,7 +26,7 @@ source_language_primary: en
 activity_status: active_recent
 activity_evidence_window_months: 24
 duration:
-  min_days: 5
+  min_days: 6
   max_days: 30
 pricing:
   currency: USD
@@ -37,33 +37,33 @@ ages:
   min: null
   max: null
 grades:
-  min: null
-  max: null
+  min: 2
+  max: 11
 operator:
   name: Camp Waldemar
   type: camp-operator
 website:
   canonical_url: https://waldemar.com
-  admissions_url: null
-  session_dates_url: https://waldemar.com
+  admissions_url: https://form.jotform.com/243535818802056
+  session_dates_url: https://waldemar.com/summer-2026/
   pricing_url: null
 contact:
-  email: null
-  phone: null
+  email: info@waldemar.com
+  phone: '(830) 238-4821'
 location:
-  address: null
-  postal_code: null
+  address: 1005 FM 1340
+  postal_code: '78024'
   latitude: null
   longitude: null
 verification:
   overnight_confirmed: true
   active_past_2_years_confirmed: true
-  confidence: medium
-  last_verified: '2026-04-13'
+  confidence: high
+  last_verified: '2026-04-17'
 evidence:
   overnight_source_url: https://waldemar.com
-  recent_activity_source_url: https://waldemar.com
-  duration_source_url: https://waldemar.com
+  recent_activity_source_url: https://waldemar.com/summer-2026/
+  duration_source_url: https://waldemar.com/about-us/program/
   pricing_source_url: null
 tags:
 - us
@@ -80,56 +80,112 @@ draft_status: draft
 # Camp Waldemar for Girls at Camp Waldemar campus
 
 ## Quick Take
-Iconic Texas Hill Country girls residential camp with official language describing it as a residential summer camp and publishing Summer 2026 dates.
+Camp Waldemar is an active all-girls residential summer camp in Hunt, Texas with published Summer 2026 dates and a mix of short-term and traditional long-term sessions. It remains a high-signal Texas Hill Country girls’ camp with strong arts, sports, and outdoor activity depth.
 
 ## Verified Facts
 - Operator: Camp Waldemar
 - Venue: Camp Waldemar campus
 - Location: Hunt, TX
+- Address: 1005 FM 1340, Hunt, TX 78024
 - Canonical URL: https://waldemar.com/
-- Program family: adventure, arts, sports
-- Known duration signal: 5 days–30 days
-- Recent activity signal: active within the repo's 24-month window heuristic
+- Official contact email: info@waldemar.com
+- Official contact phone: (830) 238-4821
+- Camp type signal: all-girls residential summer camp
+- Summer 2026 dates are publicly posted
+- Long-term sessions are described as 30-day terms
+- Short Term is described as a 6 day / 5 night term
+- Supported overall grade span from public materials: rising 2nd through 11th grades
 
 ## Overnight Evidence
-Official site describes Waldemar as an 'all-girls, residential summer camp' and provides Summer 2026 dates.
+The official homepage explicitly describes Waldemar as an “all-girls, residential summer camp” in the Texas Hill Country. The program pages also describe both short-term and long-term residential camp sessions.
 
 ## Recent Activity Evidence
-Homepage includes Summer 2026 dates.
+The official site publishes Summer 2026 dates and a live 2026 registration flow. The summer info pages also list current due dates for summer balances and forms, confirming recent operational activity.
 
 ## Program Overview
-Iconic Texas Hill Country girls residential camp with official language describing it as a residential summer camp and publishing Summer 2026 dates.
+Camp Waldemar is a longstanding girls’ summer camp in Hunt, Texas. The camp emphasizes a broad residential experience with arts, sports, water activities, horseback riding, traditions, and skill-building across both abbreviated and long-term sessions.
 
 ## Ages and Grades
-All-girls residential summer camp; long-term sessions (e.g., ~30 days) and short terms; confirm grade bands.
+I did not find a clean direct public age range on the current official pages reviewed for this pass, so ages remain uncaptured in structured form.
+
+However, the official program and application materials support the following grade normalization:
+- Short Term 1: rising 2nd–5th grades
+- Short Term 2: rising 3rd–5th grades
+- Long Term: girls going into 4th–11th grades
+
+That supports:
+- grades.min: 2
+- grades.max: 11
 
 ## Session Length and Structure
-Duration guess: 5 days–30 days.
+The current official Waldemar materials support a more precise duration model than the prior draft.
 
-Min days: 5; max days: 30.
+Published structure:
+- Short Term: 6 day / 5 night term
+- First Term: 30-day term
+- Second Term: 30-day term
 
-This record is flagged as one-week-plus priority.
+Published Summer 2026 dates:
+- Short Term 1: May 22–27, 2026
+- 1st Term: May 29–June 26, 2026
+- 2nd Term: June 28–July 26, 2026
+- Short Term 2: July 28–August 2, 2026
+
+Structured duration capture:
+- min_days: 6
+- max_days: 30
+
+This record remains correctly flagged as one-week-plus priority.
 
 ## Pricing
-Pricing not yet captured.
+I did not find a current public standard tuition table for Waldemar’s regular summer sessions on the official pages reviewed, so tuition remains uncaptured in the structured pricing block.
+
+However, the official public application page does state:
+- a $200 application fee is required to complete the application
+- the fee is non-refundable and covers the cost of maintaining a camper on Waldemar waiting lists
+
+The official summer info and FAQ pages also state:
+- camper balances for Short Term, First Term, and Second Term are due April 1
+- deposits are refundable until January 15
+- tuition payments, excluding deposits, are refundable through April 1 with written notice
 
 ## Location and Venue Notes
-Venue anchor: Camp Waldemar campus.
-
-City/region anchor: Hunt, TX.
-
-Notes: High-signal Texas girls camp; later capture exact term structures and age/grade eligibility. High-signal Texas girls camp; later capture exact term structures and age/grade eligibility.
+The official site lists Camp Waldemar at 1005 FM 1340, Hunt, TX 78024. The camp is presented as a Texas Hill Country residential camp.
 
 ## Contact and Enrollment
 Official site: https://waldemar.com/
 
-Contact details still need to be captured from the official site.
+Summer dates and info:
+https://waldemar.com/summer-2026/
+
+Application page:
+https://form.jotform.com/243535818802056
+
+Official contact details:
+- Email: info@waldemar.com
+- Phone: (830) 238-4821
+
+## Data Quality Notes
+This record is now stronger on:
+- active 2026 confirmation
+- session dates
+- overnight / residential confirmation
+- contact details
+- address
+- normalized grade range
+- clearer duration structure
+
+The main remaining structured gap is current public camp tuition for the standard summer sessions.
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Current standard summer tuition still needs direct capture from an official public rate source or authenticated parent/applicant materials.
+- Latitude and longitude still need to be captured.
+- If you want ages normalized, they may need to be inferred from grades or sourced from a page not publicly exposed in the crawl.
 
 ## Sources
-- https://waldemar.com
+- https://waldemar.com/
+- https://waldemar.com/summer-2026/
+- https://waldemar.com/summer-info/
+- https://waldemar.com/about-us/program/
+- https://waldemar.com/contact-us/
+- https://form.jotform.com/243535818802056

@@ -28,41 +28,41 @@ duration:
   max_days: 21
 pricing:
   currency: USD
-  amount_min: null
-  amount_max: null
-  boarding_included: null
+  amount_min: 3900
+  amount_max: 3900
+  boarding_included: true
 ages:
   min: null
   max: null
 grades:
-  min: null
-  max: null
+  min: 7
+  max: 9
 operator:
   name: Southern Methodist University
   type: university
 website:
-  canonical_url: https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
+  canonical_url: https://www.smu.edu/simmons/about-us/history
   admissions_url: null
-  session_dates_url: https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
-  pricing_url: null
+  session_dates_url: https://www.smu.edu/news/archives/2015/summer-camps-12june2015
+  pricing_url: https://www.smu.edu/news/archives/2015/summer-camps-12june2015
 contact:
   email: null
   phone: null
 location:
-  address: null
-  postal_code: null
+  address: 6425 Boaz Lane
+  postal_code: '75205'
   latitude: null
   longitude: null
 verification:
   overnight_confirmed: true
   active_past_2_years_confirmed: false
   confidence: medium
-  last_verified: '2026-04-13'
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
+  overnight_source_url: https://www.smu.edu/news/archives/2015/summer-camps-12june2015
   recent_activity_source_url: null
-  duration_source_url: https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
-  pricing_source_url: null
+  duration_source_url: https://www.smu.edu/simmons/about-us/history
+  pricing_source_url: https://www.smu.edu/news/archives/2015/summer-camps-12june2015
 tags:
 - us
 - tx
@@ -70,62 +70,70 @@ tags:
 - college-pre-college
 - academic-stem
 - gifted-and-talented
+- residential
+- overnight
+- legacy-program
 draft_status: draft
 ---
 
 # SMU Talented and Gifted (TAG) Program at SMU Campus
 
 ## Quick Take
-SMU Talented and Gifted (TAG) Program is a draft venue dossier for a 3-week college-pre-college, academic-stem program in Dallas, TX.
+SMU Talented and Gifted (TAG) Program appears to be a legacy SMU pre-college residential program rather than a currently verified active 2026 overnight offering. Official SMU sources still document the program historically as a 3-week on-campus academic experience for gifted middle-school students.
 
 ## Verified Facts
 - Operator: Southern Methodist University
 - Venue: SMU Campus
 - Location: Dallas, TX
-- Canonical URL: https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
+- Campus address: 6425 Boaz Lane, Dallas, TX 75205
 - Program family: college-pre-college, academic-stem
-- Known duration signal: 3-week
+- Camp type: gifted-and-talented
+- Historical duration signal: 3-week on-campus program
+- Historical grade signal: students having completed 7th, 8th, or 9th grade
+- Historical pricing signal from official 2015 SMU camp listing: $3,900
+- Historical boarding signal: room and board included in listed cost
 
 ## Overnight Evidence
-Historically a 3-week residential program for academically accelerated students
+An official 2015 SMU camps page describes the Talented and Gifted Program as costing $3,900 and explicitly says that amount includes tuition, room and board, books, and most supplies. That supports the residential / overnight classification for the program in its documented form.
 
 ## Recent Activity Evidence
-2026 Details
+I did not find a current live official TAG program page or current 2025–2026 SMU Simmons youth-program listing for this program during this verification pass. Because of that, recent activity for this exact TAG record is not confirmed.
 
 ## Program Overview
-SMU Talented and Gifted (TAG) Program is a draft venue dossier for a 3-week college-pre-college, academic-stem program in Dallas, TX.
+SMU’s Simmons School history page says the Talented and Gifted Program began in 1983 as a 3-week on-campus program offering credit and non-credit college courses for qualified students. Historical SMU camp materials describe it as offering intellectually enriching experiences for academically accelerated students.
 
 ## Ages and Grades
-Ages and grades not yet captured.
+The official Simmons history page describes TAG as serving students who had completed the seventh, eighth, or ninth grades. A 2015 SMU camps page phrases this as students entering grades 8–10, which is the equivalent next-year framing. Ages in years were not clearly published in the reviewed official sources.
 
 ## Session Length and Structure
-Duration guess: 3-week.
+SMU’s official Simmons history page describes TAG as a 3-week on-campus program. A historical official SMU camps page lists one example session as July 5–24, 2015.
 
-Min days: 21; max days: 21.
+Min days: 21  
+Max days: 21
 
-This record is flagged as one-week-plus priority.
+This record remains flagged as one-week-plus priority based on the historically documented 3-week structure.
 
 ## Pricing
-Pricing not yet captured.
+The official 2015 SMU camps page lists:
+- Cost: $3,900
+- Additional application fee: $35
+- Need-based scholarships available
+
+This should be treated as historical pricing, not current pricing.
 
 ## Location and Venue Notes
-Venue anchor: SMU Campus.
-
-City/region anchor: Dallas, TX.
-
-Notes: F o r 7 t h , 8 9 g a d e s . For 7th, 8th, or 9th grades.
+The program was hosted on the SMU campus in Dallas. SMU’s official campus maps page lists the university’s official address as 6425 Boaz Lane, Dallas, TX 75205.
 
 ## Contact and Enrollment
-Official site: https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
-
-Contact details still need to be captured from the official site.
+No current official TAG-specific admissions or contact page was confirmed during this pass. The old Youth Programs URL supplied in the draft did not resolve when checked.
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Whether SMU TAG is discontinued, archived, or superseded by another Simmons youth offering.
+- Whether this record should remain in the dataset as a legacy residential program or be excluded from active-camp views.
+- Exact ages in years were not clearly published in the official sources reviewed.
+- Latitude and longitude still need verified geocoding if required for the dataset.
 
 ## Sources
-- https://smu.edu/Simmons/Community-Enrichment/Youth-Programs
-- https://www.smu.edu/Simmons/Community-Enrichment/Youth-Programs
+- https://www.smu.edu/simmons/about-us/history
+- https://www.smu.edu/news/archives/2015/summer-camps-12june2015
+- https://www.smu.edu/aboutsmu/maps

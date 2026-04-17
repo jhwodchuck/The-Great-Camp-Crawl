@@ -11,8 +11,8 @@ region_name: Texas
 city: Austin
 venue_name: UT Austin Campus
 program_family:
-- Business
-- Pre-college
+- business
+- pre-college
 camp_types:
 - residential
 - overnight
@@ -20,50 +20,50 @@ priority_flags:
   college_precollege: true
   one_week_plus: true
 languages_found:
-- English
-source_language_primary: English
-activity_status: unknown
+- en
+source_language_primary: en
+activity_status: active_recent
 activity_evidence_window_months: 24
 duration:
   min_days: 21
   max_days: 21
 pricing:
   currency: USD
-  amount_min: null
-  amount_max: null
-  boarding_included: null
+  amount_min: 7999
+  amount_max: 7999
+  boarding_included: true
 ages:
   min: null
   max: null
 grades:
-  min: null
-  max: null
+  min: 9
+  max: 12
 operator:
-  name: Summer Discovery
-  type: university
+  name: Musiker Discovery Programs, Inc.
+  type: organization
 website:
-  canonical_url: https://summerdiscovery.com/campuses/university-of-texas-at-austin
-  admissions_url: null
-  session_dates_url: https://summerdiscovery.com/campuses/university-of-texas-at-austin
-  pricing_url: null
+  canonical_url: https://www.summerdiscovery.com/campuses/university-of-texas-at-austin
+  admissions_url: https://www.summerdiscovery.com/apply/user/login
+  session_dates_url: https://www.summerdiscovery.com/offerings-dates-tuitions
+  pricing_url: https://www.summerdiscovery.com/offerings-dates-tuitions
 contact:
-  email: null
-  phone: null
+  email: info@summerdiscovery.com
+  phone: +1 (516) 447-4907
 location:
-  address: null
-  postal_code: null
+  address: 110 Inner Campus Drive
+  postal_code: '78712'
   latitude: null
   longitude: null
 verification:
   overnight_confirmed: true
-  active_past_2_years_confirmed: false
-  confidence: medium
-  last_verified: '2026-04-13'
+  active_past_2_years_confirmed: true
+  confidence: high
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://summerdiscovery.com/campuses/university-of-texas-at-austin
-  recent_activity_source_url: null
-  duration_source_url: https://summerdiscovery.com/campuses/university-of-texas-at-austin
-  pricing_source_url: null
+  overnight_source_url: https://www.summerdiscovery.com/campuses/university-of-texas-at-austin
+  recent_activity_source_url: https://www.summerdiscovery.com/offerings-dates-tuitions
+  duration_source_url: https://www.summerdiscovery.com/courses/results/high-school?campus=university-of-texas-at-austin&fields=business-entrepreneurship&month=flexible
+  pricing_source_url: https://www.summerdiscovery.com/offerings-dates-tuitions
 tags:
 - us
 - tx
@@ -72,62 +72,83 @@ tags:
 - pre-college
 - residential
 - overnight
+- college-pre-college
+- grades-9-12
+- ut-austin
 draft_status: draft
 ---
 
 # Summer Discovery: Business Academy (UT Austin) at UT Austin Campus
 
 ## Quick Take
-Summer Discovery: Business Academy (UT Austin) is a draft venue dossier for a 3-week Business, Pre-college program in Austin, TX.
+Summer Discovery: Business Academy (UT Austin) is an active 2026 residential pre-college business program at the University of Texas at Austin. The specific business academy currently listed is the Business Innovation and Entrepreneurship Academy, a 3-week all-day academy for students in grades 9–12.
 
 ## Verified Facts
-- Operator: Summer Discovery
+- Operator: Musiker Discovery Programs, Inc. / Summer Discovery
 - Venue: UT Austin Campus
 - Location: Austin, TX
-- Canonical URL: https://summerdiscovery.com/campuses/university-of-texas-at-austin
-- Program family: Business, Pre-college
-- Known duration signal: 3-week
+- Campus address anchor: 110 Inner Campus Drive, Austin, TX 78712
+- Canonical URL: https://www.summerdiscovery.com/campuses/university-of-texas-at-austin
+- Program family: business, pre-college
+- Camp types: residential, overnight
+- Known grade range: 9th–12th
+- Known duration signal: 3 weeks
+- Known pricing signal for 2026 residential 3-week UT Austin option: $7,999
+- Contact email: info@summerdiscovery.com
+- Contact phone: +1 (516) 447-4907
 
 ## Overnight Evidence
-Includes housing on-campus accommodation and meals.
+The official UT Austin Summer Discovery campus page states that tuition includes housing and 2 meals per day, 7 days per week, which is direct evidence of a residential / overnight format for students enrolled in the residential option.
 
 ## Recent Activity Evidence
-Jun 28 - Aug 07, 2025
+The official 2026 dates and tuition page lists UT Austin residential offerings for Summer 2026, and the Summer Discovery course listings page currently shows Business Innovation and Entrepreneurship Academy at UT Austin for June 28–July 17, 2026.
 
 ## Program Overview
-Summer Discovery: Business Academy (UT Austin) is a draft venue dossier for a 3-week Business, Pre-college program in Austin, TX.
+At UT Austin, Summer Discovery offers pre-college academics taught by UT Austin instructors and experts. The current business-specific academy shown in official listings is the Business Innovation and Entrepreneurship Academy, positioned within the Business, Leadership & Entrepreneurship field.
 
 ## Ages and Grades
-Ages and grades not yet captured.
+The current official listing shows this academy for grades 9–12. A clean public age range in years was not identified on the reviewed pages, so age fields remain unfilled.
 
 ## Session Length and Structure
-Duration guess: 3-week.
+The current official business-course search results show:
+- Business Innovation and Entrepreneurship Academy
+- Grades 9th–12th
+- 3 Weeks
+- Jun 28 – Jul 17
+- All Day
 
-Min days: 21; max days: 21.
+Min days: 21  
+Max days: 21
 
-This record is flagged as one-week-plus priority.
+This record remains flagged as one-week-plus priority because the residential academy runs for 3 weeks.
 
 ## Pricing
-Pricing not yet captured.
+The official 2026 UT Austin dates and tuition page lists:
+- Residential, 3 week: $7,999
+
+Because the business academy is a 3-week UT Austin academy, this is the best current official residential pricing signal for the program record.
 
 ## Location and Venue Notes
-Venue anchor: UT Austin Campus.
-
-City/region anchor: Austin, TX.
-
-Notes: P a r t n e d w i h U T A u s . Partnered with UT Austin.
+The program is hosted at the University of Texas at Austin. The official UT Austin contact page lists the university address as 110 Inner Campus Drive, Austin, TX 78712.
 
 ## Contact and Enrollment
-Official site: https://summerdiscovery.com/campuses/university-of-texas-at-austin
-
-Contact details still need to be captured from the official site.
+Official campus page: https://www.summerdiscovery.com/campuses/university-of-texas-at-austin  
+Apply page: https://www.summerdiscovery.com/apply/user/login  
+Dates and tuition: https://www.summerdiscovery.com/offerings-dates-tuitions  
+Business-course results: https://www.summerdiscovery.com/courses/results/high-school?campus=university-of-texas-at-austin&fields=business-entrepreneurship&month=flexible  
+Email: info@summerdiscovery.com  
+Phone: +1 (516) 447-4907
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- A direct public detail page for the Business Innovation and Entrepreneurship Academy was not cleanly exposed in the reviewed results, so the campus page and course-results page are serving as the primary official anchors.
+- A public age range in years was not clearly stated on the reviewed pages.
+- Latitude and longitude still need verified geocoding if required for the dataset.
+- If your dataset later splits commuter and residential variants, this record should remain the residential version only.
 
 ## Sources
-- https://summerdiscovery.com/campuses/university-of-texas-at-austin
 - https://www.summerdiscovery.com/campuses/university-of-texas-at-austin
+- https://www.summerdiscovery.com/offerings-dates-tuitions
+- https://www.summerdiscovery.com/courses/results/high-school?campus=university-of-texas-at-austin&fields=business-entrepreneurship&month=flexible
+- https://www.summerdiscovery.com/resources/blogs
+- https://www.utexas.edu/contact-us
+---

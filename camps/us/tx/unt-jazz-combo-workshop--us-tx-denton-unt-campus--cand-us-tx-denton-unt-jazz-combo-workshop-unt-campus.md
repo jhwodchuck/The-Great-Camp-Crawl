@@ -26,18 +26,18 @@ priority_flags:
 languages_found:
 - English
 source_language_primary: English
-activity_status: unknown
+activity_status: active_recent
 activity_evidence_window_months: 24
 duration:
-  min_days: null
-  max_days: null
+  min_days: 6
+  max_days: 7
 pricing:
   currency: USD
-  amount_min: null
-  amount_max: null
+  amount_min: 925
+  amount_max: 1200
   boarding_included: null
 ages:
-  min: null
+  min: 14
   max: null
 grades:
   min: null
@@ -47,27 +47,27 @@ operator:
   type: university
 website:
   canonical_url: https://music.unt.edu/camps/jazz-combo-workshop.html
-  admissions_url: null
+  admissions_url: https://app.getacceptd.com/untmusicworkshops
   session_dates_url: https://music.unt.edu/camps/jazz-combo-workshop.html
-  pricing_url: null
+  pricing_url: https://music.unt.edu/camps/jazz-combo-workshop.html
 contact:
-  email: null
-  phone: null
+  email: music.camps@unt.edu
+  phone: '(940) 369-6541'
 location:
-  address: null
-  postal_code: null
+  address: 1155 Union Circle #311367
+  postal_code: '76203-5017'
   latitude: null
   longitude: null
 verification:
   overnight_confirmed: true
-  active_past_2_years_confirmed: false
-  confidence: medium
-  last_verified: '2026-04-13'
+  active_past_2_years_confirmed: true
+  confidence: high
+  last_verified: '2026-04-17'
 evidence:
   overnight_source_url: https://music.unt.edu/camps/jazz-combo-workshop.html
-  recent_activity_source_url: null
-  duration_source_url: null
-  pricing_source_url: null
+  recent_activity_source_url: https://music.unt.edu/camps/jazz-combo-workshop.html
+  duration_source_url: https://music.unt.edu/camps/jazz-combo-workshop.html
+  pricing_source_url: https://music.unt.edu/camps/jazz-combo-workshop.html
 tags:
 - us
 - tx
@@ -84,51 +84,71 @@ draft_status: draft
 # UNT Jazz Combo Workshop at UNT Campus
 
 ## Quick Take
-UNT Jazz Combo Workshop is a draft venue dossier for a Arts, Music, Jazz program in Denton, TX.
+UNT Jazz Combo Workshop is an active 2026 jazz program at the University of North Texas for musicians age 14 and older. The current official format includes both overnight and day-camper participation, with intensive combo playing, improvisation, theory, listening, masterclasses, faculty concerts, and student jam sessions.
 
 ## Verified Facts
 - Operator: University of North Texas
 - Venue: UNT Campus
 - Location: Denton, TX
+- Address anchor: 1155 Union Circle #311367, Denton, TX 76203-5017
 - Canonical URL: https://music.unt.edu/camps/jazz-combo-workshop.html
-- Program family: Arts, Music, Jazz, Pre-college, arts, music
+- Official 2026 dates: July 12-17, 2026
+- Official audience signal: musicians of all levels, minimum age 14
+- Overnight tuition: $1,200
+- Day Camper tuition: $925
+- Registration deadline: June 22, 2026
+- Camp contact: music.camps@unt.edu | (940) 369-6541
 
 ## Overnight Evidence
-Overnight camper option includes Housing and three meals.
+The official page states that overnight campers arrive on Sunday, July 12 for residence-hall check-in and depart on Friday, July 17, with optional arrival on Saturday, July 11 and/or departure on Saturday, July 18 for travel needs at an added fee. The overnight package includes housing and three meals per day.
 
 ## Recent Activity Evidence
-July 12-17, 2026.
+The official UNT page is live with current 2026 dates, tuition, registration details, refund policies, and registration deadline information.
 
 ## Program Overview
-UNT Jazz Combo Workshop is a draft venue dossier for a Arts, Music, Jazz program in Denton, TX.
+UNT describes the workshop as a comprehensive jazz-combo and improvisation program. The curriculum includes jazz theory and improvisation, jazz history and listening, combo rehearsals, masterclass instruction across multiple instruments, faculty concerts, and student concerts and jam sessions.
 
 ## Ages and Grades
-Ages and grades not yet captured.
+The official page does not publish a school-grade range, but it does state that participants must be at least 14 years of age by the first day of the workshop. Because the eligibility is age-based rather than grade-based, grades remain uncaptured here.
 
 ## Session Length and Structure
-Duration guess: unknown.
-
-This record is flagged as one-week-plus priority.
+The official workshop dates are July 12-17, 2026, which supports a 6-day core duration. Overnight campers may optionally arrive July 11 and/or depart July 18 for an additional fee, so a structured duration range of 6 to 7 days is reasonable for this record.
 
 ## Pricing
-Pricing not yet captured.
+The official page lists:
+- Overnight camper: $1,200
+- Day camper: $925
 
-## Location and Venue Notes
-Venue anchor: UNT Campus.
-
-City/region anchor: Denton, TX.
+The overnight package includes registration fee, tuition, housing, three meals per day from Sunday dinner through Friday lunch, parking, a music theory book, and a camp T-shirt. The day-camper package includes registration fee, tuition, lunch and dinner daily from Sunday dinner through Friday lunch, parking, a music theory book, and a camp T-shirt. Optional extra overnight travel nights cost $100 per night.
 
 ## Contact and Enrollment
-Official site: https://music.unt.edu/camps/jazz-combo-workshop.html
+Official site:
+https://music.unt.edu/camps/jazz-combo-workshop.html
 
-Contact details still need to be captured from the official site.
+Registration:
+https://app.getacceptd.com/untmusicworkshops
+
+Official public contact details:
+- music.camps@unt.edu
+- (940) 369-6541
+
+## Data Quality Notes
+This record is now stronger on:
+- active 2026 confirmation
+- exact dates
+- exact tuition
+- direct minimum age
+- residence-hall confirmation
+- direct contact info
+- venue address anchor
+
+The main remaining structured gap is the lack of a clean grade-band signal on the official page.
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- The exact session duration still needs confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Whether you want to keep this as a mixed overnight/day-camper record or split those tracks into separate linked records
+- Latitude and longitude still need to be captured
+- Maximum age or school-level cap is not directly published on the official page
 
 ## Sources
 - https://music.unt.edu/camps/jazz-combo-workshop.html
+- https://app.getacceptd.com/untmusicworkshops

@@ -20,32 +20,32 @@ priority_flags:
 languages_found:
 - en
 source_language_primary: en
-activity_status: unknown
+activity_status: active
 activity_evidence_window_months: 24
 duration:
   min_days: 14
   max_days: 14
 pricing:
   currency: USD
-  amount_min: null
-  amount_max: null
-  boarding_included: null
+  amount_min: 6000
+  amount_max: 7000
+  boarding_included: true
 ages:
   min: null
   max: null
 grades:
-  min: null
-  max: null
+  min: 10
+  max: 12
 operator:
-  name: Rice University Lilie
+  name: Rice University Liu Idea Lab for Innovation & Entrepreneurship
   type: university
 website:
-  canonical_url: https://entrepreneurship.rice.edu/pathfinder
+  canonical_url: https://entrepreneurship.rice.edu/high-school-summer-program
   admissions_url: null
-  session_dates_url: https://entrepreneurship.rice.edu/pathfinder
-  pricing_url: null
+  session_dates_url: https://entrepreneurship.rice.edu/high-school-summer-program
+  pricing_url: https://entrepreneurship.rice.edu/high-school-summer-program
 contact:
-  email: null
+  email: tony.cordova@rice.edu
   phone: null
 location:
   address: null
@@ -54,14 +54,14 @@ location:
   longitude: null
 verification:
   overnight_confirmed: true
-  active_past_2_years_confirmed: false
-  confidence: medium
-  last_verified: '2026-04-13'
+  active_past_2_years_confirmed: true
+  confidence: high
+  last_verified: '2026-04-17'
 evidence:
-  overnight_source_url: https://entrepreneurship.rice.edu/pathfinder
-  recent_activity_source_url: null
-  duration_source_url: https://entrepreneurship.rice.edu/pathfinder
-  pricing_source_url: null
+  overnight_source_url: https://entrepreneurship.rice.edu/high-school-summer-program
+  recent_activity_source_url: https://entrepreneurship.rice.edu/high-school-summer-program
+  duration_source_url: https://entrepreneurship.rice.edu/high-school-summer-program
+  pricing_source_url: https://entrepreneurship.rice.edu/high-school-summer-program
 tags:
 - us
 - tx
@@ -74,55 +74,82 @@ draft_status: draft
 # Pathfinder Summer High School Program at Rice University Campus
 
 ## Quick Take
-Pathfinder Summer High School Program is a draft venue dossier for a 2-week college-pre-college program in Houston, TX.
+Pathfinder Summer High School Program is an active 2-week college-pre-college business and entrepreneurship program in Houston, TX.
 
 ## Verified Facts
-- Operator: Rice University Lilie
+- Operator: Rice University Liu Idea Lab for Innovation & Entrepreneurship
 - Venue: Rice University Campus
 - Location: Houston, TX
-- Canonical URL: https://entrepreneurship.rice.edu/pathfinder
+- Canonical URL: https://entrepreneurship.rice.edu/high-school-summer-program
 - Program family: college-pre-college
 - Known duration signal: 2-week
+- Tuition: $6,000 early bird / $7,000 regular
+- Contact email: tony.cordova@rice.edu
 
 ## Overnight Evidence
-2-week residential program hosted by the Liu Idea Lab
+The official page describes Pathfinder as a “2-week residential program” hosted at Rice University. The FAQ also says participants stay in Rice University dormitories and that all meals are provided during the program.
 
 ## Recent Activity Evidence
-Dates and Rates for 2026
+The official page lists the 2026 program dates as July 12-25, 2026. It also lists multiple 2026 virtual info sessions and says the early bird application deadline is March 15, 2026, with rolling admissions through April 15, 2026.
 
 ## Program Overview
-Pathfinder Summer High School Program is a draft venue dossier for a 2-week college-pre-college program in Houston, TX.
+Pathfinder is Rice’s entrepreneurship-focused high school summer program hosted by the Liu Idea Lab for Innovation & Entrepreneurship. Students build a venture idea through customer discovery, prototyping, business modeling, workshops, excursions, and a final Demo Day presentation.
 
 ## Ages and Grades
-Ages and grades not yet captured.
+Ages are not explicitly published as a numeric range on the official page.
+
+Grades captured from the official eligibility language:
+- Min grade: 10
+- Max grade: 12
+
+The page says Pathfinder is for rising high school sophomores, juniors, and seniors.
 
 ## Session Length and Structure
-Duration guess: 2-week.
+The official page lists program dates of July 12-25, 2026.
 
 Min days: 14; max days: 14.
 
 This record is flagged as one-week-plus priority.
 
 ## Pricing
-Pricing not yet captured.
+Official pricing is captured.
+
+- Currency: USD
+- Amount min: 6000
+- Amount max: 7000
+- Boarding included: true
+
+The official page says:
+- Early Bird tuition: $6,000
+- Regular tuition: $7,000
+- Deposit must be paid by April 1, 2026 to qualify for early bird tuition
+
+The FAQ confirms that meals and accommodations are provided. Financial aid information is available by contacting Nick Tucker.
 
 ## Location and Venue Notes
 Venue anchor: Rice University Campus.
 
 City/region anchor: Houston, TX.
 
-Notes: F o c u s n e t r p h i , v a d . Focus on entrepreneurship, innovation, and venture creation.
+The official page confirms that the program is held on Rice University’s campus in Houston, TX, but it does not publish a clean structured dorm or classroom street address on the program page.
+
+Notes: Focus on entrepreneurship, innovation, and venture creation.
 
 ## Contact and Enrollment
-Official site: https://entrepreneurship.rice.edu/pathfinder
+Official site: https://entrepreneurship.rice.edu/high-school-summer-program
 
-Contact details still need to be captured from the official site.
+Captured contact details:
+- Email: tony.cordova@rice.edu
+- Phone: not clearly published on the program page
+
+The official page says students apply through the Pathfinder application link. It also states that questions can be directed to Program Director Tony Cordova, while financial aid questions go to Nick Tucker at Nick.tucker@rice.edu.
 
 ## Open Questions
-- Exact ages or grade bands still need confirmation.
-- Recent activity within the last 24 months still needs confirmation.
-- Official contact details still need to be captured.
-- Official pricing still needs to be captured.
+- Exact ages still need confirmation.
+- A direct public application URL still needs capture if you want admissions_url populated.
+- A specific residence hall or classroom address still needs confirmation.
+- If you want a second contact stored, the official page also names Nick Tucker for financial-aid support.
 
 ## Sources
-- https://entrepreneurship.rice.edu/pathfinder
+- https://entrepreneurship.rice.edu/high-school-summer-program
+- https://entrepreneurship.rice.edu/faculty-staff
