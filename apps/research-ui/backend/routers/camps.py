@@ -31,7 +31,14 @@ def list_camps(
     db: Session = Depends(get_db),
 ):
     """Paginated list of camps with filtering."""
-    query = db.query(Camp).filter(Camp.is_excluded.is_not(True))
+    # Only surface curated records (draft + candidate); exclude raw crawl candidates
+    # and any record flagged as excluded.
+    _SHOW_STATUSES = ("draft", "candidate")
+    query = (
+        db.query(Camp)
+        .filter(Camp.is_excluded.is_not(True))
+        .filter(Camp.draft_status.in_(_SHOW_STATUSES))
+    )
 
     if country:
         query = query.filter(Camp.country == country.upper())
@@ -79,22 +86,24 @@ def list_camps(
 @router.get("/stats", response_model=CampStatsOut)
 def camp_stats(db: Session = Depends(get_db)):
     """Aggregate counts for filter facets."""
-    total = db.query(Camp).count()
+    _SHOW_STATUSES = ("draft", "candidate")
+    base = db.query(Camp).filter(Camp.is_excluded.is_not(True)).filter(Camp.draft_status.in_(_SHOW_STATUSES))
+    total = base.count()
     by_country = dict(
-        db.query(Camp.country, func.count(Camp.id))
-        .filter(Camp.country.isnot(None))
+        base.filter(Camp.country.isnot(None))
+        .with_entities(Camp.country, func.count(Camp.id))
         .group_by(Camp.country)
         .all()
     )
     by_region = dict(
-        db.query(Camp.region, func.count(Camp.id))
-        .filter(Camp.region.isnot(None))
+        base.filter(Camp.region.isnot(None))
+        .with_entities(Camp.region, func.count(Camp.id))
         .group_by(Camp.region)
         .all()
     )
     # program_family is a JSON array stored as text, so we count per camp
     pf_counts: dict[str, int] = {}
-    rows = db.query(Camp.program_family).filter(Camp.program_family.isnot(None)).all()
+    rows = base.filter(Camp.program_family.isnot(None)).with_entities(Camp.program_family).all()
     for (pf_raw,) in rows:
         try:
             families = json.loads(pf_raw) if pf_raw else []
