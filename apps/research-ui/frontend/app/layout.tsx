@@ -6,6 +6,10 @@ import NavBar from "@/components/NavBar";
 export const metadata: Metadata = {
   title: "🏕️ The Great Camp Crawl – Research UI",
   description: "Child-friendly camp research collaboration app",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
