@@ -27,7 +27,8 @@ Included families:
 The **production PostgreSQL database** (Neon) is the source of truth for all camp data.
 
 - ~4,900 records as of April 2025
-- Connection: `RESEARCH_UI_DATABASE_URL` in `.vercel/.env.production.local`
+- Connection string: stored as `DATABASE_URL` in `.vercel/.env.production.local`
+- Scripts expect `RESEARCH_UI_DATABASE_URL` — see bootstrap snippet below
 - Read/write via SQLAlchemy or raw SQL
 - See `prompts/discovery/00-db-connection.md` for connection details
 
@@ -46,11 +47,15 @@ Do **not** use JSONL staging files as long-term data stores. The DB is canonical
 
 ### 1. Assess coverage gaps (start here)
 
-Before any new discovery, check what's in the DB:
+Before any new discovery, check what's in the DB.
+
+**Bootstrap (run once per shell session):**
 
 ```bash
 source .venv/bin/activate
 source .vercel/.env.production.local
+# .env.production.local exports DATABASE_URL; scripts expect RESEARCH_UI_DATABASE_URL
+export RESEARCH_UI_DATABASE_URL="$DATABASE_URL"
 ```
 
 Then follow `prompts/discovery/01-gap-analysis.md`.

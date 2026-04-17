@@ -53,7 +53,8 @@ DEFAULT_DB_URL = (
     or f"sqlite:///{BACKEND_DIR / 'research.db'}"
 )
 SYSTEM_PROMPT = """You are triaging records for a catalog of overnight and residential youth camps,
-family camps, faith-based camps and retreats, and residential pre-college programs.
+specialty camps, sports camps, arts and music camps, academic/STEM camps, family camps,
+faith-based camps and retreats, and residential pre-college programs.
 
 Use only the record fields you are given.
 
@@ -66,10 +67,14 @@ Return exactly one JSON object with these keys:
 
 Mark "likely_not_a_camp" when the title, URL, or description clearly point to unrelated content like
 medical pages, tax pages, classifieds, news, ecommerce, generic directories, or non-youth/non-residential content.
+Do not mark a record as "likely_not_a_camp" only because it is university-hosted, academic, research-oriented,
+or not a "traditional camp." Residential pre-college programs, specialty resident camps, and other overnight youth
+programs are in scope even when they are called academies, institutes, scholars programs, or summer programs.
 If the evidence is mixed, use "unclear" rather than guessing."""
 
 BATCH_SYSTEM_PROMPT = """You are triaging records for a catalog of overnight and residential youth camps,
-family camps, faith-based camps, and residential pre-college programs.
+specialty camps, sports camps, arts and music camps, academic/STEM camps, family camps,
+faith-based camps, and residential pre-college programs.
 
 You will receive a JSON array of records. Return ONLY a JSON array (no markdown, no prose) with one object
 per input record in the same order. Each object must contain exactly these keys:
@@ -81,7 +86,9 @@ per input record in the same order. Each object must contain exactly these keys:
 
 Mark "likely_not_a_camp" (high) for: news, ecommerce, social media, dictionaries, travel sites, sports,
 entertainment, adult content, government info pages, software tools, shipping, retail, or anything clearly
-not a youth/family/residential program. Use "unclear" only when genuine ambiguity exists."""
+not a youth/family/residential program. Do not exclude a record only because it is university-hosted,
+academic, research-oriented, or not a "traditional camp" if the record shows residential, overnight,
+or pre-college signals. Use "unclear" only when genuine ambiguity exists."""
 
 
 @dataclass
@@ -204,6 +211,108 @@ def _excerpt(text: str | None, max_chars: int = 2400) -> str | None:
     return cleaned[:max_chars] if len(cleaned) > max_chars else cleaned
 
 
+def _json_list(raw: str | None) -> list[str]:
+    if not raw:
+        return []
+    try:
+        parsed = json.loads(raw)
+    except Exception:
+        return []
+    if not isinstance(parsed, list):
+        return []
+    values: list[str] = []
+    for item in parsed:
+        text = str(item).strip().lower()
+        if text:
+            values.append(text)
+    return values
+
+
+def _camp_text_blob(camp: Camp) -> str:
+    return " ".join(
+        str(part or "")
+        for part in (
+            camp.record_id,
+            camp.name,
+            camp.display_name,
+            camp.operator_name,
+            camp.venue_name,
+            camp.website_url,
+            camp.description_md,
+        )
+    ).lower()
+
+
+def _looks_like_meta_record(camp: Camp) -> bool:
+    blob = _camp_text_blob(camp)
+    meta_markers = (
+        "lead",
+        "leads",
+        "ecosystem",
+        "directory",
+        "member network",
+        "association",
+        "sample seeded dossier",
+        "program venue to confirm",
+        "program-specific venue to confirm",
+        "venue to confirm",
+        "specific residence format not yet confirmed",
+        "institutional lead",
+    )
+    return any(marker in blob for marker in meta_markers)
+
+
+def _has_strong_in_scope_signals(camp: Camp) -> bool:
+    families = set(_json_list(camp.program_family))
+    camp_types = set(_json_list(camp.camp_types))
+    blob = _camp_text_blob(camp)
+    residential_markers = (
+        "live in residence halls",
+        "residence halls",
+        "housing and meals",
+        "students stay in university dormitories",
+        "campers stay in dorms",
+        "residential program",
+        "residential camp",
+        "residential college preparatory program",
+        "four-week summer residential program",
+        "dormitories",
+        "dorms",
+        "boarding",
+        "campus life firsthand",
+    )
+    return (
+        camp.overnight_confirmed is True
+        or "college-pre-college" in families
+        or bool({"overnight", "residential", "residential-academic"} & camp_types)
+        or any(marker in blob for marker in residential_markers)
+    )
+
+
+def _apply_triage_guardrails(camp: Camp, result: dict[str, object]) -> dict[str, object]:
+    if result.get("verdict") != "likely_not_a_camp":
+        return result
+    if _looks_like_meta_record(camp):
+        return result
+    if not _has_strong_in_scope_signals(camp):
+        return result
+
+    guarded = dict(result)
+    original_reason = str(guarded.get("reason") or "").strip()
+    guarded["verdict"] = "unclear"
+    guarded["confidence"] = "medium"
+    guarded["exclusion_reason"] = None
+    guarded["reason"] = (
+        f"{original_reason} Guardrail: residential/pre-college/specialty overnight signals require manual review."
+        if original_reason
+        else "Guardrail: residential/pre-college/specialty overnight signals require manual review."
+    )
+    signals = [str(signal) for signal in (guarded.get("signals") or []) if signal]
+    signals.append("Guardrail triggered: structured residential or pre-college signals present.")
+    guarded["signals"] = signals
+    return guarded
+
+
 def _record_payload(camp: Camp) -> dict[str, object]:
     return {
         "record_id": camp.record_id,
@@ -212,11 +321,14 @@ def _record_payload(camp: Camp) -> dict[str, object]:
         "country": camp.country,
         "region": camp.region,
         "city": camp.city,
+        "operator_name": camp.operator_name,
         "venue_name": camp.venue_name,
         "draft_status": camp.draft_status,
         "confidence": camp.confidence,
         "program_family": camp.program_family,
         "camp_types": camp.camp_types,
+        "overnight_confirmed": camp.overnight_confirmed,
+        "active_confirmed": camp.active_confirmed,
         "description_excerpt": _excerpt(camp.description_md),
     }
 
@@ -231,7 +343,17 @@ def _prompt_for_batch(camps: list[Camp]) -> str:
             "record_id": c.record_id,
             "name": c.display_name or c.name,
             "website_url": c.website_url,
-            "description_excerpt": _excerpt(c.description_md, max_chars=400),
+            "country": c.country,
+            "region": c.region,
+            "city": c.city,
+            "operator_name": c.operator_name,
+            "venue_name": c.venue_name,
+            "draft_status": c.draft_status,
+            "program_family": c.program_family,
+            "camp_types": c.camp_types,
+            "overnight_confirmed": c.overnight_confirmed,
+            "active_confirmed": c.active_confirmed,
+            "description_excerpt": _excerpt(c.description_md, max_chars=700),
         }
         for c in camps
     ]
@@ -412,7 +534,7 @@ def _triage_record(config: ClientConfig, camp: Camp) -> dict[str, object]:
     else:
         raise RuntimeError(f"Unsupported provider: {config.provider}")
 
-    result = _extract_json_object(content)
+    result = _apply_triage_guardrails(camp, _extract_json_object(content))
     return {
         "evaluated_at": datetime.now(timezone.utc).isoformat(),
         "provider": config.provider,
@@ -452,6 +574,7 @@ def _triage_batch(config: ClientConfig, camps: list[Camp]) -> list[dict[str, obj
         if not raw:
             print(f"  [batch] model skipped {camp.record_id!r} — will retry next run", file=sys.stderr)
             continue
+        raw = _apply_triage_guardrails(camp, raw)
         results.append({
             "evaluated_at": now,
             "provider": config.provider,

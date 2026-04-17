@@ -61,7 +61,7 @@ with out_path.open("a", encoding="utf-8") as out_f:
 
         # Call LLM outside of DB session
         enrichment = None
-        max_retries = 2
+        max_retries = int(os.environ.get("ENRICH_MAX_RETRIES", "5"))
         for attempt in range(1, max_retries + 1):
             try:
                 enrichment = enrich._enrich_one(config, camp, evidence_text, source_file)
@@ -69,7 +69,7 @@ with out_path.open("a", encoding="utf-8") as out_f:
             except Exception as e:
                 print(f"{rid}: LLM error (attempt {attempt}) — {e}", file=sys.stderr)
                 if attempt < max_retries:
-                    backoff = 2 ** attempt
+                    backoff = min(60, 2 ** attempt)
                     time.sleep(backoff)
                     continue
                 enrichment = None
