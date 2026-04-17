@@ -23,6 +23,7 @@ app = FastAPI(
     title="The Great Camp Crawl – Research UI",
     description="Child-friendly camp research collaboration app",
     version="0.1.0",
+    redirect_slashes=False,
 )
 
 app.add_middleware(
