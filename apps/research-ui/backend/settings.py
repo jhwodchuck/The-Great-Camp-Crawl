@@ -66,8 +66,8 @@ TOKEN_EXPIRE_MINUTES = int(os.environ.get("TOKEN_EXPIRE_MINUTES", "480"))
 RESEARCH_UI_CORS_ORIGINS = [
     origin.strip()
     for origin in os.environ.get(
-        "RESEARCH_UI_CORS_ORIGINS",
-        "http://localhost:3000,http://127.0.0.1:3000",
+            "RESEARCH_UI_CORS_ORIGINS",
+            "http://localhost:3000,http://127.0.0.1:3000,https://the-great-camp-crawl.vercel.app",
     ).split(",")
     if origin.strip()
 ]
