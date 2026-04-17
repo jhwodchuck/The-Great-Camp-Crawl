@@ -13,8 +13,8 @@ export default function NewMissionPage() {
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
 
-  if (!loading && (!user || user.role !== "parent")) {
-    router.push("/dashboard");
+  if (!loading && !user) {
+    router.push("/login");
     return null;
   }
 
@@ -49,7 +49,7 @@ export default function NewMissionPage() {
         <h1 className="text-xl font-bold text-gray-800">Create New Mission</h1>
       </div>
 
-      <div className="bg-white rounded-2xl shadow p-6">
+      <div className="bg-white rounded-2xl shadow p-6 text-gray-900">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Mission Title *</label>
