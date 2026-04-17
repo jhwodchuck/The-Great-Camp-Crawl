@@ -31,7 +31,7 @@ def list_camps(
     db: Session = Depends(get_db),
 ):
     """Paginated list of camps with filtering."""
-    query = db.query(Camp)
+    query = db.query(Camp).filter(Camp.is_excluded.is_not(True))
 
     if country:
         query = query.filter(Camp.country == country.upper())
