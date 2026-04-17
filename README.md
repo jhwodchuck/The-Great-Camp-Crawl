@@ -1,5 +1,9 @@
 # The Great Camp Crawl
 
+<p align="center">
+  <img src="assets/logo.svg" alt="The Great Camp Crawl" width="360" />
+</p>
+
 The Great Camp Crawl is a breadth-first research project for finding, validating, enriching, and browsing **overnight child and teen programs** across the **United States, Canada, and Mexico**.
 
 This repository is designed to support yearly research for one child while still building a reusable multi-year knowledge base.
