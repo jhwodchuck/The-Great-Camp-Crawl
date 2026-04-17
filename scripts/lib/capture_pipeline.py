@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import time
+import re
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
@@ -11,6 +12,20 @@ from markdownify import markdownify as md
 
 from lib.common import USER_AGENT, build_frontmatter_document, compact_whitespace, read_jsonl, sha256_bytes, utc_now_iso
 from lib.url_utils import extract_host, normalize_url, stable_capture_stem
+
+
+_SECRET_PATTERNS: tuple[tuple[re.Pattern[str], str], ...] = (
+    (re.compile(r"AIza[0-9A-Za-z_-]{35}"), "REDACTED_GOOGLE_API_KEY"),
+    (re.compile(r"AKIA[0-9A-Z]{16}"), "REDACTED_AWS_ACCESS_KEY_ID"),
+    (re.compile(r"(X-Amz-Signature=)[0-9a-fA-F]+"), r"\1REDACTED"),
+)
+
+
+def redact_sensitive_tokens(text: str) -> str:
+    redacted = text
+    for pattern, replacement in _SECRET_PATTERNS:
+        redacted = pattern.sub(replacement, redacted)
+    return redacted
 
 
 def fetch_response(
@@ -152,8 +167,8 @@ def capture_urls(
         markdown_path = text_dir / f"{stem}.md"
         try:
             response = fetch_response(session, url, timeout=timeout, retries=retries, backoff_seconds=backoff_seconds)
-            html = response.text
-            checksum = sha256_bytes(response.content)
+            html = redact_sensitive_tokens(response.text)
+            checksum = sha256_bytes(html.encode("utf-8"))
             resolved_url = normalize_url(response.url)
             history = [normalize_url(item.url) for item in response.history]
             body_markdown, metadata = extract_markdown_content(html, response.url)
