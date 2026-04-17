@@ -3,6 +3,17 @@
  *  Always use HTTPS when deploying. */
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
+if (
+  typeof window !== "undefined" &&
+  process.env.NODE_ENV === "production" &&
+  API_BASE.startsWith("http://")
+) {
+  console.warn(
+    "[research-ui] SECURITY WARNING: NEXT_PUBLIC_API_URL is using plain HTTP in production. " +
+    "Set it to an HTTPS URL to protect authentication tokens."
+  );
+}
+
 function getToken(): string | null {
   if (typeof window === "undefined") return null;
   return localStorage.getItem("access_token");
