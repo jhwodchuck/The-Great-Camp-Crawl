@@ -204,3 +204,116 @@ class ExportResult(BaseModel):
     storage_kind: str
     exported_at: datetime
     message: str
+
+
+# ---------------------------------------------------------------------------
+# Camp Catalog
+# ---------------------------------------------------------------------------
+
+
+class CampOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    record_id: str
+    name: str
+    display_name: Optional[str] = None
+    country: Optional[str] = None
+    region: Optional[str] = None
+    city: Optional[str] = None
+    venue_name: Optional[str] = None
+    program_family: Optional[str] = None
+    camp_types: Optional[str] = None
+    website_url: Optional[str] = None
+    ages_min: Optional[int] = None
+    ages_max: Optional[int] = None
+    grades_min: Optional[int] = None
+    grades_max: Optional[int] = None
+    duration_min_days: Optional[int] = None
+    duration_max_days: Optional[int] = None
+    pricing_currency: Optional[str] = None
+    pricing_min: Optional[float] = None
+    pricing_max: Optional[float] = None
+    boarding_included: Optional[bool] = None
+    overnight_confirmed: Optional[bool] = None
+    active_confirmed: Optional[bool] = None
+    confidence: Optional[str] = None
+    operator_name: Optional[str] = None
+    contact_email: Optional[str] = None
+    contact_phone: Optional[str] = None
+    draft_status: Optional[str] = None
+    description_md: Optional[str] = None
+    last_verified: Optional[str] = None
+    source: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class CampListOut(BaseModel):
+    items: list[CampOut]
+    total: int
+    page: int
+    page_size: int
+
+
+class CampStatsOut(BaseModel):
+    total: int
+    by_country: dict[str, int]
+    by_region: dict[str, int]
+    by_program_family: dict[str, int]
+
+
+# ---------------------------------------------------------------------------
+# Favorites
+# ---------------------------------------------------------------------------
+
+
+class FavoriteCreate(BaseModel):
+    camp_id: int
+    notes: Optional[str] = ""
+
+
+class FavoriteUpdate(BaseModel):
+    notes: Optional[str] = None
+
+
+class FavoriteOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    user_id: int
+    camp_id: int
+    notes: Optional[str]
+    created_at: datetime
+    camp: CampOut
+
+
+# ---------------------------------------------------------------------------
+# Scrape
+# ---------------------------------------------------------------------------
+
+
+class ScrapeRequest(BaseModel):
+    url: str
+
+    @field_validator("url")
+    @classmethod
+    def validate_url(cls, v: str) -> str:
+        v = v.strip()
+        if not v.startswith(("http://", "https://")):
+            raise ValueError("URL must start with http:// or https://")
+        if len(v) > 4096:
+            raise ValueError("URL too long")
+        return v
+
+
+class ScrapeResult(BaseModel):
+    url: str
+    title: Optional[str] = None
+    description: Optional[str] = None
+    pricing: Optional[dict] = None
+    ages: Optional[dict] = None
+    duration: Optional[dict] = None
+    contact: Optional[dict] = None
+    overnight_signals: list[str] = []
+    evidence_snippets: list[str] = []

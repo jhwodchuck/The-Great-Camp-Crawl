@@ -156,6 +156,81 @@ export interface ExportResult {
 }
 
 // ---------------------------------------------------------------------------
+// Camp Catalog types
+// ---------------------------------------------------------------------------
+
+export interface Camp {
+  id: number;
+  record_id: string;
+  name: string;
+  display_name: string | null;
+  country: string | null;
+  region: string | null;
+  city: string | null;
+  venue_name: string | null;
+  program_family: string | null;
+  camp_types: string | null;
+  website_url: string | null;
+  ages_min: number | null;
+  ages_max: number | null;
+  grades_min: number | null;
+  grades_max: number | null;
+  duration_min_days: number | null;
+  duration_max_days: number | null;
+  pricing_currency: string | null;
+  pricing_min: number | null;
+  pricing_max: number | null;
+  boarding_included: boolean | null;
+  overnight_confirmed: boolean | null;
+  active_confirmed: boolean | null;
+  confidence: string | null;
+  operator_name: string | null;
+  contact_email: string | null;
+  contact_phone: string | null;
+  draft_status: string | null;
+  description_md: string | null;
+  last_verified: string | null;
+  source: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CampListResponse {
+  items: Camp[];
+  total: number;
+  page: number;
+  page_size: number;
+}
+
+export interface CampStats {
+  total: number;
+  by_country: Record<string, number>;
+  by_region: Record<string, number>;
+  by_program_family: Record<string, number>;
+}
+
+export interface Favorite {
+  id: number;
+  user_id: number;
+  camp_id: number;
+  notes: string | null;
+  created_at: string;
+  camp: Camp;
+}
+
+export interface ScrapeResult {
+  url: string;
+  title: string | null;
+  description: string | null;
+  pricing: { currency?: string; min?: number; max?: number } | null;
+  ages: { min?: number; max?: number; grade_min?: number; grade_max?: number } | null;
+  duration: { min_days?: number; max_days?: number } | null;
+  contact: { email?: string; phone?: string } | null;
+  overnight_signals: string[];
+  evidence_snippets: string[];
+}
+
+// ---------------------------------------------------------------------------
 // Auth endpoints
 // ---------------------------------------------------------------------------
 
@@ -298,6 +373,72 @@ export const api = {
     },
     promote(contributionId: number): Promise<ExportResult> {
       return request(`/api/export/${contributionId}`, { method: "POST" });
+    },
+  },
+
+  camps: {
+    list(params?: {
+      page?: number;
+      page_size?: number;
+      country?: string;
+      region?: string;
+      program_family?: string;
+      camp_type?: string;
+      ages_min?: number;
+      ages_max?: number;
+      price_max?: number;
+      overnight?: boolean;
+      q?: string;
+    }): Promise<CampListResponse> {
+      const qs = new URLSearchParams();
+      if (params?.page) qs.set("page", String(params.page));
+      if (params?.page_size) qs.set("page_size", String(params.page_size));
+      if (params?.country) qs.set("country", params.country);
+      if (params?.region) qs.set("region", params.region);
+      if (params?.program_family) qs.set("program_family", params.program_family);
+      if (params?.camp_type) qs.set("camp_type", params.camp_type);
+      if (params?.ages_min) qs.set("ages_min", String(params.ages_min));
+      if (params?.ages_max) qs.set("ages_max", String(params.ages_max));
+      if (params?.price_max) qs.set("price_max", String(params.price_max));
+      if (params?.overnight !== undefined) qs.set("overnight", String(params.overnight));
+      if (params?.q) qs.set("q", params.q);
+      return request(`/api/camps/?${qs}`, {}, true);
+    },
+    get(recordId: string): Promise<Camp> {
+      return request(`/api/camps/${encodeURIComponent(recordId)}`, {}, true);
+    },
+    stats(): Promise<CampStats> {
+      return request("/api/camps/stats", {}, true);
+    },
+  },
+
+  favorites: {
+    list(): Promise<Favorite[]> {
+      return request("/api/favorites/");
+    },
+    add(campId: number, notes?: string): Promise<Favorite> {
+      return request("/api/favorites/", {
+        method: "POST",
+        body: JSON.stringify({ camp_id: campId, notes: notes ?? "" }),
+      });
+    },
+    update(campId: number, notes: string): Promise<Favorite> {
+      return request(`/api/favorites/${campId}`, {
+        method: "PATCH",
+        body: JSON.stringify({ notes }),
+      });
+    },
+    remove(campId: number): Promise<void> {
+      return request(`/api/favorites/${campId}`, { method: "DELETE" });
+    },
+  },
+
+  scrape: {
+    extract(url: string): Promise<ScrapeResult> {
+      return request("/api/scrape/", {
+        method: "POST",
+        body: JSON.stringify({ url }),
+      });
     },
   },
 };

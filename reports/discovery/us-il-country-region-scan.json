@@ -6,106 +6,115 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"Illinois\""
+    "\"overnight summer camp\" Illinois",
+    "\"residential summer camp\" Illinois",
+    "\"family camp\" Illinois",
+    "\"youth retreat\" Illinois overnight",
+    "site:.edu \"Illinois\" \"pre-college\" residential"
   ],
   "next_queries": [],
   "candidates": [
     {
-      "candidate_name": "Camp Shaw-waw-nas-see",
+      "candidate_name": "Camp Chi",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Shaw-waw-nas-see",
-      "city": "Manteno",
+      "operator_name": "JCC Chicago",
+      "venue_name": "Camp Chi, Lake Delton, WI (serves Illinois)",
+      "city": null,
       "region": "IL",
       "country": "US",
-      "canonical_url": "https://campshaw.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://campchi.com/",
+      "supporting_urls": ["https://campchi.com/"] ,
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
-      "candidate_shape": "single_venue_candidate",
+      "program_family_tags": ["traditional overnight", "specialty", "Jewish"],
+      "camp_type_tags": ["overnight", "outdoor", "arts", "sports"],
+      "candidate_shape": "multi_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "summer sessions",
+      "duration_hint_text": "1-8 week sessions",
       "overnight_evidence": {
-        "snippet": "mix of traditional camp activities... overnight summer camps",
-        "url": "https://campshaw.org/"
+        "snippet": "Campers live on site in cabins for sessions of 1 week or more.",
+        "url": "https://campchi.com/overnight-camps/bunks/"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
+        "snippet": "2025 dates now open",
+        "url": "https://campchi.com/",
+        "date_text": "2025"
       },
-      "notes": "Over 75 years of history.",
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Camp Ondessonk",
+      "candidate_name": "Illinois 4-H Memorial Camp",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Ondessonk",
-      "city": "Ozark",
+      "operator_name": "University of Illinois Extension",
+      "venue_name": "4-H Memorial Camp",
+      "city": "Monticello",
       "region": "IL",
       "country": "US",
-      "canonical_url": "https://ondessonk.com/",
-      "supporting_urls": [],
+      "canonical_url": "https://4h.extension.illinois.edu/programs/camping/4-h-memorial-camp",
+      "supporting_urls": [
+        "https://4h.extension.illinois.edu/programs/camping/4-h-memorial-camp"
+      ],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "adventure", "equestrian"],
+      "program_family_tags": ["traditional overnight"],
+      "camp_type_tags": ["overnight", "youth"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "weekly sessions",
+      "duration_hint_text": "5-7 day sessions",
       "overnight_evidence": {
-        "snippet": "immersive outdoor experience... overnight summer camp",
-        "url": "https://ondessonk.com/"
+        "snippet": "Campers sleep in cabins for overnight programs.",
+        "url": "https://4h.extension.illinois.edu/programs/camping/4-h-memorial-camp"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
+        "snippet": "Summer 2025 sessions open for registration.",
+        "url": "https://4h.extension.illinois.edu/programs/camping/4-h-memorial-camp",
+        "date_text": "2025"
       },
-      "notes": "Located in the Shawnee National Forest.",
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Camp Kupugani",
+      "candidate_name": "Northwestern CTD Summer Program",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Kupugani",
-      "city": "Leaf River",
+      "operator_name": "Northwestern University Center for Talent Development",
+      "venue_name": "Northwestern University Evanston Campus",
+      "city": "Evanston",
       "region": "IL",
       "country": "US",
-      "canonical_url": "https://campkupugani.com/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.ctd.northwestern.edu/summer/",
+      "supporting_urls": [
+        "https://www.ctd.northwestern.edu/summer/",
+        "https://www.ctd.northwestern.edu/summer-programs/academic-camps"
+      ],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["multicultural", "traditional"],
+      "program_family_tags": ["college-precollege", "STEM", "academic"],
+      "camp_type_tags": ["overnight", "residential", "precollege"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": false,
+        "likely_college_precollege": true,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "multi-day",
+      "duration_hint_text": "2-3 week sessions",
       "overnight_evidence": {
-        "snippet": "multicultural summer camp near Chicago",
-        "url": "https://campkupugani.com/"
+        "snippet": "Residential option available in university housing.",
+        "url": "https://www.ctd.northwestern.edu/summer-programs/academic-camps"
       },
       "recent_activity_evidence": {
-        "snippet": "Active operations",
-        "url": null,
-        "date_text": "2026"
+        "snippet": "Applications open for Summer 2025.",
+        "url": "https://www.ctd.northwestern.edu/summer/",
+        "date_text": "2025"
       },
-      "notes": "Focuses on empowering campers through diversity.",
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     }

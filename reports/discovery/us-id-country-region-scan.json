@@ -6,108 +6,85 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"Idaho\""
+    "overnight summer camp Idaho",
+    "residential summer camp Idaho",
+    "family camp Idaho",
+    "youth retreat Idaho overnight",
+    "site:.edu Idaho pre-college residential"
   ],
-  "next_queries": [],
+  "next_queries": [
+    "idaho faith-based overnight camps",
+    "idaho sports overnight camps",
+    "idaho university pre-college residential camps"
+  ],
   "candidates": [
     {
-      "candidate_name": "YMCA Camp at Horsethief Reservoir",
+      "candidate_name": "Camp Perkins Lutheran Outdoor Ministries",
       "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Horsethief Reservoir",
-      "city": "Cascade",
+      "operator_name": "Camp Perkins Lutheran Outdoor Ministries",
+      "venue_name": "Camp Perkins",
+      "city": "Stanley",
       "region": "ID",
       "country": "US",
-      "canonical_url": "https://ymcatvidaho.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.campperkins.org/",
+      "supporting_urls": [
+        "https://www.campperkins.org/youth-camps.html"
+      ],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
+      "program_family_tags": ["faith-based", "overnight", "youth", "specialty", "family"],
+      "camp_type_tags": ["traditional", "specialty", "adventure", "arts", "STEM"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "Sunday to Friday",
+      "duration_hint_text": "Most sessions last 5-6 days; mini camps for grades 3-4 last 2 nights.",
       "overnight_evidence": {
-        "snippet": "Offers traditional overnight summer camp programs (typically Sunday to Friday)",
-        "url": "https://ymcatvidaho.org/"
+        "snippet": "Campers stay in our one-room, bunk-style cabins with other youth their age and well-trained staff to guide them through adventures.",
+        "url": "https://www.campperkins.org/youth-camps.html"
       },
       "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
+        "snippet": "2026 Youth Camp REGISTRATION OPENS AT 12pm on January 15!",
+        "url": "https://www.campperkins.org/youth-camps.html",
         "date_text": "2026"
       },
-      "notes": "Focusing on outdoor skills, character building.",
+      "notes": "Faith-based camp; wide range of sessions for grades 3-12 plus family and specialty camps.",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Twinlow Camp and Retreat Center",
+      "candidate_name": "Farragut State Park (Group Camps, Hosted Youth Retreats)",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Twinlow Camp",
-      "city": "Rathdrum",
+      "operator_name": "Idaho Department of Parks and Recreation",
+      "venue_name": "Farragut State Park",
+      "city": "Athol",
       "region": "ID",
       "country": "US",
-      "canonical_url": "https://twinlow.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://parksandrecreation.idaho.gov/state-park/farragut-state-park/",
+      "supporting_urls": ["https://parksandrecreation.idaho.gov/state-park/farragut-state-park/"],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
-      "camp_type_tags": ["christian", "traditional"],
-      "candidate_shape": "single_venue_candidate",
+      "program_family_tags": ["overnight", "group_camps", "retreats"],
+      "camp_type_tags": ["multi-venue", "outdoors", "group"],
+      "candidate_shape": "multi_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
       },
-      "duration_hint_text": "multi-day",
+      "duration_hint_text": "Group camps, cabins, and use areas available for week-long and shorter periods; hosts many external youth programs and retreats.",
       "overnight_evidence": {
-        "snippet": "offers overnight programs for children... Christian values",
-        "url": "https://twinlow.org/"
+        "snippet": "Farragut State Park offers group camps, 10 camping cabins, large group use areas, and multiple overnight facilities. Regular host site for large organized youth camps (e.g., 4-H Horse Camp)",
+        "url": "https://parksandrecreation.idaho.gov/state-park/farragut-state-park/"
       },
       "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
+        "snippet": "June 24-28, 2026: Equus Echoes 4H Horse camp. The equestrian campsites will be closed. The equestrian arena will be closed June 25th – 27th.",
+        "url": "https://parksandrecreation.idaho.gov/state-park/farragut-state-park/",
         "date_text": "2026"
       },
-      "notes": "1st through 12th grade.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Paradise Point Camp",
-      "translated_name_hint": null,
-      "operator_name": "Episcopal Diocese of Idaho",
-      "venue_name": "Paradise Point Camp",
-      "city": "McCall",
-      "region": "ID",
-      "country": "US",
-      "canonical_url": "https://paradisepointcamp.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["episcopal", "traditional"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-day",
-      "overnight_evidence": {
-        "snippet": "rustic camp situated on a peninsula... offers overnight programs",
-        "url": "https://paradisepointcamp.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Ages 7-17.",
-      "validation_needs": [],
-      "confidence": "high"
+      "notes": "Venue is a state park and multi-venue host for overnight youth programs, not an operator of its own youth camp. Venue is active for 2026.",
+      "validation_needs": ["venue_unconfirmed: operator and session details for each external youth camp to be resolved in followup scans"],
+      "confidence": "medium"
     }
   ]
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth";
 
@@ -9,7 +10,7 @@ export default function NavBar() {
   return (
     <nav className="bg-blue-600 text-white px-6 py-3 flex items-center gap-6 shadow-md">
       <Link href="/dashboard" className="flex items-center gap-3 hover:opacity-95">
-        <img src="/logo.svg" alt="The Great Camp Crawl" className="h-8 w-auto" />
+        <Image src="/logo.svg" alt="The Great Camp Crawl" width={128} height={32} className="h-8 w-auto" />
         <span className="sr-only">The Great Camp Crawl</span>
       </Link>
 

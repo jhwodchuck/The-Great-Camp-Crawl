@@ -6,337 +6,84 @@
     "city": null
   },
   "queries_used": [
-    "\"summer camps in Minnesota overnight sleepaway\""
+    "YMCA Camp Warren official site overnight confirmation",
+    "Concordia Language Villages official site overnight camps"
   ],
-  "next_queries": [],
+  "next_queries": [
+    "Retry Camp Lincoln/Camp Lake Hubert for overnight evidence on latest official site",
+    "Retry Audubon Center of the North Woods for overnight youth programs evidence",
+    "Check University of Minnesota precollege page for residential program confirmation"
+  ],
   "candidates": [
     {
-      "candidate_name": "Camp Thunderbird",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Thunderbird",
-      "city": "Bemidji",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://camptbird.com/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "co-ed"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "separate camps for boys and girls with a tradition dating back to 1946",
-        "url": "https://camptbird.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Lake Plantagenet.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Foley",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Foley",
-      "city": "Pine River",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://campfoley.com/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "tech-free"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "coed sleepaway camp located on Whitefish Lake",
-        "url": "https://campfoley.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Sailing, archery, tech-free.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Pillsbury",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Pillsbury",
-      "city": "Owatonna",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://camppillsbury.com/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["arts-camps", "traditional-overnight-camps"],
-      "camp_type_tags": ["arts", "co-ed"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "coed camp for ages 6-17 that allows campers to design their own schedules",
-        "url": "https://camppillsbury.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Circus arts, theater.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Mishawaka",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Mishawaka",
-      "city": "Grand Rapids",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://campmishawaka.com/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "co-ed"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "2- to 8-week",
-      "overnight_evidence": {
-        "snippet": "traditional coed camp offering 2- to 8-week sessions",
-        "url": "https://campmishawaka.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Ages 8-16.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Birchwood",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Birchwood",
-      "city": "Laporte",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://campbirchwood.com/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "girls"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "family-owned, all-girls camp established in 1939",
-        "url": "https://campbirchwood.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Social-emotional development.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Tamahay",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Tamahay",
-      "city": "Akeley",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": null,
-      "supporting_urls": ["https://sleepawayz.com/"],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "girls"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "small, privately owned girls' camp... sleepaway",
-        "url": null
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Ages 7-16.",
-      "validation_needs": ["find canonical url"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Clearwater Forest Camp",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Clearwater Forest",
-      "city": "Deerwood",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://clearwaterforest.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
-      "camp_type_tags": ["christian", "traditional"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-day",
-      "overnight_evidence": {
-        "snippet": "Christian camp and retreat center... summer programs",
-        "url": "https://clearwaterforest.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Focus on faith, nature, community.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "YMCA Camp Ihduhapi",
+      "candidate_name": "YMCA Camp Warren",
       "translated_name_hint": null,
       "operator_name": "YMCA of the North",
-      "venue_name": "Camp Ihduhapi",
-      "city": "Loretto",
+      "venue_name": "Camp Warren",
+      "city": "Eveleth",
       "region": "MN",
       "country": "US",
-      "canonical_url": "https://www.ymcanorth.org/locations/camp_ihduhapi",
-      "supporting_urls": [],
+      "canonical_url": "https://www.ymcanorth.org/camps/camp_warren",
+      "supporting_urls": [
+        "https://www.ymcanorth.org/adventure/locations/camp_warren/register",
+        "https://www.ymcanorth.org/adventure/expectations/overnight_camp"
+      ],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
+      "program_family_tags": ["traditional", "overnight", "YMCA"],
+      "camp_type_tags": ["single-gender", "nature", "summer-camp"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "weekly",
+      "duration_hint_text": "Safe and structured sleepaway experiences; sessions typically 1+ weeks.",
       "overnight_evidence": {
-        "snippet": "YMCA overnight camp",
-        "url": "https://www.ymcanorth.org/locations/camp_ihduhapi"
+        "snippet": "Safe and structured sleepaway experiences that encourage kids to try new things while building confidence.",
+        "url": "https://www.ymcanorth.org/adventure/expectations/overnight_camp"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
+        "snippet": "2026 registration is now open!",
+        "url": "https://www.ymcanorth.org/camps/camp_warren",
         "date_text": "2026"
       },
-      "notes": "Classic YMCA resident camp.",
+      "notes": "Gender-affinity summer programs; family camp sessions also available.",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "YMCA Camp du Nord",
+      "candidate_name": "Concordia Language Villages",
       "translated_name_hint": null,
-      "operator_name": "YMCA of the North",
-      "venue_name": "Camp du Nord",
-      "city": "Ely",
+      "operator_name": "Concordia College",
+      "venue_name": "Concordia Language Villages",
+      "city": null,
       "region": "MN",
       "country": "US",
-      "canonical_url": "https://www.ymcanorth.org/locations/camp_du_nord",
-      "supporting_urls": [],
+      "canonical_url": "https://www.concordialanguagevillages.org/",
+      "supporting_urls": [
+        "https://www.concordialanguagevillages.org/summer-youth-camps/youth-overnight",
+        "https://www.concordialanguagevillages.org/dates-rates"
+      ],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["family-camps", "traditional-overnight-camps"],
-      "camp_type_tags": ["family", "traditional"],
-      "candidate_shape": "single_venue_candidate",
+      "program_family_tags": ["language-immersion", "overnight", "academic"],
+      "camp_type_tags": ["multi-language", "nature", "residential", "precollege"],
+      "candidate_shape": "multi_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": false,
+        "likely_college_precollege": true,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "weekly",
+      "duration_hint_text": "Youth Overnight: 1, 2, and 4 week summer programs.",
       "overnight_evidence": {
-        "snippet": "family and youth overnight camp in Ely",
-        "url": "https://www.ymcanorth.org/"
+        "snippet": "Our flagship Language Village camps where language comes to life. A fully immersive cultural experience.",
+        "url": "https://www.concordialanguagevillages.org/summer-youth-camps/youth-overnight"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
+        "snippet": "2023 Concordia Language Villages | Minnesota, USA | 800.222.4750",
+        "url": "https://www.concordialanguagevillages.org/",
+        "date_text": "2023"
       },
-      "notes": "Located near the Boundary Waters.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "YMCA Camp Widjiwagan",
-      "translated_name_hint": null,
-      "operator_name": "YMCA of the North",
-      "venue_name": "Camp Widjiwagan",
-      "city": "Ely",
-      "region": "MN",
-      "country": "US",
-      "canonical_url": "https://www.ymcanorth.org/locations/camp_widjiwagan",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["wilderness", "canoe"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "canoe and backpacking teen wilderness camp",
-        "url": "https://www.ymcanorth.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Wilderness immersion trips.",
+      "notes": "ACA-accredited, multiple languages, also offers adult and family sessions.",
       "validation_needs": [],
       "confidence": "high"
     }

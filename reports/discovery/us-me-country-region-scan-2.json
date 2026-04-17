@@ -1,0 +1,163 @@
+{
+  "scan_type": "country_region",
+  "scope": {
+    "country": "US",
+    "region": "ME",
+    "city": null
+  },
+  "queries_used": [
+    "maine overnight summer camps",
+    "maine residential youth camps",
+    "maine boarding summer programs site:mainecamps.org"
+  ],
+  "next_queries": [],
+  "candidates": [
+    {
+      "candidate_name": "Acadia Institute of Oceanography",
+      "translated_name_hint": null,
+      "operator_name": "Acadia Institute of Oceanography",
+      "venue_name": "Acadia Institute of Oceanography",
+      "city": "Seal Harbor",
+      "region": "ME",
+      "country": "US",
+      "program_url": "http://www.acadiainstitute.com/",
+      "contact_url": "http://www.acadiainstitute.com/contact_us.html",
+      "info_url": "https://mainecamps.org/camps/acadia-institute-of-oceanography/",
+      "evidence_snippets": [
+        {
+          "text": "AIO offers overnight summer camp programs for youth aged 10-18, focused on oceanography.",
+          "url": "http://www.acadiainstitute.com/summer-camps.html"
+        }
+      ],
+      "overnight_qualifies": true,
+      "overnight_evidence_snippet": {
+        "text": "All participants live in residence halls on the campus for the duration of their program.",
+        "url": "http://www.acadiainstitute.com/summer-camps.html"
+      },
+      "recency_evidence_snippet": {
+        "text": "Now enrolling for Summer 2026 programs.",
+        "url": "http://www.acadiainstitute.com/summer-camps.html"
+      },
+      "sessions_or_terms": [
+        "Introductory, Intermediate, Advanced sessions, each 1-2 weeks"
+      ],
+      "duration_guess": "1-2 weeks",
+      "min_age_guess": 10,
+      "max_age_guess": 18,
+      "record_basis": "site and directory evidence",
+      "validation_needs": null,
+      "priority_flags": null
+    },
+    {
+      "candidate_name": "Agassiz Village",
+      "translated_name_hint": null,
+      "operator_name": "Agassiz Village",
+      "venue_name": "Agassiz Village",
+      "city": "Poland",
+      "region": "ME",
+      "country": "US",
+      "program_url": "http://www.agassizvillage.org/",
+      "contact_url": "http://www.agassizvillage.org/contact",
+      "info_url": "https://mainecamps.org/camps/agassiz-village/",
+      "evidence_snippets": [
+        {
+          "text": "Agassiz Village is a residential summer camp program for children ages 8-17.",
+          "url": "http://www.agassizvillage.org/summer-camp/"
+        }
+      ],
+      "overnight_qualifies": true,
+      "overnight_evidence_snippet": {
+        "text": "Campers reside in cabins with 8-12 peers and counselors.",
+        "url": "http://www.agassizvillage.org/summer-camp/"
+      },
+      "recency_evidence_snippet": {
+        "text": "Registration open for 2026 summer sessions!",
+        "url": "http://www.agassizvillage.org/summer-camp/"
+      },
+      "sessions_or_terms": [
+        "2-week traditional program",
+        "teen leadership program, multi-week"
+      ],
+      "duration_guess": "2 weeks or more",
+      "min_age_guess": 8,
+      "max_age_guess": 17,
+      "record_basis": "site and directory evidence",
+      "validation_needs": null,
+      "priority_flags": null
+    },
+    {
+      "candidate_name": "Camp Agawam",
+      "translated_name_hint": null,
+      "operator_name": "Camp Agawam",
+      "venue_name": "Camp Agawam",
+      "city": "Raymond",
+      "region": "ME",
+      "country": "US",
+      "program_url": "http://www.campagawam.org/",
+      "contact_url": "http://www.campagawam.org/contact.html",
+      "info_url": "https://mainecamps.org/camps/camp-agawam/",
+      "evidence_snippets": [
+        {
+          "text": "Agawam is a traditional summer overnight camp for boys age 8-15, running 7-week and 2-week programs.",
+          "url": "http://www.campagawam.org/programs.html"
+        }
+      ],
+      "overnight_qualifies": true,
+      "overnight_evidence_snippet": {
+        "text": "Campers live in cabins by the lake and remain overnight for the full program.",
+        "url": "http://www.campagawam.org/programs.html"
+      },
+      "recency_evidence_snippet": {
+        "text": "Accepting registration for summer 2026.",
+        "url": "http://www.campagawam.org/programs.html"
+      },
+      "sessions_or_terms": [
+        "7-week main camp",
+        "A session: 2 weeks"
+      ],
+      "duration_guess": "2+ to 7 weeks",
+      "min_age_guess": 8,
+      "max_age_guess": 15,
+      "record_basis": "site evidence",
+      "validation_needs": null,
+      "priority_flags": null
+    },
+    {
+      "candidate_name": "Alford Lake Camp",
+      "translated_name_hint": null,
+      "operator_name": "Alford Lake Camp",
+      "venue_name": "Alford Lake Camp",
+      "city": "Hope",
+      "region": "ME",
+      "country": "US",
+      "program_url": "http://www.alfordlakecamp.com/",
+      "contact_url": "http://www.alfordlakecamp.com/contact/",
+      "info_url": "https://mainecamps.org/camps/alford-lake-camp/",
+      "evidence_snippets": [
+        {
+          "text": "Alford Lake Camp is a residential summer camp for girls ages 8-16, operating since 1907.",
+          "url": "http://www.alfordlakecamp.com/program/overview/"
+        }
+      ],
+      "overnight_qualifies": true,
+      "overnight_evidence_snippet": {
+        "text": "Campers sleep in tents or cabins at Alford Lake Camp for their full session.",
+        "url": "http://www.alfordlakecamp.com/program/overview/"
+      },
+      "recency_evidence_snippet": {
+        "text": "Registration for summer 2026 is available.",
+        "url": "http://www.alfordlakecamp.com/program/overview/"
+      },
+      "sessions_or_terms": [
+        "5.5 week session",
+        "Junior 3-week session"
+      ],
+      "duration_guess": "3 to 5.5 weeks",
+      "min_age_guess": 8,
+      "max_age_guess": 16,
+      "record_basis": "site and directory evidence",
+      "validation_needs": null,
+      "priority_flags": null
+    }
+  ]
+}

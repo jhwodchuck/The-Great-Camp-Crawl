@@ -6,106 +6,109 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"Iowa\""
+    "Iowa 4-H Camping official site",
+    "Ingham Okoboji Lutheran Bible Camps official site"
   ],
-  "next_queries": [],
+  "next_queries": [
+    "Retry direct access to ACA Iowa listing, YMCA Iowa Camps, LOMIK Camps, and University of Iowa pre-college programs once connectivity is restored."
+  ],
   "candidates": [
     {
-      "candidate_name": "YMCA Camp Wapsie",
+      "candidate_name": "Iowa 4-H Camping",
       "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Camp Wapsie",
-      "city": "Coggon",
+      "operator_name": "Iowa State University Extension and Outreach 4-H Youth Development",
+      "venue_name": null,
+      "city": null,
       "region": "IA",
       "country": "US",
-      "canonical_url": "https://crmetroymca.org/camp-wapsie/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.extension.iastate.edu/4h/camping",
+      "supporting_urls": ["https://www.extension.iastate.edu/4h/camping"],
       "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
-      "candidate_shape": "single_venue_candidate",
+      "source_language": "english",
+      "program_family_tags": ["traditional overnight camp"],
+      "camp_type_tags": ["overnight", "resident"],
+      "candidate_shape": "venue_unconfirmed",
       "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
       },
-      "duration_hint_text": "one-week sessions",
+      "duration_hint_text": "Resident camps where kids stay overnight in cabins, tents, or under the stars. Day camps also available.",
       "overnight_evidence": {
-        "snippet": "traditional overnight programs on 182 acres",
-        "url": "https://crmetroymca.org/"
+        "snippet": "Resident camps where kids stay overnight in cabins, tents, or under the stars.",
+        "url": "https://www.extension.iastate.edu/4h/camping"
       },
       "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
-        "date_text": "2026"
+        "snippet": "Copyright © 1995-2025 Iowa State University of Science and Technology.",
+        "url": "https://www.extension.iastate.edu/4h/camping",
+        "date_text": "2025"
       },
-      "notes": "Activities like canoeing, climbing towers, swimming.",
-      "validation_needs": ["check canonical url accuracy"],
+      "notes": "Statewide 4-H youth development program with both day and residential camp options across Iowa.",
+      "validation_needs": ["Confirm specific venues in future investigations"],
       "confidence": "high"
     },
     {
-      "candidate_name": "Des Moines Y Camp",
+      "candidate_name": "Ingham Okoboji Lutheran Bible Camps",
       "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Y Camp",
-      "city": "Boone",
+      "operator_name": "Lutheran Lakeside Ministries",
+      "venue_name": "Okoboji Lutheran Bible Camp",
+      "city": "Milford",
       "region": "IA",
       "country": "US",
-      "canonical_url": "https://dmymca.org/y-camp",
-      "supporting_urls": [],
+      "canonical_url": "https://www.okoboji.org/okoboji",
+      "supporting_urls": ["https://www.okoboji.org/okoboji", "https://www.okoboji.org/youth", "https://www.okoboji.org/familycamp"],
       "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
+      "source_language": "english",
+      "program_family_tags": ["faith-based camp", "family camp", "youth camp"],
+      "camp_type_tags": ["overnight","residential"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
       },
-      "duration_hint_text": "weekly sessions",
+      "duration_hint_text": "Youth and family summer camps, residential retreats, and year-round programming.",
       "overnight_evidence": {
-        "snippet": "provides traditional overnight camp programs",
-        "url": "https://dmymca.org/"
+        "snippet": "Family Camps, Youth Camps, and Recharges include overnight stays at camp lodges.",
+        "url": "https://www.okoboji.org/programs"
       },
       "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
+        "snippet": "Upcoming events in April-June 2026 posted on main site.",
+        "url": "https://www.okoboji.org/",
         "date_text": "2026"
       },
-      "notes": "Situated along the Des Moines River.",
+      "notes": "Okoboji is one of two sites, both offering residential summer and year-round programming for youth and families.",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Camp Wakonda",
+      "candidate_name": "Ingham Okoboji Lutheran Bible Camps",
       "translated_name_hint": null,
-      "operator_name": "Scouting America (Hawkeye Area Council)",
-      "venue_name": "Camp Wakonda",
-      "city": "Central City",
+      "operator_name": "Lutheran Lakeside Ministries",
+      "venue_name": "Ingham Lake Bible Camp",
+      "city": "Wallingford",
       "region": "IA",
       "country": "US",
-      "canonical_url": "https://hawkeyescouting.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.okoboji.org/ingham",
+      "supporting_urls": ["https://www.okoboji.org/ingham", "https://www.okoboji.org/youth", "https://www.okoboji.org/familycamp"],
       "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["scouts", "traditional"],
+      "source_language": "english",
+      "program_family_tags": ["faith-based camp", "family camp", "youth camp"],
+      "camp_type_tags": ["overnight","residential"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
       },
-      "duration_hint_text": "6-day/5-night program",
+      "duration_hint_text": "Youth and family summer camps, residential retreats, and year-round programming.",
       "overnight_evidence": {
-        "snippet": "offers a 6-day/5-night program for youth",
-        "url": "https://hawkeyescouting.org/"
+        "snippet": "Family Camps, Youth Camps, and Recharges include overnight stays at camp lodges.",
+        "url": "https://www.okoboji.org/programs"
       },
       "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
+        "snippet": "Upcoming events in April-June 2026 posted on main site.",
+        "url": "https://www.okoboji.org/",
         "date_text": "2026"
       },
-      "notes": "Youth entering 2nd through 8th grades.",
+      "notes": "Ingham is the second site of the Okoboji Lutheran Bible Camp network, also offering residential options.",
       "validation_needs": [],
       "confidence": "high"
     }

@@ -6,413 +6,675 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"Colorado\"",
-    "\"University of Colorado Boulder\" pre-college summer residential",
-    "\"Colorado State University\" pre-college residential",
-    "\"youth retreat\" \"Colorado\" overnight"
+    "overnight summer camp Colorado",
+    "residential summer camp Colorado",
+    "family camp Colorado overnight",
+    "youth retreat Colorado overnight",
+    "Colorado pre-college residential program university"
   ],
   "next_queries": [
-    "\"special needs overnight camp\" Colorado",
-    "\"family camp\" Colorado summer",
-    "\"University of Denver\" pre-college residential",
-    "\"Colorado College\" summer residential program"
+    "site:.edu Colorado pre-college residential 2025 2026"
   ],
   "candidates": [
     {
-      "candidate_name": "Camp Granite Lake",
+      "candidate_name": "Cheley Colorado Camps",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": null,
-      "city": "Golden",
+      "operator_name": "Cheley Colorado Camps",
+      "venue_name": "Cheley Colorado Camps",
+      "city": "Estes Park",
       "region": "CO",
       "country": "US",
-      "canonical_url": "https://campgranitelake.com/",
+      "canonical_url": "https://www.cheley.com/",
       "supporting_urls": [],
-      "directory_source_url": "https://colorado-summer-camps.com",
+      "directory_source_url": null,
       "source_language": "en",
       "program_family_tags": ["traditional_overnight_camp"],
-      "camp_type_tags": ["traditional", "adventure"],
+      "camp_type_tags": ["sleepaway", "residential"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "Multi-week sessions",
+      "duration_hint_text": "27-day program",
       "overnight_evidence": {
-        "snippet": "classic sleepaway experience with rustic cabins",
-        "url": "https://campgranitelake.com/"
+        "snippet": "Our 27-day sleepaway camp program is divided into eight distinct units... Each unit, comprising 57 to 70 campers and supported by 13 to 16 staff members, has its own well-maintained lodge, boathouse, and living spaces.",
+        "url": "https://www.cheley.com/"
       },
       "recent_activity_evidence": {
-        "snippet": "Active summer camp operations",
-        "url": "https://campgranitelake.com/",
-        "date_text": "2025"
+        "snippet": "Enrollment for 2026 is Open!",
+        "url": "https://www.cheley.com/",
+        "date_text": "2026"
       },
-      "notes": "Offers traditional camp experience near Denver.",
-      "validation_needs": ["Verify precise dates for 2025", "Verify exact venue address"],
+      "notes": "Established 1921, family-owned and operated. Ages 9-17. Located in Estes Park at gateway to Rocky Mountain National Park. 1,400-acre campus.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Granite Lake",
+      "translated_name_hint": null,
+      "operator_name": "Camp Granite Lake",
+      "venue_name": "Camp Granite Lake",
+      "city": "Golden",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.campgranitelake.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "19-night traditional sessions; 5-night mini-camps",
+      "overnight_evidence": {
+        "snippet": "We offer 19-night Traditional sessions for campers entering 3rd – 11th grades in Fall 2026, or 5-night introduction Mini-Camps for campers entering 2nd-5th grade in Fall 2026.",
+        "url": "https://www.campgranitelake.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Countdown to Summer 2026!",
+        "url": "https://www.campgranitelake.com/",
+        "date_text": "2026"
+      },
+      "notes": "Family-owned, co-ed sleepaway camp at 9,000 feet in the foothills of the Rocky Mountains. One hour from Denver. 135 acres with private 8-acre lake.",
+      "validation_needs": [],
       "confidence": "high"
     },
     {
       "candidate_name": "Camp Santa Maria",
       "translated_name_hint": null,
-      "operator_name": "YMCA of Northern Colorado",
-      "venue_name": null,
+      "operator_name": "Camp Santa Maria",
+      "venue_name": "Camp Santa Maria",
       "city": "Grant",
       "region": "CO",
       "country": "US",
-      "canonical_url": "https://www.ymcanoco.org/camp-santa-maria",
+      "canonical_url": "https://campsantamaria.org/",
       "supporting_urls": [],
       "directory_source_url": null,
       "source_language": "en",
       "program_family_tags": ["traditional_overnight_camp"],
-      "camp_type_tags": ["traditional", "ymca"],
+      "camp_type_tags": ["sleepaway", "residential"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "One to two week sessions",
+      "duration_hint_text": "summer camp sessions",
       "overnight_evidence": {
-        "snippet": "classic sleepaway experience in the Rocky Mountains",
-        "url": "https://www.ymcanoco.org/camp-santa-maria"
+        "snippet": "Traditional Overnight Summer Camp. Nestled in the breathtaking wilderness of the Platte Canyon.",
+        "url": "https://campsantamaria.org/"
       },
       "recent_activity_evidence": {
-        "snippet": "Running summer sessions actively",
-        "url": "https://www.ymcanoco.org/camp-santa-maria",
-        "date_text": "2025"
+        "snippet": "Camp Santa Maria is more than just a destination - it is a community designed with a singular purpose: to help young people discover the best versions of themselves.",
+        "url": "https://campsantamaria.org/",
+        "date_text": "2026"
       },
-      "notes": "Classic overnight YMCA camp.",
-      "validation_needs": ["Confirm 2025/2026 rates and schedules"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "CU Boulder Precollegiate Development Program",
-      "translated_name_hint": null,
-      "operator_name": "University of Colorado Boulder",
-      "venue_name": "CU Boulder Campus",
-      "city": "Boulder",
-      "region": "CO",
-      "country": "US",
-      "canonical_url": "https://www.colorado.edu/precollege/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["college_precollege"],
-      "camp_type_tags": ["academic"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": true,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "five-week summer residential program",
-      "overnight_evidence": {
-        "snippet": "five-week summer residential program on the CU Boulder campus before their senior year",
-        "url": "https://www.colorado.edu/precollege/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active recruitment for high school academic enhancement",
-        "url": "https://www.colorado.edu/precollege/",
-        "date_text": "2025"
-      },
-      "notes": "Targets first-generation students from specific counties.",
-      "validation_needs": ["Confirm funding/housing models for 2025"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "CU Boulder Summer Bridge Scholars Program",
-      "translated_name_hint": null,
-      "operator_name": "University of Colorado Boulder",
-      "venue_name": "CU Boulder Campus",
-      "city": "Boulder",
-      "region": "CO",
-      "country": "US",
-      "canonical_url": "https://www.colorado.edu/summerbridge/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["college_precollege"],
-      "camp_type_tags": ["academic", "transition"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": true,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "four-week academic and residential experience",
-      "overnight_evidence": {
-        "snippet": "four-week academic and residential experience ... offering college credit, housing, and meals",
-        "url": "https://www.colorado.edu/summerbridge/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active admissions and programming",
-        "url": "https://www.colorado.edu/summerbridge/",
-        "date_text": "2025"
-      },
-      "notes": "Program is focused on transitioned or admitted students.",
-      "validation_needs": ["Verify if participants remain high schoolers at time of camp"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "CSU Global Business Academy",
-      "translated_name_hint": null,
-      "operator_name": "Colorado State University",
-      "venue_name": "CSU Main Campus",
-      "city": "Fort Collins",
-      "region": "CO",
-      "country": "US",
-      "canonical_url": "https://summerprograms.colostate.edu/",
-      "supporting_urls": ["https://admissions.colostate.edu/summer-camps/"],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["college_precollege"],
-      "camp_type_tags": ["business", "academic"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": true,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "10-day intensive program",
-      "overnight_evidence": {
-        "snippet": "reside in university dormitories and engage with faculty",
-        "url": "https://summerprograms.colostate.edu/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Summer programs portal currently listing academies for grades 9-12",
-        "url": "https://summerprograms.colostate.edu/",
-        "date_text": "2025"
-      },
-      "notes": "Pre-college program focused on international business and leadership.",
+      "notes": "Established 1930. Coed ages 6-16. Located in Platte Canyon near Pike National Forest.",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "CSU Native Education Forum",
+      "candidate_name": "YMCA Camp Tumbleson Lake",
       "translated_name_hint": null,
-      "operator_name": "Colorado State University",
-      "venue_name": "CSU Main Campus",
-      "city": "Fort Collins",
+      "operator_name": "YMCA of Northern Colorado",
+      "venue_name": "YMCA Camp Tumbleson Lake",
+      "city": "Ward",
       "region": "CO",
       "country": "US",
-      "canonical_url": "https://admissions.colostate.edu/summer-camps/",
+      "canonical_url": "https://www.ymcanoco.org/camp-tumbleson-lake",
       "supporting_urls": [],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["college_precollege"],
-      "camp_type_tags": ["academic", "leadership"],
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["sleepaway", "residential", "day_camp"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": true,
-        "likely_one_week_plus": false
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
       },
-      "duration_hint_text": "five-day program",
+      "duration_hint_text": "6-day sessions",
       "overnight_evidence": {
-        "snippet": "residential summer programs that provide high school students with an opportunity to experience campus life, reside in university dormitories",
-        "url": "https://admissions.colostate.edu/summer-camps/"
+        "snippet": "A day and overnight camp located on 300 beautiful acres in the heart of the Colorado Rockies near Boulder. In 2025, we launched overnight camps at this picturesque lakeside mountain escape.",
+        "url": "https://www.ymcanoco.org/camp-tumbleson-lake"
       },
       "recent_activity_evidence": {
-        "snippet": "Listed as an active part of current K-12 offerings",
-        "url": "https://admissions.colostate.edu/summer-camps/",
-        "date_text": "2025"
+        "snippet": "Discover Overnight Camp Options for 2026. Session 1: June 7–12",
+        "url": "https://www.ymcanoco.org/camp-tumbleson-lake",
+        "date_text": "2026"
       },
-      "notes": "Targeted at rising juniors and seniors.",
-      "validation_needs": ["Confirm exact dates available"],
+      "notes": "Located 20 miles from Boulder in the Indian Peaks Wilderness Area. Ages 6-17.",
+      "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Highlands Camp & Retreat Center",
+      "candidate_name": "Avid4 Adventure Camp Blue Sky",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": null,
+      "operator_name": "Avid4 Adventure",
+      "venue_name": "Camp Blue Sky",
+      "city": "Evergreen",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://avid4.com/camp-blue-sky-camps",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["adventure_camp"],
+      "camp_type_tags": ["sleepaway", "residential", "expedition"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-week, 2-week, 3-week overnight camps",
+      "overnight_evidence": {
+        "snippet": "Located on over 500 acres of private property outside of Evergreen, CO, Avid4 Adventure Overnight Camp at Camp Blue Sky sets a stunning location for our 1st – 5th grade overnight camp programs.",
+        "url": "https://avid4.com/camp-blue-sky-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": "1-Week Overnight Camp available multiple sessions",
+        "url": "https://avid4.com/camp-blue-sky-camps",
+        "date_text": "2026"
+      },
+      "notes": "Multiple Colorado locations including Camp Blue Sky (Evergreen), Camp Windy Peak (Castle Rock). Ages 1st-12th grade.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Avid4 Adventure Camp Windy Peak",
+      "translated_name_hint": null,
+      "operator_name": "Avid4 Adventure",
+      "venue_name": "Camp Windy Peak",
+      "city": "Castle Rock",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://avid4.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["adventure_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-week, 3-week overnight camps",
+      "overnight_evidence": {
+        "snippet": "3-Week Overnight Camp Location: CO - Camp Windy Peak Grades: 6th - 8th",
+        "url": "https://avid4.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer Camp sessions available",
+        "url": "https://avid4.com/",
+        "date_text": "2026"
+      },
+      "notes": "Adventure sports camp with multiple Colorado locations.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Blue Mountain Ranch",
+      "translated_name_hint": null,
+      "operator_name": "Blue Mountain Ranch",
+      "venue_name": "Blue Mountain Ranch",
+      "city": "Divide",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.bluemountainranch.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "multiple week sessions",
+      "overnight_evidence": {
+        "snippet": "Nestled in the shadows of Pikes Peak, our sleepaway camp has welcomed boys and girls ages 7–17 for over 80 years.",
+        "url": "https://www.bluemountainranch.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Register for Summer 2026",
+        "url": "https://www.bluemountainranch.com/",
+        "date_text": "2026"
+      },
+      "notes": "Family-owned and operated for three generations. Founded 1946. Ages 7-17.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Chief Ouray YMCA of the Rockies",
+      "translated_name_hint": null,
+      "operator_name": "YMCA of the Rockies",
+      "venue_name": "Camp Chief Ouray",
+      "city": "Granby",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://campchiefouray.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "summer camp programs",
+      "overnight_evidence": {
+        "snippet": "Camp Chief Ouray has been the adventurous playground and traditional overnight camp for kids age 7-17.",
+        "url": "https://campchiefouray.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer camps, leadership trips, and youth leadership board programs available.",
+        "url": "https://campchiefouray.org/",
+        "date_text": "2026"
+      },
+      "notes": "Near Winter Park, Colorado. Over 100 years of operation.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "BookTrails (Literacy Adventure Camps)",
+      "translated_name_hint": null,
+      "operator_name": "BookTrails",
+      "venue_name": "Reading Ranch",
+      "city": "Clark (Steamboat Springs)",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://booktrails.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["literacy_adventure_camp", "specialty_camp"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5-day camps with multiple overnights",
+      "overnight_evidence": {
+        "snippet": "We offers day camps for younger kids and overnight camp options for older kids, all on our beautiful Reading Ranch near Clark, Colorado.",
+        "url": "https://booktrails.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 Camps - Camper paperwork due by June 1st, 2026",
+        "url": "https://booktrails.org/",
+        "date_text": "2026"
+      },
+      "notes": "Literacy-based wilderness camps. Programs include Hatchet Camp, Camp Instinct, Camp Fantasy, Advanced Survival. Ages 1st-8th grade.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Highlands Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": "Highlands Camp & Retreat Center",
+      "venue_name": "Highlands Summer Camp",
       "city": "Allenspark",
       "region": "CO",
       "country": "US",
-      "canonical_url": "https://www.highlandscamp.org/",
+      "canonical_url": "https://highlandscamp.org/summercamp/",
       "supporting_urls": [],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["faith_based_camps", "youth_retreat"],
-      "camp_type_tags": ["retreat", "faith"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": false
-      },
-      "duration_hint_text": "Weekend to week-long",
-      "overnight_evidence": {
-        "snippet": "accommodates up to 220 overnight guests... features dormitory-style cabins",
-        "url": "https://www.highlandscamp.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active facilities for youth and church groups",
-        "url": "https://www.highlandscamp.org/",
-        "date_text": "2025"
-      },
-      "notes": "Retreat center offering youth camps and group retreats.",
-      "validation_needs": ["Confirm hosted camp schedules vs outside rentals"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "High Peak Camp & Conference Center",
-      "translated_name_hint": null,
-      "operator_name": "Salvation Army",
-      "venue_name": null,
-      "city": "Estes Park",
-      "region": "CO",
-      "country": "US",
-      "canonical_url": "https://www.highpeaktsa.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["faith_based_camps", "youth_retreat"],
-      "camp_type_tags": ["faith", "retreat"],
+      "program_family_tags": ["traditional_overnight_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "varies by program",
+      "duration_hint_text": "week-long sessions",
       "overnight_evidence": {
-        "snippet": "offers a mix of modern dorms and lodge rooms",
-        "url": "https://www.highpeaktsa.org/"
+        "snippet": "Highlands Summer Camp is located on 293 acres in the magnificent Rocky Mountains of Colorado.",
+        "url": "https://highlandscamp.org/summercamp/"
       },
       "recent_activity_evidence": {
-        "snippet": "Active retreat programs",
-        "url": "https://www.highpeaktsa.org/",
-        "date_text": "2025"
+        "snippet": "Highlands Summer Camp 2026 - Register Now for Summer Camp!",
+        "url": "https://highlandscamp.org/summercamp/",
+        "date_text": "2026"
       },
-      "notes": "Large capacity retreat area near Rocky Mountain National Park.",
-      "validation_needs": ["Find exact summer camp session dates for youth"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Cathedral Ridge",
-      "translated_name_hint": null,
-      "operator_name": "Episcopal Church in Colorado",
-      "venue_name": null,
-      "city": "Woodland Park",
-      "region": "CO",
-      "country": "US",
-      "canonical_url": "https://cathedralridge.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["faith_based_camps", "youth_retreat"],
-      "camp_type_tags": ["faith", "retreat"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": false
-      },
-      "duration_hint_text": "weekend to week",
-      "overnight_evidence": {
-        "snippet": "overnight retreat center hosted in mountain setting",
-        "url": "https://cathedralridge.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active booking and summer program hosting",
-        "url": "https://cathedralridge.org/",
-        "date_text": "2025"
-      },
-      "notes": "Episcopal retreat center.",
-      "validation_needs": ["Verify if primary summer programs are 7+ days"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Quaker Ridge Camp & Conference Center",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": null,
-      "city": "Woodland Park",
-      "region": "CO",
-      "country": "US",
-      "canonical_url": "https://quakerridgecamp.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["faith_based_camps", "traditional_overnight_camp"],
-      "camp_type_tags": ["faith", "retreat"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "summer youth camps",
-      "overnight_evidence": {
-        "snippet": "hosts youth camps in the summer and retreat groups throughout the year in Pike National Forest",
-        "url": "https://quakerridgecamp.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Year-round active operations",
-        "url": "https://quakerridgecamp.org/",
-        "date_text": "2025"
-      },
-      "notes": "Christian venue that runs its own programming alongside rentals.",
+      "notes": "Located 60 miles northwest of Denver at 8,400 feet elevation. ACA accredited.",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Sky Ranch Lutheran Camp",
+      "candidate_name": "Roundup River Ranch",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": null,
-      "city": "Fort Collins",
+      "operator_name": "Roundup River Ranch",
+      "venue_name": "Roundup River Ranch",
+      "city": "Avon",
       "region": "CO",
       "country": "US",
-      "canonical_url": "https://skyranchcolorado.org/",
+      "canonical_url": "https://roundupriverranch.org/about-us/our-campsite/",
       "supporting_urls": [],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["faith_based_camps", "traditional_overnight_camp"],
-      "camp_type_tags": ["faith", "outdoor"],
+      "program_family_tags": ["medical_camp", "family_camp"],
+      "camp_type_tags": ["residential"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "weekly summer sessions",
+      "duration_hint_text": "week-long summer camps; weekend family camps",
       "overnight_evidence": {
-        "snippet": "rustic mountain experience... Christ-centered outdoor ministries and provide facilities for church retreats",
-        "url": "https://skyranchcolorado.org/"
+        "snippet": "We offer three types of camp programs – Onsite Residential Programs: Week-long Summer Camps for diagnosed campers ages 7–17, and weekend Family Camps for diagnosed campers ages 5–17 and their families.",
+        "url": "https://roundupriverranch.org/about-us/our-campsite/"
       },
       "recent_activity_evidence": {
-        "snippet": "Active summer camp list",
-        "url": "https://skyranchcolorado.org/",
+        "snippet": "Summer Camp and Family Camp sessions.",
+        "url": "https://roundupriverranch.org/about-us/our-campsite/",
         "date_text": "2025"
       },
-      "notes": "Traditional Lutheran camp setting.",
+      "notes": "A camp for children with serious medical conditions. FREE for all campers. Located 50 miles west of Vail along the Colorado River. 125 acres.",
       "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Keystone Science School Summer Camp",
+      "translated_name_hint": null,
+      "operator_name": "Keystone Science School",
+      "venue_name": "Keystone Science School Campus",
+      "city": "Keystone",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.keystonescienceschool.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["stem_camp", "science_camp"],
+      "camp_type_tags": ["overnight", "day_camp", "expedition"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "overnight and day camp sessions",
+      "overnight_evidence": {
+        "snippet": "Experience the Rocky Mountains of Colorado through traditional Overnight Camps and Day Camps or the excitement and adventure of our traveling Expeditions.",
+        "url": "https://www.keystonescienceschool.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer Camp programs available ages 5-17.",
+        "url": "https://www.keystonescienceschool.org/",
+        "date_text": "2026"
+      },
+      "notes": "23-acre campus along the Continental Divide. ACA Accredited. Ages 5-17.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Rocky",
+      "translated_name_hint": null,
+      "operator_name": "Camp Rocky",
+      "venue_name": "Camp Rocky",
+      "city": "Divide",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": "https://www.bestadventurecamps.com/best-colorado-adventure-camps.html",
+      "source_language": "en",
+      "program_family_tags": ["stem_camp", "conservation_camp"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "week-long sessions",
+      "overnight_evidence": {
+        "snippet": "Camp Rocky is an educational, week long residential camp for 14 through 19 year-olds who enjoy the outdoors and are interested in exploring careers in natural resources, conservation.",
+        "url": "https://www.bestadventurecamps.com/best-colorado-adventure-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Located minutes outside Woodland Park at a beautiful traditional summer camp facility at 10,000 feet.",
+        "url": "https://www.bestadventurecamps.com/best-colorado-adventure-camps.html",
+        "date_text": "2025"
+      },
+      "notes": "Christian-affiliated. Environmental focus. Ages 14-19.",
+      "validation_needs": ["verify_canonical_url"],
       "confidence": "medium"
     },
     {
-      "candidate_name": "Bird Conservancy of the Rockies Bird Camp",
+      "candidate_name": "Sonlight Christian Camp",
       "translated_name_hint": null,
-      "operator_name": "Bird Conservancy of the Rockies",
-      "venue_name": null,
-      "city": "Brighton",
+      "operator_name": "Sonlight Christian Camp",
+      "venue_name": "Sonlight Christian Camp",
+      "city": "Pagosa Springs",
       "region": "CO",
       "country": "US",
-      "canonical_url": "https://www.birdconservancy.org/",
+      "canonical_url": null,
       "supporting_urls": [],
-      "directory_source_url": null,
+      "directory_source_url": "http://besttravelcamps.com/best-colorado-travel-camps.html",
       "source_language": "en",
-      "program_family_tags": ["specialty_camps"],
-      "camp_type_tags": ["nature", "science"],
+      "program_family_tags": ["faith_based_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
       "candidate_shape": "venue_unconfirmed",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "summer sessions",
+      "duration_hint_text": "residential summer sessions",
       "overnight_evidence": {
-        "snippet": "focus on conservation, ecology, and environmental education overnight options",
-        "url": "https://www.birdconservancy.org/"
+        "snippet": "TYPE OF CAMP: Overnight/Sleepaway. CAMPER AGES: 3rd grade through 12th grades.",
+        "url": "http://besttravelcamps.com/best-colorado-travel-camps.html"
       },
       "recent_activity_evidence": {
-        "snippet": "Active annual summer programming",
-        "url": "https://www.birdconservancy.org/",
+        "snippet": "Located in southwest Colorado at 8,000 feet. 120 acre camp 7 miles north of Pagosa Springs.",
+        "url": "http://besttravelcamps.com/best-colorado-travel-camps.html",
         "date_text": "2025"
       },
-      "notes": "Need to confirm if their programs still run as overnight or day camps.",
-      "validation_needs": ["Confirm overnight component for 2025", "Identify precise venue"],
+      "notes": "ACA accredited. Licensed by State of Colorado as Child Care Facility.",
+      "validation_needs": ["verify_canonical_url"],
       "confidence": "medium"
+    },
+    {
+      "candidate_name": "JCC Ranch Camp",
+      "translated_name_hint": null,
+      "operator_name": "JCC (Jewish Community Center)",
+      "venue_name": "Ranch Camp",
+      "city": "Elbert",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": "http://besttravelcamps.com/best-colorado-travel-camps.html",
+      "source_language": "en",
+      "program_family_tags": ["faith_based_camp", "traditional_overnight_camp"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "residential summer sessions",
+      "overnight_evidence": {
+        "snippet": "Overnight camp. Ranch Camp has over 50 years of residential camping tradition, is ACA accredited and is open to children entering grades 2-11.",
+        "url": "http://besttravelcamps.com/best-colorado-travel-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Located in Colorado's Black Forest.",
+        "url": "http://besttravelcamps.com/best-colorado-travel-camps.html",
+        "date_text": "2025"
+      },
+      "notes": "Jewish-affiliated. Horseback riding, hiking, swimming, rock climbing, canoeing.",
+      "validation_needs": ["verify_canonical_url"],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Rocky Mountain Soccer Camp",
+      "translated_name_hint": null,
+      "operator_name": "Rocky Mountain Soccer Camp",
+      "venue_name": "Rocky Mountain Soccer Camp",
+      "city": "Victor",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html",
+      "source_language": "en",
+      "program_family_tags": ["sports_camp"],
+      "camp_type_tags": ["residential", "day_camp"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": "3-day residential team camps",
+      "overnight_evidence": {
+        "snippet": "3-Day Residential Team Camps - Victor, CO",
+        "url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Since 1971. Quality-Integrity-Tradition.",
+        "url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html",
+        "date_text": "2025"
+      },
+      "notes": "Soccer camp. Residential option available.",
+      "validation_needs": ["verify_canonical_url"],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Steamboat Soccer Academy",
+      "translated_name_hint": null,
+      "operator_name": "Steamboat Soccer Academy",
+      "venue_name": "Steamboat Soccer Academy",
+      "city": "Steamboat Springs",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html",
+      "source_language": "en",
+      "program_family_tags": ["sports_camp"],
+      "camp_type_tags": ["residential", "day_camp"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4-day and 9-day sessions",
+      "overnight_evidence": {
+        "snippet": "Residential campers stay at the Colorado Mountain College Alpine Campus.",
+        "url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Since 1994. Ages 8-19.",
+        "url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html",
+        "date_text": "2025"
+      },
+      "notes": "Soccer camp. Residential and day camp options.",
+      "validation_needs": ["verify_canonical_url"],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Rocky Mountain Soccer Camp at Colorado College",
+      "translated_name_hint": null,
+      "operator_name": "Rocky Mountain Soccer Camp",
+      "venue_name": "Colorado College",
+      "city": "Colorado Springs",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": null,
+      "supporting_urls": [],
+      "directory_source_url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html",
+      "source_language": "en",
+      "program_family_tags": ["sports_camp"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": "residential camp sessions",
+      "overnight_evidence": {
+        "snippet": "Residential campers stay in university residence halls.",
+        "url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Students stay in university residence halls in all of our domestic programs.",
+        "url": "https://bestsportssummercamps.com/best-colorado-sports-summer-camps.html",
+        "date_text": "2025"
+      },
+      "notes": "Uses Colorado College facilities. Soccer instruction.",
+      "validation_needs": ["verify_canonical_url"],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Bird Camp (Bird Conservancy of the Rockies)",
+      "translated_name_hint": null,
+      "operator_name": "Bird Conservancy of the Rockies",
+      "venue_name": "Bird Camp at Barr Lake & Cal-Wood",
+      "city": "Barr Lake / Rocky Mountains",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.birdconservancy.org/bird-camp-a-colorado-overnight-summer-camp-and-day-camp-for-young-nature-explorers/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["stem_camp", "environmental_education"],
+      "camp_type_tags": ["overnight", "day_camp"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "overnight programs for ages 12-17",
+      "overnight_evidence": {
+        "snippet": "Colorado Overnight Summer Camps: Taking Flight (ages 12–14) and On the Wing (ages 15–17). All overnight bird camps start at Barr Lake State Park and then travel to Cal-Wood Education Center in the Rocky Mountains.",
+        "url": "https://www.birdconservancy.org/bird-camp-a-colorado-overnight-summer-camp-and-day-camp-for-young-nature-explorers/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Published 2025-06-27",
+        "url": "https://www.birdconservancy.org/bird-camp-a-colorado-overnight-summer-camp-and-day-camp-for-young-nature-explorers/",
+        "date_text": "2025"
+      },
+      "notes": "Science-based environmental education camp. Ages 4-17 with overnight programs for older ages.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Colorado Mountain Club Campout Kids",
+      "translated_name_hint": null,
+      "operator_name": "Colorado Mountain Club",
+      "venue_name": "CMC Summer Basecamp",
+      "city": "Golden",
+      "region": "CO",
+      "country": "US",
+      "canonical_url": "https://www.cmc.org/youth/course-templates/campout-kids-cmc-state/campout-kids-2026",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["adventure_camp", "wilderness_camp"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": null
+      },
+      "duration_hint_text": "2-night overnight camp",
+      "overnight_evidence": {
+        "snippet": "Join us for a two-night overnight camping trip where you can practice tent building, fire building, backcountry cooking, and more.",
+        "url": "https://www.cmc.org/youth/course-templates/campout-kids-cmc-state/campout-kids-2026"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Dates: June 29 - July 1, 2026. Youth going into grades 3-5.",
+        "url": "https://www.cmc.org/youth/course-templates/campout-kids-cmc-state/campout-kids-2026",
+        "date_text": "2026"
+      },
+      "notes": "Wilderness skills program. Transportation from basecamp to Golden Gate State Park provided.",
+      "validation_needs": [],
+      "confidence": "high"
     }
   ]
 }

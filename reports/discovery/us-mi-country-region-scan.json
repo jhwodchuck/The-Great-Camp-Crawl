@@ -6,337 +6,126 @@
     "city": null
   },
   "queries_used": [
-    "\"top 15 overnight summer camps in Michigan\""
+    "overnight summer camp Michigan",
+    "residential summer camp Michigan",
+    "family camp Michigan",
+    "youth retreat Michigan overnight",
+    "site:.edu Michigan pre-college residential"
   ],
   "next_queries": [],
   "candidates": [
     {
-      "candidate_name": "YMCA Camp Hayo-Went-Ha",
-      "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Camp Hayo-Went-Ha",
-      "city": "Central Lake",
-      "region": "MI",
-      "country": "US",
-      "canonical_url": "https://hayowentha.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "boys-and-girls"],
-      "candidate_shape": "multi_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "long-standing separate camps for boys and girls... overnight",
-        "url": "https://hayowentha.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Character, leadership, wilderness.",
-      "validation_needs": ["split girls and boys campus potentially"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "YMCA Camp Nissokone",
-      "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Camp Nissokone",
-      "city": "Oscoda",
-      "region": "MI",
-      "country": "US",
-      "canonical_url": "https://ymcadetroit.org/nissokone/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "outdoor"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "shores of Lake Huron... overnight",
-        "url": "https://ymcadetroit.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Over a century of tradition.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Miniwanca",
-      "translated_name_hint": null,
-      "operator_name": "American Youth Foundation",
-      "venue_name": "Camp Miniwanca",
-      "city": "Shelby",
-      "region": "MI",
-      "country": "US",
-      "canonical_url": "https://ayf.com/camps/miniwanca/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "leadership"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "shores of Lake Michigan... overnight challenges",
-        "url": "https://ayf.com/camps/miniwanca/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Focuses on youth leadership.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Carvela",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Carvela",
-      "city": "Traverse City",
-      "region": "MI",
-      "country": "US",
-      "canonical_url": "https://campcarvela.com/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "unplugged"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "camper-led, unplugged experience",
-        "url": "https://campcarvela.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Wilderness expeditions.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Walden",
+      "candidate_name": "Camp Walden Michigan",
       "translated_name_hint": null,
       "operator_name": null,
       "venue_name": "Camp Walden",
-      "city": "Cheboygan",
+      "city": null,
       "region": "MI",
       "country": "US",
       "canonical_url": "https://campwaldenmi.com/",
-      "supporting_urls": [],
+      "supporting_urls": ["https://campwaldenmi.com/dates-rates/", "https://campwaldenmi.com/faqs/"],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "co-ed"],
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["coed", "lake", "nature"],
       "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "traditional coed camp on Long Lake",
-        "url": "https://campwaldenmi.com/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Broad range of sports.",
+      "priority_flags": {"likely_college_precollege": false, "likely_one_week_plus": true},
+      "duration_hint_text": "2 weeks, 4 weeks, and other multi-week sessions",
+      "overnight_evidence": {"snippet": "My son went to Walden as his (and our) first overnight experience.", "url": "https://campwaldenmi.com/"},
+      "recent_activity_evidence": {"snippet": "Registration opens September 18 for returning families and to the public on September 27. See our 2026 session dates and rates.", "url": "https://campwaldenmi.com/dates-rates/", "date_text": "2026"},
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "YMCA Camp Pendalouan",
+      "candidate_name": "Howell Nature Center Camp Wonder Overnight Camps",
       "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Camp Pendalouan",
-      "city": "Montague",
+      "operator_name": "Howell Nature Center",
+      "venue_name": "Howell Nature Center",
+      "city": "Howell",
       "region": "MI",
       "country": "US",
-      "canonical_url": "https://pendalouan.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.howellnaturecenter.org/camp-wonder/soa-overnight-camps/",
+      "supporting_urls": ["https://www.howellnaturecenter.org/camp-wonder/", "https://www.howellnaturecenter.org/wordpress/wp-content/uploads/2025/03/Print2025-BrochureCampWonder-C.pdf"],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
+      "program_family_tags": ["overnight", "nature"],
+      "camp_type_tags": ["coed", "outdoor", "adventure"],
       "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "weekly",
-      "overnight_evidence": {
-        "snippet": "Located on Big Blue Lake",
-        "url": "https://pendalouan.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Horseback riding, zip-lining.",
+      "priority_flags": {"likely_college_precollege": false, "likely_one_week_plus": true},
+      "duration_hint_text": "6-night overnight sessions",
+      "overnight_evidence": {"snippet": "transformative overnight experience! Explorers, Adventurers, Trailblazers... 6-night camp programs", "url": "https://www.howellnaturecenter.org/camp-wonder/soa-overnight-camps/"},
+      "recent_activity_evidence": {"snippet": "2025 and 2026 overnight camp sessions with registration brochure available.", "url": "https://www.howellnaturecenter.org/wordpress/wp-content/uploads/2025/03/Print2025-BrochureCampWonder-C.pdf", "date_text": "2025-2026"},
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Sherman Lake YMCA Camp",
-      "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Sherman Lake YMCA",
-      "city": "Augusta",
-      "region": "MI",
-      "country": "US",
-      "canonical_url": "https://shermanlakeymca.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "weekly",
-      "overnight_evidence": {
-        "snippet": "Sits on 365 acres... overnight adventure",
-        "url": "https://shermanlakeymca.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Focus on core values.",
-      "validation_needs": [],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Camp Newaygo",
+      "candidate_name": "Cedar Lodge Summer Camp",
       "translated_name_hint": null,
       "operator_name": null,
-      "venue_name": "Camp Newaygo",
-      "city": "Newaygo",
+      "venue_name": "Cedar Lodge",
+      "city": "Lawrence",
       "region": "MI",
       "country": "US",
-      "canonical_url": "https://campnewaygo.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.cedarlodge.com/summer-camp/",
+      "supporting_urls": ["https://www.cedarlodge.com/rates-and-dates/", "https://www.cedarlodge.com/our-facilities/"],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "girls"],
+      "program_family_tags": ["overnight", "equestrian", "family"],
+      "camp_type_tags": ["coed", "horse", "nature"],
       "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "weekly",
-      "overnight_evidence": {
-        "snippet": "historic camp known for its beautiful setting",
-        "url": "https://campnewaygo.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Diverse programming.",
+      "priority_flags": {"likely_college_precollege": false, "likely_one_week_plus": true},
+      "duration_hint_text": "Overnight, Day, and 1 to 7 week stays (typically Sunday to Sunday)",
+      "overnight_evidence": {"snippet": "Cedar Lodge is primarily an overnight coed summer camp offering 6 weeks of residential camp for children from age 7-16.", "url": "https://www.cedarlodge.com/summer-camp/"},
+      "recent_activity_evidence": {"snippet": "Cedar Lodge 2026. 50+ years of camping experience. Session info for current/next cycle.", "url": "https://www.cedarlodge.com/summer-camp/", "date_text": "2026"},
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Camp Henry",
+      "candidate_name": "YMCA Camp Ohiyesa",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Camp Henry",
-      "city": "Newaygo",
+      "operator_name": "YMCA of Metropolitan Detroit",
+      "venue_name": "YMCA Camp Ohiyesa",
+      "city": "Holly",
       "region": "MI",
       "country": "US",
-      "canonical_url": "https://camphenry.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://ymcadetroit.org/ohiyesa/",
+      "supporting_urls": ["https://ymcadetroit.org/programs/camp/overnight-camp/overnight-camp-3/"],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
-      "camp_type_tags": ["traditional", "christian"],
+      "program_family_tags": ["overnight", "traditional"],
+      "camp_type_tags": ["coed", "lake", "adventure"],
       "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "weekly",
-      "overnight_evidence": {
-        "snippet": "faith-based approach, welcoming campers",
-        "url": "https://camphenry.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "West Michigan camp.",
+      "priority_flags": {"likely_college_precollege": false, "likely_one_week_plus": true},
+      "duration_hint_text": "One week+ and daily overnight options for ages 5-teen",
+      "overnight_evidence": {"snippet": "Ohiyesa Overnight camp is an American rite of passage... We offer day and overnight camp.", "url": "https://ymcadetroit.org/ohiyesa/"},
+      "recent_activity_evidence": {"snippet": "Registration for the 2026 camp season is open now!", "url": "https://ymcadetroit.org/ohiyesa/", "date_text": "2026"},
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     },
     {
       "candidate_name": "Interlochen Arts Camp",
       "translated_name_hint": null,
-      "operator_name": "Interlochen",
+      "operator_name": "Interlochen Center for the Arts",
       "venue_name": "Interlochen Arts Camp",
       "city": "Interlochen",
       "region": "MI",
       "country": "US",
-      "canonical_url": "https://camp.interlochen.org/",
-      "supporting_urls": [],
+      "canonical_url": "https://www.interlochen.org/",
+      "supporting_urls": ["https://www.interlochen.org/art-summer-camp"],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["arts-camps"],
-      "camp_type_tags": ["arts", "pre-professional"],
+      "program_family_tags": ["arts", "overnight", "pre-college-academic"],
+      "camp_type_tags": ["coed", "music", "visual_arts", "dance", "writing", "film", "global"],
       "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-week",
-      "overnight_evidence": {
-        "snippet": "world-renowned destination for young artists... immersive programs",
-        "url": "https://camp.interlochen.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Music, theater, dance.",
+      "priority_flags": {"likely_college_precollege": true, "likely_one_week_plus": true},
+      "duration_hint_text": "Multi-week residential sessions; grades 3-12, focused arts tracks",
+      "overnight_evidence": {"snippet": "Interlochen Arts Camp has summer programs for every young artist. Overnight residential camp for grades 3-12.", "url": "https://www.interlochen.org/art-summer-camp"},
+      "recent_activity_evidence": {"snippet": "Registration for summer 2026 arts camp is open. Recent events calendar is active.", "url": "https://www.interlochen.org/", "date_text": "2026"},
+      "notes": null,
       "validation_needs": [],
       "confidence": "high"
     }

@@ -6,40 +6,251 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"Connecticut\""
+    "\"overnight summer camp\" \"Connecticut\"",
+    "\"residential summer camp\" \"Connecticut\"",
+    "\"family camp\" \"Connecticut\"",
+    "\"youth retreat\" \"Connecticut\" overnight",
+    "site:.edu \"Connecticut\" \"pre-college\" residential"
   ],
-  "next_queries": [],
+  "next_queries": [
+    "Connecticut summer camp directory ACA accredited",
+    "Connecticut sports camps overnight soccer hockey tennis",
+    "Connecticut arts music theater summer camps overnight"
+  ],
   "candidates": [
     {
       "candidate_name": "Camp Jewell YMCA",
       "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Camp Jewell",
+      "operator_name": "YMCA of Greater Hartford",
+      "venue_name": "Camp Jewell YMCA",
       "city": "Colebrook",
       "region": "CT",
       "country": "US",
       "canonical_url": "https://campjewell.org/",
-      "supporting_urls": [],
+      "supporting_urls": [
+        "https://campjewell.org/summer-camp/sleepaway-camp/",
+        "https://campjewell.org/summer-camps/sleepaway-camp/"
+      ],
       "directory_source_url": null,
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional"],
+      "program_family_tags": ["traditional_overnight", "equestrian"],
+      "camp_type_tags": ["sleepaway", "overnight"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "sessions for ages 7-16",
+      "duration_hint_text": "2-week sessions, ages 7-15",
       "overnight_evidence": {
-        "snippet": "traditional overnight experiences",
-        "url": "https://campjewell.org/"
+        "snippet": "Traditional overnight camp — ages 7-15. Set on 560 acres of forest, trails, and lakefront in Colebrook, Connecticut",
+        "url": "https://campjewell.org/summer-camp/sleepaway-camp/"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
+        "snippet": "celebrating 125 Summers of sleep away camp in Connecticut",
+        "url": "https://campjewell.org/",
         "date_text": "2026"
       },
-      "notes": "Equestrian programs and teen leadership.",
+      "notes": "One of New England's premier overnight camps, 125-year tradition. 560 acres with private lake.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Buck's Rock Performing and Creative Arts Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Buck's Rock",
+      "city": "Morris",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://www.bucksrock.org/",
+      "supporting_urls": [],
+      "directory_source_url": "https://mommypoppins.com/connecticut-kids/camps/14-sleepaway-camps-for-connecticut-kids",
+      "source_language": "en",
+      "program_family_tags": ["arts", "creative"],
+      "camp_type_tags": ["overnight", "sleepaway"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Ages 11-16",
+      "overnight_evidence": {
+        "snippet": "freedom-of-choice, non-competitive haven where artists ranging in ages from 11 to 16",
+        "url": "https://mommypoppins.com/connecticut-kids/camps/14-sleepaway-camps-for-connecticut-kids"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Best Arts-Focused Camp: Buck's Rock Performing and Creative Arts Camp",
+        "url": "https://mommypoppins.com/connecticut-kids/camps/14-sleepaway-camps-for-connecticut-kids",
+        "date_text": "2026-03"
+      },
+      "notes": "Creative arts overnight camp in Litchfield County foothills of Berkshire Mountains",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camp Awosting",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Awosting",
+      "city": "Morris",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Awosting-Overnight-Camp-330.html",
+      "supporting_urls": [],
+      "directory_source_url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Awosting-Overnight-Camp-330.html",
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight", "sports", "arts"],
+      "camp_type_tags": ["overnight", "sleepaway"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Ages 6-16",
+      "overnight_evidence": {
+        "snippet": "TYPE OF CAMP: Overnight/Sleepaway. We are in Litchfield County CT, on the shores of Bantam Lake",
+        "url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Awosting-Overnight-Camp-330.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Morris, Connecticut Summer Overnight Camps for Kids and Teens",
+        "url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Awosting-Overnight-Camp-330.html",
+        "date_text": "2025"
+      },
+      "notes": "Traditional overnight camp on Bantam Lake, Litchfield County",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camp Claire",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Camp Claire",
+      "city": "Old Lyme",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Claire-Overnight-Camp-106.html",
+      "supporting_urls": [],
+      "directory_source_url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Claire-Overnight-Camp-106.html",
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight"],
+      "camp_type_tags": ["overnight", "sleepaway", "day_camp"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One week sessions, ages 6-16. Residential $650/week",
+      "overnight_evidence": {
+        "snippet": "Located on beautiful Hamburg Cove in Lyme CT. Overnight campers have the choice of one week or multiple weeks stay",
+        "url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Claire-Overnight-Camp-106.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Since 1916, located on beautiful Hamburg Cove in Lyme, CT",
+        "url": "https://bestovernightcamps.com/best-overnight-camps-profiles/Camp-Claire-Overnight-Camp-106.html",
+        "date_text": "2025"
+      },
+      "notes": "Founded 1916, ACA accredited, Old Lyme",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Incarnation Camp",
+      "translated_name_hint": null,
+      "operator_name": "Incarnation Center",
+      "venue_name": "Pequot, Sherwood & Pioneer Village",
+      "city": "Deep River",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://www.incarnationcenter.org/camps/",
+      "supporting_urls": [
+        "https://bestovernightcamps.com/best-overnight-camps-profiles/Pequot-Sherwood-and-Pioneer-Village-Incarnation-Family-of-Camps-Overnight-Camp-832.html"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight", "adventure"],
+      "camp_type_tags": ["overnight", "sleepaway"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2, 4, 6, or 8 week sessions. Ages 7-15",
+      "overnight_evidence": {
+        "snippet": "America's oldest co-ed sleep-away camp established in 1886. All campers and staff live in platform tents",
+        "url": "https://www.incarnationcenter.org/camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Since 1886, we have provided a fun-filled, traditional camp with hands-on experience",
+        "url": "https://www.incarnationcenter.org/camps/",
+        "date_text": "2025"
+      },
+      "notes": "Oldest co-ed camp in America, 700+ wooded acres, private lake",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "SigmaCamp",
+      "translated_name_hint": null,
+      "operator_name": "SigmaCamp",
+      "venue_name": "Silver Lake Camp and Retreat Center",
+      "city": "Sharon",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://sigmacamp.org/2026",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["stem", "academic", "math_science"],
+      "camp_type_tags": ["overnight", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "8 days/7 nights (August 1-8, 2026), ages 12-15",
+      "overnight_evidence": {
+        "snippet": "SigmaCamp is a residential STEM summer camp in Connecticut for middle and high school students aged 12-15. Students are housed in comfortable lodge buildings",
+        "url": "https://sigmacamp.org/2026"
+      },
+      "recent_activity_evidence": {
+        "snippet": "SigmaCamp 2026 is a residential STEM summer camp",
+        "url": "https://sigmacamp.org/2026",
+        "date_text": "2026"
+      },
+      "notes": "Residential STEM camp, taught by professors from MIT, Yale, Stanford. $1,900 tuition",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "YMCA Camp Mohawk",
+      "translated_name_hint": null,
+      "operator_name": "YMCA",
+      "venue_name": "Camp Mohawk",
+      "city": "Litchfield",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://campmohawk.org/",
+      "supporting_urls": [],
+      "directory_source_url": "https://mommypoppins.com/connecticut-kids/camps/14-sleepaway-camps-for-connecticut-kids",
+      "source_language": "en",
+      "program_family_tags": ["traditional_overnight"],
+      "camp_type_tags": ["overnight", "sleepaway"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 to 9 week sessions, ages 7-15",
+      "overnight_evidence": {
+        "snippet": "YMCA Camp Mohawk is a premier overnight camp for girls age 7-15. With traditional camp sessions ranging 1 to 9 weeks",
+        "url": "https://campmohawk.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration for Summer 2026 is now open!",
+        "url": "https://campmohawk.org/",
+        "date_text": "2026"
+      },
+      "notes": "Girls-only overnight camp in Litchfield, CT",
       "validation_needs": [],
       "confidence": "high"
     },
@@ -53,59 +264,327 @@
       "country": "US",
       "canonical_url": "https://camplaurelwood.org/",
       "supporting_urls": [],
-      "directory_source_url": null,
+      "directory_source_url": "http://retreatfinder.com/centers/youth-focus,venue-type/connecticut",
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
-      "camp_type_tags": ["jewish", "co-ed"],
+      "program_family_tags": ["faith_based", "jewish"],
+      "camp_type_tags": ["overnight", "sleepaway", "day_camp"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "summer sessions",
+      "duration_hint_text": "Overnight Camp: entering 2nd through 10th grades",
       "overnight_evidence": {
-        "snippet": "premier Jewish co-ed overnight camp",
+        "snippet": "Connecticut's Premier Jewish Co-ed Overnight Camp. Campers entering second through 10th grades live in newly updated bunks",
         "url": "https://camplaurelwood.org/"
       },
       "recent_activity_evidence": {
-        "snippet": "Active operations",
-        "url": null,
+        "snippet": "2026 Camp is in Session!!!",
+        "url": "https://camplaurelwood.org/",
         "date_text": "2026"
       },
-      "notes": "Second through 10th grades.",
+      "notes": "Jewish overnight camp in Madison, CT. 463 Summer Hill Rd",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Greenwood Trails",
+      "candidate_name": "KenMont and KenWood Camp",
       "translated_name_hint": null,
       "operator_name": null,
-      "venue_name": "Greenwood Trails",
-      "city": "Winsted",
+      "venue_name": "KenMont/KenWood Camps",
+      "city": "Kent",
       "region": "CT",
       "country": "US",
-      "canonical_url": "https://greenwoodtrails.com/",
+      "canonical_url": "https://www.kenmontkenwood.com/",
       "supporting_urls": [],
-      "directory_source_url": null,
+      "directory_source_url": "http://retreatfinder.com/centers/youth-focus/connecticut",
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["co-ed", "traditional"],
+      "program_family_tags": ["traditional_overnight"],
+      "camp_type_tags": ["overnight", "sleepaway"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
         "likely_college_precollege": false,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "sessions for ages 7-17",
+      "duration_hint_text": "3.5 week sessions",
       "overnight_evidence": {
-        "snippet": "coed sleepaway camp in the foothills of the Berkshires",
-        "url": "https://greenwoodtrails.com/"
+        "snippet": "KenMont (a boys camp) and KenWood (a girls camp) offer children 3.5 week sessions of camp in a beautiful, lakeside setting",
+        "url": "https://mommypoppins.com/connecticut-kids/camps/14-sleepaway-camps-for-connecticut-kids"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
+        "snippet": "KenMont and KenWood Camp has over 200 acres of well-manicured grounds set at the foot of the Berkshires",
+        "url": "http://retreatfinder.com/centers/youth-focus/connecticut",
+        "date_text": "2025"
+      },
+      "notes": "Boys (KenMont) and Girls (KenWood) camps, 200 acres at foot of Berkshires",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Moore's Keep Christian Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Moore's Keep Christian Camp",
+      "city": null,
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://mooreskeep.org/spring-youth-retreat/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based", "youth_retreat"],
+      "camp_type_tags": ["overnight_retreat"],
+      "candidate_shape": "venue_unconfirmed",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "Friday Evening to Sunday Morning weekend retreat",
+      "overnight_evidence": {
+        "snippet": "The Spring Youth Retreat at Moore's Keep Christian Camp is a Friday Evening to Sunday Morning overnight experience. The cost is $150 per student, which includes lodging, meals, and all activities",
+        "url": "https://mooreskeep.org/spring-youth-retreat/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Spring Youth Retreat 2026 - Moore's Keep Christian Camp",
+        "url": "https://mooreskeep.org/spring-youth-retreat/",
+        "date_text": "2026-03"
+      },
+      "notes": "Christian youth retreat, weekend format. Need to confirm exact venue location in CT",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Holy Family Passionist Retreat Center",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Holy Family Retreat Center",
+      "city": "West Hartford",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "http://www.holyfamilyretreat.org/youth-faculty-retreats",
+      "supporting_urls": [
+        "https://www.holyfamilyretreat.org/calendar/teen"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["faith_based", "youth_retreat"],
+      "camp_type_tags": ["overnight_retreat"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "Teen Weekend Retreat June 27-29",
+      "overnight_evidence": {
+        "snippet": "This two-night retreat helps high school-aged teens grow in personal faith. Offering: $175",
+        "url": "https://www.holyfamilyretreat.org/calendar/teen"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Teen Weekend Retreat - Holy Family Youth Ministry Team",
+        "url": "https://www.holyfamilyretreat.org/calendar/teen",
+        "date_text": "2025"
+      },
+      "notes": "Catholic retreat center in West Hartford. 303 Tunxis Road",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Wightman",
+      "translated_name_hint": null,
+      "operator_name": "ABCCONN",
+      "venue_name": "Camp Wightman",
+      "city": "Griswold",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://campwightman.org/",
+      "supporting_urls": [],
+      "directory_source_url": "http://retreatfinder.com/centers/youth-focus,topic-focus/connecticut",
+      "source_language": "en",
+      "program_family_tags": ["faith_based", "traditional_overnight"],
+      "camp_type_tags": ["overnight", "sleepaway"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "30 summer camping programs for kids, teens, adults, and families",
+      "overnight_evidence": {
+        "snippet": "Camp Wightman is an ABCCONN mission. They offer approximately 30 summer camping programs for kids, teens, adults, and families",
+        "url": "http://retreatfinder.com/centers/youth-focus,topic-focus/connecticut"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Camp Wightman is an ABCCONN mission. They offer approximately 30 summer camping programs",
+        "url": "http://retreatfinder.com/centers/youth-focus,topic-focus/connecticut",
+        "date_text": "2025"
+      },
+      "notes": "Christian camping ministry. 207 Coal Pit Hill Road, Griswold, CT",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "UConn Pre-College Summer",
+      "translated_name_hint": null,
+      "operator_name": "University of Connecticut",
+      "venue_name": "UConn Storrs Campus",
+      "city": "Storrs",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://precollege-summer.uconn.edu/",
+      "supporting_urls": [
+        "https://precollege-summer.uconn.edu/prospective-students/residential-life-dining/"
+      ],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_pre_college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Residential program for high school students age 14-17",
+      "overnight_evidence": {
+        "snippet": "Our programming at the Storrs campus continues to be a residential, immersive learning experience for students age 14-17 years old",
+        "url": "https://precollege-summer.uconn.edu/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "UConn Pre-College Summer 2026 Applications Now Open with Expanded Opportunities",
+        "url": "https://precollege-summer.uconn.edu/",
         "date_text": "2026"
       },
-      "notes": "Ages 7-17.",
+      "notes": "UConn residential pre-college program. Expanding to Hartford campus (non-residential). 2026 session dates.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Choate Summer Programs",
+      "translated_name_hint": null,
+      "operator_name": "Choate Rosemary Hall",
+      "venue_name": "Choate Rosemary Hall",
+      "city": "Wallingford",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://summer.choate.edu/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_pre_college", "academic", "arts"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2-, 4-, and 5-week programs. June 28 - July 31, 2026",
+      "overnight_evidence": {
+        "snippet": "Summer faculty reside on campus and serve as residential advisers. Located on 458 acres in the heart of Wallingford, Connecticut",
+        "url": "https://summer.choate.edu/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "The application is open for Summer Programs 2026!",
+        "url": "https://summer.choate.edu/",
+        "date_text": "2026"
+      },
+      "notes": "Prestigious boarding school summer program. 120+ academic offerings. Students from 36 countries.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Summer@Conn",
+      "translated_name_hint": null,
+      "operator_name": "Connecticut College",
+      "venue_name": "Connecticut College Campus",
+      "city": "New London",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://www.conncoll.edu/academics/summer-programs/pre-college-programs/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_pre_college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Two-week residential programs, July 5-14 and July 17-28",
+      "overnight_evidence": {
+        "snippet": "Four two-week, residential pre-college programs for rising 9th-12th grade students. Participants will live and learn on campus",
+        "url": "https://www.conncoll.edu/news/news-archive/2023/precollege-programs/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Connecticut College is inviting curious, creative, insightful and innovative high school students to explore their passions",
+        "url": "https://www.conncoll.edu/news/news-archive/2023/precollege-programs/",
+        "date_text": "2023"
+      },
+      "notes": "Connecticut College pre-college residential programs. Waterfront arboretum campus.",
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "UConn Summer LEAD Program",
+      "translated_name_hint": null,
+      "operator_name": "University of Connecticut",
+      "venue_name": "UConn Storrs Campus",
+      "city": "Storrs",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://admissions.uconn.edu/summer-lead-program/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college_pre_college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "June 28-30, 2026 (2-day program)",
+      "overnight_evidence": {
+        "snippet": "Live in a residential hall on the UConn Storrs main campus for the duration of the program",
+        "url": "https://admissions.uconn.edu/summer-lead-program/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "The Summer LEAD Program is reserved for Connecticut high school students entering their senior year and will take place from June 28 – 30, 2026",
+        "url": "https://admissions.uconn.edu/summer-lead-program/",
+        "date_text": "2026"
+      },
+      "notes": "Two-day residential program for CT high school seniors. Free program.",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Connecticut Field Hockey Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "George J Sherman Family Sports Complex",
+      "city": "Storrs",
+      "region": "CT",
+      "country": "US",
+      "canonical_url": "https://www.connecticutfieldhockeycamp.com/2026-summer-overnight-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["sports"],
+      "camp_type_tags": ["overnight"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": false,
+        "likely_one_week_plus": false
+      },
+      "duration_hint_text": "3-day sessions: July 19-21 and July 23-25, 2026",
+      "overnight_evidence": {
+        "snippet": "Check-out at the dorm. 35 Gampel Service Dr. Storrs, CT 06269",
+        "url": "https://www.connecticutfieldhockeycamp.com/2026-summer-overnight-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Summer Overnight Camp - Connecticut Field Hockey Camp",
+        "url": "https://www.connecticutfieldhockeycamp.com/2026-summer-overnight-camp/",
+        "date_text": "2026"
+      },
+      "notes": "Overnight field hockey camp at UConn. $690. Dorm lodging.",
       "validation_needs": [],
       "confidence": "high"
     }

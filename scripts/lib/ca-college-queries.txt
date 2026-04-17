@@ -1,0 +1,5 @@
+site:.edu "California" "pre-college" residential
+site:.edu "California" "summer program" residential overnight
+site:.edu "California" "summer immersion" OR "summer institute" residential
+"California" university "summer camp" residential "high school"
+"California" college "summer program" residential "boarding" OR "dorm"

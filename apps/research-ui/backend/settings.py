@@ -4,7 +4,16 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
+
+def _resolve_repo_root() -> Path:
+    current = Path(__file__).resolve().parent
+    for candidate in (current, *current.parents):
+        if (candidate / "AGENTS.md").exists() or (candidate / ".git").exists():
+            return candidate
+    return current
+
+
+REPO_ROOT = _resolve_repo_root()
 DEFAULT_SQLITE_PATH = REPO_ROOT / "data" / "staging" / "research_ui.db"
 DEFAULT_SECRET = "dev-secret-change-in-production-please"
 
@@ -29,8 +38,9 @@ def _normalize_database_url(url: str) -> str:
 def _resolve_database_url() -> tuple[str, Path | None]:
     explicit_url = (
         os.environ.get("RESEARCH_UI_DATABASE_URL")
-        or os.environ.get("DATABASE_URL")
+        or os.environ.get("DATABASE_URL_UNPOOLED")
         or os.environ.get("POSTGRES_URL_NON_POOLING")
+        or os.environ.get("DATABASE_URL")
         or os.environ.get("POSTGRES_URL")
     )
     if explicit_url:
@@ -61,6 +71,9 @@ RESEARCH_UI_CORS_ORIGINS = [
     ).split(",")
     if origin.strip()
 ]
+RESEARCH_UI_CORS_ALLOW_ORIGIN_REGEX = (
+    os.environ.get("RESEARCH_UI_CORS_ALLOW_ORIGIN_REGEX", "").strip() or None
+)
 
 RESEARCH_UI_PARENT_INVITE_CODE = os.environ.get("RESEARCH_UI_PARENT_INVITE_CODE", "").strip() or None
 RESEARCH_UI_ALLOW_UNINVITED_FIRST_PARENT = _env_flag(
@@ -90,7 +103,7 @@ def validate_runtime_settings() -> None:
 
     if IS_VERCEL and IS_SQLITE:
         errors.append(
-            "SQLite is not durable on Vercel. Set RESEARCH_UI_DATABASE_URL or attach Vercel Postgres."
+            "SQLite is not durable on Vercel. Set RESEARCH_UI_DATABASE_URL or a Neon/Postgres connection string."
         )
 
     bootstrap_username = RESEARCH_UI_BOOTSTRAP_PARENT_USERNAME

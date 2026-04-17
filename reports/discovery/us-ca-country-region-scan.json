@@ -6,12 +6,996 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"California\"",
-    "\"residential summer camp\" \"California\"",
-    "\"family camp\" \"California\"",
-    "\"youth retreat\" \"California\" overnight",
-    "site:.edu \"California\" \"pre-college\" residential"
+    "overnight summer camp California",
+    "residential summer camp California",
+    "family camp California",
+    "site:.edu California pre-college residential",
+    "youth retreat California overnight",
+    "California university summer residential program high school"
   ],
-  "next_queries": [],
-  "candidates": []
+  "next_queries": [
+    "Southern California overnight camp 2026",
+    "Northern California overnight camp directory",
+    "California faith-based residential camp",
+    "California sports academy residential"
+  ],
+  "candidates": [
+    {
+      "candidate_name": "Gold Arrow Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Shaver Lake",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://goldarrowcamp.com/",
+      "supporting_urls": ["https://goldarrowcamp.com/why-gac/2026-dates-rates/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-week mini camp, 2-week and 3-week sessions available",
+      "overnight_evidence": {
+        "snippet": "Campers attending more than one session will be placed into different two-week cabin groups. Campers will spend two weeks in their cabin groups.",
+        "url": "https://goldarrowcamp.com/why-gac/2026-dates-rates/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Dates & Rates - Gold Arrow Camp",
+        "url": "https://goldarrowcamp.com/why-gac/2026-dates-rates/",
+        "date_text": "2024-07-30"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Trinity on the Bar 717 Ranch",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Hayfork",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.bar717.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4 two-week sessions plus Family Camp",
+      "overnight_evidence": {
+        "snippet": "Camp Trinity on the Bar 717 Ranch is a residential summer camp for kids ages 7-16.",
+        "url": "https://www.bar717.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Camp Trinity offers four two-week sessions of summer camp, as well as one week of Family Camp.",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/",
+        "date_text": "2025-12-11"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Skylake Yosemite Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Bass Lake",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://skylake.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Traditional 2-week sessions",
+      "overnight_evidence": {
+        "snippet": "Skylake is an Overnight California Summer Camp where campers experience traditional summer camp life without cell phones, video games or the internet. Located in the Sierra National Forest on Bass Lake, just 15 miles from Yosemite National Park.",
+        "url": "https://skylake.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Skylake is a traditional sleep-away camp near Yosemite National Park, offering a low-tech, high-fun experience since 1945.",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/",
+        "date_text": "2025-12-11"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "River Way Ranch Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Running Springs",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://riverwayranchcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Traditional camp sessions for ages 7-16",
+      "overnight_evidence": {
+        "snippet": "Every summer, campers ages 7-16 choose to spend their summer at River Way Ranch Camp, California's top co-ed traditional overnight summer camp.",
+        "url": "https://riverwayranchcamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Kids 8 to 16 can enjoy an adventure every day at the Pali Adventures overnight summer camp located in Southern California.",
+        "url": "https://paliadventures.com/"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Pali Adventures",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Running Springs",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://paliadventures.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Specialty camp sessions",
+      "overnight_evidence": {
+        "snippet": "Kids 8 to 16 can enjoy an adventure every day at the Pali Adventures overnight summer camp located in Southern California.",
+        "url": "https://paliadventures.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Pali Adventures is a one-of-a-kind overnight summer camp.",
+        "url": "https://www.kidscamps.com/camps/california-overnight-camps.html"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Catalina Sea Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Catalina Island",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.catalinaseacamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["specialty", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One and three-week programs",
+      "overnight_evidence": {
+        "snippet": "Catalina Sea Camp has one and three-week camp programs that are amazing adventures for kids ages 8-17.",
+        "url": "https://travel.mommypoppins.com/los-angeles-kids/overnight-summer-camps-california-sleepaway-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Kids have a blast in the ocean at Catalina Island.",
+        "url": "https://travel.mommypoppins.com/los-angeles-kids/overnight-summer-camps-california-sleepaway-camps",
+        "date_text": "2025-02-09"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Tawonga",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Tuolumne",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://tawonga.org/",
+      "supporting_urls": ["https://tawonga.org/summer-programs/adventure-quests/quest-h2o/", "https://tawonga.org/dates-rates/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight", "faith-based"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-week, 2-week and 3-week sessions available",
+      "overnight_evidence": {
+        "snippet": "This 3-week adventure unfolds to take the group on a road trip across California to mountains, rivers and the ocean.",
+        "url": "https://tawonga.org/summer-programs/adventure-quests/quest-h2o/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration for 2026 programs is open",
+        "url": "https://tawonga.org/dates-rates/"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Deer Crossing Wilderness Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Loon Lake",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.deercrossingcamp.com/",
+      "supporting_urls": ["https://www.deercrossingcamp.com/dates-rates"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential", "wilderness"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One-week, two-week and four-week sessions",
+      "overnight_evidence": {
+        "snippet": "Deer Crossing Wilderness Camp is where adventure and growth meet. Nestled on the crystal clear shores of Loon Lake, deep in the California wilderness near Lake Tahoe.",
+        "url": "https://www.deercrossingcamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "2026 Camp Dates & Rates - Tuition for all sessions includes meals, platform tent sleeping accommodations",
+        "url": "https://www.deercrossingcamp.com/dates-rates",
+        "date_text": "2018-01-05"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Tuolumne Trails",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Tuolumne",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.tuolumnetrails.org/",
+      "supporting_urls": ["https://www.tuolumnetrails.org/register/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4-day sessions for various ages",
+      "overnight_evidence": {
+        "snippet": "Summer 2026 Dates and Rates - Session 3: 7-17 years, July 12-July 15, 4 Days",
+        "url": "https://www.tuolumnetrails.org/register/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 Registration - Tuolumne Trails",
+        "url": "https://www.tuolumnetrails.org/register/",
+        "date_text": "2024-01-12"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Natoma",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "San Luis Obispo",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://campnatoma.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Rustic overnight summer camp on Central Coast",
+      "overnight_evidence": {
+        "snippet": "Camp Natoma is a rustic overnight summer camp located on California's Central Coast, between San Luis Obispo and Paso Robles. At Camp Natoma, youth sleep under the stars.",
+        "url": "https://campnatoma.org/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Registration Is Open For Summer 2026! 85th Anniversary Family Camp Registration is Open!",
+        "url": "https://campnatoma.org/"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Jameson Ranch Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.jamesonranchcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Traditional overnight camp",
+      "overnight_evidence": {
+        "snippet": "Jameson Ranch Camp is an overnight summer camp in California that helps children and teens develop confidence, independence, and lifelong friendships.",
+        "url": "https://campsinsider.com/california-overnight-camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Jameson Ranch Camp is an overnight summer camp in California",
+        "url": "https://campsinsider.com/california-overnight-camps/"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "High Sierra Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Shaver Lake",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://highsierracamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Overnight summer camp in High Sierra",
+      "overnight_evidence": {
+        "snippet": "Sleepaway and Overnight Summer Camps in California Fun, friends, and wilderness adventures await you at this overnight summer camp in California's High Sierra mountains.",
+        "url": "https://highsierracamp.com/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Sleepaway and Overnight Summer Camps in California",
+        "url": "https://highsierracamp.com/"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "SIGMAWest",
+      "translated_name_hint": null,
+      "operator_name": "SigmaCamp",
+      "venue_name": "Pine Summit Camp & Conference Center",
+      "city": "Big Bear Lake",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://sigmacamp.org/2026west",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "8 days/7 nights",
+      "overnight_evidence": {
+        "snippet": "SigmaWest is a residential STEM summer camp in California for middle and high school students aged 12-15. Students are housed in comfortable A-frame cabins.",
+        "url": "https://sigmacamp.org/2026west"
+      },
+      "recent_activity_evidence": {
+        "snippet": "SigmaWest 2026 is a residential STEM summer camp",
+        "url": "https://sigmacamp.org/2026west"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "COSMOS",
+      "translated_name_hint": "California State Summer School for Mathematics and Science",
+      "operator_name": "University of California",
+      "venue_name": null,
+      "city": null,
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://cosmos.ucop.edu/",
+      "supporting_urls": ["https://cosmos.ucla.edu/", "https://cosmos.ucdavis.edu/", "https://cosmos.uci.edu/", "https://cosmos.ucsd.edu/", "https://cosmos.ucsc.edu/"],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem", "college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "multi_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4 weeks (July 5 - August 1)",
+      "overnight_evidence": {
+        "snippet": "COSMOS is an intensive four-week summer residential Pre-College Program for high school students. Students are REQUIRED to live on campus for the duration of the program.",
+        "url": "https://cosmos.ucop.edu/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "COSMOS 2026 Program Dates: July 5 – Aug 1",
+        "url": "https://cosmos.ucop.edu/",
+        "date_text": "2026"
+      },
+      "notes": "Multi-campus program: UC Davis, UC Irvine, UC Los Angeles, UC Merced, UC San Diego, UC Santa Cruz",
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UC Berkeley Pre-College Scholars - Residential",
+      "translated_name_hint": null,
+      "operator_name": "University of California Berkeley",
+      "venue_name": "UC Berkeley Campus",
+      "city": "Berkeley",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://precollege.berkeley.edu/residential",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "6 or 8 weeks",
+      "overnight_evidence": {
+        "snippet": "The Berkeley Pre-College Scholars Summer Residential track offers international and domestic high school students the opportunity to live on campus.",
+        "url": "https://precollege.berkeley.edu/residential"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Summer 2026 Rates - Session C: June 22-August 14 (Eight Weeks), Session D: July 6-August 14 (Six Weeks)",
+        "url": "https://precollege.berkeley.edu/residential"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UCLA Summer College Immersion Program (SCIP)",
+      "translated_name_hint": null,
+      "operator_name": "University of California Los Angeles",
+      "venue_name": "UCLA Campus",
+      "city": "Los Angeles",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://summer.ucla.edu/student-types/high-school-students/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "6 weeks",
+      "overnight_evidence": {
+        "snippet": "Take 1-2 UCLA courses alongside UCLA undergraduates and receive exclusive access to co-curricular enhancements.",
+        "url": "https://summer.ucla.edu/student-types/high-school-students/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "UCLA Summer Sessions - high school students",
+        "url": "https://summer.ucla.edu/student-types/high-school-students/"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "UC Davis Summer Academy",
+      "translated_name_hint": null,
+      "operator_name": "University of California Davis",
+      "venue_name": "UC Davis Campus",
+      "city": "Davis",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://cie.ucdavis.edu/youth-programs/academic-preparation-high-school-students/uc-davis-summer-academy",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "3 weeks (July 7-25)",
+      "overnight_evidence": {
+        "snippet": "While attending this program, students will live in residence halls on campus, experiencing college life firsthand.",
+        "url": "https://cie.ucdavis.edu/youth-programs/academic-preparation-high-school-students/uc-davis-summer-academy"
+      },
+      "recent_activity_evidence": {
+        "snippet": "UC Davis Summer Academy is a rigorous residential college preparatory program",
+        "url": "https://cie.ucdavis.edu/youth-programs/academic-preparation-high-school-students/uc-davis-summer-academy",
+        "date_text": "2025-03-14"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "UC Davis Young Scholars Program",
+      "translated_name_hint": null,
+      "operator_name": "University of California Davis",
+      "venue_name": "UC Davis Campus",
+      "city": "Davis",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://ysp.ucdavis.edu/program-description",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem", "college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "6 weeks (June 21 - August 1)",
+      "overnight_evidence": {
+        "snippet": "Welcome to the UC Davis Young Scholars Program, a summer residential research program designed to introduce approximately 40 high-achieving high school students to the world of original research.",
+        "url": "https://ysp.ucdavis.edu/program-description"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Program dates for Summer 2026 are June 21 – August 1",
+        "url": "https://ysp.ucdavis.edu/program-description"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Stanford Medical Youth Science Program",
+      "translated_name_hint": null,
+      "operator_name": "Stanford University",
+      "venue_name": "Stanford Campus",
+      "city": "Stanford",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://smysp.stanford.edu/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "stem", "college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5 weeks (June 22-July 26)",
+      "overnight_evidence": {
+        "snippet": "Stanford Medical Youth Science Program (SMYSP) Dates: June 22–July 26 Location: Stanford University",
+        "url": "https://blog.collegevine.com/high-school-summer-programs-in-california"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Stanford Medical Youth Science Program (SMYSP) Dates: June 22–July 26",
+        "url": "https://blog.collegevine.com/high-school-summer-programs-in-california",
+        "date_text": "2026-03-04"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "University of the Pacific Summer High School Institute",
+      "translated_name_hint": null,
+      "operator_name": "University of the Pacific",
+      "venue_name": "University of the Pacific Campus",
+      "city": "Stockton",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.pacific.edu/summerhighschool",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "2 weeks",
+      "overnight_evidence": {
+        "snippet": "The University of the Pacific's Summer High School Institute is a two-week residential program designed to immerse high school students.",
+        "url": "https://blog.collegevine.com/high-school-summer-programs-in-california"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Pacific Summer High School Institute - Dates: Session 1: June 1-11, Session 2: June 16-26 Location: University of the Pacific Cost: $3,800",
+        "url": "https://blog.collegevine.com/high-school-summer-programs-in-california",
+        "date_text": "2026-03-04"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "embARC",
+      "translated_name_hint": null,
+      "operator_name": "UC Berkeley College of Environmental Design",
+      "venue_name": "UC Berkeley Campus",
+      "city": "Berkeley",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://ced.berkeley.edu/embarc",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["academic", "college-pre-college"],
+      "camp_type_tags": ["residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": true,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "4 weeks (July 6-31)",
+      "overnight_evidence": {
+        "snippet": "This summer program for rising juniors and seniors immerses participants in architecture, urban design, and sustainable city planning. Residential: $10,493",
+        "url": "https://blog.collegevine.com/high-school-summer-programs-in-california"
+      },
+      "recent_activity_evidence": {
+        "snippet": "embARC - Dates: July 6-31 Location: UC Berkeley Cost: Residential $10,493",
+        "url": "https://blog.collegevine.com/high-school-summer-programs-in-california",
+        "date_text": "2026-03-04"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "City of Berkeley Echo Lake Camp",
+      "translated_name_hint": null,
+      "operator_name": "City of Berkeley",
+      "venue_name": null,
+      "city": "Echo Lake",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Youth, family, adult and senior programs",
+      "overnight_evidence": {
+        "snippet": "Escape to the Sierra Nevada with the City of Berkeley - summer sleepaway camps for youth, families, adults, and seniors.",
+        "url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Berkeley Echo Lake Camp has served both Berkeley residents and non-residents since 1923.",
+        "url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "City of Berkeley Tuolumne Camp",
+      "translated_name_hint": null,
+      "operator_name": "City of Berkeley",
+      "venue_name": null,
+      "city": "Groveland",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["family", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Family camp programs",
+      "overnight_evidence": {
+        "snippet": "At either Echo Lake or Tuolumne Camp, families can enjoy the wilderness, great food, and all-day programming for kids.",
+        "url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Berkeley Tuolumne Camp reopened in summer 2022 after being completely rebuilt following the Rim Fire of 2013.",
+        "url": "https://berkeleyca.gov/community-recreation/parks-recreation/camps/overnight-camps"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "YMCA Camp Jones Gulch",
+      "translated_name_hint": null,
+      "operator_name": "YMCA of Greater San Francisco",
+      "venue_name": null,
+      "city": null,
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.ymcasf.org/program/overnight-summer-camps/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Traditional overnight camp in Valley of Giants",
+      "overnight_evidence": {
+        "snippet": "At Camp Jones Gulch, youth disconnect from electronics and reconnect with nature in the 'Valley of Giants'.",
+        "url": "https://www.ymcasf.org/program/overnight-summer-camps/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Overnight Summer Camps - YMCA of Greater San Francisco",
+        "url": "https://www.ymcasf.org/program/overnight-summer-camps/",
+        "date_text": "2024-12-17"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Camp Phoenix",
+      "translated_name_hint": null,
+      "operator_name": "Sierra Nevada Journeys",
+      "venue_name": "Grizzly Creek Ranch",
+      "city": null,
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://campphoenix.org/summer-camp/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Overnight camp with 2-night coastal camping trip",
+      "overnight_evidence": {
+        "snippet": "Our overnight camp gives middle-school-aged youth the chance to challenge themselves, build community, and connect with nature. Campers spend their days zip-lining, tackling ropes courses, kayaking on the lake, practicing archery, and hiking scenic mountain trails.",
+        "url": "https://campphoenix.org/summer-camp/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Camp Phoenix - Summer Camp - Discover How Time Spent in Nature Can Transform Your Kid's Life",
+        "url": "https://campphoenix.org/summer-camp/",
+        "date_text": "2020-09-21"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Camp Hi-Sierra",
+      "translated_name_hint": null,
+      "operator_name": "Boy Scouts Silicon Valley Monterey Bay Council",
+      "venue_name": null,
+      "city": "Long Barn",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://scoutingevent.com/055-CHS26",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1-week sessions with 60+ merit badges",
+      "overnight_evidence": {
+        "snippet": "Camp Hi-Sierra sits at 5,000 feet in the heart of the Stanislaus National Forest, surrounded by towering pines.",
+        "url": "https://scoutingevent.com/055-CHS26"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Camp Hi-Sierra 2026 - Week 1: June 21-27, 2026",
+        "url": "https://scoutingevent.com/055-CHS26"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Mountain Meadow Ranch",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": null,
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.mountainmeadowranchcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "1 week (6 day) and 2 week (12 day) options",
+      "overnight_evidence": {
+        "snippet": "Mountain Meadow Ranch is a co-ed overnight summer camp for ages 7-16 nestled in the Sierra Nevada Mountains.",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Mountain Meadow Ranch Summer Camp - Duration: 1 week (6 day) + 2 week (12 day) options",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/",
+        "date_text": "2025-12-11"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Marin Ranch Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Walker Creek Ranch",
+      "city": null,
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.marinranchcamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "5, 6 or 10 day programs",
+      "overnight_evidence": {
+        "snippet": "Marin Ranch Camp, a premier overnight summer camp held at Walker Creek Ranch.",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Duration: 5 days, 6 days or 10 days",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/",
+        "date_text": "2025-12-11"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "medium"
+    },
+    {
+      "candidate_name": "Farm Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": "Plantation",
+      "city": "Cazadero",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.farmcamp.org/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "Traditional camp for ages 8-17",
+      "overnight_evidence": {
+        "snippet": "Farm Camp is a traditional, coed, overnight camp for children ages 8 to 17. Located at Plantation, a working farm on 500 acres in the coastal redwoods.",
+        "url": "https://www.kidscamps.com/camps/california-overnight-camps.html"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Farm Camp is a traditional overnight summer camp on a working farm",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/",
+        "date_text": "2025-12-11"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "high"
+    },
+    {
+      "candidate_name": "Pinecrest Lake Overnight Camp",
+      "translated_name_hint": null,
+      "operator_name": null,
+      "venue_name": null,
+      "city": "Pinecrest",
+      "region": "CA",
+      "country": "US",
+      "canonical_url": "https://www.pinecrestlakecamp.com/",
+      "supporting_urls": [],
+      "directory_source_url": null,
+      "source_language": "en",
+      "program_family_tags": ["traditional", "overnight"],
+      "camp_type_tags": ["sleepaway", "residential"],
+      "candidate_shape": "single_venue_candidate",
+      "priority_flags": {
+        "likely_college_precollege": null,
+        "likely_one_week_plus": true
+      },
+      "duration_hint_text": "One and two-week options",
+      "overnight_evidence": {
+        "snippet": "Experience overnight camp fun in the beautiful Stanislaus National Forest.",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/"
+      },
+      "recent_activity_evidence": {
+        "snippet": "Duration: One and two-week options",
+        "url": "https://www.510families.com/northern-california-overnight-camp-guide/",
+        "date_text": "2025-12-11"
+      },
+      "notes": null,
+      "validation_needs": [],
+      "confidence": "medium"
+    }
+  ]
 }

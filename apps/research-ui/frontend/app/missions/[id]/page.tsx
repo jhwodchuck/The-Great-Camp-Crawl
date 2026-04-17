@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth";
-import { api, Mission, Contribution } from "@/lib/api";
+import { api, Mission, Contribution, ScrapeResult } from "@/lib/api";
 
 export default function MissionDetailPage() {
   const { user, loading } = useAuth();
@@ -19,6 +19,9 @@ export default function MissionDetailPage() {
   const [newCamp, setNewCamp] = useState({ camp_name: "", website_url: "", region: "", city: "", overnight_confirmed: "unknown", notes: "" });
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
+  const [scrapeUrl, setScrapeUrl] = useState("");
+  const [scraping, setScraping] = useState(false);
+  const [scrapeResult, setScrapeResult] = useState<ScrapeResult | null>(null);
 
   useEffect(() => {
     if (loading) return;
@@ -51,6 +54,30 @@ export default function MissionDetailPage() {
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Failed to add camp");
       setSaving(false);
+    }
+  }
+
+  async function handleScrape(e: React.FormEvent) {
+    e.preventDefault();
+    if (!scrapeUrl.trim()) return;
+    setScraping(true);
+    setError("");
+    setScrapeResult(null);
+    try {
+      const result = await api.scrape.extract(scrapeUrl.trim());
+      setScrapeResult(result);
+      // Auto-fill the form fields from scrape results
+      setNewCamp(prev => ({
+        ...prev,
+        camp_name: prev.camp_name || result.title || "",
+        website_url: result.url || prev.website_url,
+        overnight_confirmed: result.overnight_signals.length > 0 ? "yes" : prev.overnight_confirmed,
+        notes: prev.notes || (result.description ? `From website: ${result.description}` : ""),
+      }));
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Failed to scrape URL");
+    } finally {
+      setScraping(false);
     }
   }
 
@@ -92,6 +119,42 @@ export default function MissionDetailPage() {
           ) : (
             <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
               <h2 className="font-bold text-blue-800 mb-4">Tell us about the camp you found! 🎉</h2>
+
+              {/* Scrape URL auto-fill */}
+              <form onSubmit={handleScrape} className="mb-4 p-3 bg-white rounded-lg border border-blue-100">
+                <label className="block text-sm font-medium text-blue-700 mb-1">🔍 Paste a URL to auto-fill</label>
+                <div className="flex gap-2">
+                  <input
+                    type="url"
+                    value={scrapeUrl}
+                    onChange={e => setScrapeUrl(e.target.value)}
+                    placeholder="https://camphappytrails.com"
+                    className="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                  <button
+                    type="submit"
+                    disabled={scraping || !scrapeUrl.trim()}
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50"
+                  >
+                    {scraping ? "Scraping..." : "Auto-fill"}
+                  </button>
+                </div>
+                {scrapeResult && (
+                  <div className="mt-2 text-xs text-green-700 bg-green-50 rounded p-2">
+                    ✅ Found: {scrapeResult.title || "untitled"}
+                    {scrapeResult.overnight_signals.length > 0 && (
+                      <span className="ml-2">🌙 Overnight signals: {scrapeResult.overnight_signals.join(", ")}</span>
+                    )}
+                    {scrapeResult.ages && (
+                      <span className="ml-2">Ages: {scrapeResult.ages.min ?? "?"}–{scrapeResult.ages.max ?? "?"}</span>
+                    )}
+                    {scrapeResult.pricing && (
+                      <span className="ml-2">${scrapeResult.pricing.min ?? "?"}–${scrapeResult.pricing.max ?? "?"}</span>
+                    )}
+                  </div>
+                )}
+              </form>
+
               <form onSubmit={handleAddCamp} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Camp Name *</label>

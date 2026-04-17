@@ -5,12 +5,15 @@ import enum
 from datetime import datetime, timezone
 
 from sqlalchemy import (
+    Boolean,
     DateTime,
     Enum,
+    Float,
     ForeignKey,
     Integer,
     String,
     Text,
+    UniqueConstraint,
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -170,3 +173,70 @@ class ExportArtifact(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
 
     contribution: Mapped["Contribution"] = relationship("Contribution")
+
+
+# ---------------------------------------------------------------------------
+# Camp Catalog
+# ---------------------------------------------------------------------------
+
+
+class CampSource(str, enum.Enum):
+    discovery_pipeline = "discovery_pipeline"
+    child_contribution = "child_contribution"
+    manual = "manual"
+
+
+class Camp(Base):
+    __tablename__ = "camps"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    record_id: Mapped[str] = mapped_column(String(512), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(512), nullable=False)
+    display_name: Mapped[str] = mapped_column(String(512), nullable=True)
+    country: Mapped[str] = mapped_column(String(4), nullable=True, index=True)
+    region: Mapped[str] = mapped_column(String(8), nullable=True, index=True)
+    city: Mapped[str] = mapped_column(String(256), nullable=True)
+    venue_name: Mapped[str] = mapped_column(String(512), nullable=True)
+    program_family: Mapped[str] = mapped_column(Text, nullable=True)  # JSON array as text
+    camp_types: Mapped[str] = mapped_column(Text, nullable=True)  # JSON array as text
+    website_url: Mapped[str] = mapped_column(String(2048), nullable=True)
+    ages_min: Mapped[int] = mapped_column(Integer, nullable=True)
+    ages_max: Mapped[int] = mapped_column(Integer, nullable=True)
+    grades_min: Mapped[int] = mapped_column(Integer, nullable=True)
+    grades_max: Mapped[int] = mapped_column(Integer, nullable=True)
+    duration_min_days: Mapped[int] = mapped_column(Integer, nullable=True)
+    duration_max_days: Mapped[int] = mapped_column(Integer, nullable=True)
+    pricing_currency: Mapped[str] = mapped_column(String(8), nullable=True)
+    pricing_min: Mapped[float] = mapped_column(Float, nullable=True)
+    pricing_max: Mapped[float] = mapped_column(Float, nullable=True)
+    boarding_included: Mapped[bool] = mapped_column(Boolean, nullable=True)
+    overnight_confirmed: Mapped[bool] = mapped_column(Boolean, nullable=True)
+    active_confirmed: Mapped[bool] = mapped_column(Boolean, nullable=True)
+    confidence: Mapped[str] = mapped_column(String(32), nullable=True)
+    operator_name: Mapped[str] = mapped_column(String(512), nullable=True)
+    contact_email: Mapped[str] = mapped_column(String(512), nullable=True)
+    contact_phone: Mapped[str] = mapped_column(String(64), nullable=True)
+    draft_status: Mapped[str] = mapped_column(String(32), nullable=True)
+    description_md: Mapped[str] = mapped_column(Text, nullable=True)
+    last_verified: Mapped[str] = mapped_column(String(32), nullable=True)
+    source: Mapped[CampSource] = mapped_column(
+        Enum(CampSource), nullable=False, default=CampSource.discovery_pipeline
+    )
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+    favorites: Mapped[list["Favorite"]] = relationship("Favorite", back_populates="camp", cascade="all, delete-orphan")
+
+
+class Favorite(Base):
+    __tablename__ = "favorites"
+    __table_args__ = (UniqueConstraint("user_id", "camp_id", name="uq_user_camp"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id"), nullable=False)
+    camp_id: Mapped[int] = mapped_column(Integer, ForeignKey("camps.id"), nullable=False)
+    notes: Mapped[str] = mapped_column(Text, nullable=True, default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+    user: Mapped["User"] = relationship("User")
+    camp: Mapped["Camp"] = relationship("Camp", back_populates="favorites")

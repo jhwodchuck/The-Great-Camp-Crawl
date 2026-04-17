@@ -6,108 +6,84 @@
     "city": null
   },
   "queries_used": [
-    "\"overnight summer camp\" \"Kentucky\""
+    "site:https://kycamps.org",
+    "https://www.aldersgatecamp.org/camps"
   ],
-  "next_queries": [],
+  "next_queries": [
+    "Retry Loucon direct site for supporting evidence or new programming in next batch.",
+    "Run expanded .edu and faith-based queries for programs not under the KY United Methodist umbrella."
+  ],
   "candidates": [
     {
-      "candidate_name": "YMCA Camp Piomingo",
+      "candidate_name": "Aldersgate Camp & Retreat Center",
       "translated_name_hint": null,
-      "operator_name": "YMCA",
-      "venue_name": "Camp Piomingo",
-      "city": "Brandenburg",
+      "operator_name": "Kentucky Annual Conference of the United Methodist Church",
+      "venue_name": "Aldersgate Camp & Retreat Center",
+      "city": "Ravenna",
       "region": "KY",
       "country": "US",
-      "canonical_url": "https://ymcalouisville.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
+      "canonical_url": "https://www.aldersgatecamp.org/",
+      "supporting_urls": [
+        "https://www.aldersgatecamp.org/camps",
+        "https://kycamps.org"
+      ],
+      "directory_source_url": "https://kycamps.org",
       "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps"],
-      "camp_type_tags": ["traditional", "equestrian"],
+      "program_family_tags": ["overnight_camp", "family_camp", "faith_based"],
+      "camp_type_tags": ["Christian", "youth", "family"],
       "candidate_shape": "single_venue_candidate",
       "priority_flags": {
-        "likely_college_precollege": false,
+        "likely_college_precollege": null,
         "likely_one_week_plus": true
       },
-      "duration_hint_text": "weekly sessions",
+      "duration_hint_text": "Programs range 2–6 nights, Summer 2026 sessions posted.",
       "overnight_evidence": {
-        "snippet": "Offers traditional and equestrian overnight camps",
-        "url": "https://ymcalouisville.org/"
+        "snippet": "Campers spend two nights in our home-like retreat cottages. Families are invited to participate together in fun, traditional camp activities such as swimming, crafts, barn animal encounters, hayride, campfires, and more. Spend three days and two nights housed in our home-like, air-conditioned cottages.",
+        "url": "https://www.aldersgatecamp.org/camps"
       },
       "recent_activity_evidence": {
-        "snippet": "Active programs",
-        "url": null,
+        "snippet": "Session dates available for June–August 2026.",
+        "url": "https://www.aldersgatecamp.org/camps",
         "date_text": "2026"
       },
-      "notes": "Ages 5-17.",
-      "validation_needs": ["check venue city matches YMCA Louisville location context"],
-      "confidence": "high"
-    },
-    {
-      "candidate_name": "Barefoot Republic",
-      "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Barefoot Republic Camp",
-      "city": "Fountain Run",
-      "region": "KY",
-      "country": "US",
-      "canonical_url": "https://barefootrepublic.org/",
-      "supporting_urls": [],
-      "directory_source_url": null,
-      "source_language": "en",
-      "program_family_tags": ["traditional-overnight-camps", "faith-based-camps-and-retreats"],
-      "camp_type_tags": ["christian", "traditional"],
-      "candidate_shape": "single_venue_candidate",
-      "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
-      },
-      "duration_hint_text": "multi-day",
-      "overnight_evidence": {
-        "snippet": "Hosts overnight camps in Fountain Run, KY",
-        "url": "https://barefootrepublic.org/"
-      },
-      "recent_activity_evidence": {
-        "snippet": "Active operations",
-        "url": null,
-        "date_text": "2026"
-      },
-      "notes": "Elementary to senior high school.",
+      "notes": "Affiliated with KY United Methodist Conference, explicit session evidence and registration maintained.",
       "validation_needs": [],
       "confidence": "high"
     },
     {
-      "candidate_name": "Bluegrass Christian Camp",
+      "candidate_name": "Loucon Training & Retreat Center",
       "translated_name_hint": null,
-      "operator_name": null,
-      "venue_name": "Bluegrass Christian Camp",
-      "city": "Lexington",
+      "operator_name": "Kentucky Annual Conference of the United Methodist Church",
+      "venue_name": null,
+      "city": null,
       "region": "KY",
       "country": "US",
-      "canonical_url": null,
-      "supporting_urls": ["https://kentuckyfamilyfun.net/"],
-      "directory_source_url": null,
+      "canonical_url": "http://loucon.org/",
+      "supporting_urls": [
+        "https://kycamps.org"
+      ],
+      "directory_source_url": "https://kycamps.org",
       "source_language": "en",
-      "program_family_tags": ["faith-based-camps-and-retreats", "traditional-overnight-camps"],
-      "camp_type_tags": ["christian", "traditional"],
-      "candidate_shape": "single_venue_candidate",
+      "program_family_tags": ["overnight_camp", "faith_based"],
+      "camp_type_tags": ["Christian", "youth"],
+      "candidate_shape": "venue_unconfirmed",
       "priority_flags": {
-        "likely_college_precollege": false,
-        "likely_one_week_plus": true
+        "likely_college_precollege": null,
+        "likely_one_week_plus": null
       },
-      "duration_hint_text": "multi-day",
+      "duration_hint_text": null,
       "overnight_evidence": {
-        "snippet": "sleep-away camp experiences... Bluegrass Christian Camp",
-        "url": null
+        "snippet": "Loucon is a named program in the official KY United Methodist Conference camps directory.",
+        "url": "https://kycamps.org"
       },
       "recent_activity_evidence": {
-        "snippet": "Operations active",
-        "url": null,
+        "snippet": "Included with Aldersgate in 2026 camp listings.",
+        "url": "https://kycamps.org",
         "date_text": "2026"
       },
-      "notes": "Located in Lexington.",
-      "validation_needs": ["find canonical url"],
-      "confidence": "high"
+      "notes": "Direct website currently unavailable, but repeated official source confirmation.",
+      "validation_needs": ["Direct site content access (www.loucon.org)"],
+      "confidence": "medium"
     }
   ]
 }
