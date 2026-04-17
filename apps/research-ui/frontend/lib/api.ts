@@ -1,4 +1,6 @@
-/** API base URL – override with NEXT_PUBLIC_API_URL env var */
+/** API base URL – override with NEXT_PUBLIC_API_URL env var.
+ *  WARNING: Do NOT use plain HTTP in production; it exposes auth tokens.
+ *  Always use HTTPS when deploying. */
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 function getToken(): string | null {

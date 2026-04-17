@@ -1,0 +1,36 @@
+{
+  "candidate_id": "ui-contrib-1-camp-happy-trails",
+  "name": "Camp Happy Trails",
+  "website_url": "https://camphappytrails.example.com",
+  "country": "US",
+  "region": "VT",
+  "city": "Burlington",
+  "venue_name": null,
+  "overnight_confirmed": "yes",
+  "notes": "Looks great!",
+  "status": "contributed",
+  "record_basis": "child_contribution",
+  "source": "research_ui",
+  "contributor_notes": {
+    "overnight_evidence": "Campers sleep in cabins every night.",
+    "recent_activity": null,
+    "age_range": null,
+    "program_type": null,
+    "cost_info": null,
+    "why_interesting": "They have a lake and waterslide!"
+  },
+  "evidence": [
+    {
+      "url": "https://camphappytrails.example.com/about",
+      "snippet": "Campers sleep in cabins under the stars every night.",
+      "capture_notes": "From the About page"
+    }
+  ],
+  "provenance": {
+    "contribution_id": 1,
+    "contributor_id": 7,
+    "mission_id": 2,
+    "submitted_at": "2026-04-17T01:01:32.595889",
+    "promoted_at": "2026-04-17T01:01:32.621107+00:00"
+  }
+}

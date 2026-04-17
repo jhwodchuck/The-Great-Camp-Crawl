@@ -7,7 +7,7 @@ from pathlib import Path
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
-REPO_ROOT = Path(__file__).resolve().parents[4]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = os.environ.get(
     "RESEARCH_UI_DB",
     str(REPO_ROOT / "data" / "staging" / "research_ui.db"),

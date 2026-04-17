@@ -16,7 +16,7 @@ from database import get_db
 
 router = APIRouter(prefix="/api/export", tags=["export"])
 
-REPO_ROOT = Path(__file__).resolve().parents[5]
+REPO_ROOT = Path(__file__).resolve().parents[4]
 CONTRIBUTIONS_DIR = REPO_ROOT / "data" / "staging" / "contributions"
 REVIEW_QUEUE_DIR = REPO_ROOT / "data" / "staging" / "review-queue"
 

@@ -292,8 +292,7 @@ def test_only_parent_can_review():
 
 
 def test_guided_questions_list():
-    token = register_and_login("q_parent")
-    parent_token = token
+    parent_token = register_and_login("q_parent")
     child_token = register_and_login("q_child", role="child")
 
     mission_resp = client.post("/api/missions/", json={"title": "Q Mission"}, headers=auth_headers(parent_token))
