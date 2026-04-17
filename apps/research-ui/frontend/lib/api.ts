@@ -1,10 +1,7 @@
-/** API base URL – override with NEXT_PUBLIC_API_URL env var.
+/** API base URL – browser calls the backend directly; SSR uses the same env var.
  *  WARNING: Do NOT use plain HTTP in production; it exposes auth tokens.
  *  Always use HTTPS when deploying. */
-const API_BASE =
-  typeof window !== "undefined"
-    ? window.location.origin  // use same-origin so Next.js rewrites proxy to backend
-    : (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000");
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 if (
   typeof window !== "undefined" &&
