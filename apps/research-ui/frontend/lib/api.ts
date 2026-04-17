@@ -1,17 +1,10 @@
 /** API base URL – override with NEXT_PUBLIC_API_URL env var.
  *  WARNING: Do NOT use plain HTTP in production; it exposes auth tokens.
  *  Always use HTTPS when deploying. */
-let API_BASE =
-  process.env.NEXT_PUBLIC_API_URL ??
-  (process.env.NODE_ENV === "production" ? "/backend" : "http://localhost:8000");
-
-// If the build-time `NEXT_PUBLIC_API_URL` points at the separate API project
-// (the-great-camp-crawl-api.vercel.app) but the frontend is served from the
-// main domain, prefer the current origin at runtime to avoid cross-origin
-// requests and CORS issues.
-if (typeof window !== "undefined" && API_BASE && API_BASE.includes("the-great-camp-crawl-api.vercel.app")) {
-  API_BASE = window.location.origin;
-}
+const API_BASE =
+  typeof window !== "undefined"
+    ? window.location.origin  // use same-origin so Next.js rewrites proxy to backend
+    : (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000");
 
 if (
   typeof window !== "undefined" &&
