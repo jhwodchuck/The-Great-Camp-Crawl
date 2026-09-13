@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 from typing import Optional
 
 from fastapi import APIRouter, Depends, Query
@@ -9,10 +10,12 @@ from sqlalchemy import func, or_
 from sqlalchemy.orm import Session
 
 from database import get_db
+from auth import get_current_user_optional, require_parent
 from models import Camp
-from schemas import CampListOut, CampOut, CampStatsOut
+from schemas import CampListOut, CampModerationUpdate, CampOut, CampStatsOut
 
 router = APIRouter(prefix="/api/camps", tags=["camps"])
+_SHOW_STATUSES = ("draft", "candidate")
 
 
 @router.get("", response_model=CampListOut)
@@ -33,7 +36,6 @@ def list_camps(
     """Paginated list of camps with filtering."""
     # Only surface curated records (draft + candidate); exclude raw crawl candidates
     # and any record flagged as excluded.
-    _SHOW_STATUSES = ("draft", "candidate")
     query = (
         db.query(Camp)
         .filter(Camp.is_excluded.is_not(True))
@@ -86,7 +88,6 @@ def list_camps(
 @router.get("/stats", response_model=CampStatsOut)
 def camp_stats(db: Session = Depends(get_db)):
     """Aggregate counts for filter facets."""
-    _SHOW_STATUSES = ("draft", "candidate")
     base = db.query(Camp).filter(Camp.is_excluded.is_not(True)).filter(Camp.draft_status.in_(_SHOW_STATUSES))
     total = base.count()
     by_country = dict(
@@ -121,10 +122,49 @@ def camp_stats(db: Session = Depends(get_db)):
 
 
 @router.get("/{record_id}", response_model=CampOut)
-def get_camp(record_id: str, db: Session = Depends(get_db)):
+def get_camp(
+    record_id: str,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user_optional),
+):
     """Single camp detail by record_id."""
+    query = db.query(Camp).filter(Camp.record_id == record_id)
+    if current_user is None:
+        query = query.filter(Camp.is_excluded.is_not(True)).filter(
+            Camp.draft_status.in_(_SHOW_STATUSES)
+        )
+    camp = query.first()
+    if not camp:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Camp not found")
+    return CampOut.model_validate(camp)
+
+
+@router.patch("/{record_id}/moderation", response_model=CampOut)
+def moderate_camp(
+    record_id: str,
+    update: CampModerationUpdate,
+    db: Session = Depends(get_db),
+    current_user=Depends(require_parent),
+):
+    """Exclude or restore a camp while preserving a parent-visible audit trail."""
     camp = db.query(Camp).filter(Camp.record_id == record_id).first()
     if not camp:
         from fastapi import HTTPException
         raise HTTPException(status_code=404, detail="Camp not found")
+
+    camp.is_excluded = update.is_excluded
+    if update.is_excluded:
+        camp.exclusion_reason = update.reason
+        camp.exclusion_notes = update.notes
+        camp.excluded_at = datetime.now(timezone.utc)
+        camp.excluded_by_user_id = current_user.id
+    else:
+        camp.exclusion_reason = None
+        camp.exclusion_notes = None
+        camp.excluded_at = None
+        camp.excluded_by_user_id = None
+
+    db.commit()
+    db.refresh(camp)
     return CampOut.model_validate(camp)

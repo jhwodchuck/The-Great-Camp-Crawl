@@ -384,7 +384,7 @@ def test_camp_moderation_hides_excluded_records_from_public_reads(db):
         record_id="cand-us-test-not-a-camp",
         name="Medical Dosage Page",
         website_url="https://example.com/medical-dosage",
-        draft_status="candidate_pending",
+        draft_status="candidate",
         source=models.CampSource.discovery_pipeline,
     )
     db.add(camp)
