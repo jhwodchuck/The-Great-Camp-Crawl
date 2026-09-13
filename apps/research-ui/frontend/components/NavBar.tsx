@@ -20,33 +20,13 @@ export default function NavBar() {
             Catalog
           </Link>
 
-          <Link href="/missions" className="hover:underline text-sm">
-            Missions
+          <Link href="/plans" className="hover:underline text-sm">
+            Summer Plans
           </Link>
 
-          <Link href="/contributions" className="hover:underline text-sm">
-            Contributions
+          <Link href="/favorites" className="hover:underline text-sm">
+            ❤️ Favorites
           </Link>
-
-          {user.role === "parent" && (
-            <>
-              <Link href="/missions" className="hover:underline text-sm">
-                + Add or Update Camp
-              </Link>
-              <Link href="/review" className="hover:underline text-sm">
-                Review Queue
-              </Link>
-              <Link href="/missions/new" className="hover:underline text-sm">
-                + New Mission
-              </Link>
-            </>
-          )}
-
-          {user.role === "child" && (
-            <Link href="/missions" className="hover:underline text-sm">
-              + Add or Update Camp
-            </Link>
-          )}
 
           <div className="ml-auto flex items-center gap-4 text-sm">
             <span className="opacity-80">

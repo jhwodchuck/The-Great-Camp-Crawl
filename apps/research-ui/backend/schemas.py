@@ -265,6 +265,7 @@ class CampStatsOut(BaseModel):
     total: int
     by_country: dict[str, int]
     by_region: dict[str, int]
+    regions_by_country: dict[str, dict[str, int]]
     by_program_family: dict[str, int]
 
 
@@ -272,6 +273,30 @@ class CampModerationUpdate(BaseModel):
     is_excluded: bool
     reason: Optional[str] = None
     notes: Optional[str] = None
+
+
+class CampEnrichmentUpdate(BaseModel):
+    """Fields that can be updated via the ChatGPT research clipboard."""
+    ages_min: Optional[int] = None
+    ages_max: Optional[int] = None
+    grades_min: Optional[int] = None
+    grades_max: Optional[int] = None
+    duration_min_days: Optional[int] = None
+    duration_max_days: Optional[int] = None
+    pricing_currency: Optional[str] = None
+    pricing_min: Optional[float] = None
+    pricing_max: Optional[float] = None
+    boarding_included: Optional[bool] = None
+    overnight_confirmed: Optional[bool] = None
+    active_confirmed: Optional[bool] = None
+    contact_email: Optional[str] = None
+    contact_phone: Optional[str] = None
+    operator_name: Optional[str] = None
+    description_md: Optional[str] = None
+    confidence: Optional[str] = None
+    draft_status: Optional[str] = None
+    city: Optional[str] = None
+    region: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
@@ -328,3 +353,99 @@ class ScrapeResult(BaseModel):
     contact: Optional[dict] = None
     overnight_signals: list[str] = []
     evidence_snippets: list[str] = []
+
+
+# ---------------------------------------------------------------------------
+# Summer Plans (v2)
+# ---------------------------------------------------------------------------
+
+
+class SummerPlanCreate(BaseModel):
+    title: str
+    description: str = ""
+    year: int
+    target_age: Optional[int] = None
+    target_grade: Optional[int] = None
+
+
+class SummerPlanUpdate(BaseModel):
+    title: Optional[str] = None
+    description: Optional[str] = None
+    target_age: Optional[int] = None
+    target_grade: Optional[int] = None
+    is_active: Optional[int] = None
+
+
+class SummerPlanOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    title: str
+    description: str
+    year: int
+    target_age: Optional[int] = None
+    target_grade: Optional[int] = None
+    created_at: datetime
+    is_active: int
+
+
+class ShortlistItemCreate(BaseModel):
+    plan_id: int
+    camp_id: Optional[int] = None
+    custom_camp_name: Optional[str] = None
+    custom_camp_url: Optional[str] = None
+    status: str = "interested"
+
+
+class ShortlistItemUpdate(BaseModel):
+    status: Optional[str] = None
+    custom_camp_name: Optional[str] = None
+    custom_camp_url: Optional[str] = None
+
+
+class ShortlistNoteOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    shortlist_item_id: int
+    author_id: int
+    author_display_name: Optional[str] = None
+    body: str
+    source_url: Optional[str] = None
+    created_at: datetime
+
+
+class ShortlistItemOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    plan_id: int
+    camp_id: Optional[int] = None
+    custom_camp_name: Optional[str] = None
+    custom_camp_url: Optional[str] = None
+    status: str
+    added_by: int
+    created_at: datetime
+    updated_at: datetime
+    camp: Optional[CampOut] = None
+    notes: list[ShortlistNoteOut] = []
+
+
+class ShortlistNoteCreate(BaseModel):
+    body: str
+    source_url: Optional[str] = None
+
+
+class ResearchClipboard(BaseModel):
+    """Structured data for copy/paste into ChatGPT."""
+    plan_title: str
+    items: list[dict]
+
+
+class CampPlanMembership(BaseModel):
+    """A plan that a camp appears on, with the current shortlist status."""
+    plan_id: int
+    plan_title: str
+    plan_year: int
+    shortlist_item_id: int
+    status: str

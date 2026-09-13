@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from auth import ensure_bootstrap_parent
 from database import Base, SessionLocal, engine
 import models  # noqa: F401 – ensure models are registered before create_all
-from routers import auth, missions, contributions, evidence, answers, reviews, export, camps, favorites, scrape
+from routers import auth, missions, contributions, evidence, answers, reviews, export, camps, favorites, scrape, plans
 from settings import (
     RESEARCH_UI_CORS_ALLOW_ORIGIN_REGEX,
     RESEARCH_UI_CORS_ORIGINS,
@@ -44,6 +44,7 @@ app.include_router(export.router)
 app.include_router(camps.router)
 app.include_router(favorites.router)
 app.include_router(scrape.router)
+app.include_router(plans.router)
 
 
 @app.get("/health")

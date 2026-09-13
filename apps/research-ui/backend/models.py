@@ -253,3 +253,77 @@ class Favorite(Base):
 
     user: Mapped["User"] = relationship("User")
     camp: Mapped["Camp"] = relationship("Camp", back_populates="favorites")
+
+
+# ---------------------------------------------------------------------------
+# Summer Plans (v2 — replaces missions/contributions/favorites workflow)
+# ---------------------------------------------------------------------------
+
+
+class ShortlistStatus(str, enum.Enum):
+    interested = "interested"
+    researching = "researching"
+    applied = "applied"
+    going = "going"
+    passed = "passed"
+
+
+class SummerPlan(Base):
+    __tablename__ = "summer_plans"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    title: Mapped[str] = mapped_column(String(256), nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    year: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
+    target_age: Mapped[int] = mapped_column(Integer, nullable=True)
+    target_grade: Mapped[int] = mapped_column(Integer, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    is_active: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
+
+    shortlist_items: Mapped[list["ShortlistItem"]] = relationship(
+        "ShortlistItem", back_populates="plan", cascade="all, delete-orphan"
+    )
+
+
+class ShortlistItem(Base):
+    __tablename__ = "shortlist_items"
+    __table_args__ = (
+        UniqueConstraint("plan_id", "camp_id", name="uq_plan_camp"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    plan_id: Mapped[int] = mapped_column(Integer, ForeignKey("summer_plans.id"), nullable=False)
+    camp_id: Mapped[int] = mapped_column(Integer, ForeignKey("camps.id"), nullable=True)
+
+    # For camps not yet in catalog
+    custom_camp_name: Mapped[str] = mapped_column(String(512), nullable=True)
+    custom_camp_url: Mapped[str] = mapped_column(String(2048), nullable=True)
+
+    status: Mapped[ShortlistStatus] = mapped_column(
+        Enum(ShortlistStatus), nullable=False, default=ShortlistStatus.interested
+    )
+    added_by: Mapped[int] = mapped_column(Integer, ForeignKey("users.id"), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+    plan: Mapped["SummerPlan"] = relationship("SummerPlan", back_populates="shortlist_items")
+    camp: Mapped["Camp"] = relationship("Camp")
+    added_by_user: Mapped["User"] = relationship("User")
+    notes: Mapped[list["ShortlistNote"]] = relationship(
+        "ShortlistNote", back_populates="shortlist_item", cascade="all, delete-orphan",
+        order_by="ShortlistNote.created_at.desc()",
+    )
+
+
+class ShortlistNote(Base):
+    __tablename__ = "shortlist_notes"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    shortlist_item_id: Mapped[int] = mapped_column(Integer, ForeignKey("shortlist_items.id"), nullable=False)
+    author_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id"), nullable=False)
+    body: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    source_url: Mapped[str] = mapped_column(String(2048), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+    shortlist_item: Mapped["ShortlistItem"] = relationship("ShortlistItem", back_populates="notes")
+    author: Mapped["User"] = relationship("User")

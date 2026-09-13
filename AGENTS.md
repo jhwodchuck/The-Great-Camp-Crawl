@@ -36,7 +36,7 @@ Do **not** use JSONL staging files as long-term data stores. The DB is canonical
 
 ## Core Rules
 
-1. One final record per **physical venue or session location**.
+1. One final record per **distinct named program**. If a single venue or operator runs multiple separately-named programs (e.g. "Adventures in Marine Biology" and "Sharks and More" at TAMUG Sea Camp), each program gets its own record. Do not collapse distinct programs into a single record just because they share a campus.
 2. Do not mark a program as qualifying without evidence of **overnight** or **residential** participation.
 3. Do not create a final record without evidence of activity in the **last 24 months**.
 4. Preserve ambiguity instead of inventing facts.

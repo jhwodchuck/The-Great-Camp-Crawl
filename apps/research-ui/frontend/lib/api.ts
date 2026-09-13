@@ -209,6 +209,7 @@ export interface CampStats {
   total: number;
   by_country: Record<string, number>;
   by_region: Record<string, number>;
+  regions_by_country: Record<string, Record<string, number>>;
   by_program_family: Record<string, number>;
 }
 
@@ -216,6 +217,29 @@ export interface CampModerationPayload {
   is_excluded: boolean;
   reason?: string;
   notes?: string;
+}
+
+export interface CampEnrichmentPayload {
+  ages_min?: number | null;
+  ages_max?: number | null;
+  grades_min?: number | null;
+  grades_max?: number | null;
+  duration_min_days?: number | null;
+  duration_max_days?: number | null;
+  pricing_currency?: string | null;
+  pricing_min?: number | null;
+  pricing_max?: number | null;
+  boarding_included?: boolean | null;
+  overnight_confirmed?: boolean | null;
+  active_confirmed?: boolean | null;
+  contact_email?: string | null;
+  contact_phone?: string | null;
+  operator_name?: string | null;
+  description_md?: string | null;
+  confidence?: string | null;
+  draft_status?: string | null;
+  city?: string | null;
+  region?: string | null;
 }
 
 export interface Favorite {
@@ -237,6 +261,60 @@ export interface ScrapeResult {
   contact: { email?: string; phone?: string } | null;
   overnight_signals: string[];
   evidence_snippets: string[];
+}
+
+// ---------------------------------------------------------------------------
+// Summer Plans (v2)
+// ---------------------------------------------------------------------------
+
+export interface CampPlanMembership {
+  plan_id: number;
+  plan_title: string;
+  plan_year: number;
+  shortlist_item_id: number;
+  status: string;
+}
+
+export interface SummerPlan {
+  id: number;
+  title: string;
+  description: string;
+  year: number;
+  target_age: number | null;
+  target_grade: number | null;
+  created_at: string;
+  is_active: number;
+}
+
+export type ShortlistStatus = "interested" | "researching" | "applied" | "going" | "passed";
+
+export interface ShortlistNote {
+  id: number;
+  shortlist_item_id: number;
+  author_id: number;
+  author_display_name: string | null;
+  body: string;
+  source_url: string | null;
+  created_at: string;
+}
+
+export interface ShortlistItem {
+  id: number;
+  plan_id: number;
+  camp_id: number | null;
+  custom_camp_name: string | null;
+  custom_camp_url: string | null;
+  status: ShortlistStatus;
+  added_by: number;
+  created_at: string;
+  updated_at: string;
+  camp: Camp | null;
+  notes: ShortlistNote[];
+}
+
+export interface ResearchClipboard {
+  plan_title: string;
+  items: Record<string, unknown>[];
 }
 
 // ---------------------------------------------------------------------------
@@ -395,6 +473,8 @@ export const api = {
       camp_type?: string;
       ages_min?: number;
       ages_max?: number;
+      grades_min?: number;
+      grades_max?: number;
       price_max?: number;
       overnight?: boolean;
       q?: string;
@@ -408,6 +488,8 @@ export const api = {
       if (params?.camp_type) qs.set("camp_type", params.camp_type);
       if (params?.ages_min) qs.set("ages_min", String(params.ages_min));
       if (params?.ages_max) qs.set("ages_max", String(params.ages_max));
+      if (params?.grades_min) qs.set("grades_min", String(params.grades_min));
+      if (params?.grades_max) qs.set("grades_max", String(params.grades_max));
       if (params?.price_max) qs.set("price_max", String(params.price_max));
       if (params?.overnight !== undefined) qs.set("overnight", String(params.overnight));
       if (params?.q) qs.set("q", params.q);
@@ -425,6 +507,15 @@ export const api = {
         method: "PATCH",
         body: JSON.stringify(payload),
       });
+    },
+    enrich(recordId: string, payload: CampEnrichmentPayload): Promise<Camp> {
+      return request(`/api/camps/${encodeURIComponent(recordId)}/enrich`, {
+        method: "PATCH",
+        body: JSON.stringify(payload),
+      });
+    },
+    plans(recordId: string): Promise<CampPlanMembership[]> {
+      return request(`/api/camps/${encodeURIComponent(recordId)}/plans`);
     },
   },
 
@@ -454,6 +545,63 @@ export const api = {
       return request("/api/scrape/", {
         method: "POST",
         body: JSON.stringify({ url }),
+      });
+    },
+  },
+
+  plans: {
+    list(): Promise<SummerPlan[]> {
+      return request("/api/plans/");
+    },
+    get(id: number): Promise<SummerPlan> {
+      return request(`/api/plans/${id}`);
+    },
+    create(payload: { title: string; description?: string; year: number }): Promise<SummerPlan> {
+      return request("/api/plans/", { method: "POST", body: JSON.stringify(payload) });
+    },
+    update(id: number, payload: Partial<SummerPlan>): Promise<SummerPlan> {
+      return request(`/api/plans/${id}`, { method: "PATCH", body: JSON.stringify(payload) });
+    },
+    shortlist(planId: number, status?: string): Promise<ShortlistItem[]> {
+      const qs = status ? `?status=${status}` : "";
+      return request(`/api/plans/${planId}/shortlist${qs}`);
+    },
+    addToShortlist(planId: number, payload: {
+      camp_id?: number;
+      custom_camp_name?: string;
+      custom_camp_url?: string;
+      status?: string;
+    }): Promise<ShortlistItem> {
+      return request(`/api/plans/${planId}/shortlist`, {
+        method: "POST",
+        body: JSON.stringify({ plan_id: planId, ...payload }),
+      });
+    },
+    updateItem(itemId: number, payload: { status?: string; custom_camp_name?: string; custom_camp_url?: string }): Promise<ShortlistItem> {
+      return request(`/api/plans/shortlist/${itemId}`, {
+        method: "PATCH",
+        body: JSON.stringify(payload),
+      });
+    },
+    removeItem(itemId: number): Promise<void> {
+      return request(`/api/plans/shortlist/${itemId}`, { method: "DELETE" });
+    },
+    addNote(itemId: number, body: string, sourceUrl?: string): Promise<ShortlistNote> {
+      return request(`/api/plans/shortlist/${itemId}/notes`, {
+        method: "POST",
+        body: JSON.stringify({ body, source_url: sourceUrl }),
+      });
+    },
+    deleteNote(noteId: number): Promise<void> {
+      return request(`/api/plans/notes/${noteId}`, { method: "DELETE" });
+    },
+    clipboard(planId: number): Promise<ResearchClipboard> {
+      return request(`/api/plans/${planId}/clipboard`);
+    },
+    importResearch(planId: number, items: { name: string; notes: string; source_url?: string }[]): Promise<{ imported: number; total_in_payload: number }> {
+      return request(`/api/plans/${planId}/import-research`, {
+        method: "POST",
+        body: JSON.stringify({ items }),
       });
     },
   },
